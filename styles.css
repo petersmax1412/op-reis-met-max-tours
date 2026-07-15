@@ -342,7 +342,7 @@ h3 {
 .tour-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 }
 
 .tour-card {
