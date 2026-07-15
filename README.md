@@ -1,6 +1,6 @@
-# Op Reis Met Max webapp
+# Stadsopdracht webapp
 
-Nieuwe conceptversie voor interactieve stadsrondleidingen.
+Nieuwe conceptversie voor interactieve stadsrondleidingen op `stadsopdracht.nl`.
 
 ## Wat zit erin
 

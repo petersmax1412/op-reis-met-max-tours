@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opreismetmax.nl/sitemap.xml
+Sitemap: https://stadsopdracht.nl/sitemap.xml

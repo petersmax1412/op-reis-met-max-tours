@@ -1,13 +1,13 @@
 # Cloudflare Pages deploy
 
-Deze map is klaar om als statische website via GitHub naar Cloudflare Pages te deployen.
+Deze map is klaar om als statische website via GitHub naar Cloudflare Pages te deployen voor `stadsopdracht.nl`.
 
 ## Aanbevolen GitHub-structuur
 
 Maak een nieuwe GitHub-repository, bijvoorbeeld:
 
 ```text
-op-reis-met-max-tours
+stadsopdracht
 ```
 
 Upload of push de inhoud van deze map als root van die repository:
@@ -58,7 +58,7 @@ Voor een subdomein zoals `tours.voorbeeld.nl` kun je een CNAME naar je `*.pages.
 
 ## Na domeinkeuze aanpassen
 
-Pas deze bestanden aan naar je echte domein:
+Deze bestanden staan nu ingesteld op `https://stadsopdracht.nl/`:
 
 - `sitemap.xml`
 - `robots.txt`

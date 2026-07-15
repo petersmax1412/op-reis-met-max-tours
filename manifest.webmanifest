@@ -1,6 +1,6 @@
 {
-  "name": "Op Reis Met Max",
-  "short_name": "Tours",
+  "name": "Stadsopdracht",
+  "short_name": "Stadsopdracht",
   "description": "Interactieve stadsrondleidingen met opdrachten.",
   "start_url": "./index.html",
   "scope": "./",
