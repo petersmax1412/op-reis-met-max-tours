@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/app-icon.svg" />
-    <link rel="stylesheet" href="styles.css?v=8" />
+    <link rel="stylesheet" href="styles.css?v=9" />
   </head>
   <body>
     <header class="app-shell">
@@ -27,6 +27,7 @@
         <a href="#mijn-tour">Mijn tour</a>
         <a href="#betaling">Betalen</a>
       </nav>
+      <div class="account-actions" data-account-actions></div>
     </header>
 
     <main id="home">
@@ -152,6 +153,14 @@
       <div data-checkout-content></div>
     </dialog>
 
-    <script src="script.js?v=8"></script>
+    <dialog class="checkout-dialog" data-auth-dialog>
+      <form method="dialog">
+        <button class="icon-button" value="close" aria-label="Sluiten">×</button>
+      </form>
+      <div data-auth-content></div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js?v=9"></script>
   </body>
 </html>

@@ -7,28 +7,37 @@ Nieuwe conceptversie voor interactieve stadsrondleidingen op `stadsopdracht.nl`.
 - Mobiele webapp-layout voor Android en iOS
 - PWA-bestanden: `manifest.webmanifest`, `service-worker.js` en app-icon
 - Tourwinkel met prijzen
-- Demo-aankoop om tours lokaal te ontgrendelen
+- Accountflow voor inloggen en registreren
+- Aankoop en voortgang per account via Supabase
 - Interactieve stops met opdrachten, hints en voortgang
-- Lokale voortgang via browseropslag
+- Rabobank-betaalverzoek met iDEAL/Wero-tekst
+
+## Accounts koppelen
+
+De app is voorbereid op Supabase Auth en een `user_tours` tabel. Maak een Supabase-project aan,
+voer `SUPABASE_SETUP.sql` uit in de SQL editor en vul daarna bovenin `script.js` deze waarden in:
+
+```js
+const supabaseConfig = {
+  url: "https://jouw-project.supabase.co",
+  anonKey: "jouw-public-anon-key",
+};
+```
+
+Zolang deze waarden leeg zijn, toont de app dat accounts nog gekoppeld moeten worden en kunnen
+bezoekers niet betalen.
 
 ## Betalingen koppelen
 
-In `script.js` staat per tour een veld `paymentUrl`.
-
-Vul daar een echte checkout-link in, bijvoorbeeld van Mollie Payment Links, Stripe Payment Links of een eigen backend-checkout:
+In `script.js` staat per tour een veld `paymentUrl`. Daar staat nu het Rabobank betaalverzoek:
 
 ```js
-paymentUrl: "https://jouw-betaalprovider.nl/checkout/...",
+paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=...",
 ```
 
-Voor productie is de beste volgende stap:
-
-1. Maak per tour een betaalproduct aan bij Mollie of Stripe.
-2. Laat de knop naar de checkout gaan.
-3. Laat je betaalprovider na betaling terugsturen naar een succespagina.
-4. Ontgrendel de tour met een unieke toegangscode of account-login.
-
-De huidige demo-ontgrendeling is bedoeld voor testen en presentatie, niet als definitieve betaalbeveiliging.
+De app vraagt eerst om inloggen. Daarna opent de betaalpagina en wordt de route na verwerking aan
+het account gekoppeld. Later kan dit worden vervangen door Mollie of Stripe met webhooks voor
+volledige betaalcontrole.
 
 ## Online zetten met Cloudflare Pages
 
