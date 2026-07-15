@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Op Reis Met Max | Interactieve stadsrondleidingen</title>
+    <meta
+      name="description"
+      content="Koop interactieve stadsrondleidingen voor een paar euro en ontdek steden via opdrachten, verhalen en slimme routes."
+    />
+    <meta name="theme-color" content="#12312c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Op Reis Met Max" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/app-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-shell">
+      <a class="brand" href="#home" aria-label="Op Reis Met Max">
+        <span class="brand-mark">M</span>
+        <span>Op Reis Met Max</span>
+      </a>
+      <nav class="top-nav" aria-label="Navigatie">
+        <a href="#tours">Tours</a>
+        <a href="#mijn-tour">Mijn tour</a>
+        <a href="#betaling">Betalen</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero-app">
+        <div class="hero-copy">
+          <p class="eyebrow">Interactieve stadsrondleidingen</p>
+          <h1>Ontdek een stad via opdrachten, plekken en verhalen.</h1>
+          <p>
+            Koop een route voor een paar euro, open hem direct op je telefoon en voer bij elke stop
+            een korte opdracht uit. Zo kijk je beter, leer je meer en voelt een stad minder als een
+            checklist.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#tours">Bekijk tours</a>
+            <button class="button ghost" type="button" data-open-tour="amsterdam">Probeer demo</button>
+          </div>
+        </div>
+
+        <div class="phone-preview" aria-label="Voorbeeld van de webapp">
+          <div class="phone-top">
+            <span>Amsterdam Jordaan</span>
+            <strong>62%</strong>
+          </div>
+          <div class="route-map" aria-hidden="true">
+            <span class="map-line"></span>
+            <span class="pin active">1</span>
+            <span class="pin">2</span>
+            <span class="pin">3</span>
+            <span class="pin">4</span>
+          </div>
+          <article class="task-card">
+            <span class="pill">Stop 2 van 6</span>
+            <h2>Vind het geveldetail</h2>
+            <p>Kijk omhoog bij de brug en zoek welk symbool boven de oude pakhuisdeur staat.</p>
+            <button class="button primary small" type="button" data-open-tour="amsterdam">Start opdracht</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="Hoe werkt het">
+        <article>
+          <strong>1</strong>
+          <span>Kies een stad</span>
+        </article>
+        <article>
+          <strong>2</strong>
+          <span>Betaal veilig</span>
+        </article>
+        <article>
+          <strong>3</strong>
+          <span>Open direct je route</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>Los opdrachten op</span>
+        </article>
+      </section>
+
+      <section class="section tours-section" id="tours">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow dark">Shop</p>
+            <h2>Koopbare stadstours</h2>
+          </div>
+          <p>
+            Elke tour is gemaakt voor mobiel gebruik: korte stops, heldere opdrachten, lokale
+            context en voortgang die op je toestel bewaard blijft.
+          </p>
+        </div>
+
+        <div class="tour-grid" data-tour-grid></div>
+      </section>
+
+      <section class="section live-tour" id="mijn-tour">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow dark">Webapp</p>
+            <h2>Mijn tour</h2>
+          </div>
+          <p data-tour-status>Kies een tour om de interactieve opdrachten te bekijken.</p>
+        </div>
+
+        <div class="tour-workspace">
+          <aside class="stop-list" data-stop-list aria-label="Stops in deze tour"></aside>
+          <section class="assignment-panel" data-assignment-panel>
+            <p class="empty-state">Nog geen tour geselecteerd.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="section payment-section" id="betaling">
+        <div>
+          <p class="eyebrow dark">Betalingen</p>
+          <h2>Betaalflow klaar voor Mollie of Stripe</h2>
+          <p>
+            De koopknoppen kunnen naar echte checkout-links wijzen. Voor een productieversie is een
+            server of betaalplatform nodig om aankopen betrouwbaar te valideren en tours pas na
+            betaling te ontgrendelen.
+          </p>
+        </div>
+        <div class="payment-card">
+          <span class="pill">Betaalstructuur</span>
+          <ul>
+            <li>Prijs per tour vanaf €3,99</li>
+            <li>Checkout via externe betaalpagina</li>
+            <li>Demo-ontgrendeling voor deze prototypeversie</li>
+            <li>PWA voorbereid voor Android en iOS</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-nav" aria-label="Mobiele navigatie">
+      <a href="#tours">Tours</a>
+      <a href="#mijn-tour">Mijn tour</a>
+      <a href="#betaling">Betalen</a>
+    </footer>
+
+    <dialog class="checkout-dialog" data-checkout-dialog>
+      <form method="dialog">
+        <button class="icon-button" value="close" aria-label="Sluiten">×</button>
+      </form>
+      <div data-checkout-content></div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

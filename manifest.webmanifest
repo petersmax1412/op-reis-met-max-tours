@@ -1,0 +1,18 @@
+{
+  "name": "Op Reis Met Max",
+  "short_name": "Tours",
+  "description": "Interactieve stadsrondleidingen met opdrachten.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#12312c",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
