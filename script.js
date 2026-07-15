@@ -206,41 +206,24 @@ const formatDistance = (distance) => {
   return `${(distance / 1000).toFixed(1).replace(".", ",")} km`;
 };
 
-const getRoutePoints = (tour) => {
-  const coords = tour.stops.map((stop) => stop.coordinates);
-  const minLat = Math.min(...coords.map((coord) => coord.lat));
-  const maxLat = Math.max(...coords.map((coord) => coord.lat));
-  const minLng = Math.min(...coords.map((coord) => coord.lng));
-  const maxLng = Math.max(...coords.map((coord) => coord.lng));
-  const latRange = maxLat - minLat || 1;
-  const lngRange = maxLng - minLng || 1;
-
-  return coords.map((coord) => ({
-    x: 18 + ((coord.lng - minLng) / lngRange) * 64,
-    y: 82 - ((coord.lat - minLat) / latRange) * 64,
-  }));
-};
-
-const renderMiniMap = (tour, activeIndex) => {
-  const points = getRoutePoints(tour);
-  const path = points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(" ");
-  const pins = points
-    .map(
-      (point, index) => `
-        <g class="route-pin ${index === activeIndex ? "active" : ""} ${completedStops(tour.id).includes(index) ? "done" : ""}">
-          <circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="5.5"></circle>
-          <text x="${point.x.toFixed(1)}" y="${(point.y + 1.8).toFixed(1)}">${index + 1}</text>
-        </g>
-      `,
-    )
-    .join("");
+const renderStopMap = (stop) => {
+  const { lat, lng } = stop.coordinates;
+  const latDelta = 0.0016;
+  const lngDelta = 0.0022;
+  const bounds = [lng - lngDelta, lat - latDelta, lng + lngDelta, lat + latDelta]
+    .map((value) => value.toFixed(5))
+    .join("%2C");
+  const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${bounds}&layer=mapnik&marker=${lat.toFixed(5)}%2C${lng.toFixed(5)}`;
 
   return `
-    <svg class="mini-map" viewBox="0 0 100 100" role="img" aria-label="Routekaart Málaga met actieve stop">
-      <rect x="2" y="2" width="96" height="96" rx="8"></rect>
-      <path d="${path}"></path>
-      ${pins}
-    </svg>
+    <div class="stop-map">
+      <iframe
+        title="Kaart van ${stop.place}"
+        src="${mapUrl}"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   `;
 };
 
@@ -420,7 +403,7 @@ const renderAssignment = () => {
       </div>
       <aside class="assignment-box">
         <h3>Routekaart</h3>
-        ${renderMiniMap(tour, selectedStopIndex)}
+        ${renderStopMap(stop)}
         <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${formatDistance(distance)}.</p>
         <h3>Hint</h3>
         <p>${stop.hint}</p>

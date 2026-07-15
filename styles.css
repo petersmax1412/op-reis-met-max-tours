@@ -483,49 +483,22 @@ h3 {
   gap: 10px;
 }
 
-.mini-map {
+.stop-map {
   background: #e8efe8;
   border-radius: 8px;
-  display: block;
-  height: auto;
+  height: 260px;
   margin: 4px 0 12px;
-  max-width: 100%;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
-.mini-map rect {
-  fill: #f9fbf6;
-  stroke: var(--line);
-  stroke-width: 1.5;
-}
-
-.mini-map path {
-  fill: none;
-  stroke: var(--blue);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3.5;
-}
-
-.route-pin circle {
-  fill: white;
-  stroke: var(--green);
-  stroke-width: 2;
-}
-
-.route-pin text {
-  fill: var(--green);
-  font-size: 5px;
-  font-weight: 900;
-  text-anchor: middle;
-}
-
-.route-pin.active circle {
-  fill: var(--yellow);
-}
-
-.route-pin.done circle {
-  fill: var(--mint);
+.stop-map iframe {
+  border: 0;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .answer-options {
