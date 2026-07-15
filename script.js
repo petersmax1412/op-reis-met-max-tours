@@ -13,6 +13,7 @@ const tours = [
       {
         title: "Begin op Plaza de la Constitución",
         place: "Plaza de la Constitución",
+        coordinates: { lat: 36.72121, lng: -4.42154 },
         assignment: "Kijk rond en zoek drie details die laten zien dat dit plein al eeuwen een ontmoetingsplek is.",
         question: "Welk detail voelt het oudst: steen, gevel, straatpatroon of iets anders?",
         hint: "Let op de randen van het plein, niet alleen op het midden.",
@@ -37,6 +38,7 @@ const tours = [
       {
         title: "Lees de kathedraal",
         place: "Catedral de Málaga",
+        coordinates: { lat: 36.72027, lng: -4.41906 },
         assignment: "Loop langzaam langs de buitenkant en zoek het verschil tussen de twee torens.",
         question: "Waarom denk je dat de kathedraal de bijnaam La Manquita kreeg?",
         hint: "La Manquita betekent ongeveer: de eenarmige vrouw.",
@@ -61,6 +63,7 @@ const tours = [
       {
         title: "Romeins spoor zoeken",
         place: "Teatro Romano",
+        coordinates: { lat: 36.72116, lng: -4.41666 },
         assignment: "Zoek een plek waar je tegelijk Romeinse resten en Moorse muren kunt zien.",
         question: "Welke laag van de stad valt jou het meest op?",
         hint: "Draai je rug niet te snel naar de heuvel achter het theater.",
@@ -85,6 +88,7 @@ const tours = [
       {
         title: "Kijk als een verdediger",
         place: "Alcazaba ingang",
+        coordinates: { lat: 36.72137, lng: -4.41617 },
         assignment: "Stel je voor dat je de stad moest beschermen. Zoek drie redenen waarom deze plek slim gekozen is.",
         question: "Wat helpt hier meer: hoogte, zicht, muren of routecontrole?",
         hint: "Kijk naar de verbinding tussen heuvel, stad en haven.",
@@ -109,6 +113,7 @@ const tours = [
       {
         title: "Picasso zonder museumkaart",
         place: "Plaza de la Merced",
+        coordinates: { lat: 36.72309, lng: -4.41705 },
         assignment: "Zoek op het plein naar verwijzingen naar Picasso en noteer wat de stad met hem wil uitstralen.",
         question: "Wordt Picasso hier vooral als kunstenaar, inwoner of symbool gebruikt?",
         hint: "Kijk naar beelden, gevels en toeristische routes rondom het plein.",
@@ -133,6 +138,7 @@ const tours = [
       {
         title: "Eindig aan de haven",
         place: "Muelle Uno",
+        coordinates: { lat: 36.71664, lng: -4.41464 },
         assignment: "Kijk terug richting stad en zoek hoe oud Málaga en nieuw Málaga elkaar hier raken.",
         question: "Wat voelt hier het meest modern, en wat blijft duidelijk historisch?",
         hint: "Vergelijk de looproute, het water, de skyline en de vestingmuur.",
@@ -168,12 +174,103 @@ const checkoutContent = document.querySelector("[data-checkout-content]");
 
 let selectedTourId = null;
 let selectedStopIndex = 0;
+let userLocation = null;
+let locationMessage = "Locatie nog niet actief.";
+
+const unlockRadiusMeters = 100;
 
 const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
 const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
 
 const isUnlocked = (tourId) => Boolean(getProgress()[tourId]?.unlocked);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
+
+const toRad = (value) => (value * Math.PI) / 180;
+
+const distanceInMeters = (from, to) => {
+  if (!from || !to) return null;
+  const earthRadius = 6371000;
+  const dLat = toRad(to.lat - from.lat);
+  const dLng = toRad(to.lng - from.lng);
+  const lat1 = toRad(from.lat);
+  const lat2 = toRad(to.lat);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  return Math.round(earthRadius * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+};
+
+const formatDistance = (distance) => {
+  if (distance === null) return "Onbekend";
+  if (distance < 1000) return `${distance} m`;
+  return `${(distance / 1000).toFixed(1).replace(".", ",")} km`;
+};
+
+const getRoutePoints = (tour) => {
+  const coords = tour.stops.map((stop) => stop.coordinates);
+  const minLat = Math.min(...coords.map((coord) => coord.lat));
+  const maxLat = Math.max(...coords.map((coord) => coord.lat));
+  const minLng = Math.min(...coords.map((coord) => coord.lng));
+  const maxLng = Math.max(...coords.map((coord) => coord.lng));
+  const latRange = maxLat - minLat || 1;
+  const lngRange = maxLng - minLng || 1;
+
+  return coords.map((coord) => ({
+    x: 18 + ((coord.lng - minLng) / lngRange) * 64,
+    y: 82 - ((coord.lat - minLat) / latRange) * 64,
+  }));
+};
+
+const renderMiniMap = (tour, activeIndex) => {
+  const points = getRoutePoints(tour);
+  const path = points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(" ");
+  const pins = points
+    .map(
+      (point, index) => `
+        <g class="route-pin ${index === activeIndex ? "active" : ""} ${completedStops(tour.id).includes(index) ? "done" : ""}">
+          <circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="5.5"></circle>
+          <text x="${point.x.toFixed(1)}" y="${(point.y + 1.8).toFixed(1)}">${index + 1}</text>
+        </g>
+      `,
+    )
+    .join("");
+
+  return `
+    <svg class="mini-map" viewBox="0 0 100 100" role="img" aria-label="Routekaart Málaga met actieve stop">
+      <rect x="2" y="2" width="96" height="96" rx="8"></rect>
+      <path d="${path}"></path>
+      ${pins}
+    </svg>
+  `;
+};
+
+const getCurrentLocation = () => {
+  if (!("geolocation" in navigator)) {
+    locationMessage = "Je browser ondersteunt geen locatiebepaling.";
+    renderAssignment();
+    return;
+  }
+
+  locationMessage = "Locatie wordt opgehaald...";
+  renderAssignment();
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      userLocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+        accuracy: Math.round(position.coords.accuracy),
+      };
+      locationMessage = `Locatie actief, nauwkeurigheid ongeveer ${userLocation.accuracy} m.`;
+      renderAssignment();
+    },
+    () => {
+      locationMessage = "Locatie niet beschikbaar. Geef toestemming om opdrachten vrij te spelen.";
+      renderAssignment();
+    },
+    { enableHighAccuracy: true, maximumAge: 15000, timeout: 12000 },
+  );
+};
 
 const showToast = (message) => {
   const toast = document.createElement("div");
@@ -254,6 +351,18 @@ const renderAssignment = () => {
   const done = completedStops(tour.id);
   const progress = Math.round((done.length / tour.stops.length) * 100);
   const locked = !isUnlocked(tour.id);
+  const distance = distanceInMeters(userLocation, stop.coordinates);
+  const isNearby = distance !== null && distance <= unlockRadiusMeters;
+  const locationLocked = !locked && !done.includes(selectedStopIndex) && !isNearby;
+  const answerLocked = locked || locationLocked;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${stop.coordinates.lat},${stop.coordinates.lng}`;
+  const locationHelp = locked
+    ? "Koop of ontgrendel de tour om locatiecontrole te gebruiken."
+    : isNearby
+      ? `Je bent binnen ${unlockRadiusMeters} meter. De vraag is vrijgegeven.`
+      : distance === null
+        ? "Zet je locatie aan om deze vraag vrij te spelen."
+        : `Je bent nog ${formatDistance(distance)} van deze stop. Binnen ${unlockRadiusMeters} meter gaat de vraag open.`;
 
   tourStatus.textContent = locked
     ? `${tour.title} is nog niet gekocht. Je ziet nu een preview.`
@@ -271,14 +380,26 @@ const renderAssignment = () => {
         <div class="assignment-box">
           <h3>Opdracht</h3>
           <p>${locked ? "Preview: " : ""}${stop.assignment}</p>
+          <div class="location-gate ${isNearby || done.includes(selectedStopIndex) ? "open" : ""}">
+            <strong>${done.includes(selectedStopIndex) ? "Deze stop is al voltooid." : locationHelp}</strong>
+            <span>${locationMessage}</span>
+            <div class="location-actions">
+              <button class="button small ${isNearby ? "ghost" : "primary"}" type="button" data-use-location>
+                Gebruik mijn locatie
+              </button>
+              <a class="button ghost small" href="${mapsUrl}" target="_blank" rel="noopener">
+                Open kaart
+              </a>
+            </div>
+          </div>
           <h3>Vraag</h3>
-          <p>${stop.question}</p>
+          <p>${locationLocked && !done.includes(selectedStopIndex) ? "Deze vraag wordt zichtbaar zodra je bij de stop bent." : stop.question}</p>
           <div class="answer-options" role="group" aria-label="Antwoordopties">
             ${stop.choices
               .map(
                 (choice, choiceIndex) => `
                   <button class="answer-option" type="button" data-answer-choice="${choiceIndex}" ${
-                    locked ? "disabled" : ""
+                    answerLocked ? "disabled" : ""
                   }>
                     ${choice.text}
                   </button>
@@ -291,11 +412,16 @@ const renderAssignment = () => {
               ? "Deze opdracht is voltooid. Je kunt nog steeds andere antwoorden bekijken, maar je voortgang blijft bewaard."
               : locked
                 ? "Koop de tour om antwoorden te kiezen en voortgang op te slaan."
-                : "Kies het antwoord dat volgens jou het best past."
+                : locationLocked
+                  ? "Ga naar de stop en zet locatie aan om de vraag te beantwoorden."
+                  : "Kies het antwoord dat volgens jou het best past."
           }</p>
         </div>
       </div>
       <aside class="assignment-box">
+        <h3>Routekaart</h3>
+        ${renderMiniMap(tour, selectedStopIndex)}
+        <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${formatDistance(distance)}.</p>
         <h3>Hint</h3>
         <p>${stop.hint}</p>
         <h3>Waarom dit werkt</h3>
@@ -351,6 +477,7 @@ document.addEventListener("click", (event) => {
   const openButton = event.target.closest("[data-open-tour]");
   const stopButton = event.target.closest("[data-stop-index]");
   const answerButton = event.target.closest("[data-answer-choice]");
+  const locationButton = event.target.closest("[data-use-location]");
   const demoUnlock = event.target.closest("[data-demo-unlock]");
   const paymentMissing = event.target.closest("[data-payment-missing]");
 
@@ -361,6 +488,10 @@ document.addEventListener("click", (event) => {
     selectedStopIndex = Number(stopButton.dataset.stopIndex);
     renderStops();
     renderAssignment();
+  }
+
+  if (locationButton) {
+    getCurrentLocation();
   }
 
   if (answerButton && selectedTourId) {

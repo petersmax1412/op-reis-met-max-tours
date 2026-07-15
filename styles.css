@@ -451,6 +451,83 @@ h3 {
   padding: 18px;
 }
 
+.location-gate {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 14px;
+}
+
+.location-gate.open {
+  background: var(--mint);
+  border-color: rgba(18, 49, 44, 0.34);
+}
+
+.location-gate strong {
+  color: var(--ink);
+}
+
+.location-gate span,
+.map-caption {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mini-map {
+  background: #e8efe8;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  margin: 4px 0 12px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.mini-map rect {
+  fill: #f9fbf6;
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.mini-map path {
+  fill: none;
+  stroke: var(--blue);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3.5;
+}
+
+.route-pin circle {
+  fill: white;
+  stroke: var(--green);
+  stroke-width: 2;
+}
+
+.route-pin text {
+  fill: var(--green);
+  font-size: 5px;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.route-pin.active circle {
+  fill: var(--yellow);
+}
+
+.route-pin.done circle {
+  fill: var(--mint);
+}
+
 .answer-options {
   display: grid;
   gap: 10px;
