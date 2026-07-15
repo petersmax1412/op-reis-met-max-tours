@@ -600,6 +600,44 @@ h3 {
   background: rgba(19, 33, 31, 0.5);
 }
 
+.processing-card {
+  align-items: center;
+  background: #f4f7f1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  margin-top: 18px;
+  padding: 24px;
+  text-align: center;
+}
+
+.processing-card strong {
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+.processing-card span:last-child {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.processing-spinner {
+  animation: spin 850ms linear infinite;
+  border: 4px solid #dbe5d5;
+  border-top-color: var(--green);
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .icon-button {
   background: #eef2eb;
   border: 0;

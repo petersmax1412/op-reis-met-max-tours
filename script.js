@@ -6,7 +6,7 @@ const tours = [
     price: "€4,49",
     duration: "120 min",
     distance: "3,2 km",
-    paymentUrl: "",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
       "Een interactieve wandeling door het historische centrum, langs de kathedraal, Alcazaba, Picasso-sporen en de haven.",
     stops: [
@@ -176,8 +176,10 @@ let selectedTourId = null;
 let selectedStopIndex = 0;
 let userLocation = null;
 let locationMessage = "Locatie nog niet actief.";
+let paymentTimer = null;
 
 const unlockRadiusMeters = 100;
+const paymentProcessingMs = 40000;
 
 const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
 const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
@@ -437,22 +439,46 @@ const openCheckout = (tourId) => {
     <p>${tour.summary}</p>
     <p><strong>Prijs: ${tour.price}</strong></p>
     <div class="hero-actions">
-      <button class="button primary" type="button" data-demo-unlock="${tour.id}">
-        Demo-aankoop afronden
+      <a class="button primary" href="${tour.paymentUrl}" target="_blank" rel="noopener" data-start-payment="${
+        tour.id
+      }">
+        Betaal met Rabobank
+      </a>
+      <button class="button ghost" type="button" data-close-checkout>
+        Later betalen
       </button>
-      ${
-        tour.paymentUrl
-          ? `<a class="button ghost" href="${tour.paymentUrl}" rel="noopener">Naar betaalpagina</a>`
-          : `<button class="button ghost" type="button" data-payment-missing>Betaallink ontbreekt</button>`
-      }
     </div>
     <p>
-      Productieversie: vul per tour een Mollie- of Stripe-checkoutlink in, of koppel een backend
-      die na betaling een unieke toegangscode terugstuurt.
+      Open het Rabobank betaalverzoek in een nieuw tabblad. Zodra je terugkomt, wordt de route
+      automatisch voor je klaargezet.
     </p>
   `;
 
   checkoutDialog.showModal();
+};
+
+const startPaymentProcessing = (tourId) => {
+  if (paymentTimer) window.clearTimeout(paymentTimer);
+
+  checkoutContent.innerHTML = `
+    <span class="pill">Betaling geopend</span>
+    <h2>Betaling wordt verwerkt</h2>
+    <p>
+      Rond het Rabobank betaalverzoek af in het geopende tabblad. Deze webapp geeft je route
+      automatisch vrij zodra de verwerking klaar is.
+    </p>
+    <div class="processing-card" role="status" aria-live="polite">
+      <span class="processing-spinner" aria-hidden="true"></span>
+      <strong>Even geduld</strong>
+      <span>We zetten je Málaga-route klaar.</span>
+    </div>
+  `;
+
+  paymentTimer = window.setTimeout(() => {
+    paymentTimer = null;
+    checkoutDialog.close();
+    unlockTour(tourId);
+  }, paymentProcessingMs);
 };
 
 document.addEventListener("click", (event) => {
@@ -461,8 +487,8 @@ document.addEventListener("click", (event) => {
   const stopButton = event.target.closest("[data-stop-index]");
   const answerButton = event.target.closest("[data-answer-choice]");
   const locationButton = event.target.closest("[data-use-location]");
-  const demoUnlock = event.target.closest("[data-demo-unlock]");
-  const paymentMissing = event.target.closest("[data-payment-missing]");
+  const startPayment = event.target.closest("[data-start-payment]");
+  const closeCheckout = event.target.closest("[data-close-checkout]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
@@ -504,13 +530,12 @@ document.addEventListener("click", (event) => {
     showToast("Goed antwoord. Opdracht opgeslagen.");
   }
 
-  if (demoUnlock) {
-    checkoutDialog.close();
-    unlockTour(demoUnlock.dataset.demoUnlock);
+  if (startPayment) {
+    startPaymentProcessing(startPayment.dataset.startPayment);
   }
 
-  if (paymentMissing) {
-    showToast("Vul straks je echte Mollie- of Stripe-betaallink in.");
+  if (closeCheckout) {
+    checkoutDialog.close();
   }
 });
 
