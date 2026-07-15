@@ -442,15 +442,15 @@ const openCheckout = (tourId) => {
       <a class="button primary" href="${tour.paymentUrl}" target="_blank" rel="noopener" data-start-payment="${
         tour.id
       }">
-        Betaal met Rabobank
+        Betaal met iDEAL of Wero
       </a>
       <button class="button ghost" type="button" data-close-checkout>
         Later betalen
       </button>
     </div>
     <p>
-      Open het Rabobank betaalverzoek in een nieuw tabblad. Zodra je terugkomt, wordt de route
-      automatisch voor je klaargezet.
+      Open de betaalpagina in een nieuw tabblad. Zodra je terugkomt, wordt de route automatisch
+      voor je klaargezet.
     </p>
   `;
 
@@ -464,8 +464,8 @@ const startPaymentProcessing = (tourId) => {
     <span class="pill">Betaling geopend</span>
     <h2>Betaling wordt verwerkt</h2>
     <p>
-      Rond het Rabobank betaalverzoek af in het geopende tabblad. Deze webapp geeft je route
-      automatisch vrij zodra de verwerking klaar is.
+      Rond je betaling af in het geopende tabblad. Deze webapp geeft je route automatisch vrij
+      zodra de verwerking klaar is.
     </p>
     <div class="processing-card" role="status" aria-live="polite">
       <span class="processing-spinner" aria-hidden="true"></span>
