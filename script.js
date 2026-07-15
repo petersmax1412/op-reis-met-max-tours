@@ -16,6 +16,23 @@ const tours = [
         assignment: "Kijk rond en zoek drie details die laten zien dat dit plein al eeuwen een ontmoetingsplek is.",
         question: "Welk detail voelt het oudst: steen, gevel, straatpatroon of iets anders?",
         hint: "Let op de randen van het plein, niet alleen op het midden.",
+        choices: [
+          {
+            text: "De historische gevels en het straatpatroon rond het plein",
+            correct: true,
+            feedback: "Precies. Het plein lees je vooral aan de randen: gevels, doorgangen en hoe straten erop uitkomen.",
+          },
+          {
+            text: "De moderne winkelpuien",
+            correct: false,
+            feedback: "Die vallen op, maar vertellen minder over de oudste laag van het plein.",
+          },
+          {
+            text: "Alleen de terrassen in het midden",
+            correct: false,
+            feedback: "Terrassen laten zien hoe het plein nu gebruikt wordt, maar kijk ook naar de vaste stadsstructuur.",
+          },
+        ],
       },
       {
         title: "Lees de kathedraal",
@@ -23,6 +40,23 @@ const tours = [
         assignment: "Loop langzaam langs de buitenkant en zoek het verschil tussen de twee torens.",
         question: "Waarom denk je dat de kathedraal de bijnaam La Manquita kreeg?",
         hint: "La Manquita betekent ongeveer: de eenarmige vrouw.",
+        choices: [
+          {
+            text: "Omdat één toren onafgebouwd bleef",
+            correct: true,
+            feedback: "Klopt. De bijnaam verwijst naar de ontbrekende of onafgemaakte tweede toren.",
+          },
+          {
+            text: "Omdat de kathedraal maar één ingang heeft",
+            correct: false,
+            feedback: "Logische gok, maar de bijnaam gaat niet over de ingang. Kijk omhoog naar de torens.",
+          },
+          {
+            text: "Omdat het gebouw vroeger een ziekenhuis was",
+            correct: false,
+            feedback: "Nee, de bijnaam komt uit de vorm van het gebouw zelf, niet uit een vroegere functie.",
+          },
+        ],
       },
       {
         title: "Romeins spoor zoeken",
@@ -30,6 +64,23 @@ const tours = [
         assignment: "Zoek een plek waar je tegelijk Romeinse resten en Moorse muren kunt zien.",
         question: "Welke laag van de stad valt jou het meest op?",
         hint: "Draai je rug niet te snel naar de heuvel achter het theater.",
+        choices: [
+          {
+            text: "Romeinse en Moorse lagen liggen hier letterlijk naast elkaar",
+            correct: true,
+            feedback: "Ja. Dit punt werkt zo goed omdat je meerdere tijdlagen tegelijk kunt zien.",
+          },
+          {
+            text: "Hier zie je vooral moderne hoogbouw",
+            correct: false,
+            feedback: "Moderne stad is dichtbij, maar deze stop draait juist om oudere lagen.",
+          },
+          {
+            text: "Dit is vooral een winkelstraat uit de 20e eeuw",
+            correct: false,
+            feedback: "Niet helemaal. Kijk naar het theater en de vesting erboven.",
+          },
+        ],
       },
       {
         title: "Kijk als een verdediger",
@@ -37,6 +88,23 @@ const tours = [
         assignment: "Stel je voor dat je de stad moest beschermen. Zoek drie redenen waarom deze plek slim gekozen is.",
         question: "Wat helpt hier meer: hoogte, zicht, muren of routecontrole?",
         hint: "Kijk naar de verbinding tussen heuvel, stad en haven.",
+        choices: [
+          {
+            text: "De combinatie van hoogte, zicht en controle over routes",
+            correct: true,
+            feedback: "Goed gezien. De kracht van deze plek zit juist in de combinatie, niet in één los element.",
+          },
+          {
+            text: "Alleen de drukte van de stad",
+            correct: false,
+            feedback: "Drukte zegt iets over nu, maar verdediging ging vooral over zicht en controle.",
+          },
+          {
+            text: "Omdat de muren laag en open zijn",
+            correct: false,
+            feedback: "Kijk nog eens naar de positie en opbouw: afsluiten en vertragen waren juist belangrijk.",
+          },
+        ],
       },
       {
         title: "Picasso zonder museumkaart",
@@ -44,6 +112,23 @@ const tours = [
         assignment: "Zoek op het plein naar verwijzingen naar Picasso en noteer wat de stad met hem wil uitstralen.",
         question: "Wordt Picasso hier vooral als kunstenaar, inwoner of symbool gebruikt?",
         hint: "Kijk naar beelden, gevels en toeristische routes rondom het plein.",
+        choices: [
+          {
+            text: "Als kunstenaar én als herkenbaar symbool van Málaga",
+            correct: true,
+            feedback: "Mooi. De stad gebruikt Picasso zowel historisch als herkenbaar merkpunt.",
+          },
+          {
+            text: "Alleen als voetballer van de stad",
+            correct: false,
+            feedback: "Nee, deze verwijzingen gaan duidelijk over kunst, geboorteplaats en stadsidentiteit.",
+          },
+          {
+            text: "Vooral als onbekende reiziger",
+            correct: false,
+            feedback: "Niet echt. Picasso is hier juist een van de bekendste namen die Málaga kan claimen.",
+          },
+        ],
       },
       {
         title: "Eindig aan de haven",
@@ -51,6 +136,23 @@ const tours = [
         assignment: "Kijk terug richting stad en zoek hoe oud Málaga en nieuw Málaga elkaar hier raken.",
         question: "Wat voelt hier het meest modern, en wat blijft duidelijk historisch?",
         hint: "Vergelijk de looproute, het water, de skyline en de vestingmuur.",
+        choices: [
+          {
+            text: "De havenpromenade voelt modern, terwijl de stad en vesting historisch blijven",
+            correct: true,
+            feedback: "Precies. Dit eindpunt laat de overgang tussen oude stad en nieuwe waterfront goed zien.",
+          },
+          {
+            text: "Alles voelt hier middeleeuws",
+            correct: false,
+            feedback: "Er zijn historische zichtlijnen, maar de havenzone zelf is juist sterk vernieuwd.",
+          },
+          {
+            text: "Er is geen verschil tussen oud en nieuw",
+            correct: false,
+            feedback: "Kijk nog eens naar materiaal, functies en skyline. Het contrast is juist de les van deze stop.",
+          },
+        ],
       },
     ],
   },
@@ -171,16 +273,26 @@ const renderAssignment = () => {
           <p>${locked ? "Preview: " : ""}${stop.assignment}</p>
           <h3>Vraag</h3>
           <p>${stop.question}</p>
-          <div class="answer-row">
-            <input type="text" ${locked ? "disabled" : ""} placeholder="${
-              locked ? "Koop de tour om antwoorden op te slaan" : "Typ je antwoord"
-            }" aria-label="Antwoord" />
-            <button class="button primary" type="button" data-complete-stop="${selectedStopIndex}" ${
-              locked ? "disabled" : ""
-            }>
-              Voltooi
-            </button>
+          <div class="answer-options" role="group" aria-label="Antwoordopties">
+            ${stop.choices
+              .map(
+                (choice, choiceIndex) => `
+                  <button class="answer-option" type="button" data-answer-choice="${choiceIndex}" ${
+                    locked ? "disabled" : ""
+                  }>
+                    ${choice.text}
+                  </button>
+                `,
+              )
+              .join("")}
           </div>
+          <p class="answer-feedback" data-answer-feedback>${
+            done.includes(selectedStopIndex)
+              ? "Deze opdracht is voltooid. Je kunt nog steeds andere antwoorden bekijken, maar je voortgang blijft bewaard."
+              : locked
+                ? "Koop de tour om antwoorden te kiezen en voortgang op te slaan."
+                : "Kies het antwoord dat volgens jou het best past."
+          }</p>
         </div>
       </div>
       <aside class="assignment-box">
@@ -238,7 +350,7 @@ document.addEventListener("click", (event) => {
   const buyButton = event.target.closest("[data-buy-tour]");
   const openButton = event.target.closest("[data-open-tour]");
   const stopButton = event.target.closest("[data-stop-index]");
-  const completeButton = event.target.closest("[data-complete-stop]");
+  const answerButton = event.target.closest("[data-answer-choice]");
   const demoUnlock = event.target.closest("[data-demo-unlock]");
   const paymentMissing = event.target.closest("[data-payment-missing]");
 
@@ -251,16 +363,31 @@ document.addEventListener("click", (event) => {
     renderAssignment();
   }
 
-  if (completeButton && selectedTourId) {
+  if (answerButton && selectedTourId) {
+    const tour = tours.find((item) => item.id === selectedTourId);
+    const choice = tour?.stops[selectedStopIndex]?.choices[Number(answerButton.dataset.answerChoice)];
+    const feedback = document.querySelector("[data-answer-feedback]");
+    if (!choice || !feedback) return;
+
+    document
+      .querySelectorAll("[data-answer-choice]")
+      .forEach((button) => button.classList.remove("correct", "incorrect"));
+    answerButton.classList.add(choice.correct ? "correct" : "incorrect");
+    feedback.textContent = choice.feedback;
+
+    if (!choice.correct) {
+      showToast("Bijna. Lees de hint en probeer opnieuw.");
+      return;
+    }
+
     const progress = getProgress();
     const current = progress[selectedTourId] || { unlocked: true, completed: [] };
-    const index = Number(completeButton.dataset.completeStop);
-    current.completed = [...new Set([...current.completed, index])];
+    current.completed = [...new Set([...current.completed, selectedStopIndex])];
     progress[selectedTourId] = current;
     saveProgress(progress);
     renderStops();
-    renderAssignment();
-    showToast("Opdracht opgeslagen.");
+    window.setTimeout(renderAssignment, 900);
+    showToast("Goed antwoord. Opdracht opgeslagen.");
   }
 
   if (demoUnlock) {
