@@ -218,7 +218,7 @@ h3 {
 .route-map {
   background:
     linear-gradient(135deg, rgba(240, 191, 90, 0.25), rgba(29, 109, 134, 0.18)),
-    url("assets/hero-travel.png") center/cover;
+    url("assets/hero-travel.jpg") center/cover;
   border-radius: 22px;
   height: 280px;
   margin-bottom: 16px;

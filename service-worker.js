@@ -1,4 +1,4 @@
-const cacheName = "stadsopdracht-v5";
+const cacheName = "stadsopdracht-v6";
 const filesToCache = [
   "./",
   "./index.html",
@@ -7,7 +7,7 @@ const filesToCache = [
   "./manifest.webmanifest",
   "./assets/favicon.svg",
   "./assets/app-icon.svg",
-  "./assets/hero-travel.png",
+  "./assets/hero-travel.jpg",
 ];
 
 self.addEventListener("install", (event) => {
