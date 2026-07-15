@@ -21,7 +21,6 @@ service-worker.js
 robots.txt
 sitemap.xml
 _headers
-_redirects
 assets/
 ```
 
@@ -42,6 +41,8 @@ Build output directory: /
 Root directory: leeg laten
 Production branch: main
 ```
+
+Belangrijk: laat de build/deploy command leeg. Vul hier dus niet `npx wrangler deploy` in. Deze site heeft geen buildstap nodig; als Wrangler alsnog draait, kan Cloudflare tijdelijke `.git`- en `.wrangler`-bestanden proberen mee te uploaden.
 
 Cloudflare geeft daarna automatisch een `*.pages.dev` URL.
 

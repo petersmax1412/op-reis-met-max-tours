@@ -41,4 +41,6 @@ Build output directory: /
 Production branch: main
 ```
 
+Laat de build/deploy command leeg. Gebruik hier geen `npx wrangler deploy`.
+
 Zie `CLOUDFLARE_DEPLOY.md` voor de volledige stap-voor-stap uitleg.
