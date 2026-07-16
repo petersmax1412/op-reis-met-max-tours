@@ -58,6 +58,20 @@ body.browser-mode .bottom-nav {
   display: none;
 }
 
+body.admin-host .app-shell {
+  display: flex;
+}
+
+body.admin-host main {
+  display: block;
+}
+
+body.admin-host .promo-intro,
+body.admin-host .web-install-only,
+body.admin-host .install-callout {
+  display: none;
+}
+
 body.standalone-mode .promo-intro,
 body.standalone-mode .web-install-only {
   display: none;

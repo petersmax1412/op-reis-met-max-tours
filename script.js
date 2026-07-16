@@ -6338,6 +6338,7 @@ let promoSceneIndex = 0;
 const defaultUnlockRadiusMeters = 70;
 const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
+const adminUsername = "petersmax1412@gmail.com";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
 const promoDurations = [3200, 3200, 3800, 5600, 3800, 3400, 4600];
@@ -6536,6 +6537,7 @@ const cityPhotos = {
 
 const isStandaloneApp = () =>
   window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
+const isAdminHost = () => window.location.hostname.toLowerCase() === "admin.stadsopdracht.nl";
 
 const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
 const isMobileDevice = () => /android|iphone|ipad|ipod/i.test(window.navigator.userAgent);
@@ -7041,9 +7043,11 @@ const sharePromoVideo = async (variant) => {
 };
 
 const applyRuntimeMode = () => {
+  const adminHost = isAdminHost();
   const standalone = isStandaloneApp();
-  document.body.classList.toggle("standalone-mode", standalone);
-  document.body.classList.toggle("browser-mode", !standalone);
+  document.body.classList.toggle("admin-host", adminHost);
+  document.body.classList.toggle("standalone-mode", standalone && !adminHost);
+  document.body.classList.toggle("browser-mode", !standalone && !adminHost);
 };
 
 const stopUnlockRadii = {
@@ -7337,7 +7341,7 @@ const initPromoIntro = () => {
   if (!promoIntro || !promoProgress) return;
   const replayOnReload = !isMobileDevice();
 
-  if (isStandaloneApp()) {
+  if (isAdminHost() || isStandaloneApp()) {
     promoIntro.hidden = true;
     return;
   }
@@ -7355,7 +7359,7 @@ const initPromoIntro = () => {
 const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
 const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
 
-const isAdminMode = () => localStorage.getItem(adminStorageKey) === "active";
+const isAdminMode = () => isAdminHost() && localStorage.getItem(adminStorageKey) === "active";
 const isUnlocked = (tourId) => isAdminMode() || Boolean(getProgress()[tourId]?.unlocked);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
 const getUnlockRadius = (stop) => stopUnlockRadii[stop.place] || defaultUnlockRadiusMeters;
@@ -9063,6 +9067,14 @@ const renderCityTabs = () => {
 const renderAdminPanel = () => {
   if (!adminPanel) return;
 
+  if (!isAdminHost()) {
+    adminPanel.hidden = true;
+    adminPanel.innerHTML = "";
+    return;
+  }
+
+  adminPanel.hidden = false;
+
   if (isAdminMode()) {
     adminPanel.innerHTML = `
       <div class="admin-card active">
@@ -9082,13 +9094,7 @@ const renderAdminPanel = () => {
           <p>Maak verticale video’s voor Instagram, TikTok of stories. Op mobiel opent direct het deelvenster.</p>
         </div>
         <div class="admin-promo-actions">
-          <button class="button primary" type="button" data-admin-promo="install" data-promo-label="Installeer nu">
-            Installeer nu
-          </button>
-          <button class="button ghost" type="button" data-admin-promo="intro" data-promo-label="App intro">
-            App intro
-          </button>
-          <button class="button ghost" type="button" data-admin-promo="question" data-promo-label="Voorbeeldvraag">
+          <button class="button primary" type="button" data-admin-promo="question" data-promo-label="Voorbeeldvraag">
             Voorbeeldvraag
           </button>
           <button class="button ghost" type="button" data-admin-promo="unlock" data-promo-label="Locatie unlock">
@@ -9105,10 +9111,11 @@ const renderAdminPanel = () => {
       <div>
         <span class="pill">Admin</span>
         <h2>Beheer toegang</h2>
-        <p>Log in om routes te testen zonder aankoop of locatieblokkade.</p>
+        <p>Log in op de adminversie om routes te testen zonder aankoop of locatieblokkade.</p>
       </div>
       <div class="admin-login">
-        <input type="password" data-admin-code placeholder="Admin code" aria-label="Admin code" />
+        <input type="email" data-admin-email placeholder="E-mailadres" aria-label="Admin e-mailadres" autocomplete="username" />
+        <input type="password" data-admin-code placeholder="Wachtwoord" aria-label="Admin wachtwoord" autocomplete="current-password" />
         <button class="button primary" type="button" data-admin-login>
           Inloggen
         </button>
@@ -9232,6 +9239,13 @@ const showExpertCompletionCard = (tourId) => {
 
 const renderWebInstallOnly = () => {
   if (!webInstallOnly) return;
+  if (isAdminHost()) {
+    webInstallOnly.innerHTML = "";
+    webInstallOnly.hidden = true;
+    return;
+  }
+
+  webInstallOnly.hidden = false;
 
   const canInstall = Boolean(deferredInstallPrompt);
   const ios = isIosDevice();
@@ -9332,7 +9346,7 @@ const renderInstallCallout = () => {
   if (!installCallout) return;
   installCallout.innerHTML = "";
 
-  if (!isStandaloneApp()) {
+  if (!isAdminHost() && !isStandaloneApp()) {
     renderWebInstallOnly();
   }
 };
@@ -9682,9 +9696,12 @@ document.addEventListener("click", (event) => {
   }
 
   if (adminLogin) {
-    const input = document.querySelector("[data-admin-code]");
-    if (input?.value.trim() !== adminAccessCode) {
-      showToast("Admin code klopt niet.");
+    const emailInput = document.querySelector("[data-admin-email]");
+    const passwordInput = document.querySelector("[data-admin-code]");
+    const emailMatches = emailInput?.value.trim().toLowerCase() === adminUsername;
+    const passwordMatches = passwordInput?.value.trim() === adminAccessCode;
+    if (!emailMatches || !passwordMatches) {
+      showToast("Admin login klopt niet.");
       return;
     }
 
@@ -9807,7 +9824,7 @@ citySearch?.addEventListener("input", (event) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Enter") return;
-  if (!event.target.closest("[data-admin-code]")) return;
+  if (!event.target.closest("[data-admin-code], [data-admin-email]")) return;
   document.querySelector("[data-admin-login]")?.click();
 });
 
