@@ -3146,6 +3146,12 @@ const loadShareImage = (src) =>
     image.src = src;
   });
 
+let appIconImagePromise = null;
+const loadAppIconImage = () => {
+  appIconImagePromise ||= loadShareImage("assets/app-icon-512.png");
+  return appIconImagePromise;
+};
+
 const drawCoverImage = (context, image, x, y, width, height) => {
   const sourceRatio = image.naturalWidth / image.naturalHeight;
   const targetRatio = width / height;
@@ -3279,10 +3285,8 @@ const shareCompletionCard = async (tourId) => {
       await navigator.share(shareData);
       showToast("Deelvenster geopend.");
     } else {
-      const url = URL.createObjectURL(file);
-      window.open(url, "_blank", "noopener");
-      window.setTimeout(() => URL.revokeObjectURL(url), 60000);
-      showToast("Delen lukt hier niet automatisch. De afbeelding is geopend.");
+      downloadGeneratedFile(file);
+      showToast("Afbeelding gedownload.");
     }
   } catch {
     showToast("Delen lukte niet. Probeer het nog een keer vanaf je telefoon.");
@@ -3323,14 +3327,23 @@ const drawPromoBackground = (context, width, height, progress) => {
   }
 };
 
-const drawPromoBrand = (context) => {
+const downloadGeneratedFile = (file) => {
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = file.name;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 120000);
+};
+
+const drawPromoBrand = (context, appIcon) => {
   context.fillStyle = "rgba(255, 255, 255, 0.94)";
   fillRoundedRect(context, 70, 70, 390, 92, 46);
-  context.fillStyle = "#10aeca";
-  fillRoundedRect(context, 94, 93, 46, 46, 12);
-  context.fillStyle = "#fff";
-  context.font = "900 29px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
-  context.fillText("S", 109, 127);
+  if (appIcon) {
+    context.drawImage(appIcon, 94, 93, 46, 46);
+  }
   context.fillStyle = "#087f91";
   context.font = "900 35px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
   context.fillText("Stadsopdracht", 154, 129);
@@ -3378,9 +3391,9 @@ const drawPromoRoute = (context, progress) => {
   });
 };
 
-const drawPromoVideoFrame = (context, variant, progress, width, height) => {
+const drawPromoVideoFrame = (context, variant, progress, width, height, appIcon) => {
   drawPromoBackground(context, width, height, progress);
-  drawPromoBrand(context);
+  drawPromoBrand(context, appIcon);
   drawPromoFooter(context, width);
 
   context.fillStyle = "#fff";
@@ -3454,11 +3467,9 @@ const drawPromoVideoFrame = (context, variant, progress, width, height) => {
   if (variant === "install") {
     context.fillStyle = "rgba(255, 255, 255, 0.96)";
     fillRoundedRect(context, 316, 355, 448, 448, 92);
-    context.fillStyle = "#10aeca";
-    fillRoundedRect(context, 356, 395, 368, 368, 78);
-    context.fillStyle = "#ffffff";
-    context.font = "900 230px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
-    context.fillText("S", 471, 655);
+    if (appIcon) {
+      context.drawImage(appIcon, 356, 395, 368, 368);
+    }
 
     context.fillStyle = "#fff";
     context.font = "900 84px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
@@ -3497,6 +3508,7 @@ const createPromoVideoFile = async (variant) => {
   canvas.width = 1080;
   canvas.height = 1920;
   const context = canvas.getContext("2d");
+  const appIcon = await loadAppIconImage();
   const stream = canvas.captureStream(30);
   const recorder = new MediaRecorder(stream, { mimeType, videoBitsPerSecond: 6500000 });
   const chunks = [];
@@ -3517,7 +3529,7 @@ const createPromoVideoFile = async (variant) => {
   await new Promise((resolve) => {
     const draw = (now) => {
       const progress = Math.min(1, (now - startedAt) / duration);
-      drawPromoVideoFrame(context, variant, progress, canvas.width, canvas.height);
+      drawPromoVideoFrame(context, variant, progress, canvas.width, canvas.height, appIcon);
       if (progress < 1) {
         requestAnimationFrame(draw);
         return;
@@ -3553,10 +3565,8 @@ const sharePromoVideo = async (variant) => {
       await navigator.share(shareData);
       showToast("Deelvenster geopend.");
     } else {
-      const url = URL.createObjectURL(file);
-      window.open(url, "_blank", "noopener");
-      window.setTimeout(() => URL.revokeObjectURL(url), 120000);
-      showToast("Delen lukt hier niet automatisch. Het filmpje is geopend.");
+      downloadGeneratedFile(file);
+      showToast("Filmpje gedownload.");
     }
   } catch {
     showToast("Filmpje maken lukte niet in deze browser.");
