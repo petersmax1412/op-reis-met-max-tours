@@ -828,6 +828,7 @@ const tourStatus = document.querySelector("[data-tour-status]");
 const installCallout = document.querySelector("[data-install-callout]");
 const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
+const adminPanel = document.querySelector("[data-admin-panel]");
 
 let selectedTourId = null;
 let selectedCityId = "all";
@@ -840,6 +841,8 @@ let installHelpVisible = false;
 
 const unlockRadiusMeters = 100;
 const paymentProcessingMs = 40000;
+const adminStorageKey = "stadsopdracht-admin";
+const adminAccessCode = "max2026";
 
 const openDialog = (dialog) => {
   if (!dialog) return;
@@ -866,7 +869,8 @@ const closeDialog = (dialog) => {
 const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
 const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
 
-const isUnlocked = (tourId) => Boolean(getProgress()[tourId]?.unlocked);
+const isAdminMode = () => localStorage.getItem(adminStorageKey) === "active";
+const isUnlocked = (tourId) => isAdminMode() || Boolean(getProgress()[tourId]?.unlocked);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
 
 const toRad = (value) => (value * Math.PI) / 180;
@@ -985,8 +989,45 @@ const renderCityTabs = () => {
     .join("");
 };
 
+const renderAdminPanel = () => {
+  if (!adminPanel) return;
+
+  if (isAdminMode()) {
+    adminPanel.innerHTML = `
+      <div class="admin-card active">
+        <div>
+          <span class="pill">Admin actief</span>
+          <h2>Testmodus staat aan</h2>
+          <p>Aankoop en locatiecontrole worden overgeslagen op dit apparaat.</p>
+        </div>
+        <button class="button ghost" type="button" data-admin-logout>
+          Uitloggen
+        </button>
+      </div>
+    `;
+    return;
+  }
+
+  adminPanel.innerHTML = `
+    <div class="admin-card">
+      <div>
+        <span class="pill">Admin</span>
+        <h2>Beheer toegang</h2>
+        <p>Log in om routes te testen zonder aankoop of locatieblokkade.</p>
+      </div>
+      <div class="admin-login">
+        <input type="password" data-admin-code placeholder="Admin code" aria-label="Admin code" />
+        <button class="button primary" type="button" data-admin-login>
+          Inloggen
+        </button>
+      </div>
+    </div>
+  `;
+};
+
 const refreshApp = () => {
   renderInstallCallout();
+  renderAdminPanel();
   renderCityTabs();
   renderTours();
   if (selectedTourId) {
@@ -1159,12 +1200,15 @@ const renderAssignment = () => {
 
   const distance = distanceInMeters(userLocation, stop.coordinates);
   const isNearby = distance !== null && distance <= unlockRadiusMeters;
-  const locationLocked = !locked && !done.includes(selectedStopIndex) && !isNearby;
+  const adminMode = isAdminMode();
+  const locationLocked = !adminMode && !locked && !done.includes(selectedStopIndex) && !isNearby;
   const answerLocked = locked || locationLocked;
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${stop.coordinates.lat},${stop.coordinates.lng}`;
   const locationHelp = locked
     ? "Koop of ontgrendel de tour om locatiecontrole te gebruiken."
-    : isNearby
+    : adminMode
+      ? "Adminmodus actief: locatiecontrole wordt overgeslagen."
+      : isNearby
       ? `Je bent binnen ${unlockRadiusMeters} meter. De vraag is vrijgegeven.`
       : distance === null
         ? "Zet je locatie aan om deze vraag vrij te spelen."
@@ -1186,7 +1230,7 @@ const renderAssignment = () => {
         <div class="assignment-box">
           <h3>Opdracht</h3>
           <p>${locked ? "Preview: " : ""}${stop.assignment}</p>
-          <div class="location-gate ${isNearby || done.includes(selectedStopIndex) ? "open" : ""}">
+          <div class="location-gate ${adminMode || isNearby || done.includes(selectedStopIndex) ? "open" : ""}">
             <strong>${done.includes(selectedStopIndex) ? "Deze stop is al voltooid." : locationHelp}</strong>
             <span>${locationMessage}</span>
             <div class="location-actions">
@@ -1227,7 +1271,9 @@ const renderAssignment = () => {
       <aside class="assignment-box">
         <h3>Routekaart</h3>
         ${renderStopMap(stop)}
-        <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${formatDistance(distance)}.</p>
+        <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${
+          adminMode ? "adminmodus" : formatDistance(distance)
+        }.</p>
         <h3>Hint</h3>
         <p>${stop.hint}</p>
         <h3>Waarom dit werkt</h3>
@@ -1323,6 +1369,8 @@ document.addEventListener("click", (event) => {
   const installButton = event.target.closest("[data-install-app]");
   const installHelpButton = event.target.closest("[data-show-install-help]");
   const cityTab = event.target.closest("[data-city-tab]");
+  const adminLogin = event.target.closest("[data-admin-login]");
+  const adminLogout = event.target.closest("[data-admin-logout]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
@@ -1331,6 +1379,34 @@ document.addEventListener("click", (event) => {
     resetWorkspace();
     renderCityTabs();
     renderTours();
+  }
+
+  if (adminLogin) {
+    const input = document.querySelector("[data-admin-code]");
+    if (input?.value.trim() !== adminAccessCode) {
+      showToast("Admin code klopt niet.");
+      return;
+    }
+
+    localStorage.setItem(adminStorageKey, "active");
+    renderAdminPanel();
+    renderTours();
+    if (selectedTourId) {
+      renderStops();
+      renderAssignment();
+    }
+    showToast("Adminmodus actief.");
+  }
+
+  if (adminLogout) {
+    localStorage.removeItem(adminStorageKey);
+    renderAdminPanel();
+    renderTours();
+    if (selectedTourId) {
+      renderStops();
+      renderAssignment();
+    }
+    showToast("Adminmodus uitgeschakeld.");
   }
   if (installHelpButton) {
     installHelpVisible = true;
@@ -1395,6 +1471,12 @@ document.addEventListener("click", (event) => {
   if (closeCheckout) {
     closeDialog(checkoutDialog);
   }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Enter") return;
+  if (!event.target.closest("[data-admin-code]")) return;
+  document.querySelector("[data-admin-login]")?.click();
 });
 
 window.addEventListener("beforeinstallprompt", (event) => {
