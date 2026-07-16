@@ -166,8 +166,9 @@ const tours = [
 
 const storageKey = "stadsopdracht-progress";
 const supabaseConfig = {
-  url: "",
-  anonKey: "",
+  url: "https://pkhyreudjcdkzhrjtdpi.supabase.co",
+  anonKey:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBraHlyZXVkamNka3pocmp0ZHBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxNDgyMzUsImV4cCI6MjA5OTcyNDIzNX0.S0R34ryoWYBMHU-8fYJsR73MLNK2gnANAgJPjZHqmBE",
 };
 
 const tourGrid = document.querySelector("[data-tour-grid]");
