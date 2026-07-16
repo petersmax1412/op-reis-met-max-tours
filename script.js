@@ -4,11 +4,11 @@ const tours = [
     city: "Málaga",
     title: "Málaga Centro: sporen van zon, steen en zee",
     price: "€4,49",
-    duration: "120 min",
-    distance: "3,2 km",
+    duration: "140 min",
+    distance: "3,9 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een interactieve wandeling door het historische centrum, langs de kathedraal, Alcazaba, Picasso-sporen en de haven.",
+      "Een interactieve wandeling door het historische centrum, langs de kathedraal, Alcazaba, Picasso-sporen, haven en strand.",
     stops: [
       {
         title: "Begin op Plaza de la Constitución",
@@ -136,7 +136,7 @@ const tours = [
         ],
       },
       {
-        title: "Eindig aan de haven",
+        title: "Bekijk de haven",
         place: "Muelle Uno",
         coordinates: { lat: 36.71664, lng: -4.41464 },
         assignment: "Kijk terug richting stad en zoek hoe oud Málaga en nieuw Málaga elkaar hier raken.",
@@ -160,6 +160,33 @@ const tours = [
           },
         ],
       },
+      {
+        title: "Eindig bij La Malagueta",
+        place: "Playa de la Malagueta",
+        coordinates: { lat: 36.7151, lng: -4.4058 },
+        assignment:
+          "Loop door richting het strand en kijk hoe de stad overgaat van havenpromenade naar dagelijkse kustplek.",
+        question: "Waarom is La Malagueta een logisch extra eindpunt voor Málaga?",
+        hint: "Let op de overgang van historische stad naar haven, promenade en strand.",
+        choices: [
+          {
+            text: "Omdat Málaga hier duidelijk laat zien dat stad, haven en strand dicht op elkaar liggen",
+            correct: true,
+            feedback:
+              "Precies. La Malagueta maakt Málaga als kuststad concreet: na pleinen, vesting en haven eindig je bij het strand waar de stad letterlijk aan zee raakt.",
+          },
+          {
+            text: "Omdat dit het hoogste bergpunt van Málaga is",
+            correct: false,
+            feedback: "Nee, deze stop draait juist om de lage kustlijn en de overgang naar strand.",
+          },
+          {
+            text: "Omdat hier geen enkele relatie met de haven of stad is",
+            correct: false,
+            feedback: "Niet goed. Je ziet hier juist hoe dichtbij haven, centrum en strand bij elkaar liggen.",
+          },
+        ],
+      },
     ],
   },
   {
@@ -167,11 +194,11 @@ const tours = [
     city: "Düsseldorf",
     title: "Düsseldorf Altstadt: Rijn, Altbier en lichtklok",
     price: "€4,49",
-    duration: "120 min",
-    distance: "3,0 km",
+    duration: "150 min",
+    distance: "3,8 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een stadswandeling van het Rathaus en de Rijn naar Königsallee, de langste Theke en de lichtklok van de Rheinturm.",
+      "Een stadswandeling van het Rathaus en de Rijn naar Königsallee, de langste Theke, Rheinturm en MedienHafen.",
     stops: [
       {
         title: "Start op de Marktplatz",
@@ -246,6 +273,33 @@ const tours = [
             text: "Omdat de Altstadt vooral bekendstaat om kantoren zonder horeca",
             correct: false,
             feedback: "Niet helemaal. Juist de concentratie van cafés, bars en Altbier-brouwhuizen maakt deze plek bekend.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar kunst aan de Grabbeplatz",
+        place: "Kunstsammlung K20",
+        coordinates: { lat: 51.2276, lng: 6.7758 },
+        assignment:
+          "Bekijk het museumgebouw en het plein eromheen. Zoek hoe moderne kunst hier vlak naast Altstadt en uitgaansleven staat.",
+        question: "Waarom is Kunstsammlung K20 een sterke extra laag in Düsseldorf?",
+        hint: "Denk aan kunst, centrumligging en contrast met de cafés van de Altstadt.",
+        choices: [
+          {
+            text: "Omdat moderne kunst hier direct naast bestuur, Altstadt en uitgaanscultuur ligt",
+            correct: true,
+            feedback:
+              "Klopt. K20 laat zien dat Düsseldorf niet alleen Rijn, winkels en Altbier is, maar ook een serieuze kunststad midden in het centrum.",
+          },
+          {
+            text: "Omdat het museum ver buiten de stad in een bos ligt",
+            correct: false,
+            feedback: "Nee, juist de centrale ligging maakt deze stop logisch.",
+          },
+          {
+            text: "Omdat Düsseldorf geen band met moderne kunst heeft",
+            correct: false,
+            feedback: "Niet goed. De kunstcollecties zijn juist een belangrijk deel van het culturele profiel van de stad.",
           },
         ],
       },
@@ -330,6 +384,33 @@ const tours = [
           },
         ],
       },
+      {
+        title: "Eindig tussen havenarchitectuur",
+        place: "MedienHafen",
+        coordinates: { lat: 51.2161, lng: 6.7585 },
+        assignment:
+          "Loop vanaf de Rheinturm richting de moderne havengebouwen en zoek hoe oude havenruimte is veranderd in architectuur, horeca en kantoren.",
+        question: "Wat maakt MedienHafen een logisch eindpunt na de Altstadt en Rheinturm?",
+        hint: "Vergelijk oude Rijnstad, moderne toren en hergebruik van havengebied.",
+        choices: [
+          {
+            text: "Het laat zien hoe Düsseldorf oude havenruimte gebruikt voor moderne architectuur en stadsleven",
+            correct: true,
+            feedback:
+              "Precies. MedienHafen maakt de route compleet: je begint bij bestuur en Altstadt, volgt de Rijn en eindigt waar Düsseldorf zichzelf modern en creatief presenteert.",
+          },
+          {
+            text: "Omdat hier alleen middeleeuwse stadsmuren zonder moderne gebouwen staan",
+            correct: false,
+            feedback: "Nee, juist de moderne architectuur en hergebruikte havenruimte vallen hier op.",
+          },
+          {
+            text: "Omdat de Rijn vanaf hier volledig onzichtbaar is",
+            correct: false,
+            feedback: "Niet goed. De Rijn en havencontext zijn juist de basis van dit gebied.",
+          },
+        ],
+      },
     ],
   },
   {
@@ -337,11 +418,11 @@ const tours = [
     city: "Keulen",
     title: "Keulen Centrum: dom, Rijn en verborgen stadslagen",
     price: "€4,49",
-    duration: "130 min",
-    distance: "3,2 km",
+    duration: "160 min",
+    distance: "4,0 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Ontdek Keulen via de Dom, de Rijnbrug, oude pleinen, Groß St. Martin en de moderne havenrand.",
+      "Ontdek Keulen via de Dom, de Rijnbrug, oude pleinen, Groß St. Martin, het Schokoladenmuseum en de moderne havenrand.",
     stops: [
       {
         title: "Begin bij de Dom",
@@ -366,6 +447,33 @@ const tours = [
             text: "Omdat hij vooral laag en breed is",
             correct: false,
             feedback: "De verticale kracht van de torens is juist wat je meteen merkt.",
+          },
+        ],
+      },
+      {
+        title: "Bekijk kunst naast de Dom",
+        place: "Museum Ludwig",
+        coordinates: { lat: 50.9407, lng: 6.9606 },
+        assignment:
+          "Kijk naar de ligging van het museum tussen Dom, station en Rijn. Zoek waarom moderne kunst hier niet losstaat van de stad.",
+        question: "Waarom past Museum Ludwig goed direct na de Dom?",
+        hint: "Let op de korte afstand tussen religieus icoon, station, museum en rivier.",
+        choices: [
+          {
+            text: "Omdat Keulen hier oude religieuze identiteit en moderne kunst heel dicht bij elkaar zet",
+            correct: true,
+            feedback:
+              "Precies. Museum Ludwig maakt de eerste stop rijker: naast de middeleeuwse Dom zie je Keulen als moderne museumstad aan de Rijn.",
+          },
+          {
+            text: "Omdat het museum vooral een parkeerplaats zonder collectie is",
+            correct: false,
+            feedback: "Nee, dit is juist een belangrijk museum voor moderne kunst.",
+          },
+          {
+            text: "Omdat het ver weg ligt van Dom, station en Rijn",
+            correct: false,
+            feedback: "Niet goed. De kracht zit juist in de extreem centrale ligging.",
           },
         ],
       },
@@ -476,6 +584,33 @@ const tours = [
         ],
       },
       {
+        title: "Volg de Rijn naar chocolade",
+        place: "Schokoladenmuseum Köln",
+        coordinates: { lat: 50.9317, lng: 6.9642 },
+        assignment:
+          "Kijk naar de ligging op het schiereiland aan de Rijn en zoek waarom juist zo’n museum goed past bij handel, haven en toerisme.",
+        question: "Waarom past het Schokoladenmuseum goed op deze route langs de Rijn?",
+        hint: "Denk aan handel, koloniale goederen, havenruimte en een publieksvriendelijke museumfunctie.",
+        choices: [
+          {
+            text: "Omdat chocoladegeschiedenis, handel en hergebruikte Rijnruimte hier samenkomen",
+            correct: true,
+            feedback:
+              "Klopt. Het museum voelt luchtig, maar past serieus bij de Rijnstad: goederen, handel, havenruimte en toerisme komen hier op een toegankelijke manier samen.",
+          },
+          {
+            text: "Omdat het museum midden in een bergdal zonder rivier ligt",
+            correct: false,
+            feedback: "Nee, de ligging aan de Rijn is juist belangrijk voor het verhaal van handel en stad.",
+          },
+          {
+            text: "Omdat chocolade niets met handel of wereldroutes te maken heeft",
+            correct: false,
+            feedback: "Niet goed. Chocolade is juist verbonden met handelsstromen, verwerking en consumptiecultuur.",
+          },
+        ],
+      },
+      {
         title: "Eindig bij de havenrand",
         place: "Rheinauhafen",
         coordinates: { lat: 50.9259, lng: 6.9659 },
@@ -507,11 +642,11 @@ const tours = [
     city: "Frankfurt",
     title: "Frankfurt Altstadt: handel, skyline en de Main",
     price: "€4,49",
-    duration: "110 min",
-    distance: "3,5 km",
+    duration: "145 min",
+    distance: "4,6 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een compacte route langs Römerberg, Dom, bruggen, Goethe en de skyline van Frankfurt.",
+      "Een compacte route langs Römerberg, Paulskirche, Dom, bruggen, Goethe en de skyline van Frankfurt.",
     stops: [
       {
         title: "Start op Römerberg",
@@ -535,6 +670,33 @@ const tours = [
             text: "Omdat er geen publieke ruimte is",
             correct: false,
             feedback: "Het plein is juist publieke ruimte: open, herkenbaar en goed bruikbaar.",
+          },
+        ],
+      },
+      {
+        title: "Sta bij de Paulskirche",
+        place: "Paulskirche Frankfurt",
+        coordinates: { lat: 50.1113, lng: 8.6809 },
+        assignment:
+          "Kijk naar de ronde vorm en de sobere uitstraling. Zoek waarom dit gebouw meer politiek dan kerkelijk voelt.",
+        question: "Waarom is de Paulskirche belangrijk voor Frankfurt en Duitsland?",
+        hint: "Denk aan vergadering, democratie en nationale herinnering.",
+        choices: [
+          {
+            text: "Omdat de plek verbonden is met vroege parlementaire en democratische geschiedenis",
+            correct: true,
+            feedback:
+              "Precies. De Paulskirche is niet alleen een kerkgebouw: ze is een herinneringsplek voor democratie, debat en politieke modernisering in Duitsland.",
+          },
+          {
+            text: "Omdat het gebouw vooral bekend is als wolkenkrabber",
+            correct: false,
+            feedback: "Nee, de kracht zit niet in hoogte, maar in politieke betekenis.",
+          },
+          {
+            text: "Omdat hier nooit publieke bijeenkomsten of politiek plaatsvonden",
+            correct: false,
+            feedback: "Juist wel. De plek is belangrijk door vergaderen, debat en democratische herinnering.",
           },
         ],
       },
@@ -585,6 +747,33 @@ const tours = [
             text: "Omdat de Main geen invloed heeft gehad",
             correct: false,
             feedback: "De rivier is juist belangrijk voor handel, routes en stadsbeeld.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar de Museumsufer",
+        place: "Städel Museum",
+        coordinates: { lat: 50.1031, lng: 8.6742 },
+        assignment:
+          "Loop aan de zuidoever richting het museum en kijk hoe Frankfurt cultuur aan de rivier heeft georganiseerd.",
+        question: "Waarom is de Museumsufer een belangrijke tegenhanger van de skyline?",
+        hint: "Denk aan kunst, rivier, wandelen en publieke cultuur.",
+        choices: [
+          {
+            text: "Omdat de zuidoever laat zien dat Frankfurt ook een sterke museum- en cultuurstad is",
+            correct: true,
+            feedback:
+              "Ja. De Museumsufer maakt Frankfurt breder dan banken alleen: aan de Main wordt cultuur een route, met musea, uitzicht en publieke ruimte.",
+          },
+          {
+            text: "Omdat hier alleen snelwegen zonder musea liggen",
+            correct: false,
+            feedback: "Nee, juist de reeks musea aan de oever is hier bepalend.",
+          },
+          {
+            text: "Omdat de Main niets met de cultuurroute te maken heeft",
+            correct: false,
+            feedback: "Niet goed. De rivier organiseert de hele ervaring van deze museumzone.",
           },
         ],
       },
@@ -675,11 +864,11 @@ const tours = [
     city: "London",
     title: "London Central: pleinen, bruggen en macht",
     price: "€4,49",
-    duration: "150 min",
-    distance: "6,3 km",
+    duration: "210 min",
+    distance: "7,0 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een route door centraal London langs Trafalgar Square, Covent Garden, St Paul’s, Borough Market en de Thames.",
+      "Een grote route door centraal London langs West End, rechtspraak, St Paul’s, Tate Modern, Shakespeare’s Globe, Borough Market en de Thames.",
     stops: [
       {
         title: "Start op Trafalgar Square",
@@ -707,6 +896,33 @@ const tours = [
         ],
       },
       {
+        title: "Voel de theaterdrukte",
+        place: "Leicester Square",
+        coordinates: { lat: 51.5106, lng: -0.1301 },
+        assignment:
+          "Kijk naar bioscopen, theaters, drukte en de routes eromheen. Zoek waarom dit plein voelt als entertainmentknooppunt.",
+        question: "Waarom past Leicester Square goed tussen Trafalgar Square en Covent Garden?",
+        hint: "Denk aan theater, film, drukte en korte looproutes door West End.",
+        choices: [
+          {
+            text: "Omdat het plein de entertainmentlaag van West End heel direct zichtbaar maakt",
+            correct: true,
+            feedback:
+              "Klopt. Leicester Square is geen rustig ceremonieel plein, maar een plek van premières, theaters, bioscopen en publieksdrukte.",
+          },
+          {
+            text: "Omdat het vooral een stille kloostertuin is",
+            correct: false,
+            feedback: "Nee, de plek draait juist om entertainment en druk stedelijk gebruik.",
+          },
+          {
+            text: "Omdat West End hier volledig ophoudt",
+            correct: false,
+            feedback: "Niet goed. Je staat juist midden in de entertainmentzone van West End.",
+          },
+        ],
+      },
+      {
         title: "Zoek straatleven in Covent Garden",
         place: "Covent Garden",
         coordinates: { lat: 51.5117, lng: -0.124 },
@@ -728,6 +944,33 @@ const tours = [
             text: "Dat het alleen een snelwegknooppunt is",
             correct: false,
             feedback: "Nee, dit is vooral een voetgangersplek met veel verblijfskwaliteit.",
+          },
+        ],
+      },
+      {
+        title: "Loop langs recht en macht",
+        place: "Royal Courts of Justice",
+        coordinates: { lat: 51.5136, lng: -0.1133 },
+        assignment:
+          "Bekijk de gotische gevel aan Strand en zoek hoe rechtspraak hier bijna als kathedraal van de wet wordt neergezet.",
+        question: "Waarom zijn de Royal Courts of Justice een sterke stop op weg naar de City?",
+        hint: "Let op architectuur, gezag en de ligging tussen West End en City.",
+        choices: [
+          {
+            text: "Omdat rechtspraak hier zichtbaar gezag krijgt op een belangrijke stadsroute",
+            correct: true,
+            feedback:
+              "Precies. De gevel gebruikt bijna kerkelijke monumentaliteit om recht en gezag zichtbaar te maken aan een drukke route richting de City.",
+          },
+          {
+            text: "Omdat het gebouw vooral een pretparkattractie is",
+            correct: false,
+            feedback: "Nee, de functie en uitstraling draaien om rechtspraak en institutioneel gezag.",
+          },
+          {
+            text: "Omdat het gebouw bewust niet zichtbaar is vanaf de straat",
+            correct: false,
+            feedback: "Niet goed. De gevel is juist nadrukkelijk aanwezig aan Strand.",
           },
         ],
       },
@@ -780,6 +1023,60 @@ const tours = [
             text: "De brug volgt vooral een middeleeuwse stadsmuur en negeert St Paul’s",
             correct: false,
             feedback: "Niet goed. De zichtlijn naar St Paul’s is juist een van de sterkste ruimtelijke effecten.",
+          },
+        ],
+      },
+      {
+        title: "Sta bij Tate Modern",
+        place: "Tate Modern",
+        coordinates: { lat: 51.5076, lng: -0.0994 },
+        assignment:
+          "Bekijk de oude elektriciteitscentrale van buiten en zoek hoe industrie hier kunst en publieke ruimte is geworden.",
+        question: "Waarom past Tate Modern zo sterk bij de Millennium Bridge?",
+        hint: "Kijk naar hergebruik, moderne kunst en de zichtlijn naar St Paul’s.",
+        choices: [
+          {
+            text: "Omdat een oud industrieel gebouw hier een moderne kunstbestemming aan de Thames werd",
+            correct: true,
+            feedback:
+              "Precies. Tate Modern laat London goed zien: oude infrastructuur krijgt een nieuwe culturele rol, direct verbonden met St Paul’s via de voetgangersbrug.",
+          },
+          {
+            text: "Omdat Tate Modern vooral een middeleeuws kasteel is",
+            correct: false,
+            feedback: "Nee, het gebouw komt uit industriële geschiedenis en is hergebruikt als kunstmuseum.",
+          },
+          {
+            text: "Omdat het museum bewust geen relatie met de rivier heeft",
+            correct: false,
+            feedback: "Niet goed. De ligging aan de Thames en de brug is juist bepalend.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar Shakespeare’s Globe",
+        place: "Shakespeare’s Globe",
+        coordinates: { lat: 51.5081, lng: -0.0972 },
+        assignment:
+          "Blijf buiten en vergelijk het ronde theater met Tate Modern en de rivier ernaast. Zoek waarom Bankside zo’n culturele laag heeft.",
+        question: "Waarom past Shakespeare’s Globe goed op de route langs Bankside?",
+        hint: "Denk aan theatergeschiedenis, rivierkant en herbouw van cultuurplekken.",
+        choices: [
+          {
+            text: "Omdat het theater de historische entertainmentkant van de zuidoever zichtbaar maakt",
+            correct: true,
+            feedback:
+              "Precies. Bankside was lang een plek voor drukte, theater en vermaak buiten de formele City. The Globe maakt die culturele laag zichtbaar tussen brug, Tate Modern en markt.",
+          },
+          {
+            text: "Omdat dit vooral een modern vliegveld naast de Thames is",
+            correct: false,
+            feedback: "Nee, dit draait om theatergeschiedenis en de culturele zuidoever.",
+          },
+          {
+            text: "Omdat Shakespeare geen relatie met theater had",
+            correct: false,
+            feedback: "Niet goed. Juist Shakespeare en theater maken deze plek herkenbaar.",
           },
         ],
       },
@@ -843,11 +1140,11 @@ const tours = [
     city: "Copenhagen",
     title: "Copenhagen Centrum: haven, hof en waterstad",
     price: "€4,49",
-    duration: "145 min",
-    distance: "4,6 km",
+    duration: "180 min",
+    distance: "5,7 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een wandelroute langs Rådhuspladsen, Tivoli, Christiansborg, Nyhavn, Amalienborg, Marmorkirken en de waterkant.",
+      "Een wandelroute langs Rådhuspladsen, Tivoli, Rundetaarn, Christiansborg, Rosenborg, Nyhavn, Amalienborg, Marmorkirken en de waterkant.",
     stops: [
       {
         title: "Start op Rådhuspladsen",
@@ -904,6 +1201,33 @@ const tours = [
         ],
       },
       {
+        title: "Zoek uitzicht bij Rundetaarn",
+        place: "Rundetaarn",
+        coordinates: { lat: 55.6814, lng: 12.5758 },
+        assignment:
+          "Kijk naar de ronde toren en de drukke straten eromheen. Zoek waarom wetenschap, uitzicht en centrumleven hier samenkomen.",
+        question: "Waarom is Rundetaarn een slimme extra stop in Copenhagen?",
+        hint: "Denk aan observatie, universiteit, uitzicht en ligging in het oude centrum.",
+        choices: [
+          {
+            text: "Omdat de toren wetenschap, oriëntatie en stadsuitzicht midden in het centrum bundelt",
+            correct: true,
+            feedback:
+              "Klopt. Rundetaarn is meer dan een uitzichtpunt: de toren hoort bij Copenhagen als kennisstad en laat tegelijk de compacte binnenstad van boven begrijpen.",
+          },
+          {
+            text: "Omdat de toren diep onder de grond ligt",
+            correct: false,
+            feedback: "Nee, juist hoogte en uitzicht maken deze stop logisch.",
+          },
+          {
+            text: "Omdat Copenhagen geen oude binnenstad heeft",
+            correct: false,
+            feedback: "Niet goed. De toren staat juist midden in een historische stadslaag.",
+          },
+        ],
+      },
+      {
         title: "Sta op het machtseiland",
         place: "Christiansborg Slot",
         coordinates: { lat: 55.6763, lng: 12.5806 },
@@ -927,6 +1251,33 @@ const tours = [
             text: "Omdat de plek ver van de historische binnenstad is weggehaald",
             correct: false,
             feedback: "Niet goed. Slotsholmen ligt juist midden tussen centrum, kanalen en oude handelsroutes.",
+          },
+        ],
+      },
+      {
+        title: "Loop naar koninklijk groen",
+        place: "Rosenborg Slot",
+        coordinates: { lat: 55.6859, lng: 12.5777 },
+        assignment:
+          "Bekijk het kasteel en de tuinen van buiten. Zoek hoe koninklijke macht hier kleiner en parkachtiger voelt dan bij Amalienborg.",
+        question: "Wat voegt Rosenborg toe aan het koninklijke verhaal van Copenhagen?",
+        hint: "Vergelijk kasteel, tuin, kroonjuwelen en de latere formele ruimte van Amalienborg.",
+        choices: [
+          {
+            text: "Rosenborg laat een oudere, tuinachtige en verzamelende kant van koninklijke macht zien",
+            correct: true,
+            feedback:
+              "Precies. Rosenborg voelt intiemer dan Amalienborg: kasteel, tuin en koninklijke collecties maken macht hier bijna museaal en parkachtig.",
+          },
+          {
+            text: "Omdat Rosenborg vooral een modern vliegveld is",
+            correct: false,
+            feedback: "Nee, dit is een historisch kasteel met tuinen in de stad.",
+          },
+          {
+            text: "Omdat er geen relatie is met koninklijke geschiedenis",
+            correct: false,
+            feedback: "Niet goed. Juist die koninklijke geschiedenis maakt de plek sterk.",
           },
         ],
       },
@@ -1045,11 +1396,11 @@ const tours = [
     city: "Innsbruck",
     title: "Innsbruck Altstadt: keizerstad tussen bergen",
     price: "€4,49",
-    duration: "120 min",
-    distance: "2,6 km",
+    duration: "135 min",
+    distance: "3,0 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een compacte route door de Altstadt langs het Gouden Dak, Hofburg, Hofkirche, Dom, Innbrug en Maria-Theresien-Straße.",
+      "Een compacte route door de Altstadt langs het Gouden Dak, Hofburg, Hofkirche, Dom, Innbrug, Maria-Theresien-Straße en Triumphpforte.",
     stops: [
       {
         title: "Start bij het Gouden Dak",
@@ -1187,7 +1538,7 @@ const tours = [
         ],
       },
       {
-        title: "Eindig op de grote stadsas",
+        title: "Loop over de grote stadsas",
         place: "Maria-Theresien-Straße",
         coordinates: { lat: 47.2659, lng: 11.3948 },
         assignment:
@@ -1213,6 +1564,33 @@ const tours = [
           },
         ],
       },
+      {
+        title: "Eindig bij de Triumphpforte",
+        place: "Triumphpforte",
+        coordinates: { lat: 47.2628, lng: 11.3947 },
+        assignment:
+          "Bekijk de poort aan het einde van de straat en zoek hoe feest, macht en herinnering in één stadsmonument passen.",
+        question: "Waarom is de Triumphpforte een sterk eindpunt voor Innsbruck?",
+        hint: "Let op de ligging aan de stadsas en op het idee van een poort als ceremonieel stadsbeeld.",
+        choices: [
+          {
+            text: "Omdat de poort de representatieve straat afsluit met ceremonie, macht en herinnering",
+            correct: true,
+            feedback:
+              "Klopt. De Triumphpforte werkt als eindteken van de stadsas: je loopt van compacte Altstadt naar een ceremonieel monument dat Innsbruck als hof- en herinneringsstad laat zien.",
+          },
+          {
+            text: "Omdat de poort midden op een afgelegen bergtop staat",
+            correct: false,
+            feedback: "Nee, de kracht zit juist in de stedelijke ligging aan het einde van de straat.",
+          },
+          {
+            text: "Omdat het monument niets met representatie te maken heeft",
+            correct: false,
+            feedback: "Niet goed. Een triomfpoort is bijna per definitie een representatief en ceremonieel stadsbeeld.",
+          },
+        ],
+      },
     ],
   },
   {
@@ -1220,11 +1598,11 @@ const tours = [
     city: "Wenen",
     title: "Wenen Centrum: keizerlijke macht, muziek en Ringstraße",
     price: "€4,49",
-    duration: "180 min",
-    distance: "6,7 km",
+    duration: "220 min",
+    distance: "8,2 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een rijke route door Wenen langs Stephansdom, Hofburg, Heldenplatz, Staatsoper, Naschmarkt, Karlskirche, Stadtpark en Prater.",
+      "Een rijke route door Wenen langs Stephansdom, Hofburg, Heldenplatz, Staatsoper, Musikverein, Naschmarkt, Karlskirche, Hundertwasserhaus en Prater.",
     stops: [
       {
         title: "Start bij de Stephansdom",
@@ -1335,6 +1713,33 @@ const tours = [
         ],
       },
       {
+        title: "Luister naar de muziekstad",
+        place: "Musikverein",
+        coordinates: { lat: 48.2005, lng: 16.3726 },
+        assignment:
+          "Bekijk de buitenkant en de ligging vlak bij de Ringstraße. Zoek hoe concertcultuur hier dezelfde status krijgt als paleizen en opera.",
+        question: "Waarom past de Musikverein zo goed bij het verhaal van Wenen?",
+        hint: "Denk aan concertcultuur, prestige en de stad als muziekhoofdstad.",
+        choices: [
+          {
+            text: "Omdat Wenen hier zijn muziekcultuur als stedelijke prestigeplek zichtbaar maakt",
+            correct: true,
+            feedback:
+              "Precies. De Musikverein laat zien dat muziek in Wenen niet alleen entertainment is, maar identiteit, status en internationale uitstraling.",
+          },
+          {
+            text: "Omdat Wenen nauwelijks bekendstaat om muziek",
+            correct: false,
+            feedback: "Nee, muziek is juist een van de sterkste lagen van de stad.",
+          },
+          {
+            text: "Omdat het gebouw vooral een goederenloods is",
+            correct: false,
+            feedback: "Niet goed. De functie en uitstraling draaien om concertcultuur.",
+          },
+        ],
+      },
+      {
         title: "Proef de Naschmarkt",
         place: "Naschmarkt",
         coordinates: { lat: 48.1987, lng: 16.3646 },
@@ -1416,6 +1821,33 @@ const tours = [
         ],
       },
       {
+        title: "Zoek kleur buiten de rechte lijn",
+        place: "Hundertwasserhaus",
+        coordinates: { lat: 48.2072, lng: 16.394 },
+        assignment:
+          "Bekijk de gevel van buiten en zoek hoe kleur, onregelmatigheid en planten afwijken van de formele Ringstraße-stad.",
+        question: "Wat voegt Hundertwasserhaus toe aan de Weense route?",
+        hint: "Vergelijk deze gevel met de paleizen, opera en rechte stadsboulevards eerder in de route.",
+        choices: [
+          {
+            text: "Het laat een speelsere, ecologische en anti-formele kant van Wenen zien",
+            correct: true,
+            feedback:
+              "Klopt. Hundertwasserhaus breekt bewust met rechte monumentaliteit: kleur, groen en onregelmatigheid maken hier een heel andere stadslaag zichtbaar.",
+          },
+          {
+            text: "Omdat het exact hetzelfde is als de Hofburg",
+            correct: false,
+            feedback: "Nee, juist het contrast met de formele keizerlijke stad maakt deze stop interessant.",
+          },
+          {
+            text: "Omdat de gevel volledig kleurloos en symmetrisch is",
+            correct: false,
+            feedback: "Niet goed. Kleur en onregelmatigheid zijn juist de kern.",
+          },
+        ],
+      },
+      {
         title: "Eindig bij het reuzenrad",
         place: "Prater Riesenrad",
         coordinates: { lat: 48.2167, lng: 16.3959 },
@@ -1449,11 +1881,11 @@ const tours = [
     city: "Madrid",
     title: "Madrid: park, stationsoase en koninklijke assen",
     price: "€4,49",
-    duration: "170 min",
-    distance: "6,4 km",
+    duration: "220 min",
+    distance: "8,1 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een route van Retiro Park via de tropische oase van Puerta de Atocha naar Sol, Gran Vía, Templo de Debod en Plaza de España.",
+      "Een grote route van Retiro Park via Atocha, Prado, Sol, Plaza Mayor, Gran Vía, Debod en Palacio Real naar Plaza de España.",
     stops: [
       {
         title: "Begin bij het Retiro-meer",
@@ -1537,6 +1969,33 @@ const tours = [
         ],
       },
       {
+        title: "Kijk naar de museumas",
+        place: "Museo del Prado",
+        coordinates: { lat: 40.4138, lng: -3.6921 },
+        assignment:
+          "Bekijk de omgeving van het Prado en de brede Paseo del Prado. Zoek hoe kunst, wetenschap en prestige hier een stadsas vormen.",
+        question: "Waarom is het Prado logisch op de route tussen Atocha en Sol?",
+        hint: "Denk aan kunstcollecties, Paseo del Prado en de culturele as van Madrid.",
+        choices: [
+          {
+            text: "Omdat Madrid hier zijn grote museum- en cultuuras zichtbaar maakt",
+            correct: true,
+            feedback:
+              "Precies. Het Prado is meer dan één museum: samen met de Paseo del Prado laat het zien hoe Madrid cultuur als stedelijke hoofdroute inzet.",
+          },
+          {
+            text: "Omdat het Prado vooral een voetbalstadion is",
+            correct: false,
+            feedback: "Nee, het Prado hoort bij de belangrijkste kunstmusea van Madrid.",
+          },
+          {
+            text: "Omdat deze plek ver weg ligt van alle culturele routes",
+            correct: false,
+            feedback: "Niet goed. Juist de ligging aan de museumas maakt deze stop logisch.",
+          },
+        ],
+      },
+      {
         title: "Sta midden op Puerta del Sol",
         place: "Puerta del Sol",
         coordinates: { lat: 40.41694, lng: -3.70353 },
@@ -1560,6 +2019,33 @@ const tours = [
             text: "Omdat het plein alleen bekend is door een haven",
             correct: false,
             feedback: "Niet goed. Madrid heeft geen zeehaven; Sol draait om centrumfunctie, tijd en oriëntatie.",
+          },
+        ],
+      },
+      {
+        title: "Zoek het oude plein bij Plaza Mayor",
+        place: "Plaza Mayor Madrid",
+        coordinates: { lat: 40.4154, lng: -3.7074 },
+        assignment:
+          "Loop het plein op en kijk naar de gesloten vorm, arcades en gevelritme. Zoek hoe dit plein anders werkt dan Sol.",
+        question: "Wat maakt Plaza Mayor anders dan Puerta del Sol?",
+        hint: "Vergelijk open verkeersdrukte met een meer gesloten ceremonieel plein.",
+        choices: [
+          {
+            text: "Plaza Mayor voelt meer als een omkaderd historisch plein voor markt, ceremonie en verblijf",
+            correct: true,
+            feedback:
+              "Klopt. Waar Sol een knooppunt is, voelt Plaza Mayor meer als een stedelijke kamer: gesloten randen, arcades en geschiedenis maken het plein formeler.",
+          },
+          {
+            text: "Omdat Plaza Mayor vooral een snelweg zonder pleinruimte is",
+            correct: false,
+            feedback: "Nee, juist de duidelijke pleinruimte is hier belangrijk.",
+          },
+          {
+            text: "Omdat er geen historische laag zichtbaar is",
+            correct: false,
+            feedback: "Niet goed. Het plein is juist een van de duidelijkste historische stadsruimtes van Madrid.",
           },
         ],
       },
@@ -1614,6 +2100,33 @@ const tours = [
             text: "Omdat er vanaf hier geen enkel uitzicht is",
             correct: false,
             feedback: "Niet goed. Juist het uitzicht richting westen maakt deze stop sterk.",
+          },
+        ],
+      },
+      {
+        title: "Sta bij het Palacio Real",
+        place: "Palacio Real de Madrid",
+        coordinates: { lat: 40.4179, lng: -3.7143 },
+        assignment:
+          "Bekijk het paleis en de open ruimte eromheen van buiten. Zoek hoe monarchie hier aan de westkant van het centrum zichtbaar wordt.",
+        question: "Waarom past het Palacio Real goed vlak voor Plaza de España?",
+        hint: "Denk aan macht, westelijke centrumrand, tuinen en monumentale schaal.",
+        choices: [
+          {
+            text: "Omdat het paleis de koninklijke laag van Madrid toevoegt aan de route naar het westen",
+            correct: true,
+            feedback:
+              "Precies. Na park, station, Sol en Gran Vía laat het Palacio Real Madrid als hofstad zien, met schaal, tuinen en ceremonieel stadsbeeld.",
+          },
+          {
+            text: "Omdat het paleis een klein modern winkelcentrum is",
+            correct: false,
+            feedback: "Nee, de monumentale schaal en koninklijke betekenis zijn juist bepalend.",
+          },
+          {
+            text: "Omdat het paleis ver buiten Madrid ligt",
+            correct: false,
+            feedback: "Niet goed. Het ligt juist aan de westelijke rand van het historische centrum.",
           },
         ],
       },
@@ -1683,6 +2196,19 @@ const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
 const promoDurations = [3200, 3200, 3800, 5600, 3800, 3400, 4600];
+const minTourPrice = 2.99;
+const maxTourPrice = 5.99;
+const baseTourPrice = 4.49;
+const baseTourStops = 6;
+const pricePerExtraStop = 0.5;
+
+const formatEuroPrice = (price) => `€${price.toFixed(2).replace(".", ",")}`;
+const getTourPriceValue = (tour) =>
+  Math.min(
+    maxTourPrice,
+    Math.max(minTourPrice, baseTourPrice + (tour.stops.length - baseTourStops) * pricePerExtraStop),
+  );
+const getTourPrice = (tour) => formatEuroPrice(getTourPriceValue(tour));
 const cityPhotos = {
   malaga: {
     src: "assets/cities/malaga.jpg",
@@ -1775,33 +2301,46 @@ const stopUnlockRadii = {
   "Alcazaba ingang": 70,
   "Plaza de la Merced": 60,
   "Muelle Uno": 90,
+  "Playa de la Malagueta": 130,
   "Marktplatz en Rathaus": 60,
   "Burgplatz en Schlossturm": 70,
   Bolkerstraße: 60,
+  "Kunstsammlung K20": 80,
   Königsallee: 80,
   "Rheinuferpromenade bij KIT": 90,
   Rheinturm: 90,
+  MedienHafen: 100,
   "Kölner Dom": 90,
+  "Museum Ludwig": 80,
   Hohenzollernbrücke: 120,
   "Alter Markt": 60,
   "Historisches Rathaus": 60,
   "Groß St. Martin": 70,
+  "Schokoladenmuseum Köln": 90,
   Rheinauhafen: 100,
   Römerberg: 60,
+  "Paulskirche Frankfurt": 70,
   "Kaiserdom St. Bartholomäus": 70,
   "Eiserner Steg": 100,
+  "Städel Museum": 100,
   "Goethe-Haus": 60,
   "Main Tower": 70,
   "Alte Oper": 80,
   "Trafalgar Square": 90,
+  "Leicester Square": 80,
   "Covent Garden": 80,
+  "Royal Courts of Justice": 90,
   "St Paul’s Cathedral": 100,
   "Millennium Bridge": 110,
+  "Tate Modern": 100,
+  "Shakespeare’s Globe": 90,
   "Borough Market": 80,
   "Tower Bridge": 120,
   Rådhuspladsen: 70,
   "Tivoli Gardens": 80,
+  Rundetaarn: 80,
   "Christiansborg Slot": 90,
+  "Rosenborg Slot": 100,
   Nyhavn: 90,
   "Amalienborg Slotsplads": 90,
   "Frederik’s Church": 70,
@@ -1812,20 +2351,26 @@ const stopUnlockRadii = {
   "Dom zu St. Jakob": 70,
   Innbrücke: 100,
   "Maria-Theresien-Straße": 90,
+  Triumphpforte: 80,
   Stephansdom: 90,
   Hofburg: 110,
   Heldenplatz: 110,
   "Wiener Staatsoper": 80,
+  Musikverein: 80,
   Naschmarkt: 110,
   Karlskirche: 90,
   Stadtpark: 120,
+  Hundertwasserhaus: 110,
   "Prater Riesenrad": 130,
   "Estanque Grande del Retiro": 100,
   "Palacio de Cristal": 90,
   "Puerta de Atocha tropentuin": 120,
+  "Museo del Prado": 100,
   "Puerta del Sol": 100,
+  "Plaza Mayor Madrid": 100,
   "Gran Vía bij Telefónica": 90,
   "Templo de Debod": 120,
+  "Palacio Real de Madrid": 120,
   "Plaza de España Madrid": 110,
 };
 
@@ -1961,6 +2506,8 @@ const deeperContextByPlace = {
     "Picasso wordt hier niet alleen als kunstenaar herinnerd, maar ook als stadsidentiteit. Málaga gebruikt zijn geboorteplek om cultuur en toerisme aan elkaar te koppelen.",
   "Muelle Uno":
     "Muelle Uno laat zien hoe een havenstad zichzelf vernieuwt: de oude stad blijft zichtbaar, maar de waterkant krijgt moderne functies voor wandelen, winkels en horeca.",
+  "Playa de la Malagueta":
+    "La Malagueta maakt de kustidentiteit van Málaga tastbaar. Na de historische stad en haven zie je hier hoe strand, promenade en dagelijks stadsleven direct tegen het centrum aan liggen.",
   "Marktplatz en Rathaus":
     "De Marktplatz koppelt bestuur aan openbare ruimte. Het ruiterstandbeeld van Jan Wellem en het Rathaus vertellen samen hoe Düsseldorf zichzelf als residentiestad presenteerde.",
   "Burgplatz en Schlossturm":
@@ -1971,10 +2518,16 @@ const deeperContextByPlace = {
     "De Kö gebruikt water, bomen en brede profielen om luxe ruimtelijk te maken. Dure merken zitten hier omdat het adres zelf status geeft: zien, gezien worden en rustig flaneren horen bij de winkelervaring.",
   Bolkerstraße:
     "De 'langste Theke' is een bijnaam voor de dichtheid aan cafés, brouwhuizen en Altbiercultuur. Dat uitgaansnetwerk is een belangrijk deel van Düsseldorfs identiteit.",
+  "Kunstsammlung K20":
+    "K20 voegt Düsseldorfs kunstprofiel toe aan de route. Midden bij de Altstadt laat het museum zien dat de stad ook een belangrijke plek voor moderne en hedendaagse kunst is.",
   Rheinturm:
     "De Lichtzeitpegel maakt techniek speels zichtbaar: de toren is observatiepunt, landmark en klok tegelijk. Dat past goed bij de moderne Rijnzone.",
+  MedienHafen:
+    "MedienHafen laat Düsseldorf als moderne Rijnstad zien. Oude havenruimte is hier niet verdwenen, maar opnieuw geladen met architectuur, horeca, kantoren en uitzicht.",
   "Kölner Dom":
     "De Dom is in Keulen meer dan een kerk. Door zijn torens van ongeveer 157 meter en zijn ligging naast het station is hij vaak het eerste en sterkste beeld van de stad.",
+  "Museum Ludwig":
+    "Museum Ludwig maakt de Domomgeving verrassend modern. Naast station, kerk en Rijn krijgt Keulen hier een uitgesproken kunstlaag met internationale uitstraling.",
   Hohenzollernbrücke:
     "Deze brug combineert treinverkeer, voetgangersroutes en liefdessloten. Daardoor wordt infrastructuur tegelijk een ritueel en uitzichtpunt.",
   "Alter Markt":
@@ -1983,14 +2536,20 @@ const deeperContextByPlace = {
     "Het Rathaus toont de stedelijke zelfstandigheid van Keulen. De toren, beelden en decoratie laten zien dat bestuur niet verstopt werd, maar als stedelijke macht zichtbaar moest zijn.",
   "Groß St. Martin":
     "Groß St. Martin is een sterke buitenstop omdat de toren boven de Altstadt uitsteekt. Je ziet zonder naar binnen te gaan hoe kerk, plein, smalle straten en Rijn dicht bij elkaar liggen.",
+  "Schokoladenmuseum Köln":
+    "Het Schokoladenmuseum koppelt een publieksvriendelijke attractie aan Keulens handelsverhaal. Aan de Rijn wordt consumptiegeschiedenis ineens onderdeel van haven, routes en toerisme.",
   Rheinauhafen:
     "Rheinauhafen laat zien hoe een oud havengebied nieuwe stedelijke waarde krijgt. De Rijn blijft de drager, maar de functies verschuiven naar wonen, werken en recreatie.",
   Römerberg:
     "Römerberg is belangrijk omdat Frankfurt hier zijn historische gezicht laat zien, naast een stad die veel moderner en financieeler bekendstaat.",
+  "Paulskirche Frankfurt":
+    "De Paulskirche geeft Frankfurt een politieke laag. Naast handel en skyline staat hier een herinneringsplek voor parlementaire geschiedenis, debat en democratische symboliek.",
   "Kaiserdom St. Bartholomäus":
     "De Dom herinnert aan Frankfurt als kroningsstad. Daardoor gaat deze plek niet alleen over religie, maar ook over keizerlijke macht en ceremonie.",
   "Eiserner Steg":
     "Vanaf de Eiserner Steg zie je Frankfurt in één beeld: oude stad, Main, musea en skyline. De brug maakt die lagen letterlijk oversteekbaar.",
+  "Städel Museum":
+    "Het Städel en de Museumsufer laten Frankfurt als cultuurstad zien. De zuidoever is een bewuste tegenhanger van de commerciële skyline aan de noordkant.",
   "Goethe-Haus":
     "Goethes geboortehuis geeft Frankfurt een cultureel anker naast banken en beurs. Een individuele schrijver wordt zo onderdeel van het collectieve stadsverhaal.",
   "Main Tower":
@@ -1999,22 +2558,34 @@ const deeperContextByPlace = {
     "De Alte Oper toont hoe cultuur en prestige samenkomen. Het gebouw zegt: Frankfurt is niet alleen handel en banken, maar ook podium, pleinruimte en publiek leven.",
   "Trafalgar Square":
     "Trafalgar Square is ontworpen als nationaal podium. Monumenten, zichtlijnen en musea maken het plein politiek, ceremonieel en toeristisch tegelijk.",
+  "Leicester Square":
+    "Leicester Square maakt West End als entertainmentmachine zichtbaar. Theaters, bioscopen, premières en drukte geven London hier een heel andere energie dan Trafalgar Square.",
   "Covent Garden":
     "Covent Garden veranderde van marktgebied naar cultuur- en winkelplek. De levendigheid komt uit die mix van handel, optreden en verblijf.",
+  "Royal Courts of Justice":
+    "De Royal Courts of Justice tonen rechtspraak als zichtbare stedelijke macht. De gevel maakt gezag bijna net zo monumentaal als kerken en paleizen.",
   "Borough Market":
     "Borough Market laat London als handelsstad proeven. Bij London Bridge komen oude marktcultuur, spoorbogen, toerisme en internationale foodcultuur bij elkaar.",
   "St Paul’s Cathedral":
     "St Paul’s is een spiritueel en nationaal symbool. De herbouw na de Grote Brand van 1666 en de koepel van Wren maken het gebouw belangrijker dan alleen een herkenbaar silhouet.",
   "Millennium Bridge":
     "De Millennium Bridge is krachtig door zijn zichtlijn: St Paul’s, de Thames en Tate Modern worden door een voetgangersas in één verhaal gezet.",
+  "Tate Modern":
+    "Tate Modern laat hergebruik op grote schaal zien. Een industrieel gebouw aan de Thames werd een kunstmuseum dat de zuidoever cultureel opnieuw definieert.",
+  "Shakespeare’s Globe":
+    "Shakespeare’s Globe maakt Bankside als theater- en vermaakszone zichtbaar. De herbouw laat zien hoe London historische cultuur opnieuw inzet aan een moderne wandelroute.",
   "Tower Bridge":
     "Tower Bridge is herkenbaar omdat moderne bascule-techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
   Rådhuspladsen:
     "Rådhuspladsen laat Copenhagen als functionerende hoofdstad zien: bestuur, verkeer, metro, winkels en toerisme zitten hier niet apart, maar vormen samen de entree tot de binnenstad.",
   "Tivoli Gardens":
     "Tivoli is bijzonder omdat vermaak niet aan de rand van de stad ligt, maar midden in het centrum. De gevel werkt als belofte: achter de stedelijke drukte begint een afgesloten wereld van licht, tuinen en attracties.",
+  Rundetaarn:
+    "Rundetaarn laat Copenhagen als kennis- en uitzichtstad zien. De toren koppelt wetenschap, oriëntatie en compacte binnenstad aan elkaar.",
   "Christiansborg Slot":
     "Christiansborg maakt staatsmacht ruimtelijk zichtbaar. Op Slotsholmen zitten parlement, regering en hoogste rechtspraak dicht bij elkaar, waardoor het eiland voelt als een bestuurlijk hart.",
+  "Rosenborg Slot":
+    "Rosenborg Slot voegt een oudere en groenere koninklijke laag toe. Het kasteel en de tuinen voelen intiemer dan Amalienborg, maar zijn historisch net zo belangrijk.",
   Nyhavn:
     "Nyhavn is een goed voorbeeld van hergebruik van havenruimte. Wat ooit praktisch en handelsgericht was, is nu een toeristische plek waar kleur, water, terrassen en schepen het stadsbeeld dragen.",
   "Amalienborg Slotsplads":
@@ -2035,6 +2606,8 @@ const deeperContextByPlace = {
     "De Innbrug is fundamenteel voor Innsbruck. De naam van de stad verwijst naar de brug over de Inn, en daarmee naar routes, handel en de ligging tussen Alpenpassen.",
   "Maria-Theresien-Straße":
     "Maria-Theresien-Straße toont Innsbruck als representatieve wandel- en winkelstad. De straat geeft meer ruimte dan de Altstadt en laat de bergen als decor in het stadsbeeld staan.",
+  Triumphpforte:
+    "De Triumphpforte sluit de representatieve stadsas af als ceremonieel monument. In Innsbruck komen hofcultuur, stedelijke vorm en herinnering hier compact samen.",
   Stephansdom:
     "De Stephansdom is het verticale hart van Wenen. De toren, het plein en de straten eromheen maken de kerk tot oriëntatiepunt, religieus symbool en stedelijk anker.",
   Hofburg:
@@ -2043,12 +2616,16 @@ const deeperContextByPlace = {
     "Heldenplatz toont hoe publieke ruimte beladen kan worden. Keizerlijke monumentaliteit, militaire symboliek en latere politieke herinneringen zitten hier in dezelfde open ruimte.",
   "Wiener Staatsoper":
     "De Staatsoper gebruikt cultuur als stedelijke status. Aan de Ringstraße werd muziek niet verstopt, maar prominent ingezet om Wenen als wereldstad te presenteren.",
+  Musikverein:
+    "De Musikverein maakt Wenen als muziekhoofdstad concreet. Het gebouw geeft concertcultuur dezelfde stedelijke waardigheid als opera, paleizen en musea.",
   Naschmarkt:
     "De Naschmarkt geeft Wenen een dagelijks en internationaal gezicht. Tussen kramen, eetplekken en talen zie je een stad die niet alleen keizerlijk, maar ook levendig en gemengd is.",
   Karlskirche:
     "De Karlskirche is barokke stadsregie: koepel, zuilen, plein en water versterken elkaar. Het gebouw is niet alleen kerk, maar ook zorgvuldig geënsceneerde ruimte.",
   Stadtpark:
     "Stadtpark laat Wenen ontspannen na alle monumentaliteit. Muziekcultuur, groen en openbare ruimte komen samen in een plek die minder formeel is, maar nog steeds typisch Weens.",
+  Hundertwasserhaus:
+    "Hundertwasserhaus breekt met de formele monumentaliteit van Wenen. Kleur, groen en onregelmatigheid voegen een speelse, eigenwijze stadslaag toe.",
   "Prater Riesenrad":
     "De Prater laat Wenen van zijn publieke en speelse kant zien. Het Riesenrad is niet keizerlijk of kerkelijk, maar juist populair, herkenbaar en verbonden met vrije tijd.",
   "Estanque Grande del Retiro":
@@ -2057,12 +2634,18 @@ const deeperContextByPlace = {
     "Het Palacio de Cristal verbindt Madrid met 19e-eeuwse tentoonstellingscultuur. Glas en ijzer waren modern, maar door de ligging aan water en bomen voelt het gebouw tegelijk licht en landschappelijk.",
   "Puerta de Atocha tropentuin":
     "Atocha is interessant omdat infrastructuur hier meer is dan doorstromen. De tropische tuin verandert de oude hal in een verblijfsplek, waardoor reizen, wachten en stadsarchitectuur zachter aanvoelen.",
+  "Museo del Prado":
+    "Het Prado maakt Madrid als kunsthoofdstad tastbaar. Aan de Paseo del Prado wordt cultuur niet een losse attractie, maar een hele stadsas.",
   "Puerta del Sol":
     "Puerta del Sol is Madrid als middelpunt: klok, Kilometer Zero, herkenbare symbolen en winkelstraten maken het plein tot een plek waar lokale identiteit en nationale oriëntatie samenkomen.",
+  "Plaza Mayor Madrid":
+    "Plaza Mayor is Madrid als historische stadskamer. De gesloten vorm, arcades en gevels maken het plein ceremoniëler en rustiger leesbaar dan Sol.",
   "Gran Vía bij Telefónica":
     "Gran Vía is de grote moderne stadsdoorbraak van Madrid. De straat gebruikt breedte, gevels, theaters en vroege hoogbouw om de hoofdstad grootstedelijker en spectaculairder te laten voelen.",
   "Templo de Debod":
     "Templo de Debod is een verplaatst monument dat door zijn Madrileense plek nieuwe betekenis krijgt. Het westelijke uitzicht, de open ruimte en de zonsondergang maken het een geliefde stadsritueelplek.",
+  "Palacio Real de Madrid":
+    "Het Palacio Real voegt Madrid als hofstad toe aan de route. De westelijke centrumrand krijgt hier monumentale schaal, tuinen en koninklijke representatie.",
   "Plaza de España Madrid":
     "Plaza de España brengt meerdere Madrid-lagen samen: Cervantes en Don Quichot als verhaal, hoogbouw als moderniteit, en een vernieuwd plein als groene schakel aan de rand van Gran Vía.",
 };
@@ -2089,6 +2672,10 @@ const routeGuides = {
       route: "Daal af richting Paseo del Parque en loop daarna door naar Muelle Uno aan het water.",
       watch: "Let op de overgang van oude stad naar havenpromenade, palmen, verkeer en zeezicht.",
     },
+    {
+      route: "Loop vanaf Muelle Uno langs de havenrand richting La Malagueta en blijf aan de kant van de promenade.",
+      watch: "Let op hoe de stad van moderne havenruimte naar strand, zee en dagelijks kustleven verschuift.",
+    },
   ],
   dusseldorf: [
     {
@@ -2100,8 +2687,12 @@ const routeGuides = {
       watch: "Let op hoe de open ruimte aan de Rijn meteen overgaat in smalle straten vol cafés en brouwhuizen.",
     },
     {
-      route: "Loop vanaf Bolkerstraße via de winkelstraten richting Königsallee.",
-      watch: "Vergelijk onderweg de drukke Altstadt-sfeer met de rustigere, luxere uitstraling van de Kö.",
+      route: "Loop vanaf Bolkerstraße naar Kunstsammlung K20 aan de rand van de Altstadt.",
+      watch: "Vergelijk de uitgaanssfeer van de Altstadt met de rustigere museum- en pleinruimte rond K20.",
+    },
+    {
+      route: "Loop vanaf K20 via de winkelstraten richting Königsallee.",
+      watch: "Let op hoe cultuur, winkels en representatieve luxe steeds dichter bij elkaar komen.",
     },
     {
       route: "Loop vanaf de Kö richting de Rijn en kies het stuk promenade bij KIT als tussenpunt naar de Rheinturm.",
@@ -2111,11 +2702,19 @@ const routeGuides = {
       route: "Volg vanaf de promenade de Rijn zuidwaarts richting Rheinturm.",
       watch: "Je blijft aan dezelfde oever: let op hoe de kade steeds moderner wordt richting MedienHafen.",
     },
+    {
+      route: "Loop vanaf de Rheinturm nog een kort stuk door richting MedienHafen en de opvallende moderne havengebouwen.",
+      watch: "Vergelijk de technische hoogte van de toren met de expressieve architectuur en terrassen van de haven.",
+    },
   ],
   keulen: [
     {
-      route: "Loop vanaf de Dom naar de Hohenzollernbrücke en neem de trappen of route richting de voetgangerszijde.",
-      watch: "Kijk hoe station, Dom en brug samen één druk aankomstgebied vormen.",
+      route: "Loop vanaf de Dom een kort stuk naar Museum Ludwig aan de kant van station en Rijn.",
+      watch: "Let op hoe middeleeuwse religie en moderne kunst hier bijna deur aan deur staan.",
+    },
+    {
+      route: "Loop vanaf Museum Ludwig naar de Hohenzollernbrücke en neem de route richting de voetgangerszijde.",
+      watch: "Kijk hoe station, museum, Dom en brug samen één druk aankomstgebied vormen.",
     },
     {
       route: "Keer terug richting de Altstadt en loop via de Rijnkant naar Alter Markt.",
@@ -2130,22 +2729,34 @@ const routeGuides = {
       watch: "Let op de toren als oriëntatiepunt en op hoe smal de oude straten richting Rijn worden.",
     },
     {
-      route: "Loop vanaf Groß St. Martin richting de Rijn en volg de oever zuidwaarts naar Rheinauhafen.",
-      watch: "Je hoeft geen gebouwen in: kijk buiten naar de overgang van oude Altstadt naar moderne havenrand.",
+      route: "Loop vanaf Groß St. Martin richting de Rijn en volg de oever zuidwaarts naar het Schokoladenmuseum.",
+      watch: "Let op hoe de oude Altstadt langzaam plaatsmaakt voor musea, kades en hergebruikte Rijnruimte.",
+    },
+    {
+      route: "Loop vanaf het Schokoladenmuseum verder langs het water naar Rheinauhafen.",
+      watch: "Kijk hoe de route steeds moderner wordt: van publieksmuseum naar havenarchitectuur en Kranhäuser.",
     },
   ],
   frankfurt: [
     {
-      route: "Loop vanaf Römerberg richting de Kaiserdom via de oude stadskern.",
-      watch: "Let op hoe reconstructie, oude vormen en moderne functies door elkaar lopen.",
+      route: "Loop vanaf Römerberg een kort stuk naar de Paulskirche.",
+      watch: "Let op hoe snel marktplein, bestuur en politieke herinnering elkaar in de oude kern raken.",
+    },
+    {
+      route: "Loop vanaf de Paulskirche richting de Kaiserdom via de oude stadskern.",
+      watch: "Let op hoe politieke herinnering, reconstructie en religieuze geschiedenis dicht bij elkaar liggen.",
     },
     {
       route: "Loop vanaf de Dom terug richting de Main en steek de Eiserner Steg op.",
       watch: "Kijk onderweg hoe snel de stad van kerk en plein naar rivierfront verandert.",
     },
     {
+      route: "Steek door naar de zuidoever en loop richting Städel Museum aan de Museumsufer.",
+      watch: "Vergelijk de skyline aan de overkant met de culturele rust van de museumoever.",
+    },
+    {
       route: "Steek terug naar de noordkant en loop via de binnenstad richting Goethe-Haus.",
-      watch: "Let op hoe de schaal kleiner en persoonlijker wordt dan bij rivier en skyline.",
+      watch: "Let op hoe de schaal kleiner en persoonlijker wordt dan bij rivier, museumoever en skyline.",
     },
     {
       route: "Loop vanaf Goethe-Haus richting het bankencluster en Main Tower.",
@@ -2158,20 +2769,36 @@ const routeGuides = {
   ],
   london: [
     {
-      route: "Loop vanaf Trafalgar Square via Strand richting Covent Garden.",
-      watch: "Let op theaters, smalle passages en hoe druk verkeer verandert in voetgangersgebied.",
+      route: "Loop vanaf Trafalgar Square naar Leicester Square via de rand van West End.",
+      watch: "Let op hoe nationale monumentaliteit snel verandert in theater- en bioscoopdrukte.",
     },
     {
-      route: "Loop vanaf Covent Garden richting Fleet Street en Ludgate Hill naar St Paul’s Cathedral.",
-      watch: "Kijk onderweg naar de overgang van theater- en winkelstad naar de City.",
+      route: "Loop vanaf Leicester Square door naar Covent Garden.",
+      watch: "Kijk hoe entertainment, voetgangersstraten, winkels en straatoptredens elkaar opvolgen.",
+    },
+    {
+      route: "Loop vanaf Covent Garden via Strand richting de Royal Courts of Justice.",
+      watch: "Let op hoe winkel- en theaterstad verandert in institutionele gevels en drukke stadsroutes.",
+    },
+    {
+      route: "Loop vanaf de Royal Courts via Fleet Street en Ludgate Hill naar St Paul’s Cathedral.",
+      watch: "Kijk onderweg naar de overgang van rechtspraak en persgeschiedenis naar de City.",
     },
     {
       route: "Loop vanaf St Paul’s recht richting de Millennium Bridge.",
       watch: "Let op hoe de zichtlijn naar de Thames steeds sterker wordt.",
     },
     {
-      route: "Steek de Millennium Bridge over en loop via Bankside richting Borough Market.",
-      watch: "Kijk naar Tate Modern, spoorbogen, pakhuizen en foodstalls: dit is de zuidoever als werk- en cultuurgebied.",
+      route: "Steek de Millennium Bridge over en loop naar Tate Modern.",
+      watch: "Vergelijk de koepel van St Paul’s achter je met de industriële gevel van Tate Modern voor je.",
+    },
+    {
+      route: "Loop vanaf Tate Modern langs Bankside naar Shakespeare’s Globe.",
+      watch: "Let op hoe moderne kunst en theatergeschiedenis direct naast elkaar aan de rivier liggen.",
+    },
+    {
+      route: "Loop vanaf Shakespeare’s Globe verder langs Bankside richting Borough Market.",
+      watch: "Let op hoe theatergeschiedenis, pakhuizen, spoorbogen en foodcultuur elkaar opvolgen.",
     },
     {
       route: "Loop vanaf Borough Market via London Bridge of de zuidelijke Thames-route richting Tower Bridge.",
@@ -2184,12 +2811,20 @@ const routeGuides = {
       watch: "Let op hoe het stadhuisplein, verkeer en de speelse gevel van Tivoli bijna tegen elkaar aan liggen.",
     },
     {
-      route: "Loop vanaf Tivoli terug richting het centrum en volg de route via de binnenstad naar Slotsholmen en Christiansborg Slot.",
-      watch: "Kijk onderweg hoe Copenhagen wisselt van vermaak en winkelstraten naar bestuur, bruggen en paleisachtige gevels.",
+      route: "Loop vanaf Tivoli terug richting het centrum en volg de winkelstraten naar Rundetaarn.",
+      watch: "Kijk hoe Copenhagen wisselt van vermaak naar compacte winkelstad en historische kennisplek.",
     },
     {
-      route: "Loop vanaf Christiansborg via Holmens Kanal richting Kongens Nytorv en door naar Nyhavn.",
-      watch: "Let op de overgang van machtseiland en kanalen naar de kleurrijke havengevels van Nyhavn.",
+      route: "Loop vanaf Rundetaarn richting Slotsholmen en Christiansborg Slot.",
+      watch: "Let op hoe smalle centrumstraten overgaan in bruggen, water en bestuurlijke gevels.",
+    },
+    {
+      route: "Loop vanaf Christiansborg via de binnenstad naar Rosenborg Slot en de tuinen.",
+      watch: "Vergelijk het formele machtseiland met het oudere, groenere kasteelkarakter van Rosenborg.",
+    },
+    {
+      route: "Loop vanaf Rosenborg richting Kongens Nytorv en door naar Nyhavn.",
+      watch: "Let op de overgang van koninklijk groen naar kleurrijke havengevels en terrassen.",
     },
     {
       route: "Volg vanaf Nyhavn de route richting Amaliehaven en Amalienborg Slotsplads.",
@@ -2222,8 +2857,12 @@ const routeGuides = {
       watch: "Kijk onderweg naar de overgang van smalle historische straten naar rivier, licht en bergzicht.",
     },
     {
-      route: "Loop vanaf de Innbrug terug richting het centrum en eindig op Maria-Theresien-Straße.",
+      route: "Loop vanaf de Innbrug terug richting het centrum en ga naar Maria-Theresien-Straße.",
       watch: "Let op hoe de stad van rivierovergang en Altstadt verandert in een brede winkel- en flaneeras.",
+    },
+    {
+      route: "Volg Maria-Theresien-Straße zuidwaarts naar de Triumphpforte.",
+      watch: "Kijk hoe de brede stadsas eindigt in een ceremonieel monument met de bergen nog steeds op de achtergrond.",
     },
   ],
   vienna: [
@@ -2240,7 +2879,11 @@ const routeGuides = {
       watch: "Let op de overgang van keizerlijke pleinen naar de 19e-eeuwse stadsboulevard.",
     },
     {
-      route: "Loop vanaf de Staatsoper richting de Naschmarkt via de omgeving van Karlsplatz.",
+      route: "Loop vanaf de Staatsoper richting Musikverein aan de rand van Karlsplatz.",
+      watch: "Vergelijk opera als theaterinstituut met concertcultuur als Weense identiteit.",
+    },
+    {
+      route: "Loop vanaf Musikverein richting de Naschmarkt via de omgeving van Karlsplatz.",
       watch: "Vergelijk de formele cultuurgebouwen met het dagelijkse marktleven dat steeds sterker wordt.",
     },
     {
@@ -2252,8 +2895,12 @@ const routeGuides = {
       watch: "Kijk hoe de route van barokke monumentaliteit naar groen, water en muziekherinnering beweegt.",
     },
     {
-      route: "Loop vanaf Stadtpark richting Wien Mitte en verder naar de Prater-ingang bij het Riesenrad.",
-      watch: "Let op hoe de stad verandert van nette centrumrand naar een grotere ontspanningszone met attracties en parkruimte.",
+      route: "Loop vanaf Stadtpark richting Hundertwasserhaus.",
+      watch: "Let op hoe de stad minder formeel wordt: kleur, onregelmatigheid en groen breken met de monumentale stijl.",
+    },
+    {
+      route: "Loop vanaf Hundertwasserhaus richting Wien Mitte en verder naar de Prater-ingang bij het Riesenrad.",
+      watch: "Let op hoe de stad verandert van kleurrijk woonexperiment naar een grotere ontspanningszone met attracties en parkruimte.",
     },
   ],
   madrid: [
@@ -2266,22 +2913,34 @@ const routeGuides = {
       watch: "Kijk hoe Madrid verandert van parklandschap naar musea, verkeer en grote stationsruimte.",
     },
     {
+      route: "Loop vanaf Atocha via Paseo del Prado naar Museo del Prado.",
+      watch: "Let op hoe station, bomenlaan, museumgevels en culturele prestige-as elkaar opvolgen.",
+    },
+    {
       route:
-        "Loop vanaf Atocha via Paseo del Prado, Neptuno en de Barrio de las Letras richting Puerta del Sol. Is dit stuk te lang of wil je tijd winnen, neem dan metro lijn 1 vanaf Atocha of Estación del Arte richting Sol.",
-      watch: "Onderweg zie je de overgang van station naar museumas, literair kwartier en uiteindelijk het drukke hart van Madrid.",
+        "Loop vanaf het Prado via Barrio de las Letras richting Puerta del Sol. Is dit stuk te lang of wil je tijd winnen, neem dan metro lijn 1 vanaf Atocha of Estación del Arte richting Sol en loop later kort terug naar het Prado als losse museumstop.",
+      watch: "Onderweg zie je de overgang van museumas en literair kwartier naar het drukke hart van Madrid.",
       transit: "Metro-optie: neem lijn 1 vanaf Atocha of Estación del Arte naar Sol en pak de route daar weer op.",
     },
     {
-      route: "Loop vanaf Puerta del Sol via Calle de la Montera of Calle Preciados richting Gran Vía en zoek het Telefónica-gebouw als herkenningspunt.",
-      watch: "Let op hoe het plein overgaat in winkelstraten en daarna in een bredere, meer theatrale stadsboulevard.",
+      route: "Loop vanaf Puerta del Sol via Calle Mayor naar Plaza Mayor.",
+      watch: "Vergelijk de open knooppuntdrukte van Sol met de gesloten historische pleinruimte van Plaza Mayor.",
     },
     {
-      route: "Volg Gran Vía westwaarts richting Plaza de España, maar buig eerst door naar Templo de Debod via Plaza de España en het parkgebied erachter.",
+      route: "Loop vanaf Plaza Mayor terug richting Sol en daarna via Calle de la Montera of Preciados naar Gran Vía.",
+      watch: "Let op hoe historisch pleinleven overgaat in winkelstraten en daarna in een brede stadsboulevard.",
+    },
+    {
+      route: "Volg Gran Vía westwaarts richting Plaza de España, maar buig eerst door naar Templo de Debod via het parkgebied erachter.",
       watch: "Kijk hoe de stad van drukke winkel- en theaterstraat langzaam opener wordt richting uitzichtpunt en park.",
     },
     {
-      route: "Loop vanaf Templo de Debod terug richting Plaza de España en eindig bij het Cervantes-monument.",
-      watch: "Vergelijk het rustige uitzichtpunt met de stedelijke schaal van het plein, de torens en de start van Gran Vía.",
+      route: "Loop vanaf Templo de Debod richting het Palacio Real en de tuinen aan de westkant van het centrum.",
+      watch: "Vergelijk het informele uitzichtpunt met de formele schaal van paleis, tuinen en hofstad.",
+    },
+    {
+      route: "Loop vanaf het Palacio Real via de westelijke centrumrand naar Plaza de España.",
+      watch: "Let op hoe koninklijke monumentaliteit overgaat in een moderner plein met hoogbouw, groen en Cervantes.",
     },
   ],
 };
@@ -2289,6 +2948,90 @@ const routeGuides = {
 const buildDeeperContext = (tour, stop) =>
   deeperContextByPlace[stop.place] ||
   `Deze plek zegt iets typisch over ${tour.city}: niet alleen het losse gebouw of plein is belangrijk, maar vooral hoe ${stop.place} verbonden is met de geschiedenis, routes en identiteit van de stad. Door ter plekke naar details te kijken, zie je beter waarom juist deze stop in de route zit.`;
+
+const activityTipsByPlace = {
+  "Plaza de la Constitución": "Pak na de route nog een drankje rond Plaza del Obispo of loop kort naar Museo Carmen Thyssen voor Málaga’s schilderkunst.",
+  "Catedral de Málaga": "Wil je meer context, bezoek dan het kathedraalmuseum of kies een dakrondleiding voor uitzicht over het oude centrum.",
+  "Teatro Romano": "Loop even binnen bij het Centro de Interpretación del Teatro Romano; klein, snel en precies passend bij deze stop.",
+  "Alcazaba ingang": "Als je tijd hebt, bezoek de Alcazaba zelf en loop door naar Gibralfaro voor het beste overzicht over stad en haven.",
+  "Plaza de la Merced": "Voor kunstliefhebbers ligt het Picasso Museum dichtbij; leuker nog als je eerst zijn geboorteplein hebt gezien.",
+  "Muelle Uno": "Sluit af met Centre Pompidou Málaga of wandel door naar de vuurtoren La Farola voor havengevoel en avondlicht.",
+  "Playa de la Malagueta": "Neem na afloop iets aan de chiringuitos of wandel over de boulevard richting Pedregalejo als je nog kustsfeer wilt.",
+  "Marktplatz en Rathaus": "Bezoek het SchifffahrtMuseum in de Schlossturm als je de band tussen Düsseldorf en de Rijn verder wilt snappen.",
+  "Burgplatz en Schlossturm": "Blijf nog even aan de Rheintreppe zitten; dit is een van de beste plekken om de stad zonder haast te lezen.",
+  Bolkerstraße: "Proef een Altbier in een traditioneel brouwhuis zoals Uerige of Füchschen, liefst staand aan de toog.",
+  "Kunstsammlung K20": "Ga naar binnen bij K20 als je moderne kunst wilt toevoegen aan je Altstadt-dag; het museum ligt ideaal op de route.",
+  Königsallee: "Loop langzaam langs beide kanten van de gracht en kijk bij de etalages hoe luxe hier bijna als straatdecor werkt.",
+  "Rheinuferpromenade bij KIT": "KIT - Kunst im Tunnel ligt letterlijk onder de promenade en is een leuke korte kunststop onderweg.",
+  Rheinturm: "Ga bij helder weer omhoog in de Rheinturm; vanaf boven begrijp je Rijn, Altstadt en MedienHafen in één blik.",
+  MedienHafen: "Loop langs de Gehry-gebouwen en drink iets aan het water; dit is Düsseldorf op z’n meest modern.",
+  "Kölner Dom": "Bezoek de Domschatzkammer of beklim de toren als je energie hebt; de hoogte maakt de stad ineens heel concreet.",
+  "Museum Ludwig": "Loop Museum Ludwig binnen voor moderne kunst, vooral als je het contrast met de Dom extra sterk wilt maken.",
+  Hohenzollernbrücke: "Loop tot halverwege de brug voor het klassieke Domzicht en kijk hoe treinverkeer en voetgangers elkaar kruisen.",
+  "Alter Markt": "Neem hier pauze op een terras en kijk naar de gevels rond het plein; dat is bijna een gratis stadsmuseum.",
+  "Historisches Rathaus": "Kijk extra naar de beelden op de toren of bezoek in de buurt het Wallraf-Richartz-Museum voor Keulse kunstgeschiedenis.",
+  "Groß St. Martin": "Loop om de kerk heen via de smalle straten richting Rijn; buiten zie je de ligging eigenlijk het best.",
+  "Schokoladenmuseum Köln": "Ga het Schokoladenmuseum in als je tijd hebt; het is toegankelijk, leuk en past goed bij Keulen als handelsstad.",
+  Rheinauhafen: "Wandel door tot de Kranhäuser en vergelijk oude havenfunctie met moderne architectuur aan het water.",
+  Römerberg: "Bezoek het Historisches Museum Frankfurt aan de rand van het plein als je de stadslagen verder wilt uitpakken.",
+  "Paulskirche Frankfurt": "Loop binnen als de Paulskirche open is; de sobere ruimte maakt de democratische herinnering veel tastbaarder.",
+  "Kaiserdom St. Bartholomäus": "Beklim de Domtoren als die open is; het uitzicht maakt het verschil tussen oude stad en skyline duidelijk.",
+  "Eiserner Steg": "Steek door naar de Museumsufer; vooral het Städel Museum is een sterke vervolgstop voor kunst.",
+  "Städel Museum": "Neem minstens de museumtuin of entreeomgeving mee; voor kunstliefhebbers is het Städel de moeite waard om langer te blijven.",
+  "Goethe-Haus": "Bezoek het Goethe-Haus als je tijd hebt; het maakt de schrijver minder abstract en veel menselijker.",
+  "Main Tower": "Neem echt eens een kijkje vanaf het uitkijkplatform; Frankfurt is van boven misschien wel het meest logisch.",
+  "Alte Oper": "Check of er ’s avonds een concert is of drink iets op Opernplatz terwijl de gevel langzaam oplicht.",
+  "Trafalgar Square": "Loop gratis de National Gallery binnen; zelfs een kwartier geeft deze plek meteen meer culturele diepte.",
+  "Leicester Square": "Kijk of er een theater- of filmpremière-sfeer hangt en loop daarna via de kleine straten richting Covent Garden.",
+  "Covent Garden": "Blijf even voor straatmuziek of loop naar het London Transport Museum als je stad en mobiliteit leuk vindt.",
+  "Royal Courts of Justice": "Loop eventueel door naar Temple Church of kijk naar de details in de gevel; dit stuk London zit vol juridische geschiedenis.",
+  "St Paul’s Cathedral": "Beklim de koepel of loop naar binnen voor de Whispering Gallery; de schaal voel je pas echt van dichtbij.",
+  "Millennium Bridge": "Ga Tate Modern in, al is het maar kort; vanaf de bovenste verdiepingen zie je de brug en St Paul’s als één as.",
+  "Tate Modern": "Ga gratis even naar binnen of pak een uitzichtpunt in het gebouw; de relatie met St Paul’s blijft daar sterk zichtbaar.",
+  "Shakespeare’s Globe": "Check of er een voorstelling of rondleiding is; anders is de buitenkant al een mooie korte theaterstop.",
+  "Borough Market": "Proef iets kleins bij een kraam en loop daarna naar Southwark Cathedral voor een rustige tegenhanger naast de markt.",
+  "Tower Bridge": "Bezoek de Tower Bridge Exhibition als je wilt zien hoe de brug technisch opent en sluit.",
+  Rådhuspladsen: "Loop even het stadhuis binnen als het open is, of gebruik het plein als start voor Strøget.",
+  "Tivoli Gardens": "Ga ’s avonds terug naar Tivoli voor de verlichting; dan begrijp je pas waarom het midden in de stad werkt.",
+  Rundetaarn: "Beklim Rundetaarn als je tijd hebt; het is een van de vriendelijkste uitzichtpunten van Copenhagen.",
+  "Christiansborg Slot": "De toren van Christiansborg is een sterke gratis uitzichtplek als je Copenhagen van boven wilt zien.",
+  "Rosenborg Slot": "Bezoek Rosenborg Slot of wandel door Kongens Have; beide geven een rustige koninklijke pauze midden in de stad.",
+  Nyhavn: "Stap op een korte havenrondvaart vanaf Nyhavn; vanaf het water wordt de stad ineens veel begrijpelijker.",
+  "Amalienborg Slotsplads": "Probeer de wisseling van de wacht mee te pakken of bezoek Amalienborg Museum voor het hofverhaal.",
+  "Frederik’s Church": "Loop binnen bij Marmorkirken voor de koepelruimte; buiten is de as mooi, binnen voel je de schaal.",
+  "Den Lille Havfrue": "Combineer deze stop met Kastellet; de vestingwallen maken de wandeling naar het beeld veel rijker.",
+  "Goldenes Dachl": "Bezoek het museum bij het Goldenes Dachl als je meer wilt weten over Maximiliaan en de stad als machtsdecor.",
+  "Hofburg Innsbruck": "De Hofburg is ook van binnen te bezoeken en geeft veel context over Innsbruck als Habsburgse residentiestad.",
+  Hofkirche: "Ga naar binnen voor de zwarte bronzen figuren rond het grafmonument; dat is een van Innsbrucks sterkste museumachtige ervaringen.",
+  "Dom zu St. Jakob": "Loop kort naar binnen voor het barokke interieur, vooral als je net de compacte buitenruimte hebt bekeken.",
+  Innbrücke: "Neem tijd voor de gekleurde huizen aan de Inn; dit is de fotostop die de stad bijna vanzelf uitlegt.",
+  "Maria-Theresien-Straße": "Ga zitten met zicht op de Annasäule en de bergen; dit is een goede plek om stad en Alpen tegelijk te voelen.",
+  Triumphpforte: "Loop nog een stukje door richting Wiltener Platzl voor een rustiger lokaal einde na de drukke stadsas.",
+  Stephansdom: "Beklim de toren of bezoek de catacomben als je Wenen onder en boven straatniveau wilt ervaren.",
+  Hofburg: "Bezoek de Kaiserappartements of de Schatzkammer als je de keizerlijke machtslaag concreter wilt maken.",
+  Heldenplatz: "Loop naar het Weltmuseum Wien of de Neue Burg; rond dit plein zit enorm veel collectie en wereldgeschiedenis.",
+  "Wiener Staatsoper": "Kijk of er een rondleiding of last-minute staanplaats is; opera is hier geen decor maar levend gebruik.",
+  Musikverein: "Check of er een concert is, of kijk alleen al naar de buitenkant rond Karlsplatz als muziekstop tussen opera en markt.",
+  Naschmarkt: "Proef iets kleins bij een kraam en loop daarna langs de Secession voor een sterke kunststop vlakbij.",
+  Karlskirche: "Ga naar binnen als er toegang is; de hoogte en fresco’s maken de theatrale buitenkant nog duidelijker.",
+  Stadtpark: "Zoek het Strauss-monument en combineer dit met een korte wandeling langs de Wienfluss.",
+  Hundertwasserhaus: "Loop ook even naar Kunst Haus Wien in de buurt als je Hundertwasser beter wilt begrijpen.",
+  "Prater Riesenrad": "Maak een ritje in het Riesenrad als je tijd hebt; het uitzicht maakt de speelse kant van Wenen compleet.",
+  "Estanque Grande del Retiro": "Huur een roeibootje of loop naar het monument van Alfonso XII voor een mooi overzicht over het meer.",
+  "Palacio de Cristal": "Check of er een gratis Reina Sofía-tentoonstelling in het Palacio de Cristal loopt; de plek is vaak al de helft van de ervaring.",
+  "Puerta de Atocha tropentuin": "Combineer Atocha met Museo Reina Sofía vlakbij, vooral als je moderne Spaanse kunst wilt zien.",
+  "Museo del Prado": "Plan later minstens een korte Prado-sessie; zelfs één zaal maakt Madrid als kunststad veel sterker.",
+  "Puerta del Sol": "Loop kort naar Chocolatería San Ginés of naar Plaza Mayor; allebei laten een andere laag van het centrum zien.",
+  "Plaza Mayor Madrid": "Neem een korte pauze onder de arcades of loop naar Mercado de San Miguel voor een snelle eetstop.",
+  "Gran Vía bij Telefónica": "Bezoek de Espacio Fundación Telefónica of kijk of er een musical draait aan Gran Vía.",
+  "Templo de Debod": "Kom hier rond zonsondergang terug; het uitzicht richting Casa de Campo is dan het sterkst.",
+  "Palacio Real de Madrid": "Bezoek de Sabatini-tuinen of het paleis zelf als je meer tijd hebt; dit is de hofstadlaag van Madrid.",
+  "Plaza de España Madrid": "Loop door naar het Palacio Real of de Sabatini-tuinen; beide liggen dichtbij en sluiten mooi aan op dit eindpunt.",
+};
+
+const buildActivityTip = (tour, stop) =>
+  activityTipsByPlace[stop.place] ||
+  `Blijf na deze opdracht nog een paar minuten rond ${stop.place}. Zoek een museum, uitzichtpunt of café in de buurt en vergelijk wat je daar ziet met het verhaal van ${tour.city}.`;
 
 const renderStopMap = (stop) => {
   const { lat, lng } = stop.coordinates;
@@ -2557,6 +3300,10 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
       <h3>Waarom dit ertoe doet</h3>
       <p>${buildDeeperContext(tour, stop)}</p>
     </div>
+    <div class="activity-tip">
+      <h3>Tip voor daarna</h3>
+      <p>${buildActivityTip(tour, stop)}</p>
+    </div>
     ${
       hasNextStop
         ? `
@@ -2570,6 +3317,11 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
               <strong>Let onderweg op</strong>
               <span>${guide?.watch || "Kijk naar gevels, straatprofiel, drukte en zichtlijnen tussen de twee stops."}</span>
             </div>
+            ${
+              guide?.transit
+                ? `<div class="transit-option"><strong>Metro-optie</strong><span>${guide.transit}</span></div>`
+                : ""
+            }
             <p class="arrival-status" data-arrival-status>
               Open de looproute, wandel naar de plek en druk daar op “Ik ben er”.
             </p>
@@ -2694,20 +3446,11 @@ const renderWebInstallOnly = () => {
 
 const renderInstallCallout = () => {
   if (!installCallout) return;
+  installCallout.innerHTML = "";
 
   if (!isStandaloneApp()) {
-    installCallout.innerHTML = "";
     renderWebInstallOnly();
-    return;
   }
-
-  installCallout.innerHTML = `
-    <div>
-      <span class="pill">Webapp actief</span>
-      <h2>Stadsopdracht staat klaar als app</h2>
-      <p>Open hem vanaf je beginscherm wanneer je in de stad loopt.</p>
-    </div>
-  `;
 };
 
 const renderTours = () => {
@@ -2728,7 +3471,7 @@ const renderTours = () => {
             <span>${tour.distance}</span>
             <span>${tour.stops.length} opdrachten</span>
           </div>
-          <strong class="tour-price">${tour.price}</strong>
+          <strong class="tour-price">${getTourPrice(tour)}</strong>
           <div class="tour-actions">
             <button class="button primary" type="button" data-buy-tour="${tour.id}">
               ${unlocked ? "Open tour" : "Koop tour"}
@@ -2922,7 +3665,7 @@ const openCheckout = (tourId) => {
     <span class="pill">Checkout</span>
     <h2>${tour.title}</h2>
     <p>${tour.summary}</p>
-    <p><strong>Prijs: ${tour.price}</strong></p>
+    <p><strong>Prijs: ${getTourPrice(tour)}</strong></p>
     <p class="device-warning">
       Let op: je aankoop en voortgang worden alleen op dit apparaat en in deze browser bewaard.
       Gebruik bij voorkeur de geïnstalleerde webapp op je telefoon.
