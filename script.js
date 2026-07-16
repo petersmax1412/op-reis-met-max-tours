@@ -21,7 +21,7 @@ const tours = [
           {
             text: "De historische gevels en het straatpatroon rond het plein",
             correct: true,
-            feedback: "Precies. Het plein lees je vooral aan de randen: gevels, doorgangen en hoe straten erop uitkomen.",
+            feedback: "Precies. Je begrijpt het plein vooral aan de randen: gevels, doorgangen en hoe straten erop uitkomen.",
           },
           {
             text: "De moderne winkelpuien",
@@ -36,7 +36,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees de kathedraal",
+        title: "Bekijk de kathedraal",
         place: "Catedral de Málaga",
         coordinates: { lat: 36.72027, lng: -4.41906 },
         assignment: "Loop langzaam langs de buitenkant en zoek het verschil tussen de twee torens.",
@@ -250,7 +250,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees de Königsallee",
+        title: "Bekijk de Königsallee",
         place: "Königsallee",
         coordinates: { lat: 51.2245, lng: 6.7782 },
         assignment:
@@ -289,7 +289,7 @@ const tours = [
             text: "De oever wordt hier een verblijfsroute tussen Altstadt, Rijn en moderne skyline",
             correct: true,
             feedback:
-              "Goed gezien. Dit stuk promenade maakt de Rijn onderdeel van de wandeling: je loopt niet om, maar leest onderweg de overgang naar Rheinturm en MedienHafen.",
+              "Goed gezien. Dit stuk promenade maakt de Rijn onderdeel van de wandeling: je loopt niet om, maar ziet onderweg de overgang naar Rheinturm en MedienHafen.",
           },
           {
             text: "Omdat je hier door de Rijn moet oversteken om de toren te bereiken",
@@ -304,7 +304,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees de lichtklok",
+        title: "Bekijk de lichtklok",
         place: "Rheinturm",
         coordinates: { lat: 51.2179, lng: 6.7616 },
         assignment:
@@ -958,7 +958,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees de koninklijke ruimte",
+        title: "Bekijk de koninklijke ruimte",
         place: "Amalienborg Slotsplads",
         coordinates: { lat: 55.684, lng: 12.593 },
         assignment:
@@ -1254,7 +1254,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees macht in de Hofburg",
+        title: "Bekijk macht in de Hofburg",
         place: "Hofburg",
         coordinates: { lat: 48.2066, lng: 16.3656 },
         assignment:
@@ -1657,7 +1657,7 @@ const deeperContextByPlace = {
   "Amalienborg Slotsplads":
     "Amalienborg werkt door beheersing: vier paleizen, een open achthoekige ruimte en zichtlijnen richting kerk en haven. Daardoor voelt monarchie hier tegelijk formeel en dichtbij.",
   "Frederik’s Church":
-    "Frederik’s Church, vaak Marmorkirken genoemd, versterkt de as van Frederiksstaden. De koepel geeft de wijk een herkenbaar middelpunt en maakt de route vanaf Amalienborg logisch leesbaar.",
+    "Frederik’s Church, vaak Marmorkirken genoemd, versterkt de as van Frederiksstaden. De koepel geeft de wijk een herkenbaar middelpunt en maakt de route vanaf Amalienborg direct begrijpelijk.",
   "Den Lille Havfrue":
     "Den Lille Havfrue bewijst dat een icoon niet groot hoeft te zijn. Het beeld verbindt H.C. Andersen, sprookjescultuur en de havenrand tot een herkenbaar eindbeeld van Copenhagen.",
   "Goldenes Dachl":
