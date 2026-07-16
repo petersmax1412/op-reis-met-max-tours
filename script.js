@@ -1534,6 +1534,7 @@ const isStandaloneApp = () =>
   window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
 
 const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+const isMobileDevice = () => /android|iphone|ipad|ipod/i.test(window.navigator.userAgent);
 
 const renderCityPhoto = (tour, modifier = "") => {
   const photo = cityPhotos[tour.id];
@@ -2331,30 +2332,35 @@ const renderWebInstallOnly = () => {
 
   const canInstall = Boolean(deferredInstallPrompt);
   const ios = isIosDevice();
+  const mobile = isMobileDevice();
+  const helpText = ios
+    ? "Op iPhone: open stadsopdracht.nl in Safari, tik op Delen en kies Zet op beginscherm."
+    : mobile
+      ? "Op Android: open stadsopdracht.nl in Chrome en kies Installeren of Toevoegen aan startscherm."
+      : "Pak je telefoon, open stadsopdracht.nl en installeer de webapp via Safari of Chrome.";
   webInstallOnly.innerHTML = `
     <div class="web-install-card">
       <img src="assets/app-icon-512.png" alt="Stadsopdracht" />
-      <span class="promo-eyebrow">Installeer de webapp</span>
-      <h1>Open Stadsopdracht vanaf je beginscherm</h1>
+      <span class="promo-eyebrow">${mobile ? "Installeer de webapp" : "Gebruik je telefoon"}</span>
+      <h1>${mobile ? "Open Stadsopdracht vanaf je beginscherm" : "Installeer op je mobiel"}</h1>
       <p>
-        De routes, locatiechecks en voortgang werken straks in de geïnstalleerde webapp. In de
-        gewone browser tonen we alleen deze introductie en installatiehulp.
+        De routes, locatiechecks en voortgang zijn bedoeld voor onderweg. Op desktop tonen we alleen
+        de introductie; wandelen doe je straks in de webapp op je telefoon.
       </p>
+      ${mobile ? "" : `<p class="web-install-kicker">Open deze site op je telefoon om de app te installeren.</p>`}
       ${
-        installHelpVisible || ios || !canInstall
-          ? `<p class="web-install-help">${
-              ios
-                ? "Op iPhone: open deze pagina in Safari, tik op Delen en kies Zet op beginscherm."
-                : "Gebruik de install-knop van je browser of kies in het browsermenu Installeren / Toevoegen aan startscherm."
-            }</p>`
+        installHelpVisible || ios || !canInstall || !mobile
+          ? `<p class="web-install-help">${helpText}</p>`
           : ""
       }
       <div class="web-install-actions">
-        <button class="button primary" type="button" data-install-app>
-          Installeer webapp
-        </button>
+        ${
+          mobile
+            ? `<button class="button primary" type="button" data-install-app>Installeer webapp</button>`
+            : `<button class="button primary" type="button" data-show-install-help>Hoe installeer ik op mobiel?</button>`
+        }
         <button class="button ghost" type="button" data-show-install-help>
-          Hoe installeer ik?
+          Installatiehulp
         </button>
       </div>
     </div>
@@ -2712,12 +2718,14 @@ document.addEventListener("click", (event) => {
   if (installHelpButton) {
     installHelpVisible = true;
     renderInstallCallout();
+    renderWebInstallOnly();
   }
 
   if (installButton) {
     if (!deferredInstallPrompt) {
       installHelpVisible = true;
       renderInstallCallout();
+      renderWebInstallOnly();
       return;
     }
 
@@ -2725,6 +2733,7 @@ document.addEventListener("click", (event) => {
     deferredInstallPrompt.userChoice.finally(() => {
       deferredInstallPrompt = null;
       renderInstallCallout();
+      renderWebInstallOnly();
     });
   }
 

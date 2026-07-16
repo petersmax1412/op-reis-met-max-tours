@@ -42,6 +42,7 @@ button {
 }
 
 body.promo-active {
+  background: #12253f;
   overflow: hidden;
 }
 
@@ -57,7 +58,7 @@ body.standalone-mode .web-install-only {
 }
 
 .promo-intro {
-  background: #12253f;
+  background: linear-gradient(160deg, #39bbef, #1b84c6);
   color: #f7f3ea;
   display: grid;
   inset: 0;
@@ -74,12 +75,13 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
 .web-install-only {
   align-content: center;
   background:
-    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.5), transparent 28%),
+    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.38), transparent 30%),
     linear-gradient(160deg, #39bbef, #1b84c6);
   color: #f7f3ea;
   display: none;
+  min-height: 100svh;
   min-height: 100vh;
-  padding: clamp(28px, 7vw, 70px);
+  padding: clamp(22px, 4vw, 44px);
 }
 
 .web-install-card {
@@ -91,8 +93,17 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   gap: 16px;
   justify-items: start;
   margin: 0 auto;
-  max-width: 560px;
-  padding: clamp(22px, 5vw, 38px);
+  max-width: 680px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.web-install-kicker {
+  background: rgba(247, 243, 234, 0.14);
+  border: 1px solid rgba(247, 243, 234, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 850;
+  padding: 12px;
 }
 
 .web-install-card img {
@@ -104,7 +115,8 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
 
 .web-install-card h1 {
   color: #f7f3ea;
-  font-size: clamp(2.3rem, 10vw, 4.5rem);
+  font-size: clamp(2.15rem, 5vw, 3.4rem);
+  line-height: 0.96;
   margin-bottom: 0;
 }
 
@@ -143,15 +155,12 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
 }
 
 .promo-stage {
-  aspect-ratio: 9 / 16;
   background: linear-gradient(160deg, #39bbef, #1b84c6);
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.42);
   height: 100vh;
   max-height: 100vh;
-  max-width: 480px;
   overflow: hidden;
   position: relative;
-  width: min(100vw, calc(100vh * 9 / 16));
+  width: 100vw;
 }
 
 .promo-progress {
@@ -304,24 +313,24 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
 .promo-scene h1,
 .promo-scene h2 {
   color: #f7f3ea;
-  font-size: clamp(2.4rem, 9vw, 4rem);
+  font-size: clamp(2.7rem, 6vw, 5.9rem);
   font-weight: 950;
   letter-spacing: 0;
   line-height: 0.96;
   margin: 0 0 12px;
-  max-width: 340px;
+  max-width: 760px;
 }
 
 .promo-scene h2 {
-  font-size: clamp(2rem, 7vw, 3rem);
+  font-size: clamp(2.35rem, 5vw, 4.9rem);
 }
 
 .promo-scene p {
   color: rgba(247, 243, 234, 0.88);
-  font-size: 1rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.28rem);
   line-height: 1.48;
   margin: 0;
-  max-width: 310px;
+  max-width: 520px;
 }
 
 .promo-scene.active .promo-logo,
@@ -543,6 +552,34 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-aspect-ratio: 4 / 5) {
+  .promo-intro {
+    background: #12253f;
+  }
+
+  .promo-stage {
+    aspect-ratio: 9 / 16;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.42);
+    max-width: 480px;
+    width: min(100vw, calc(100vh * 9 / 16));
+  }
+
+  .promo-scene h1,
+  .promo-scene h2 {
+    font-size: clamp(2.4rem, 9vw, 4rem);
+    max-width: 340px;
+  }
+
+  .promo-scene h2 {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .promo-scene p {
+    font-size: 1rem;
+    max-width: 310px;
   }
 }
 
