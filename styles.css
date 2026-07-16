@@ -190,6 +190,206 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   color: #fff;
 }
 
+.web-install-only.ios-install-mode {
+  align-content: stretch;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.48), transparent 28%),
+    radial-gradient(circle at 84% 20%, rgba(240, 191, 90, 0.38), transparent 24%),
+    linear-gradient(160deg, #39bbef, #1b84c6);
+  overflow: hidden;
+  padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom));
+}
+
+.ios-install-card {
+  align-content: space-between;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08)),
+    rgba(18, 37, 63, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(18, 37, 63, 0.28);
+  display: grid;
+  gap: 22px;
+  margin: 0 auto;
+  max-width: 560px;
+  min-height: calc(100svh - 36px);
+  overflow: hidden;
+  padding: clamp(20px, 6vw, 34px);
+  position: relative;
+  width: min(100%, 560px);
+}
+
+.ios-install-card::before {
+  background:
+    linear-gradient(90deg, transparent, rgba(247, 243, 234, 0.32), transparent),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.13) 0 1px, transparent 1px 34px);
+  content: "";
+  inset: 0;
+  opacity: 0.7;
+  pointer-events: none;
+  position: absolute;
+}
+
+.ios-install-card::after {
+  background: var(--yellow);
+  border-radius: 999px;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ios-install-top,
+.ios-install-steps,
+.ios-safari-hint {
+  position: relative;
+  z-index: 1;
+}
+
+.ios-install-logo {
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(18, 37, 63, 0.28);
+  height: 88px;
+  margin-bottom: 18px;
+  width: 88px;
+}
+
+.ios-install-top h1 {
+  color: #fff;
+  font-size: clamp(2.2rem, 12vw, 4.2rem);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 0.95;
+  margin: 0 0 14px;
+}
+
+.ios-install-top p {
+  color: rgba(247, 243, 234, 0.92);
+  font-size: 1.02rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.ios-install-steps {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 12px;
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.ios-install-step {
+  align-items: center;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 44px 1fr;
+}
+
+.ios-install-step p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  font-weight: 720;
+  line-height: 1.38;
+  margin: 0;
+}
+
+.ios-install-step strong {
+  color: var(--ink);
+  font-weight: 930;
+}
+
+.ios-install-icon {
+  align-items: center;
+  background: var(--mint);
+  border: 1px solid rgba(16, 174, 202, 0.24);
+  border-radius: 12px;
+  color: var(--blue);
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.ios-install-icon svg {
+  fill: none;
+  height: 26px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+  width: 26px;
+}
+
+.ios-install-icon.app {
+  background: transparent;
+  border: 0;
+}
+
+.ios-install-icon.app img {
+  border-radius: 11px;
+  box-shadow: 0 8px 18px rgba(18, 37, 63, 0.2);
+  height: 42px;
+  width: 42px;
+}
+
+.ios-safari-hint {
+  align-items: center;
+  background: rgba(247, 243, 234, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  color: var(--ink);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 28px 1fr 28px;
+  min-height: 58px;
+  padding: 8px 16px;
+}
+
+.ios-safari-hint span {
+  background: var(--line);
+  border-radius: 8px;
+  height: 26px;
+  position: relative;
+}
+
+.ios-safari-hint span:first-child::before {
+  background: var(--ink);
+  border-radius: 999px;
+  box-shadow:
+    0 8px 0 var(--ink),
+    0 16px 0 var(--ink);
+  content: "";
+  height: 3px;
+  left: 7px;
+  position: absolute;
+  top: 4px;
+  width: 14px;
+}
+
+.ios-safari-hint span:last-child::before {
+  border: 3px solid var(--ink);
+  border-left-color: transparent;
+  border-radius: 50%;
+  content: "";
+  height: 13px;
+  left: 6px;
+  position: absolute;
+  top: 5px;
+  width: 13px;
+}
+
+.ios-safari-hint strong {
+  font-size: 1rem;
+  font-weight: 900;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .promo-intro.is-hidden {
   opacity: 0;
   pointer-events: none;

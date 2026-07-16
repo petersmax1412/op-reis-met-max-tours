@@ -2338,6 +2338,55 @@ const renderWebInstallOnly = () => {
   const canInstall = Boolean(deferredInstallPrompt);
   const ios = isIosDevice();
   const mobile = isMobileDevice();
+  webInstallOnly.classList.toggle("ios-install-mode", ios);
+
+  if (ios) {
+    webInstallOnly.innerHTML = `
+      <div class="ios-install-card">
+        <div class="ios-install-top">
+          <img class="ios-install-logo" src="assets/app-icon-512.png" alt="Stadsopdracht" />
+          <span class="promo-eyebrow">Installeer de webapp</span>
+          <h1>Installeren om te ontdekken</h1>
+          <p>
+            Voeg Stadsopdracht toe aan je beginscherm. Daarna open je de routes als een echte app,
+            met locatiechecks, opdrachten en je voortgang op dit apparaat.
+          </p>
+        </div>
+        <div class="ios-install-steps" aria-label="Installatiestappen voor iPhone">
+          <div class="ios-install-step">
+            <span class="ios-install-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 15V3m0 0 4 4m-4-4-4 4" />
+                <path d="M6 10v9h12v-9" />
+              </svg>
+            </span>
+            <p><strong>Stap 1:</strong> Tik onderin Safari op de knop <strong>Delen</strong>.</p>
+          </div>
+          <div class="ios-install-step">
+            <span class="ios-install-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
+            <p><strong>Stap 2:</strong> Kies <strong>Zet op beginscherm</strong>. Staat die optie lager? Veeg dan eerst omhoog in het deelmenu.</p>
+          </div>
+          <div class="ios-install-step">
+            <span class="ios-install-icon app" aria-hidden="true">
+              <img src="assets/app-icon-192.png" alt="" />
+            </span>
+            <p><strong>Stap 3:</strong> Open <strong>Stadsopdracht</strong> vanaf je beginscherm.</p>
+          </div>
+        </div>
+        <div class="ios-safari-hint" aria-hidden="true">
+          <span></span>
+          <strong>stadsopdracht.nl</strong>
+          <span></span>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
   const helpText = ios
     ? "Op iPhone: open stadsopdracht.nl in Safari, tik op Delen en kies Zet op beginscherm."
     : mobile
