@@ -1040,6 +1040,383 @@ const tours = [
       },
     ],
   },
+  {
+    id: "innsbruck",
+    city: "Innsbruck",
+    title: "Innsbruck Altstadt: keizerstad tussen bergen",
+    price: "€4,49",
+    duration: "120 min",
+    distance: "2,6 km",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    summary:
+      "Een compacte route door de Altstadt langs het Gouden Dak, Hofburg, Hofkirche, Dom, Innbrug en Maria-Theresien-Straße.",
+    stops: [
+      {
+        title: "Start bij het Gouden Dak",
+        place: "Goldenes Dachl",
+        coordinates: { lat: 47.2687, lng: 11.3933 },
+        assignment:
+          "Kijk naar de erker, de kleine schaal van het plein en de bergwand op de achtergrond. Zoek hoe macht hier heel zichtbaar werd gemaakt.",
+        question: "Waarom is het Goldenes Dachl zo’n sterk symbool van Innsbruck?",
+        hint: "Let op de erker als podium en op de ligging midden in de oude stad.",
+        choices: [
+          {
+            text: "Het maakte keizerlijke aanwezigheid zichtbaar op een druk punt in de Altstadt",
+            correct: true,
+            feedback:
+              "Precies. Het Gouden Dak is klein vergeleken met een paleis, maar werkt als een machtig balkon: wie hier verscheen, stond letterlijk boven het stadsleven.",
+          },
+          {
+            text: "Omdat het vooral een moderne winkelgalerij zonder historische betekenis is",
+            correct: false,
+            feedback: "Nee, juist de historische erker en de keizerlijke uitstraling maken dit punt zo herkenbaar.",
+          },
+          {
+            text: "Omdat het gebouw ver buiten de oude stad staat",
+            correct: false,
+            feedback: "Niet goed. Het staat juist midden in de Altstadt, waar veel routes samenkomen.",
+          },
+        ],
+      },
+      {
+        title: "Lees de Hofburg van buiten",
+        place: "Hofburg Innsbruck",
+        coordinates: { lat: 47.2693, lng: 11.3946 },
+        assignment:
+          "Bekijk de gevel en de hofachtige ruimte eromheen. Zoek hoe Innsbruck niet alleen bergstad, maar ook machtscentrum werd.",
+        question: "Wat vertelt de Hofburg over de rol van Innsbruck in de Habsburgse wereld?",
+        hint: "Denk aan residentie, hofcultuur en bestuur in een stad tussen Alpenpassen.",
+        choices: [
+          {
+            text: "Innsbruck was ook een residentie- en bestuursstad, niet alleen een bergplaats",
+            correct: true,
+            feedback:
+              "Klopt. De Hofburg laat zien dat Innsbruck strategisch en politiek belangrijk was: een plek waar macht, reizen door de Alpen en hofcultuur elkaar raakten.",
+          },
+          {
+            text: "Dat Innsbruck nooit een band had met vorstelijke macht",
+            correct: false,
+            feedback: "Juist wel. De Hofburg is een heel duidelijke herinnering aan dynastieke macht.",
+          },
+          {
+            text: "Dat de stad vooral pas in de 21e eeuw belangrijk werd",
+            correct: false,
+            feedback: "Nee, Innsbruck had al veel eerder een strategische rol door ligging en hofgeschiedenis.",
+          },
+        ],
+      },
+      {
+        title: "Zoek de hofherinnering",
+        place: "Hofkirche",
+        coordinates: { lat: 47.2691, lng: 11.3952 },
+        assignment:
+          "Blijf buiten bij de kerk en kijk naar de ligging naast Hofburg en museumgebied. Bedenk waarom herinnering aan macht juist hier past.",
+        question: "Waarom past de Hofkirche logisch naast de Hofburg in deze route?",
+        hint: "Denk aan hof, herdenking en politieke herinnering.",
+        choices: [
+          {
+            text: "De plek koppelt vorstelijke macht aan herinnering en ceremonie",
+            correct: true,
+            feedback:
+              "Ja. De Hofkirche hoort bij het bredere hoflandschap: niet alleen wonen en besturen, maar ook herdenken en macht symbolisch doorgeven.",
+          },
+          {
+            text: "Omdat de kerk vooral losstaat van elke hofgeschiedenis",
+            correct: false,
+            feedback: "Nee, de naam en ligging wijzen juist op de relatie met hof en dynastie.",
+          },
+          {
+            text: "Omdat dit de beste plek is om alleen moderne kantoren te bekijken",
+            correct: false,
+            feedback: "Niet echt. Deze stop draait juist om historische macht en herinneringscultuur.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar de Dom en de bergen",
+        place: "Dom zu St. Jakob",
+        coordinates: { lat: 47.2697, lng: 11.3942 },
+        assignment:
+          "Ga buiten op het plein staan en vergelijk de barokke gevel met de smalle straten eromheen en de bergen achter de stad.",
+        question: "Wat maakt de Dom zu St. Jakob typisch voor Innsbruck als compacte Alpenstad?",
+        hint: "Let op schaal, pleinvorm en de nabijheid van berg en Altstadt.",
+        choices: [
+          {
+            text: "Een monumentale kerk staat hier heel dicht op smalle straten en bergdecor",
+            correct: true,
+            feedback:
+              "Mooi gezien. In Innsbruck zitten monumentaliteit en compactheid dicht op elkaar: een barokke kerk, kleine pleinen en de Alpen blijven tegelijk voelbaar.",
+          },
+          {
+            text: "Omdat de Dom midden in een vlakke havenstad staat",
+            correct: false,
+            feedback: "Nee, het Alpenlandschap is juist een belangrijk deel van de ervaring hier.",
+          },
+          {
+            text: "Omdat de kerk nauwelijks zichtbaar is vanaf de oude stad",
+            correct: false,
+            feedback: "Kijk naar de gevel en het plein: de Dom is juist een duidelijke stedelijke markering.",
+          },
+        ],
+      },
+      {
+        title: "Sta op de brug over de Inn",
+        place: "Innbrücke",
+        coordinates: { lat: 47.2698, lng: 11.3903 },
+        assignment:
+          "Stop op of bij de brug en kijk naar de rivier, gekleurde huizen en bergen. Zoek waarom juist deze rivierovergang belangrijk werd.",
+        question: "Waarom is de Innbrug belangrijk voor het verhaal van Innsbruck?",
+        hint: "De naam Innsbruck betekent letterlijk brug over de Inn.",
+        choices: [
+          {
+            text: "De brug en rivierovergang zitten zelfs in de naam en oorsprong van de stad",
+            correct: true,
+            feedback:
+              "Precies. Innsbruck is letterlijk een stad rond een oversteek: rivier, handel, reisroutes en bergpassen komen hier samen.",
+          },
+          {
+            text: "Omdat de Inn niets met de stad te maken heeft",
+            correct: false,
+            feedback: "Juist wel. De rivier en brug zijn zo belangrijk dat ze in de stadsnaam terugkomen.",
+          },
+          {
+            text: "Omdat de stad vooral aan zee is ontstaan",
+            correct: false,
+            feedback: "Nee, dit is geen zeestad. De ligging aan de Inn en tussen Alpenroutes is bepalend.",
+          },
+        ],
+      },
+      {
+        title: "Eindig op de grote stadsas",
+        place: "Maria-Theresien-Straße",
+        coordinates: { lat: 47.2659, lng: 11.3948 },
+        assignment:
+          "Loop de straat in en kijk naar gevels, winkels, zichtlijnen en de bergachtergrond. Zoek het contrast met de smalle Altstadt.",
+        question: "Wat laat Maria-Theresien-Straße zien dat de smalle Altstadt minder sterk laat zien?",
+        hint: "Let op breedte, representatie, winkels en zicht richting bergen.",
+        choices: [
+          {
+            text: "Een bredere representatieve stadsruimte waar handel, flaneren en bergzicht samenkomen",
+            correct: true,
+            feedback:
+              "Klopt. Hier voelt Innsbruck ruimer en representatiever: de stad toont zich als winkel- en wandelstad, terwijl de bergen op de achtergrond blijven meespelen.",
+          },
+          {
+            text: "Dat Innsbruck alleen uit smalle middeleeuwse steegjes bestaat",
+            correct: false,
+            feedback: "Nee, juist deze straat laat een bredere en formelere stadslaag zien.",
+          },
+          {
+            text: "Dat winkels en openbaar stadsleven hier volledig ontbreken",
+            correct: false,
+            feedback: "Niet echt. De straat leeft juist door winkels, terrassen, voetgangers en zichtlijnen.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "vienna",
+    city: "Wenen",
+    title: "Wenen Centrum: keizerlijke macht, muziek en Ringstraße",
+    price: "€4,49",
+    duration: "160 min",
+    distance: "4,8 km",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    summary:
+      "Een rijke route door Wenen langs Stephansdom, Hofburg, Heldenplatz, Staatsoper, Naschmarkt, Karlskirche en Stadtpark.",
+    stops: [
+      {
+        title: "Start bij de Stephansdom",
+        place: "Stephansdom",
+        coordinates: { lat: 48.2085, lng: 16.3731 },
+        assignment:
+          "Kijk naar de toren, het dakpatroon en de drukte op het plein. Zoek waarom dit punt nog steeds voelt als hart van de stad.",
+        question: "Waarom is de Stephansdom zo’n sterk oriëntatiepunt in Wenen?",
+        hint: "Let op hoogte, pleinwerking, symboliek en de routes eromheen.",
+        choices: [
+          {
+            text: "De Dom combineert religieus symbool, skylinepunt en centrum van stedelijke routes",
+            correct: true,
+            feedback:
+              "Precies. De Stephansdom is niet alleen een kerk: de toren, het plein en de omliggende straten maken hem tot een kompas voor de binnenstad.",
+          },
+          {
+            text: "Omdat de Dom bewust buiten alle belangrijke routes is gebouwd",
+            correct: false,
+            feedback: "Nee, juist de centrale ligging en zichtbaarheid maken de Dom zo sterk.",
+          },
+          {
+            text: "Omdat de kerk vooral bekend is als moderne woontoren",
+            correct: false,
+            feedback: "Niet goed. De betekenis zit in religie, historie, skyline en stadsidentiteit.",
+          },
+        ],
+      },
+      {
+        title: "Lees macht in de Hofburg",
+        place: "Hofburg",
+        coordinates: { lat: 48.2066, lng: 16.3656 },
+        assignment:
+          "Blijf buiten en kijk naar poorten, binnenplaatsen en gevels. Zoek hoe een paleiscomplex groter voelt dan één gebouw.",
+        question: "Waarom is de Hofburg meer dan alleen een paleis aan de route?",
+        hint: "Denk aan eeuwenlange uitbreiding, bestuur, hofleven en symbolische macht.",
+        choices: [
+          {
+            text: "Het complex groeide mee met dynastieke macht en vormt een bestuurlijk hoflandschap",
+            correct: true,
+            feedback:
+              "Klopt. De Hofburg is geen los monument, maar een verzameling machtslagen: wonen, besturen, ceremonie en representatie zijn hier aan elkaar gebouwd.",
+          },
+          {
+            text: "Omdat het complex vooral een kleine winkelpassage zonder geschiedenis is",
+            correct: false,
+            feedback: "Nee, juist de schaal en geschiedenis maken de Hofburg zo belangrijk.",
+          },
+          {
+            text: "Omdat Wenen nooit een keizerlijke hofstad is geweest",
+            correct: false,
+            feedback: "Juist wel. De Hofburg is een van de duidelijkste plekken waar je dat ziet.",
+          },
+        ],
+      },
+      {
+        title: "Sta op Heldenplatz",
+        place: "Heldenplatz",
+        coordinates: { lat: 48.2064, lng: 16.3634 },
+        assignment:
+          "Kijk naar de open ruimte, de ruiterbeelden en de monumentale gevels. Zoek waarom dit plein zowel indrukwekkend als beladen kan voelen.",
+        question: "Wat maakt Heldenplatz historisch krachtig maar ook gevoelig?",
+        hint: "Denk aan keizerlijke representatie én politieke massabijeenkomsten.",
+        choices: [
+          {
+            text: "Het plein werd gemaakt voor macht en ceremonie, maar draagt ook latere politieke herinneringen",
+            correct: true,
+            feedback:
+              "Ja. Heldenplatz is ruimtelijke macht in steen en open ruimte, maar juist zulke pleinen kunnen later ook beladen herinneringsplekken worden.",
+          },
+          {
+            text: "Omdat het plein geen enkele politieke betekenis heeft gehad",
+            correct: false,
+            feedback: "Nee, de schaal en geschiedenis maken dit plein juist politiek geladen.",
+          },
+          {
+            text: "Omdat het plein alleen als rustige binnentuin is ontworpen",
+            correct: false,
+            feedback: "Niet echt. De openheid en monumentale randen wijzen juist op publieke representatie.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar de Staatsoper",
+        place: "Wiener Staatsoper",
+        coordinates: { lat: 48.2028, lng: 16.3692 },
+        assignment:
+          "Bekijk de gevel en de ligging aan de Ringstraße. Zoek waarom cultuur hier bijna dezelfde status krijgt als bestuur.",
+        question: "Waarom staat de Wiener Staatsoper zo logisch aan de Ringstraße?",
+        hint: "Let op representatie, prestige en de 19e-eeuwse stadsuitbreiding.",
+        choices: [
+          {
+            text: "De Ringstraße gebruikte cultuurgebouwen om Wenen als moderne prestigieuze hoofdstad te tonen",
+            correct: true,
+            feedback:
+              "Precies. De Staatsoper is cultuur als visitekaartje: muziek, architectuur en stedelijke grandeur worden samen onderdeel van de hoofdstad.",
+          },
+          {
+            text: "Omdat opera in Wenen bewust onzichtbaar moest blijven",
+            correct: false,
+            feedback: "Nee, de ligging en gevel zijn juist heel representatief.",
+          },
+          {
+            text: "Omdat de Ringstraße alleen voor fabrieksterreinen werd aangelegd",
+            correct: false,
+            feedback: "Niet goed. De Ringstraße werd juist een podium voor musea, parlement, opera en andere representatieve gebouwen.",
+          },
+        ],
+      },
+      {
+        title: "Proef de Naschmarkt",
+        place: "Naschmarkt",
+        coordinates: { lat: 48.1987, lng: 16.3646 },
+        assignment:
+          "Kijk naar kramen, geuren, internationale producten en de lange lineaire vorm. Zoek hoe marktleven een andere kant van Wenen laat zien.",
+        question: "Wat vertelt de Naschmarkt over Wenen naast paleizen en concertzalen?",
+        hint: "Let op dagelijks gebruik, migratie, eten en handel.",
+        choices: [
+          {
+            text: "De markt laat Wenen zien als dagelijkse, internationale handels- en eetstad",
+            correct: true,
+            feedback:
+              "Mooi. De Naschmarkt haalt Wenen van het keizerlijke podium naar straatniveau: eten, handel, talen en geuren maken de stad levend en gemengd.",
+          },
+          {
+            text: "Dat Wenen geen markt- of eetcultuur heeft",
+            correct: false,
+            feedback: "Juist deze plek laat zien hoe belangrijk eten, handel en ontmoeting zijn.",
+          },
+          {
+            text: "Dat alle interessante plekken alleen binnen paleizen liggen",
+            correct: false,
+            feedback: "Nee, de Naschmarkt bewijst dat openbare straatcultuur net zo veel over de stad kan vertellen.",
+          },
+        ],
+      },
+      {
+        title: "Bekijk de Karlskirche",
+        place: "Karlskirche",
+        coordinates: { lat: 48.1981, lng: 16.3713 },
+        assignment:
+          "Kijk naar de koepel, de twee zuilen en de vijver ervoor. Zoek waarom het gebouw zo theatraal in de ruimte staat.",
+        question: "Waarom voelt de Karlskirche zo scenografisch, bijna als een decorstuk?",
+        hint: "Let op symmetrie, water, koepel en de zuilen voor de gevel.",
+        choices: [
+          {
+            text: "Door de combinatie van koepel, zuilen, voorplein en spiegeling in het water",
+            correct: true,
+            feedback:
+              "Klopt. De Karlskirche is barokke regie: het gebouw gebruikt ruimte, symmetrie en reflectie om veel dramatischer te werken dan alleen de gevel.",
+          },
+          {
+            text: "Omdat de kerk bewust zonder zichtbare gevel is gebouwd",
+            correct: false,
+            feedback: "Nee, juist de gevel, koepel en zuilen zijn heel nadrukkelijk zichtbaar.",
+          },
+          {
+            text: "Omdat het gebouw vooral opgaat in een smalle steeg",
+            correct: false,
+            feedback: "Niet echt. De kerk werkt juist door de open ruimte ervoor.",
+          },
+        ],
+      },
+      {
+        title: "Eindig in het Stadtpark",
+        place: "Stadtpark",
+        coordinates: { lat: 48.2046, lng: 16.3796 },
+        assignment:
+          "Zoek het Strauss-monument en kijk hoe park, muziekcultuur en stadsrust samenkomen na de drukte van de binnenstad.",
+        question: "Waarom is Stadtpark een passend einde voor een Weense stadsopdracht?",
+        hint: "Denk aan muziek, publieke ontspanning en de overgang van monumenten naar groen.",
+        choices: [
+          {
+            text: "Het park verbindt Weense muziekcultuur met een toegankelijke publieke rustplek",
+            correct: true,
+            feedback:
+              "Precies. Na paleizen, markten en kerken laat Stadtpark een zachtere kant van Wenen zien: muziek als stadsidentiteit, maar dan in een groene openbare ruimte.",
+          },
+          {
+            text: "Omdat het park niets met cultuur of stadsleven te maken heeft",
+            correct: false,
+            feedback: "Nee, het park zit vol stedelijk gebruik en culturele verwijzingen.",
+          },
+          {
+            text: "Omdat Wenen bijna geen publieke parken kent",
+            correct: false,
+            feedback: "Niet goed. Juist zulke parken maken de monumentale stad leefbaarder.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 const storageKey = "stadsopdracht-progress";
@@ -1107,6 +1484,19 @@ const stopUnlockRadii = {
   "Amalienborg Slotsplads": 90,
   "Frederik’s Church": 70,
   "Den Lille Havfrue": 120,
+  "Goldenes Dachl": 60,
+  "Hofburg Innsbruck": 80,
+  Hofkirche: 70,
+  "Dom zu St. Jakob": 70,
+  Innbrücke: 100,
+  "Maria-Theresien-Straße": 90,
+  Stephansdom: 90,
+  Hofburg: 110,
+  Heldenplatz: 110,
+  "Wiener Staatsoper": 80,
+  Naschmarkt: 110,
+  Karlskirche: 90,
+  Stadtpark: 120,
 };
 
 const openDialog = (dialog) => {
@@ -1242,6 +1632,32 @@ const deeperContextByPlace = {
     "Frederik’s Church, vaak Marmorkirken genoemd, versterkt de as van Frederiksstaden. De koepel geeft de wijk een herkenbaar middelpunt en maakt de route vanaf Amalienborg logisch leesbaar.",
   "Den Lille Havfrue":
     "Den Lille Havfrue bewijst dat een icoon niet groot hoeft te zijn. Het beeld verbindt H.C. Andersen, sprookjescultuur en de havenrand tot een herkenbaar eindbeeld van Copenhagen.",
+  "Goldenes Dachl":
+    "Het Goldenes Dachl werkt als een klein maar krachtig machtsdecor. De erker maakte vorstelijke aanwezigheid zichtbaar midden in de Altstadt, precies waar stadsleven en prestige elkaar raakten.",
+  "Hofburg Innsbruck":
+    "De Hofburg laat zien dat Innsbruck meer was dan een doorgang door de Alpen. De stad werd ook residentieplek, bestuurlijk punt en onderdeel van Habsburgse macht.",
+  Hofkirche:
+    "De Hofkirche koppelt Innsbruck aan dynastieke herinnering. Naast Hofburg en oude stad wordt macht hier niet alleen bestuurd, maar ook herdacht en verbeeld.",
+  "Dom zu St. Jakob":
+    "De Dom zu St. Jakob laat de compacte kracht van Innsbruck zien: barokke monumentaliteit, kleine stedelijke ruimte en de nabijheid van de bergen vallen bijna over elkaar heen.",
+  Innbrücke:
+    "De Innbrug is fundamenteel voor Innsbruck. De naam van de stad verwijst naar de brug over de Inn, en daarmee naar routes, handel en de ligging tussen Alpenpassen.",
+  "Maria-Theresien-Straße":
+    "Maria-Theresien-Straße toont Innsbruck als representatieve wandel- en winkelstad. De straat geeft meer ruimte dan de Altstadt en laat de bergen als decor in het stadsbeeld staan.",
+  Stephansdom:
+    "De Stephansdom is het verticale hart van Wenen. De toren, het plein en de straten eromheen maken de kerk tot oriëntatiepunt, religieus symbool en stedelijk anker.",
+  Hofburg:
+    "De Hofburg is Wenen als machtscomplex: eeuwen van uitbreiding, hofleven, bestuur en representatie zijn hier niet in één gebouw, maar in een heel stedelijk gebied verzameld.",
+  Heldenplatz:
+    "Heldenplatz toont hoe publieke ruimte beladen kan worden. Keizerlijke monumentaliteit, militaire symboliek en latere politieke herinneringen zitten hier in dezelfde open ruimte.",
+  "Wiener Staatsoper":
+    "De Staatsoper gebruikt cultuur als stedelijke status. Aan de Ringstraße werd muziek niet verstopt, maar prominent ingezet om Wenen als wereldstad te presenteren.",
+  Naschmarkt:
+    "De Naschmarkt geeft Wenen een dagelijks en internationaal gezicht. Tussen kramen, eetplekken en talen zie je een stad die niet alleen keizerlijk, maar ook levendig en gemengd is.",
+  Karlskirche:
+    "De Karlskirche is barokke stadsregie: koepel, zuilen, plein en water versterken elkaar. Het gebouw is niet alleen kerk, maar ook zorgvuldig geënsceneerde ruimte.",
+  Stadtpark:
+    "Stadtpark laat Wenen ontspannen na alle monumentaliteit. Muziekcultuur, groen en openbare ruimte komen samen in een plek die minder formeel is, maar nog steeds typisch Weens.",
 };
 
 const routeGuides = {
@@ -1379,6 +1795,54 @@ const routeGuides = {
     {
       route: "Loop vanaf Frederik’s Church via Esplanaden en langs de rand van Kastellet richting Den Lille Havfrue.",
       watch: "Let op hoe de stad opener wordt: vestinggroen, havenwater en wandelpaden nemen het over van paleisstraten.",
+    },
+  ],
+  innsbruck: [
+    {
+      route: "Loop vanaf het Goldenes Dachl een kort stuk richting de Hofburg via de smalle straten van de Altstadt.",
+      watch: "Let op hoe snel het intieme plein rond het Gouden Dak overgaat in een formelere hofomgeving.",
+    },
+    {
+      route: "Loop vanaf de Hofburg richting de Hofkirche en blijf buiten rond de kerk en het museumgebied.",
+      watch: "Kijk hoe residentie, herinnering en cultuur hier bijna tegen elkaar aan liggen.",
+    },
+    {
+      route: "Loop vanaf de Hofkirche terug richting de Dom zu St. Jakob.",
+      watch: "Let op hoe compact de route is: in Innsbruck liggen hof, kerk en Altstadt verrassend dicht bij elkaar.",
+    },
+    {
+      route: "Loop vanaf de Dom door de Altstadt richting de Innbrug.",
+      watch: "Kijk onderweg naar de overgang van smalle historische straten naar rivier, licht en bergzicht.",
+    },
+    {
+      route: "Loop vanaf de Innbrug terug richting het centrum en eindig op Maria-Theresien-Straße.",
+      watch: "Let op hoe de stad van rivierovergang en Altstadt verandert in een brede winkel- en flaneeras.",
+    },
+  ],
+  vienna: [
+    {
+      route: "Loop vanaf de Stephansdom via de binnenstad richting de Hofburg.",
+      watch: "Let op hoe winkelstraten en historische gevels langzaam overgaan in poorten en paleisruimtes.",
+    },
+    {
+      route: "Loop door of langs de Hofburg richting Heldenplatz.",
+      watch: "Kijk hoe binnenplaatsen en doorgangen uitkomen op een grote, bijna theatrale open ruimte.",
+    },
+    {
+      route: "Loop vanaf Heldenplatz richting de Ringstraße en de Wiener Staatsoper.",
+      watch: "Let op de overgang van keizerlijke pleinen naar de 19e-eeuwse stadsboulevard.",
+    },
+    {
+      route: "Loop vanaf de Staatsoper richting de Naschmarkt via de omgeving van Karlsplatz.",
+      watch: "Vergelijk de formele cultuurgebouwen met het dagelijkse marktleven dat steeds sterker wordt.",
+    },
+    {
+      route: "Loop vanaf de Naschmarkt naar Karlskirche en gebruik de open ruimte rond Karlsplatz als oriëntatiepunt.",
+      watch: "Let op hoe markt, verkeer, plein en barokke kerk hier naast elkaar bestaan.",
+    },
+    {
+      route: "Loop vanaf Karlskirche richting Stadtpark via de oostelijke centrumrand.",
+      watch: "Kijk hoe de route van barokke monumentaliteit naar groen, water en muziekherinnering beweegt.",
     },
   ],
 };
