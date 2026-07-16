@@ -1478,11 +1478,77 @@ const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
 const promoDurations = [3200, 3200, 3800, 5600, 3600, 3400, 4600];
+const cityPhotos = {
+  malaga: {
+    src: "assets/cities/malaga.jpg",
+    alt: "Uitzicht over Málaga vanaf de Alcazaba",
+    credit: "Jooonas07, CC0",
+    source: "https://commons.wikimedia.org/wiki/File:Alcazaba_Malaga_View_on_the_City.jpg",
+  },
+  dusseldorf: {
+    src: "assets/cities/dusseldorf.jpg",
+    alt: "Skyline van Düsseldorf vanaf de Oberkasseler Brücke",
+    credit: "Anil Öztas, CC BY-SA 4.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_(DE),_Skyline_von_Oberkasseler_Br%C3%BCcke_--_2023_--_0023.jpg",
+  },
+  cologne: {
+    src: "assets/cities/cologne.jpg",
+    alt: "Keulen overdag met de Rijn en de Dom",
+    credit: "Dietmar Rabich, CC BY-SA 4.0",
+    source: "https://commons.wikimedia.org/wiki/File:K%C3%B6ln,_Stadtpanorama_--_2014_--_1857.jpg",
+  },
+  frankfurt: {
+    src: "assets/cities/frankfurt.jpg",
+    alt: "Skyline van Frankfurt aan de Main",
+    credit: "Norbert Nagel, CC BY-SA 4.0",
+    source: "https://commons.wikimedia.org/wiki/File:Frankfurt_Skyline_with_river_Main_2014.jpg",
+  },
+  london: {
+    src: "assets/cities/london.jpg",
+    alt: "Londense skyline met The Shard",
+    credit: "Bex Walton, CC BY 2.0",
+    source: "https://commons.wikimedia.org/wiki/File:The_Shard_and_the_London_skyline_(50151577742).jpg",
+  },
+  copenhagen: {
+    src: "assets/cities/copenhagen.jpg",
+    alt: "Nyhavn in Copenhagen met gekleurde gevels en water",
+    credit: "Dietmar Rabich, CC BY-SA 4.0",
+    source: "https://commons.wikimedia.org/wiki/File:Kopenhagen_(DK),_Nyhavn_--_2017_--_1447.jpg",
+  },
+  innsbruck: {
+    src: "assets/cities/innsbruck.jpg",
+    alt: "Gekleurde huizen aan de Inn in Innsbruck met de Nordkette erachter",
+    credit: "Stephan Mosel, CC BY 2.0",
+    source: "https://commons.wikimedia.org/wiki/File:Innsbruck_and_River.jpg",
+  },
+  vienna: {
+    src: "assets/cities/vienna.jpg",
+    alt: "Panorama van Wenen vanaf Belvedere",
+    credit: "MrPanyGoff, CC BY-SA 3.0",
+    source: "https://commons.wikimedia.org/wiki/File:Panorama_from_Belvedere_-_Vienna.jpg",
+  },
+};
 
 const isStandaloneApp = () =>
   window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
 
 const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+
+const renderCityPhoto = (tour, modifier = "") => {
+  const photo = cityPhotos[tour.id];
+  if (!photo) return "";
+
+  return `
+    <figure class="city-photo ${modifier}">
+      <img src="${photo.src}" alt="${photo.alt}" loading="lazy" />
+      <figcaption>
+        Foto:
+        <a href="${photo.source}" target="_blank" rel="noopener noreferrer">${photo.credit}</a>
+      </figcaption>
+    </figure>
+  `;
+};
 
 const applyRuntimeMode = () => {
   const standalone = isStandaloneApp();
@@ -2320,6 +2386,7 @@ const renderTours = () => {
       const unlocked = isUnlocked(tour.id);
       return `
         <article class="tour-card">
+          ${renderCityPhoto(tour, "card-photo")}
           <header>
             <span class="pill">${tour.city}</span>
             <h3>${tour.title}</h3>
@@ -2389,6 +2456,7 @@ const renderAssignment = () => {
     tourStatus.textContent = `${tour.title}: preview. Koop de route om stops, vragen en kaartjes te openen.`;
     assignmentPanel.innerHTML = `
       <div class="preview-panel">
+        ${renderCityPhoto(tour, "preview-photo")}
         <span class="pill">${tour.city}</span>
         <h2>${tour.title}</h2>
         <p>${tour.summary}</p>

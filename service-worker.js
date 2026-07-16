@@ -1,4 +1,4 @@
-const cacheName = "stadsopdracht-v35";
+const cacheName = "stadsopdracht-v36";
 const filesToCache = [
   "./",
   "./index.html",
@@ -10,6 +10,14 @@ const filesToCache = [
   "./assets/app-icon-192.png",
   "./assets/app-icon-512.png",
   "./assets/hero-travel.jpg",
+  "./assets/cities/malaga.jpg",
+  "./assets/cities/dusseldorf.jpg",
+  "./assets/cities/cologne.jpg",
+  "./assets/cities/frankfurt.jpg",
+  "./assets/cities/london.jpg",
+  "./assets/cities/copenhagen.jpg",
+  "./assets/cities/innsbruck.jpg",
+  "./assets/cities/vienna.jpg",
 ];
 
 self.addEventListener("install", (event) => {

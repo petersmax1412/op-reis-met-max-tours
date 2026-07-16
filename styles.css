@@ -1110,12 +1110,58 @@ h3 {
   display: grid;
   gap: 16px;
   min-height: 330px;
-  padding: 22px;
+  overflow: hidden;
+  padding: 0 22px 22px;
 }
 
 .tour-card header {
   display: grid;
   gap: 8px;
+}
+
+.city-photo {
+  background: #d9e8eb;
+  margin: 0;
+  position: relative;
+}
+
+.city-photo img {
+  display: block;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.city-photo figcaption {
+  background: linear-gradient(180deg, rgba(12, 28, 38, 0), rgba(12, 28, 38, 0.72));
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.7rem;
+  font-weight: 750;
+  left: 0;
+  padding: 28px 12px 9px;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.34);
+}
+
+.city-photo a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+}
+
+.card-photo {
+  margin-left: -22px;
+  margin-right: -22px;
+}
+
+.preview-photo {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-photo img {
+  height: 260px;
 }
 
 .tour-meta {
