@@ -163,7 +163,7 @@ const tours = [
       {
         title: "Eindig bij La Malagueta",
         place: "Playa de la Malagueta",
-        coordinates: { lat: 36.7151, lng: -4.4058 },
+        coordinates: { lat: 36.7191, lng: -4.4099 },
         assignment:
           "Loop door richting het strand en kijk hoe de stad overgaat van havenpromenade naar dagelijkse kustplek.",
         question: "Waarom is La Malagueta een logisch extra eindpunt voor Málaga?",
@@ -3060,6 +3060,47 @@ const renderStopMap = (stop) => {
 const getWalkingRouteUrl = (from, to) =>
   `https://www.google.com/maps/dir/?api=1&origin=${from.coordinates.lat},${from.coordinates.lng}&destination=${to.coordinates.lat},${to.coordinates.lng}&travelmode=walking`;
 
+const getFullTourRouteUrl = (tour) => {
+  const stops = tour.stops;
+  const origin = stops[0].coordinates;
+  const destination = stops[stops.length - 1].coordinates;
+  const waypoints = stops
+    .slice(1, -1)
+    .map((stop) => `${stop.coordinates.lat},${stop.coordinates.lng}`)
+    .join("|");
+
+  return `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${destination.lat},${destination.lng}&travelmode=walking${
+    waypoints ? `&waypoints=${encodeURIComponent(waypoints)}` : ""
+  }`;
+};
+
+const renderAdminRouteAudit = (tour) => {
+  if (!isAdminMode()) return "";
+
+  return `
+    <div class="admin-route-audit">
+      <span class="pill">Admin routecheck</span>
+      <h3>Hele route in Google Maps</h3>
+      <p>Open alle stops achter elkaar om te controleren of de wandelvolgorde logisch loopt.</p>
+      <a class="button primary small" href="${getFullTourRouteUrl(tour)}" target="_blank" rel="noopener">
+        Open volledige route
+      </a>
+      <ol>
+        ${tour.stops
+          .map(
+            (stop, index) => `
+              <li>
+                <strong>${index + 1}. ${stop.title}</strong>
+                <span>${stop.place} · unlock binnen ${getUnlockRadius(stop)} m</span>
+              </li>
+            `,
+          )
+          .join("")}
+      </ol>
+    </div>
+  `;
+};
+
 const renderRouteGuide = (tour, stopIndex) => {
   const nextStop = tour.stops[stopIndex + 1];
   if (!nextStop) {
@@ -3505,6 +3546,7 @@ const renderStops = () => {
   }
 
   const done = completedStops(tour.id);
+  const adminMode = isAdminMode();
   stopList.innerHTML = tour.stops
     .map(
       (stop, index) => `
@@ -3514,6 +3556,7 @@ const renderStops = () => {
           <span>Stop ${index + 1}</span>
           <strong>${stop.title}</strong>
           <span>${stop.place}</span>
+          ${adminMode ? `<em>Unlockafstand: binnen ${getUnlockRadius(stop)} m</em>` : ""}
         </button>
       `,
     )
@@ -3591,6 +3634,11 @@ const renderAssignment = () => {
           <p>${locked ? "Preview: " : ""}${stop.assignment}</p>
           <div class="location-gate ${adminMode || isNearby || done.includes(selectedStopIndex) ? "open" : ""}">
             <strong>${done.includes(selectedStopIndex) ? "Deze stop is al voltooid." : locationHelp}</strong>
+            ${
+              adminMode
+                ? `<small>Normaal opent deze opdracht pas binnen ${unlockRadiusMeters} meter van deze locatie.</small>`
+                : ""
+            }
             <span>${locationMessage}</span>
             <div class="location-actions">
               <button class="button small ${isNearby ? "ghost" : "primary"}" type="button" data-use-location>
@@ -3633,7 +3681,8 @@ const renderAssignment = () => {
         ${renderStopMap(stop)}
         <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${
           adminMode ? "adminmodus" : formatDistance(distance)
-        }.</p>
+        }. Unlockgrens: ${unlockRadiusMeters} m.</p>
+        ${renderAdminRouteAudit(tour)}
         ${renderRouteGuide(tour, selectedStopIndex)}
         <h3>Hint</h3>
         <p>${stop.hint}</p>
