@@ -2162,281 +2162,281 @@ const tours = [
   {
     id: "valencia",
     city: "Valencia",
-    title: "Valencia: zijde, sinaasappelpleinen en Turia-toekomst",
+    title: "Valencia: zijde, waterrecht en de omgebouwde rivier",
     price: "€4,49",
     duration: "210 min",
-    distance: "6,9 km",
+    distance: "7,1 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een route van het station en de oude handelsstad via de Turia-tuinen naar de futuristische Ciudad de las Artes y las Ciencias.",
+      "Een route van modernistische aankomst en Fallas-plein via zijdehandel, waterrecht en de Turia-tuinen naar Calatrava’s futuristische Valencia.",
     stops: [
       {
-        title: "Start bij Estació del Nord",
+        title: "Start tussen sinaasappels en mozaïek",
         place: "Estació del Nord Valencia",
         coordinates: { lat: 39.46613, lng: -0.37739 },
         assignment:
-          "Bekijk de gevel en zoek keramiek, sinaasappelmotieven en andere details die Valencia als bestemming meteen neerzetten.",
-        question: "Waarom is Estació del Nord een sterk beginpunt voor Valencia?",
-        hint: "Let op reis, stadspresentatie en decoratie, niet alleen op de perrons.",
+          "Bekijk de gevel en de entreezone. Zoek sinaasappels, keramiek, mozaïek en andere details die Valencia al bij aankomst als mediterrane stad presenteren.",
+        question: "Wat maakt Estació del Nord specifiek Valenciaans, en niet zomaar een mooi station?",
+        hint: "Let op lokale decoratie: keramiek, fruitmotieven, kleur en modernistische details.",
         choices: [
           {
-            text: "Omdat het station aankomst combineert met Valenciaanse decoratie en identiteit",
+            text: "Het station gebruikt modernistische decoratie met lokale motieven zoals keramiek en sinaasappels",
             correct: true,
             feedback:
-              "Precies. Het station is niet alleen functioneel: de gevel en details maken van aankomen meteen een kennismaking met Valencia als mediterrane stad.",
+              "Precies. De Estació del Nord is aankomst als visitekaartje: reisfunctie, ambacht en lokale symbolen worden één Valenciaanse eerste indruk.",
           },
           {
-            text: "Omdat het station bewust geen enkele versiering heeft",
+            text: "Het gebouw is juist beroemd omdat het volledig kaal en industrieel is gehouden",
             correct: false,
-            feedback: "Niet goed. Kijk juist naar keramiek, kleur en motieven in en rond het gebouw.",
+            feedback: "Nee, de kracht zit juist in de decoratie. Kijk naar de kleur, keramiek en florale details.",
           },
           {
-            text: "Omdat dit vooral een middeleeuws klooster buiten de stad is",
+            text: "Het station verwijst vooral naar Alpenarchitectuur en wintersport",
             correct: false,
-            feedback: "Nee, dit is een stedelijk station dat Valencia aan reizigers presenteert.",
+            feedback: "Niet goed. De verwijzingen zijn juist mediterraner en lokaler: Valencia wil zich hier herkenbaar maken.",
           },
         ],
       },
       {
-        title: "Sta op het stadhuisplein",
+        title: "Sta op het Fallas-podium",
         place: "Plaça de l'Ajuntament",
         coordinates: { lat: 39.46975, lng: -0.37634 },
         assignment:
-          "Kijk naar het stadhuis, het postgebouw, de brede ruimte en de bloemenkiosken. Zoek hoe het plein officieel en dagelijks tegelijk voelt.",
-        question: "Wat maakt Plaça de l'Ajuntament zo belangrijk in het centrum van Valencia?",
-        hint: "Denk aan bestuur, feesten, verkeer en dagelijkse ontmoetingen.",
+          "Kijk naar het stadhuis, het postgebouw, het open midden en de bloemenkiosken. Stel je voor waar de mascletà tijdens Fallas de ruimte vult.",
+        question: "Waarom is Plaça de l'Ajuntament meer dan alleen een bestuursplein?",
+        hint: "Denk aan het stadhuis, het postgebouw, bloemen, dagelijkse drukte en Fallas.",
         choices: [
           {
-            text: "Het plein koppelt bestuur, stadsfeesten en alledaagse centrumdrukte aan elkaar",
+            text: "Omdat bestuur, bloemenhandel, dagelijkse routes en Fallas-ceremonie hier samenkomen",
             correct: true,
             feedback:
-              "Klopt. Dit plein is een stedelijk podium: officieel door de gebouwen, levendig door verkeer, bloemen en grote evenementen zoals Fallas.",
+              "Klopt. Dit plein is Valencia als podium: officieel door de gebouwen, dagelijks door de drukte en explosief tijdens Fallas.",
           },
           {
-            text: "Omdat hier vooral een afgelegen strand zonder stadsfunctie ligt",
+            text: "Omdat het plein vooral een rustige binnentuin zonder publieke functie is",
             correct: false,
-            feedback: "Nee, je staat juist midden in het bestuurlijke en dagelijkse centrum.",
+            feedback: "Nee, dit is juist een zichtbaar, druk en ceremonieel centrumplein.",
           },
           {
-            text: "Omdat het plein alleen uit moderne kantoren zonder publieke ruimte bestaat",
+            text: "Omdat Fallas hier niets mee te maken heeft en alleen buiten de stad plaatsvindt",
             correct: false,
-            feedback: "Niet helemaal. De publieke ruimte en de ceremoniële gebouwen zijn juist bepalend.",
+            feedback: "Niet goed. Fallas is juist sterk verbonden met de openbare ruimtes van Valencia, waaronder dit plein.",
           },
         ],
       },
       {
-        title: "Ruik de markt",
+        title: "Lees eten als architectuur",
         place: "Mercat Central Valencia",
         coordinates: { lat: 39.47351, lng: -0.37875 },
         assignment:
-          "Loop rond de buitenkant of naar binnen als het open is. Zoek hoe ijzer, glas, keramiek en eten samen één stadsmachine vormen.",
-        question: "Waarom is de Mercat Central meer dan alleen een plek om eten te kopen?",
-        hint: "Let op schaal, licht, materiaal en hoe de markt midden in de oude stad ligt.",
+          "Loop rond de markt of ga naar binnen als het open is. Zoek ijzer, glas, keramiek, koepels en producten uit de huerta en de zee.",
+        question: "Wat maakt de Mercat Central zo’n sterke Valencia-stop?",
+        hint: "Kijk naar het gebouw én naar wat er verkocht wordt: stad, tuinbouwgebied en kust komen hier samen.",
         choices: [
           {
-            text: "Omdat handel, architectuur en dagelijks stadsleven hier zichtbaar samenkomen",
+            text: "Omdat modernistische markthal, dagelijkse voedselcultuur en Valencia’s huerta hier samenkomen",
             correct: true,
             feedback:
-              "Goed gezien. De markt maakt Valencia tastbaar: voedselcultuur, modernistische architectuur en dagelijkse drukte zitten hier in één gebouw.",
+              "Goed gezien. De markt is een stad in miniatuur: architectuur, eten, handel, zee en irrigatieland rond Valencia worden hier tastbaar.",
           },
           {
-            text: "Omdat de markt expres buiten de stad en zonder bezoekers is gebouwd",
+            text: "Omdat de markt vooral een stille museumzaal zonder dagelijkse handel is",
             correct: false,
-            feedback: "Nee, juist de centrale ligging en het gebruik maken deze stop sterk.",
+            feedback: "Nee. Juist het dagelijkse gebruik maakt dit gebouw krachtig.",
           },
           {
-            text: "Omdat het gebouw alleen als parkeerplaats ontworpen is",
+            text: "Omdat het gebouw is ontworpen om daglicht en versproducten zoveel mogelijk te verbergen",
             correct: false,
-            feedback: "Niet goed. De architectuur is duidelijk gemaakt voor licht, handel en verblijf.",
+            feedback: "Niet goed. De hal gebruikt juist licht, ruimte en decoratie om handel aantrekkelijk te maken.",
           },
         ],
       },
       {
-        title: "Lees zijde in steen",
+        title: "Lees zijde en geld in steen",
         place: "La Lonja de la Seda",
         coordinates: { lat: 39.47432, lng: -0.37844 },
         assignment:
-          "Bekijk de buitenkant en zoek waarom dit gebouw machtiger voelt dan een gewone markthal.",
-        question: "Wat vertelt La Lonja de la Seda over het oude Valencia?",
-        hint: "Lonja betekent handelsbeurs. Denk aan zijde, geld en internationale handel.",
+          "Bekijk de gotische buitenkant en, als je binnen kunt, de zuilen van de Sala de Contratación. Zoek waarom handel hier bijna als machtstheater voelt.",
+        question: "Waarom is La Lonja de la Seda zo belangrijk voor Valencia’s identiteit?",
+        hint: "UNESCO koppelt deze plek aan de macht en rijkdom van Valencia als mediterrane handelsstad.",
         choices: [
           {
-            text: "Dat Valencia rijk en internationaal verbonden was door handel, vooral zijde",
+            text: "Omdat de zijdehandel hier een monumentaal gebouw kreeg dat koopmansmacht zichtbaar maakte",
             correct: true,
             feedback:
-              "Precies. De Lonja is handelsmacht in steen: Valencia laat hier zien dat koopmanschap, rijkdom en prestige bij de stad hoorden.",
+              "Precies. De Lonja is geen gewone handelsplek: het is Valencia’s koopmansmacht in gotische steen, gebouwd om rijkdom en betrouwbaarheid uit te stralen.",
           },
           {
-            text: "Dat Valencia vroeger geen enkele handelsfunctie had",
+            text: "Omdat het gebouw vooral bewijst dat Valencia nooit internationale handel kende",
             correct: false,
-            feedback: "Nee, dit gebouw draait juist om handel en stedelijke rijkdom.",
+            feedback: "Nee, de Lonja bewijst juist het tegenovergestelde: handel en zijde waren essentieel.",
           },
           {
-            text: "Dat het gebouw vooral als modern vliegveld is ontworpen",
+            text: "Omdat de Lonja een puur religieus klooster zonder handelsfunctie was",
             correct: false,
-            feedback: "Niet goed. De gotische vorm en handelsfunctie horen bij de historische stad.",
+            feedback: "Niet goed. De naam en de handelszaal wijzen duidelijk op koopmanschap en contracten.",
           },
         ],
       },
       {
-        title: "Zoek het hart bij de kathedraal",
-        place: "Catedral de Valencia en Miguelete",
-        coordinates: { lat: 39.47567, lng: -0.37503 },
+        title: "Zoek waterrecht bij de kathedraal",
+        place: "Catedral de Valencia en Puerta de los Apóstoles",
+        coordinates: { lat: 39.47604, lng: -0.37518 },
         assignment:
-          "Loop rond de kathedraal en kijk naar de toren, pleinen en poorten. Zoek hoe meerdere stijlen aan één gebouw vastzitten.",
-        question: "Waarom voelt de kathedraal van Valencia als een stapel stadsgeschiedenis?",
-        hint: "Kijk naar verschillende kanten van het gebouw; ze zien niet allemaal hetzelfde uit.",
+          "Ga naar de Puerta de los Apóstoles bij de kathedraal. Zoek waarom juist een kerkpoort de plek werd voor een openbaar watertribunaal.",
+        question: "Wat maakt het Tribunal de las Aguas bij deze kathedraalpoort zo typisch Valenciaans?",
+        hint: "Het tribunaal behandelt irrigatieconflicten uit de huerta en komt traditioneel openbaar bijeen.",
         choices: [
           {
-            text: "Omdat gotiek, barok, oudere lagen en stadspleinen rond één kerk samenkomen",
+            text: "Het verbindt de stad met irrigatie, landbouw rond Valencia en publiek recht op een zichtbare plek",
             correct: true,
             feedback:
-              "Ja. De kathedraal werkt als geheugen van de stad: toren, poorten en pleinen tonen dat Valencia door de eeuwen heen is doorgebouwd.",
+              "Ja. Dit is heel Valenciaans: water uit de omgeving, boerenbelang, eeuwenoude regels en openbare rechtspraak komen samen bij de kathedraal.",
           },
           {
-            text: "Omdat het gebouw volledig uit één moderne glazen hal bestaat",
+            text: "Het gaat vooral over zeevisserij en heeft niets met irrigatie te maken",
             correct: false,
-            feedback: "Nee, juist de historische lagen en stijlen maken deze plek interessant.",
+            feedback: "Nee. Het tribunaal draait juist om irrigatiewater voor de huerta rond Valencia.",
           },
           {
-            text: "Omdat de kathedraal nergens vanuit de stad zichtbaar is",
+            text: "Het is een moderne toeristische show zonder historische rechtsfunctie",
             correct: false,
-            feedback: "Niet goed. De Miguelete-toren is juist een sterk oriëntatiepunt.",
+            feedback: "Niet goed. De kracht zit juist in de lange traditie en publieke functie.",
           },
         ],
       },
       {
-        title: "Ga naar de oude stadspoort",
+        title: "Ga naar de stadspoort aan de rivier",
         place: "Torres de Serranos",
         coordinates: { lat: 39.47921, lng: -0.3755 },
         assignment:
-          "Bekijk de torens vanaf de brugzijde. Zoek hoe de poort tegelijk verdediging, entree en stadsbeeld is.",
-        question: "Wat laten de Torres de Serranos goed zien over Valencia?",
-        hint: "Denk aan muren, stadspoorten en de overgang naar de Turia.",
+          "Bekijk de torens vanaf de brugzijde. Zoek hoe de poort werkt als entree vanuit de oude rivierkant naar de stad.",
+        question: "Waarom zijn de Torres de Serranos meer dan alleen twee mooie torens?",
+        hint: "Denk aan stadsmuren, toegang, controle en de oude rand bij de Turia.",
         choices: [
           {
-            text: "Dat de historische stad poorten gebruikte om binnen en buiten duidelijk te scheiden",
+            text: "Ze markeerden een gecontroleerde toegang tot de ommuurde stad aan de kant van de Turia",
             correct: true,
             feedback:
-              "Klopt. De torens zijn niet zomaar decor: ze tonen hoe de stad zich verdedigde en hoe belangrijk gecontroleerde ingangen waren.",
+              "Klopt. Je staat hier op de oude overgang tussen buiten en binnen: verdediging, ontvangst en stadsidentiteit in één poort.",
           },
           {
-            text: "Dat Valencia nooit stadsmuren of poorten heeft gehad",
+            text: "Ze zijn gebouwd als decor voor de moderne metro en hadden geen stadsfunctie",
             correct: false,
-            feedback: "Nee, deze torens zijn juist een zichtbaar restant van die verdedigingslaag.",
+            feedback: "Nee, de torens horen bij de historische ommuring en toegang tot de stad.",
           },
           {
-            text: "Dat dit vooral een modern metrostation zonder historische betekenis is",
+            text: "Ze tonen vooral dat Valencia altijd volledig open en zonder poorten was",
             correct: false,
-            feedback: "Niet goed. De middeleeuwse poortfunctie is hier de kern.",
+            feedback: "Niet goed. Juist deze poort laat zien dat toegang vroeger gereguleerd werd.",
           },
         ],
       },
       {
-        title: "Loop de Turia in",
+        title: "Daal af in de verdwenen rivier",
         place: "Jardín del Turia bij Puente del Real",
         coordinates: { lat: 39.47576, lng: -0.36754 },
         assignment:
-          "Kijk hoe je in een park loopt dat lager ligt dan de straten eromheen. Zoek sporen dat dit ooit rivierbedding was.",
-        question: "Waarom is de Turia-tuin zo bepalend voor het moderne Valencia?",
-        hint: "Denk aan een oude rivier, overstroming, omleiding en nieuw stadspark.",
+          "Kijk naar het hoogteverschil, de bruggen boven je en de langgerekte parkvorm. Zoek bewijs dat je in een voormalige rivierbedding loopt.",
+        question: "Wat is de grote stadszet achter de Jardín del Turia?",
+        hint: "Na zware overstromingen werd de rivier omgeleid; de oude bedding werd een park.",
         choices: [
           {
-            text: "Omdat een voormalige rivierbedding is veranderd in een lange groene stadsroute",
+            text: "Valencia veranderde de oude Turia-bedding in een lang park dat de stad van west naar oost verbindt",
             correct: true,
             feedback:
-              "Precies. Valencia heeft van een risico en barrière een parkas gemaakt. Daardoor kun je kilometers door groen lopen midden in de stad.",
+              "Precies. De Turia is Valencia’s grote transformatie: een vroegere rivier en risicoruimte werd een groene route door de stad.",
           },
           {
-            text: "Omdat dit nog steeds de drukste autosnelweg van de stad is",
+            text: "De oude rivierbedding werd volledig volgebouwd met gesloten winkelcentra",
             correct: false,
-            feedback: "Nee, juist de keuze voor parkruimte maakt de Turia bijzonder.",
+            feedback: "Nee. De keuze voor een openbaar park maakt Valencia hier juist bijzonder.",
           },
           {
-            text: "Omdat de tuin niets met de vorm van de stad te maken heeft",
+            text: "De Turia-tuin is een klein binnenhof zonder relatie met bruggen of stadsroute",
             correct: false,
-            feedback: "Niet goed. De langgerekte vorm beïnvloedt routes, wijken en stadsbeleving sterk.",
+            feedback: "Niet goed. De langgerekte vorm en bruggen verraden juist de oude rivierstructuur.",
           },
         ],
       },
       {
-        title: "Luister naar de parkas",
-        place: "Palau de la Música Valencia",
-        coordinates: { lat: 39.46642, lng: -0.36047 },
+        title: "Zoek Gulliver in de rivier",
+        place: "Parque Gulliver",
+        coordinates: { lat: 39.46237, lng: -0.35824 },
         assignment:
-          "Bekijk hoe het concertgebouw aan de Turia ligt. Zoek hoe cultuur hier niet op een plein, maar in een parkroute terechtkomt.",
-        question: "Waarom past Palau de la Música goed in deze wandeling door de Turia?",
-        hint: "Denk aan muziek, park, waterpartijen en de route naar het oosten.",
+          "Bekijk de reusachtige Gulliverfiguur en hoe kinderen hem als speeltoestel gebruiken. Zoek waarom dit alleen logisch voelt in een park dat al zo ongewone ruimte heeft.",
+        question: "Waarom past Parque Gulliver zo goed in de oude Turia-bedding?",
+        hint: "Denk aan schaal, speelruimte en een park dat lang en laag door de stad loopt.",
         choices: [
           {
-            text: "Omdat cultuur hier onderdeel wordt van de lange groene route door de stad",
+            text: "Omdat de brede voormalige rivierbedding ruimte geeft aan een speels, bijna absurd stadsobject",
             correct: true,
             feedback:
-              "Ja. Het Palau laat zien dat de Turia niet alleen recreatie is: de parkas draagt ook cultuur, architectuur en stedelijke ontmoeting.",
+              "Ja. Gulliver werkt omdat de Turia geen normaal buurtpark is: de oude rivierbedding geeft ruimte aan iets groots, speels en typisch herkenbaars.",
           },
           {
-            text: "Omdat het gebouw midden in zee staat",
+            text: "Omdat Gulliver eigenlijk een middeleeuwse stadspoort is",
             correct: false,
-            feedback: "Nee, het ligt juist in de parkbedding van de Turia.",
+            feedback: "Nee, dit is juist de speelse moderne parklaag van Valencia.",
           },
           {
-            text: "Omdat muziek in Valencia geen publieke plek heeft",
+            text: "Omdat de plek bewust ontoegankelijk is voor kinderen en wandelaars",
             correct: false,
-            feedback: "Niet goed. Dit gebouw maakt muziek juist zichtbaar in de openbare stad.",
+            feedback: "Niet goed. De functie is juist publiek spel en verblijf in de Turia.",
           },
         ],
       },
       {
-        title: "Bekijk de stad van de toekomst",
+        title: "Bekijk Calatrava’s witte stad",
         place: "Ciudad de las Artes y las Ciencias",
         coordinates: { lat: 39.45528, lng: -0.35083 },
         assignment:
-          "Loop langs het water en zoek hoe wit beton, reflecties en grote vormen bijna een filmdecor maken.",
-        question: "Waarom is de Ciudad de las Artes y las Ciencias zo’n sterk eindbeeld van Valencia?",
-        hint: "Vergelijk dit met de oude stadspoorten, markt en kathedraal.",
+          "Loop langs het water en zoek hoe witte constructies, reflecties en enorme vormen een nieuw stadsbeeld maken.",
+        question: "Waarom is de Ciudad de las Artes y las Ciencias een logisch vervolg op de Turia-route?",
+        hint: "Het complex ligt aan de oostelijke kant van de voormalige rivierbedding.",
         choices: [
           {
-            text: "Omdat Valencia hier een futuristisch cultureel gezicht toevoegt aan zijn historische stad",
+            text: "Omdat de oude rivierbedding hier overgaat in een futuristisch cultuur- en wetenschapsdecor",
             correct: true,
             feedback:
-              "Precies. Na gotiek, handel en Turia-groen eindig je bij Valencia als ontwerpstad: groots, wit, reflecterend en bewust spectaculair.",
+              "Precies. Na zijde, waterrecht en parkruimte toont Valencia hier zijn spectaculaire moderne laag: wit, groot, reflecterend en bewust iconisch.",
           },
           {
-            text: "Omdat dit complex uit middeleeuwse stadsmuren bestaat",
+            text: "Omdat dit complex vooral een reconstructie van middeleeuwse stadsmuren is",
             correct: false,
-            feedback: "Nee, dit is juist de moderne, futuristische laag van Valencia.",
+            feedback: "Nee. Hier draait het juist om moderne architectuur en nieuw stadsimago.",
           },
           {
-            text: "Omdat het geen relatie heeft met de Turia-route",
+            text: "Omdat het complex ver buiten de route ligt en niets met de Turia te maken heeft",
             correct: false,
-            feedback: "Niet goed. Het complex ligt juist aan het einde van de voormalige rivierbedding.",
+            feedback: "Niet goed. De ligging aan de voormalige rivierbedding is juist de reden dat deze stop logisch is.",
           },
         ],
       },
       {
-        title: "Eindig bij Oceanogràfic",
+        title: "Eindig in de waterwereld",
         place: "Oceanogràfic Valencia",
         coordinates: { lat: 39.45262, lng: -0.34742 },
         assignment:
-          "Kijk naar de waterleliestructuren en de ligging aan het einde van het complex. Zoek hoe water hier van stadspark naar attractie verandert.",
-        question: "Waarom is Oceanogràfic een logisch laatste punt na de Ciudad de las Artes y las Ciencias?",
-        hint: "Denk aan water, educatie, attractie en het uiterste oostelijke einde van de route.",
+          "Kijk naar de waterlelie-achtige gebouwen en de ligging aan het einde van het complex. Zoek hoe water hier verandert van irrigatieverhaal naar zee- en aquariumwereld.",
+        question: "Waarom rondt Oceanogràfic deze Valencia-route goed af?",
+        hint: "Vergelijk water bij het Tribunal de las Aguas, de Turia en dit aquariumcomplex.",
         choices: [
           {
-            text: "Omdat de route hier eindigt bij water, educatie en een grote publieksattractie",
+            text: "Omdat het watermotief van irrigatie en rivier hier eindigt als zee, educatie en publieksattractie",
             correct: true,
             feedback:
-              "Klopt. Oceanogràfic rondt Valencia af als stad van zee, wetenschap en familie-attracties: de Turia-as eindigt hier in een uitgesproken waterwereld.",
+              "Klopt. De route begint met stad en handel, maar eindigt met Valencia als waterstad: irrigatie, oude rivier, moderne architectuur en zeeleven komen samen.",
           },
           {
-            text: "Omdat dit het hoogste bergpunt van Valencia is",
+            text: "Omdat Oceanogràfic vooral een droog bergfort zonder relatie met water is",
             correct: false,
             feedback: "Nee, deze stop draait juist om water en publiekscultuur.",
           },
           {
-            text: "Omdat je hier terug midden op de oude markt staat",
+            text: "Omdat dit exact dezelfde functie heeft als de middeleeuwse zijdebeurs",
             correct: false,
-            feedback: "Niet goed. De oude markt ligt in het centrum; hier zit je in de moderne oostelijke stadslaag.",
+            feedback: "Niet goed. Hier zit je in de moderne oostelijke stadslaag, niet in de handelsstad van de Lonja.",
           },
         ],
       },
@@ -2445,200 +2445,227 @@ const tours = [
   {
     id: "douglas",
     city: "Douglas",
-    title: "Douglas: baai, trams en Manx verhalen",
+    title: "Douglas: ferryhaven, Victoriaanse promenade en Manx identiteit",
     price: "€4,49",
-    duration: "140 min",
-    distance: "4,6 km",
+    duration: "170 min",
+    distance: "5,4 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een compacte route door de hoofdstad van Isle of Man, langs haven, promenade, paardentram, theater, museum en Douglas Head.",
+      "Een scherpe route door de hoofdstad van Isle of Man, langs haven, Jubilee Clock, Tower of Refuge, promenade-erfgoed, Gaiety Theatre, paardentram, Manx Museum en Douglas Head.",
     stops: [
       {
-        title: "Begin bij de ferry-aankomst",
-        place: "Douglas Sea Terminal",
-        coordinates: { lat: 54.14822, lng: -4.47412 },
+        title: "Begin bij de eilandpoort",
+        place: "Douglas Sea Terminal en havenbrug",
+        coordinates: { lat: 54.14799, lng: -4.47472 },
         assignment:
-          "Kijk naar de haven, ferryterminal en de baai. Zoek waarom aankomst over zee zo belangrijk voelt voor Douglas.",
-        question: "Waarom is de Sea Terminal een logisch startpunt voor Douglas?",
-        hint: "Denk aan eiland, ferry, haven en eerste indruk van de hoofdstad.",
+          "Kijk naar de ferryterminal, de haven en de beweegbare bruggen. Zoek hoe Douglas aankomst, goederen en eilandverbinding in één compacte havenruimte verzamelt.",
+        question: "Waarom vertelt deze plek meteen iets typisch over Douglas?",
+        hint: "Denk aan eilandlogistiek: wie of wat komt hier binnen voordat het verder het eiland op gaat?",
         choices: [
           {
-            text: "Omdat Douglas als eilandhoofdstad sterk verbonden is met aankomst over zee",
+            text: "Omdat de stad hier zichtbaar functioneert als toegangspoort voor reizigers, vracht en eilandverbindingen",
             correct: true,
             feedback:
-              "Precies. Op Isle of Man is de ferry geen detail: de haven maakt meteen duidelijk dat Douglas een toegangspoort tot het eiland is.",
+              "Precies. Douglas is geen willekeurige kustplaats: de ferry en haven maken de hoofdstad tot een praktische poort van het eiland.",
           },
           {
-            text: "Omdat Douglas diep landinwaarts zonder haven ligt",
+            text: "Omdat deze plek vooral bedoeld is als uitzichtpunt zonder verkeersfunctie",
             correct: false,
-            feedback: "Nee, juist de baai en haven bepalen de eerste indruk van de stad.",
+            feedback: "Niet helemaal. Er is uitzicht, maar de kern is dat hier aankomst en doorstroming van het eiland beginnen.",
           },
           {
-            text: "Omdat dit vooral een bergstation boven de stad is",
+            text: "Omdat Isle of Man vroeger geen verbindingen over zee nodig had",
             correct: false,
-            feedback: "Niet goed. Dit is de maritieme entree van Douglas.",
+            feedback: "Nee. Juist de zee en de ferryverbindingen zijn bepalend voor Douglas als hoofdstad.",
           },
         ],
       },
       {
-        title: "Zoek de toren in de baai",
-        place: "Tower of Refuge viewpoint",
-        coordinates: { lat: 54.14934, lng: -4.47183 },
+        title: "Zoek Victoria's klok",
+        place: "Jubilee Clock Douglas",
+        coordinates: { lat: 54.15054, lng: -4.47835 },
         assignment:
-          "Kijk vanaf de promenade of havenkant naar Conister Rock. Zoek waarom een kleine toren midden in de baai nuttig kon zijn.",
-        question: "Waarvoor werd de Tower of Refuge gebouwd?",
-        hint: "Let op de rots, de baai en het risico voor schepen.",
+          "Ga bij de klok staan en kijk naar Victoria Street, Loch Promenade en de richting van de haven. Zoek waarom een klok op deze plek werkt als stadsanker.",
+        question: "Waarom past de Jubilee Clock juist op deze plek in Douglas?",
+        hint: "De klok verwijst naar Queen Victoria's Golden Jubilee van 1887 en staat bij een druk stedelijk kruispunt.",
         choices: [
           {
-            text: "Als schuilplaats voor schipbreukelingen op de rots in de baai",
+            text: "Omdat hij Victoriaans stadsvertoon koppelt aan een kruispunt tussen winkelstraat, promenade en haven",
             correct: true,
             feedback:
-              "Klopt. De toren laat de ruige kant van de baai zien: mooi uitzicht, maar historisch ook gevaarlijk voor schepen.",
+              "Klopt. De klok is geen los ornament: hij markeert een Victoriaans centrumstuk op een plek waar promenade, stad en haven elkaar raken.",
           },
           {
-            text: "Als middeleeuwse gevangenis midden in de winkelstraat",
+            text: "Omdat hij een moderne digitale verkeersmeter uit de jaren 2000 is",
             correct: false,
-            feedback: "Nee, de ligging op Conister Rock vertelt dat het om veiligheid op zee ging.",
+            feedback: "Nee. De betekenis zit juist in de late 19e-eeuwse herdenkingscultuur en het stadsbeeld.",
           },
           {
-            text: "Als moderne uitkijktoren voor vliegverkeer",
+            text: "Omdat hij verborgen staat op een plek waar bijna niemand langskomt",
             correct: false,
-            feedback: "Niet goed. De functie hoort bij scheepvaart en redding.",
+            feedback: "Niet goed. Hij staat juist zichtbaar bij een logische doorgang tussen centrum en promenade.",
           },
         ],
       },
       {
-        title: "Loop langs Loch Promenade",
-        place: "Loch Promenade",
-        coordinates: { lat: 54.15126, lng: -4.4786 },
+        title: "Kijk naar de reddingstoren",
+        place: "Tower of Refuge zichtpunt",
+        coordinates: { lat: 54.15018, lng: -4.47542 },
         assignment:
-          "Kijk naar de boog van de baai, de gevelrijen en de ruimte voor wandelen. Zoek waarom dit zo’n klassiek kustfront voelt.",
-        question: "Wat maakt Loch Promenade typisch voor Douglas als badplaatsstad?",
-        hint: "Denk aan wandelen, uitzicht, hotels en de langgerekte baai.",
+          "Kijk vanaf de promenade naar Conister Rock en de kleine toren in de baai. Zoek waarom een mooi uitzicht hier tegelijk een waarschuwingsverhaal is.",
+        question: "Waarom staat de Tower of Refuge midden in Douglas Bay?",
+        hint: "Denk aan Conister Rock, schipbreuken en Sir William Hillary, mede-oprichter van de RNLI.",
         choices: [
           {
-            text: "De promenade maakt van de baai een lange publieke wandel- en uitzichtplek",
+            text: "Als toevlucht voor schipbreukelingen die op de rots in de baai terechtkwamen",
             correct: true,
             feedback:
-              "Ja. Douglas presenteert zich hier als kustplaats: lopen, kijken, frisse lucht en gevels langs de baai vormen samen het stadsbeeld.",
+              "Precies. De toren maakt de baai dubbel: prachtig voor bezoekers, maar historisch gevaarlijk genoeg om een reddingsplek nodig te maken.",
           },
           {
-            text: "Omdat de promenade volledig ondergronds ligt",
+            text: "Als decoratieve vuurtoren voor vliegtuigen boven Douglas",
             correct: false,
-            feedback: "Nee, de kracht is juist open zicht op de baai.",
+            feedback: "Nee. De functie gaat over scheepvaart en veiligheid op de rots, niet over vliegverkeer.",
           },
           {
-            text: "Omdat er geen relatie met toerisme of wandelen is",
+            text: "Als wachttoren van een middeleeuws kasteel aan de winkelstraat",
             correct: false,
-            feedback: "Niet goed. De promenade is precies gemaakt voor verblijf en kustbeleving.",
+            feedback: "Niet goed. De ligging in zee vertelt dat het om redding in de baai gaat.",
           },
         ],
       },
       {
-        title: "Vind de paardentram",
-        place: "Douglas Bay Horse Tramway",
-        coordinates: { lat: 54.15494, lng: -4.48084 },
+        title: "Lees de promenade als vakantie-machine",
+        place: "Loch Promenade en Marine Gardens",
+        coordinates: { lat: 54.15472, lng: -4.48076 },
         assignment:
-          "Zoek de rails of haltes van de paardentram. Bedenk waarom juist zo’n langzaam vervoermiddel bij de promenade past.",
-        question: "Waarom is de Douglas Bay Horse Tramway zo bijzonder?",
-        hint: "Denk aan toerisme, traditie en vervoer langs de baai.",
+          "Kijk naar de lange gevelwand, tuinen, schuilplekken en zichtlijnen over de baai. Zoek hoe de promenade bezoekers moest laten wandelen, kijken en blijven.",
+        question: "Wat maakt Loch Promenade meer dan alleen een stoep langs zee?",
+        hint: "Denk aan Victoriaans toerisme, hotels, wandelen, tuinen en uitzicht over de baai.",
         choices: [
           {
-            text: "Omdat een historische paardentram nog steeds bij het kusttoerisme van Douglas hoort",
+            text: "Hij is ontworpen als verblijfsruimte waar toerisme, uitzicht, hotels en wandelen samenkomen",
             correct: true,
             feedback:
-              "Precies. De tram is transport én attractie: hij maakt van verplaatsen langs de baai een stukje levend erfgoed.",
+              "Ja. De promenade maakt van Douglas Bay een soort lang openbaar balkon: je loopt niet alleen ergens heen, je verblijft in het stadsdecor.",
           },
           {
-            text: "Omdat het een ondergrondse hogesnelheidslijn is",
+            text: "Hij is vooral gebouwd om bezoekers zo snel mogelijk van de zee weg te leiden",
             correct: false,
-            feedback: "Nee, het bijzondere zit juist in langzaam, zichtbaar en historisch vervoer.",
+            feedback: "Nee. Alles aan deze plek trekt je juist naar het uitzicht, de gevels en het wandelen langs de baai.",
           },
           {
-            text: "Omdat Douglas nooit toeristische vervoersmiddelen had",
+            text: "Hij heeft weinig met toerisme te maken omdat er geen zicht op de baai is",
             correct: false,
-            feedback: "Niet goed. De kustpromenade en tram horen sterk bij het toeristische verhaal.",
+            feedback: "Niet goed. Juist het open zicht op de baai is de kern van de promenade.",
           },
         ],
       },
       {
-        title: "Kijk naar Villa Marina en Gaiety",
-        place: "Villa Marina en Gaiety Theatre",
-        coordinates: { lat: 54.15662, lng: -4.48188 },
+        title: "Zoek het theater van Frank Matcham",
+        place: "Gaiety Theatre Douglas",
+        coordinates: { lat: 54.15671, lng: -4.48236 },
         assignment:
-          "Bekijk de gebouwen en tuinen aan de promenade. Zoek hoe entertainment hier bij de badplaatscultuur hoort.",
-        question: "Waarom passen Villa Marina en het Gaiety Theatre goed op deze route?",
-        hint: "Denk aan avondvermaak, toeristen en de promenade als verblijfsplek.",
+          "Bekijk de theatergevel en de ligging aan de promenade. Zoek waarom een serieus theater hier logisch is naast zeezicht en vakantievermaak.",
+        question: "Wat maakt het Gaiety Theatre bijzonder binnen het verhaal van Douglas?",
+        hint: "Het theater opende in 1900 en wordt gekoppeld aan theaterarchitect Frank Matcham.",
         choices: [
           {
-            text: "Ze laten zien dat Douglas bezoekers niet alleen strand, maar ook cultuur en amusement bood",
+            text: "Het laat zien dat Douglas als badplaats ook avondcultuur, theatertechniek en prestige wilde bieden",
             correct: true,
             feedback:
-              "Klopt. Badplaatsen draaiden niet alleen om zeezicht: theaters, muziek en avonden uit maakten het verblijf aantrekkelijker.",
+              "Klopt. Het Gaiety Theatre maakt de promenade rijker: bezoekers kwamen niet alleen voor lucht en uitzicht, maar ook voor voorstellingen en avondleven.",
           },
           {
-            text: "Omdat het vooral industriële loodsen zonder publiek zijn",
+            text: "Omdat het theater vooral als veerbootterminal is gebouwd",
             correct: false,
-            feedback: "Nee, dit complex draait juist om publiek, cultuur en entertainment.",
+            feedback: "Nee. De functie is juist cultuur en publiek vermaak, niet havenlogistiek.",
           },
           {
-            text: "Omdat ze ver van de promenade verborgen liggen",
+            text: "Omdat Douglas geen Victoriaanse toeristische cultuur kende",
             correct: false,
-            feedback: "Niet goed. De ligging aan de promenade maakt ze juist logisch.",
+            feedback: "Niet goed. De promenade, theaters en hotels vertellen juist veel over die cultuur.",
           },
         ],
       },
       {
-        title: "Ga naar het Manx Museum",
+        title: "Vind het langzaamste erfgoed",
+        place: "Douglas Bay Horse Tramway halte",
+        coordinates: { lat: 54.15812, lng: -4.48232 },
+        assignment:
+          "Zoek rails, haltes of verwijzingen naar de paardentram. Bedenk waarom juist langzaam vervoer hier waarde heeft.",
+        question: "Waarom is de Douglas Bay Horse Tramway geen gewone OV-lijn?",
+        hint: "Let op de route langs de promenade en op het verschil tussen transport en attractie.",
+        choices: [
+          {
+            text: "Omdat de paardentram vervoer, toeristische beleving en levend promenade-erfgoed tegelijk is",
+            correct: true,
+            feedback:
+              "Precies. De tram is niet sterk omdat hij snel is, maar omdat hij het tempo van de oude badplaats zichtbaar maakt.",
+          },
+          {
+            text: "Omdat hij bedoeld is als ondergrondse verbinding naar het vliegveld",
+            correct: false,
+            feedback: "Nee. Alles aan de paardentram is bovengronds, zichtbaar en verbonden met de promenade.",
+          },
+          {
+            text: "Omdat hij vooral door zware industriegebieden rijdt",
+            correct: false,
+            feedback: "Niet goed. De logica zit juist in de toeristische route langs de baai.",
+          },
+        ],
+      },
+      {
+        title: "Duik de Manx laag in",
         place: "Manx Museum",
-        coordinates: { lat: 54.15194, lng: -4.48172 },
+        coordinates: { lat: 54.15179, lng: -4.48217 },
         assignment:
-          "Bekijk de entree en denk aan het verschil tussen Douglas als kuststad en Isle of Man als eiland met eigen cultuur.",
-        question: "Waarom is het Manx Museum belangrijk in een route door Douglas?",
-        hint: "Manx verwijst naar Isle of Man zelf: taal, cultuur, geschiedenis en identiteit.",
+          "Bekijk de entree en denk aan het verschil tussen Douglas als badplaats en Isle of Man als eiland met eigen taal, parlement en geschiedenis.",
+        question: "Waarom hoort het Manx Museum in deze route, ook al ligt het niet direct aan zee?",
+        hint: "Manx gaat over de eigen cultuur van Isle of Man: taal, bestuur, Vikinglagen, internment en eilandidentiteit.",
         choices: [
           {
-            text: "Omdat het de lokale Manx geschiedenis en eilandidentiteit achter de hoofdstad zichtbaar maakt",
+            text: "Omdat het de promenade-stad koppelt aan de diepere Manx identiteit van het eiland",
             correct: true,
             feedback:
-              "Ja. Douglas is meer dan promenade en ferry: het museum koppelt de hoofdstad aan Manx taal, politiek, archeologie en eilandverhalen.",
+              "Ja. Zonder het Manx Museum blijft Douglas vooral haven en promenade. Hier komt het verhaal van het eiland zelf erbij.",
           },
           {
-            text: "Omdat het museum alleen over Valencia gaat",
+            text: "Omdat het museum vooral over Spaanse zijdehandel gaat",
             correct: false,
-            feedback: "Nee, dit museum gaat juist over Isle of Man en de Manx identiteit.",
+            feedback: "Nee, dat past eerder bij Valencia. Hier draait het om Isle of Man en Manx cultuur.",
           },
           {
-            text: "Omdat het museum geen relatie met de stad of het eiland heeft",
+            text: "Omdat Douglas geen eigen eilandcontext nodig heeft",
             correct: false,
-            feedback: "Niet goed. Dit is juist de plek waar de bredere eilandcontext binnenkomt.",
+            feedback: "Niet goed. Juist die eilandcontext maakt Douglas anders dan een gewone Britse badplaats.",
           },
         ],
       },
       {
-        title: "Eindig boven de haven",
-        place: "Douglas Head Camera Obscura",
-        coordinates: { lat: 54.14383, lng: -4.46646 },
+        title: "Eindig bij de 11 uitzichten",
+        place: "Great Union Camera Obscura Douglas Head",
+        coordinates: { lat: 54.14458, lng: -4.46703 },
         assignment:
-          "Loop omhoog naar Douglas Head en kijk terug over haven, Tower of Refuge en promenade. Zoek hoe de hele route in één beeld past.",
-        question: "Waarom is Douglas Head een sterk eindpunt?",
-        hint: "Let op hoogte, uitzicht, haven, baai en de route die je net liep.",
+          "Klim naar Douglas Head en kijk terug over haven, Tower of Refuge, promenade en open zee. Zoek waarom dit punt de hele route samenvat.",
+        question: "Waarom is de Camera Obscura op Douglas Head een sterker eindpunt dan zomaar nog een uitzichtbank?",
+        hint: "De Great Union Camera Obscura staat bekend om meerdere kijkrichtingen; het punt zelf geeft overzicht over baai, stad en zee.",
         choices: [
           {
-            text: "Omdat je vanaf hier haven, baai, stad en promenade als één landschap begrijpt",
+            text: "Omdat je hier Douglas als reeks beelden leest: haven, baai, promenade, zee en eilandrand",
             correct: true,
             feedback:
-              "Precies. Boven op Douglas Head valt de route samen: aankomst over zee, promenadecultuur, eilandidentiteit en de vorm van de baai.",
+              "Precies. Boven Douglas Head wordt de route één kaart in je hoofd: de havenpoort, reddingstoren, promenade en kustlijn vallen samen.",
           },
           {
-            text: "Omdat je hier niets van Douglas kunt zien",
+            text: "Omdat je hier juist volledig afgesloten bent van elk uitzicht",
             correct: false,
             feedback: "Nee, het uitzicht is juist de reden om hier te eindigen.",
           },
           {
-            text: "Omdat Douglas Head onder de zeespiegel ligt",
+            text: "Omdat de Camera Obscura vooral een winkelcentrum onder de promenade is",
             correct: false,
-            feedback: "Niet goed. Je klimt juist naar een hoger punt boven haven en baai.",
+            feedback: "Niet goed. Je staat boven de haven op een historisch uitzichtpunt.",
           },
         ],
       },
@@ -2864,19 +2891,20 @@ const stopUnlockRadii = {
   "Plaça de l'Ajuntament": 90,
   "Mercat Central Valencia": 80,
   "La Lonja de la Seda": 70,
-  "Catedral de Valencia en Miguelete": 90,
+  "Catedral de Valencia en Puerta de los Apóstoles": 90,
   "Torres de Serranos": 90,
   "Jardín del Turia bij Puente del Real": 120,
-  "Palau de la Música Valencia": 110,
+  "Parque Gulliver": 120,
   "Ciudad de las Artes y las Ciencias": 130,
   "Oceanogràfic Valencia": 130,
-  "Douglas Sea Terminal": 90,
-  "Tower of Refuge viewpoint": 110,
-  "Loch Promenade": 110,
-  "Douglas Bay Horse Tramway": 100,
-  "Villa Marina en Gaiety Theatre": 100,
+  "Douglas Sea Terminal en havenbrug": 90,
+  "Jubilee Clock Douglas": 70,
+  "Tower of Refuge zichtpunt": 110,
+  "Loch Promenade en Marine Gardens": 110,
+  "Gaiety Theatre Douglas": 80,
+  "Douglas Bay Horse Tramway halte": 100,
   "Manx Museum": 90,
-  "Douglas Head Camera Obscura": 130,
+  "Great Union Camera Obscura Douglas Head": 130,
 };
 
 const openDialog = (dialog) => {
@@ -3155,39 +3183,41 @@ const deeperContextByPlace = {
   "Plaza de España Madrid":
     "Plaza de España brengt meerdere Madrid-lagen samen: Cervantes en Don Quichot als verhaal, hoogbouw als moderniteit, en een vernieuwd plein als groene schakel aan de rand van Gran Vía.",
   "Estació del Nord Valencia":
-    "Estació del Nord laat Valencia zichzelf meteen presenteren. De modernistische decoratie maakt aankomst niet neutraal, maar typisch Valenciaans door keramiek, kleur en verwijzingen naar lokale identiteit.",
+    "Estació del Nord laat Valencia zichzelf meteen presenteren. De modernistische decoratie maakt aankomst niet neutraal, maar typisch Valenciaans door keramiek, kleur, sinaasappels en ambacht.",
   "Plaça de l'Ajuntament":
-    "Plaça de l'Ajuntament is een bestuurlijk podium en dagelijks knooppunt tegelijk. Juist die mix maakt het plein belangrijk: ceremonies, Fallas, bloemen, verkeer en gevels delen dezelfde ruimte.",
+    "Plaça de l'Ajuntament is een bestuurlijk podium en dagelijks knooppunt tegelijk. Juist die mix maakt het plein belangrijk: stadhuis, postgebouw, bloemen, verkeer en Fallas delen dezelfde ruimte.",
   "Mercat Central Valencia":
-    "De Mercat Central toont Valencia via eten en architectuur. Het gebouw maakt handel licht, kleurrijk en publiek, midden in een wijk waar markt, Lonja en pleinen elkaar versterken.",
+    "De Mercat Central toont Valencia via eten, architectuur en omgeving. De markt koppelt modernistisch licht en keramiek aan producten uit de huerta, de zee en het dagelijkse stadsleven.",
   "La Lonja de la Seda":
-    "La Lonja de la Seda is een van de sterkste tekens van Valencia als handelsstad. De zijdehandel werd hier niet verborgen, maar kreeg een monumentale, bijna kerkelijke waardigheid.",
-  "Catedral de Valencia en Miguelete":
-    "De kathedraal en Miguelete maken Valencia leesbaar als stad van opeenvolgende lagen. Rond één kerk komen stijlen, pleinen, poorten en oriëntatiepunten bij elkaar.",
+    "La Lonja de la Seda is een van de sterkste tekens van Valencia als handelsstad. De zijdehandel werd hier niet verborgen, maar kreeg monumentale, gotische waardigheid.",
+  "Catedral de Valencia en Puerta de los Apóstoles":
+    "Bij de Puerta de los Apóstoles wordt Valencia's watercultuur zichtbaar. De kathedraalpoort is niet alleen religieus decor, maar ook podium voor openbaar irrigatierecht.",
   "Torres de Serranos":
-    "De Torres de Serranos tonen hoe de oude stad zich afbakende. Door de ligging aan de rand richting Turia voel je de overgang tussen historisch centrum en latere groene stadsas.",
+    "De Torres de Serranos tonen hoe de oude stad zich afbakende. Door de ligging aan de rand richting Turia voel je de overgang tussen ommuurde stad, brug en buitengebied.",
   "Jardín del Turia bij Puente del Real":
     "De Turia-tuin is Valencia's grote stedelijke ingreep. Een voormalige rivierbedding werd een lang park dat wijken verbindt en de stad een heel eigen wandelstructuur geeft.",
-  "Palau de la Música Valencia":
-    "Het Palau de la Música laat zien dat de Turia niet alleen groen is. Cultuur, waterpartijen en wandelroutes maken de oude rivierbedding tot een publieke stadsruimte.",
+  "Parque Gulliver":
+    "Parque Gulliver maakt de Turia speels en bijna surrealistisch. De brede oude rivierbedding biedt ruimte aan een groot object dat tegelijk sculptuur, speeltuin en stadsicoon is.",
   "Ciudad de las Artes y las Ciencias":
-    "De Ciudad de las Artes y las Ciencias is Valencia als toekomstbeeld. De vormen, reflecties en schaal zetten bewust een spectaculair contrast naast de compacte historische stad.",
+    "De Ciudad de las Artes y las Ciencias is Valencia als toekomstbeeld. Aan het einde van de oude rivierbedding zet de stad een spectaculair contrast naast haar handels- en watergeschiedenis.",
   "Oceanogràfic Valencia":
-    "Oceanogràfic rondt de moderne oostelijke as af met water, educatie en attractiewaarde. Het verbindt Valencia's mediterrane identiteit met wetenschap en publiekscultuur.",
-  "Douglas Sea Terminal":
-    "De Sea Terminal maakt Douglas meteen eilandhoofdstad. Aankomst, ferry, haven en baai vertellen dat verbinding met zee hier geen achtergrond is, maar basis van de stad.",
-  "Tower of Refuge viewpoint":
+    "Oceanogràfic rondt de moderne oostelijke as af met water, educatie en attractiewaarde. Het laat het watermotief van huerta en Turia verschuiven naar zee en publiekscultuur.",
+  "Douglas Sea Terminal en havenbrug":
+    "De Sea Terminal en havenbrug maken Douglas meteen praktisch en maritiem. Hier zie je hoe een eilandhoofdstad afhankelijk is van aankomst, vracht, reizigers en gecontroleerde doorgangen.",
+  "Jubilee Clock Douglas":
+    "De Jubilee Clock zet Victoriaans Douglas letterlijk op een kruispunt. Het monument maakt van tijd, koninklijke herdenking en stadsoriëntatie één herkenbaar punt.",
+  "Tower of Refuge zichtpunt":
     "De Tower of Refuge maakt de baai dubbel: mooi en gevaarlijk tegelijk. Het kleine gebouw op Conister Rock herinnert aan scheepvaart, redding en de kracht van het water.",
-  "Loch Promenade":
-    "Loch Promenade zet Douglas neer als klassieke kustplaats. De langgerekte boog van gevels, wandelruimte en uitzicht maakt de baai tot openbaar podium.",
-  "Douglas Bay Horse Tramway":
+  "Loch Promenade en Marine Gardens":
+    "Loch Promenade en de Marine Gardens tonen Douglas als geconstrueerde badplaats. De baai werd niet alleen bekeken, maar ingericht als lange verblijfsruimte.",
+  "Gaiety Theatre Douglas":
+    "Het Gaiety Theatre voegt Frank Matcham, theatertechniek en avondcultuur toe aan de promenade. Douglas profileerde zich daarmee als bestemming, niet alleen als haven.",
+  "Douglas Bay Horse Tramway halte":
     "De paardentram is levend erfgoed langs de baai. Hij laat zien dat toeristisch vervoer niet altijd snel hoeft te zijn; juist het ritme en de zichtbaarheid zijn de attractie.",
-  "Villa Marina en Gaiety Theatre":
-    "Villa Marina en het Gaiety Theatre voegen avondvermaak en cultuur toe aan de promenade. Douglas wordt zo meer dan zeezicht: het wordt een verblijfsstad.",
   "Manx Museum":
     "Het Manx Museum trekt de route van Douglas naar Isle of Man als geheel. Hier komen taal, eilandgeschiedenis, politiek en identiteit achter de kuststad naar voren.",
-  "Douglas Head Camera Obscura":
-    "Douglas Head geeft overzicht. Vanaf de hoogte begrijp je de route als één baai-landschap met ferry, promenade, toren, stad en open zee.",
+  "Great Union Camera Obscura Douglas Head":
+    "Douglas Head geeft overzicht. Vanaf de hoogte begrijp je de route als één baai-landschap met ferry, promenade, reddingstoren, stad en open zee.",
 };
 
 const routeGuides = {
@@ -3486,66 +3516,70 @@ const routeGuides = {
   valencia: [
     {
       route: "Loop vanaf Estació del Nord naar Plaça de l'Ajuntament via de brede centrumstraten.",
-      watch: "Let op hoe aankomstarchitectuur overgaat in bestuurlijke stad en dagelijkse drukte.",
+      watch: "Let op hoe modernistische aankomst overgaat in een plein dat tegelijk bestuur, bloemen en Fallas-podium is.",
     },
     {
       route: "Loop vanaf Plaça de l'Ajuntament noordwestwaarts naar de Mercat Central.",
-      watch: "Kijk hoe officiële gevels en winkelstraten langzaam plaatsmaken voor de oude handelskern.",
+      watch: "Kijk hoe officiële gevels en winkelstraten langzaam plaatsmaken voor voedselhandel en oude stadsdichtheid.",
     },
     {
       route: "Steek vanaf de Mercat Central kort over naar La Lonja de la Seda.",
-      watch: "Vergelijk voedselhandel van nu met de monumentale handelsbeurs van vroeger.",
+      watch: "Vergelijk voedselhandel van nu met de monumentale zijde- en contracthandel van vroeger.",
     },
     {
-      route: "Loop vanaf La Lonja via de oude straten naar de kathedraal en de Miguelete.",
-      watch: "Let op hoe smalle straten steeds opnieuw uitkomen op kleine pleinen rond de kathedraal.",
+      route: "Loop vanaf La Lonja via de oude straten naar de Puerta de los Apóstoles bij de kathedraal.",
+      watch: "Let op hoe handel, kerk en openbaar waterrecht in een paar minuten lopen bij elkaar komen.",
     },
     {
       route: "Loop vanaf de kathedraal noordwaarts naar de Torres de Serranos.",
-      watch: "Kijk hoe het centrum richting oude stadsrand en Turia-overgang beweegt.",
+      watch: "Kijk hoe het centrum richting oude stadsrand, poort en Turia-overgang beweegt.",
     },
     {
       route: "Daal vanaf Torres de Serranos af naar de Turia-tuinen bij Puente del Real.",
       watch: "Let op het hoogteverschil: je voelt dat je een oude rivierbedding in loopt.",
     },
     {
-      route: "Volg de Turia-tuinen oostwaarts richting Palau de la Música.",
-      watch: "Kijk hoe sport, groen, water en bruggen elkaar in één lang stadspark opvolgen.",
+      route: "Volg de Turia-tuinen oostwaarts richting Parque Gulliver.",
+      watch: "Kijk hoe sport, groen, bruggen en speelruimte elkaar in één lang stadspark opvolgen.",
     },
     {
       route:
         "Volg de Turia verder oostwaarts naar de Ciudad de las Artes y las Ciencias. Dit is het langste wandelstuk; blijf in de parkbedding voor de meest logische route.",
-      watch: "Let op hoe het park steeds opener en moderner wordt voordat de witte gebouwen verschijnen.",
+      watch: "Let op hoe het park steeds opener, groter en moderner wordt voordat de witte gebouwen verschijnen.",
     },
     {
       route: "Loop door het complex langs het water naar Oceanogràfic.",
-      watch: "Vergelijk de theatrale museumarchitectuur met het meer attractieachtige waterlandschap aan het einde.",
+      watch: "Vergelijk de theatrale cultuurarchitectuur met het meer attractieachtige waterlandschap aan het einde.",
     },
   ],
   douglas: [
     {
-      route: "Loop vanaf de Sea Terminal naar de havenkant en zoek zicht op de Tower of Refuge in de baai.",
-      watch: "Let op hoe ferry, haven en open water meteen samen het eilandgevoel neerzetten.",
+      route: "Loop vanaf de Sea Terminal langs de haven richting Victoria Street en de Jubilee Clock.",
+      watch: "Let op de overgang van ferrylogistiek naar een Victoriaans stadscentrum met klok en winkelstraten.",
     },
     {
-      route: "Volg de promenade noordwaarts naar Loch Promenade.",
-      watch: "Kijk hoe de baai zich opent en de route verandert van haven naar klassieke kustpromenade.",
+      route: "Loop vanaf de Jubilee Clock naar de promenade en zoek zicht op de Tower of Refuge in Douglas Bay.",
+      watch: "Kijk hoe een stadsmonument aan land wordt gekoppeld aan een reddingsverhaal midden in de baai.",
     },
     {
-      route: "Blijf langs de promenade lopen richting de haltes en rails van de Douglas Bay Horse Tramway.",
-      watch: "Let op hoe de promenade breed genoeg is gemaakt voor wandelen, uitzicht en historisch vervoer.",
+      route: "Volg de promenade noordwaarts langs Loch Promenade en de Marine Gardens.",
+      watch: "Let op gevelrijen, tuinen en schuilplekken: de promenade is ontworpen om te verblijven.",
     },
     {
-      route: "Loop verder langs de baai naar Villa Marina en het Gaiety Theatre.",
-      watch: "Kijk hoe entertainmentgebouwen de promenade meer maken dan alleen een wandelstrook.",
+      route: "Loop verder langs de baai naar het Gaiety Theatre bij Villa Marina.",
+      watch: "Kijk hoe ontspanning overdag overgaat in avondcultuur en theater aan dezelfde promenade.",
     },
     {
-      route: "Loop vanaf Villa Marina landinwaarts omhoog naar het Manx Museum.",
+      route: "Blijf in de buurt van de promenade en zoek rails, halte of verwijzingen naar de Douglas Bay Horse Tramway.",
+      watch: "Let op hoe de tram bij de promenade hoort als langzaam erfgoed, niet als haastige verbinding.",
+    },
+    {
+      route: "Loop vanaf de promenade landinwaarts omhoog naar het Manx Museum.",
       watch: "Let op de overgang van kustfront naar stadsstraten en culturele eilandcontext.",
     },
     {
       route:
-        "Loop vanaf het Manx Museum terug richting haven en klim daarna naar Douglas Head. Dit laatste stuk is steiler; neem rustig de tijd.",
+        "Loop vanaf het Manx Museum terug richting haven en klim daarna naar Douglas Head en de Camera Obscura. Dit laatste stuk is steiler; neem rustig de tijd.",
       watch: "Kijk onderweg terug: hoe hoger je komt, hoe duidelijker de boog van de baai wordt.",
     },
   ],
@@ -3637,19 +3671,20 @@ const activityTipsByPlace = {
   "Plaça de l'Ajuntament": "Kom later terug als er markt, licht of Fallas-activiteit is; dit plein verandert sterk per moment van de dag.",
   "Mercat Central Valencia": "Proef iets simpels uit de markt, bijvoorbeeld fruit, horchata of een kleine lokale snack, als de markt open is.",
   "La Lonja de la Seda": "Bezoek de binnenzaal als je tijd hebt; de zuilen maken de rijkdom van de zijdehandel veel tastbaarder.",
-  "Catedral de Valencia en Miguelete": "Beklim de Miguelete als je energie hebt; het uitzicht helpt de compacte oude stad te begrijpen.",
+  "Catedral de Valencia en Puerta de los Apóstoles": "Ben je er op donderdag rond 12 uur, kijk dan of je iets van het Tribunal de las Aguas kunt meemaken.",
   "Torres de Serranos": "Loop over of rond de torens als toegang mogelijk is; van boven zie je de oude stadsrand en Turia veel beter.",
   "Jardín del Turia bij Puente del Real": "Huur later een fiets voor de Turia-route als je sneller naar strand of haven wilt doorsteken.",
-  "Palau de la Música Valencia": "Check of er een concert of gratis buitenmoment is; muziek past hier logisch bij de parkas.",
+  "Parque Gulliver": "Neem hier even pauze als je met kinderen reist; dit is een van de meest speelse plekken in de Turia.",
   "Ciudad de las Artes y las Ciencias": "Neem de tijd voor foto's rond het water; vroeg of laat licht maakt de reflecties veel sterker.",
   "Oceanogràfic Valencia": "Plan Oceanogràfic als aparte activiteit als je met kinderen reist of meer over zeeleven wilt toevoegen.",
-  "Douglas Sea Terminal": "Kijk later bij aankomst of vertrek van een ferry; dan voel je de rol van Douglas als eilandpoort het best.",
-  "Tower of Refuge viewpoint": "Loop bij laag of hoog tij nog eens terug naar het uitzichtpunt; de baai verandert dan zichtbaar.",
-  "Loch Promenade": "Neem rustig een koffie langs de promenade en kijk hoe weer, licht en water het stadsbeeld veranderen.",
-  "Douglas Bay Horse Tramway": "Rijd een stukje met de paardentram als hij rijdt; langzaam reizen past perfect bij deze promenade.",
-  "Villa Marina en Gaiety Theatre": "Check het avondprogramma van het Gaiety Theatre; het gebouw is leuker als je er ook een voorstelling aan koppelt.",
+  "Douglas Sea Terminal en havenbrug": "Kijk later bij aankomst of vertrek van een ferry; dan voel je de rol van Douglas als eilandpoort het best.",
+  "Jubilee Clock Douglas": "Loop even Victoria Street in; dan zie je hoe de klok winkelstad, haven en promenade aan elkaar knoopt.",
+  "Tower of Refuge zichtpunt": "Loop bij laag of hoog tij nog eens terug naar het uitzichtpunt; de baai verandert dan zichtbaar.",
+  "Loch Promenade en Marine Gardens": "Neem rustig een koffie langs de promenade en kijk hoe weer, licht en water het stadsbeeld veranderen.",
+  "Gaiety Theatre Douglas": "Check het avondprogramma of een rondleiding; het theater is sterker als je ook iets van de binnenwereld ziet.",
+  "Douglas Bay Horse Tramway halte": "Rijd een stukje met de paardentram als hij rijdt; langzaam reizen past perfect bij deze promenade.",
   "Manx Museum": "Ga naar binnen als je tijd hebt; het museum is een van de beste plekken om Isle of Man echt te begrijpen.",
-  "Douglas Head Camera Obscura": "Blijf boven even zitten voor het uitzicht over de baai, vooral als het licht aan het einde van de dag zachter wordt.",
+  "Great Union Camera Obscura Douglas Head": "Blijf boven even zitten voor het uitzicht over de baai, vooral als het licht aan het einde van de dag zachter wordt.",
 };
 
 const buildActivityTip = (tour, stop) =>
