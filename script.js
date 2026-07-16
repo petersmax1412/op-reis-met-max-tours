@@ -6359,6 +6359,35 @@ const normalizeSearch = (value) =>
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+
+const tourCountries = {
+  malaga: ["Spanje", "Spain", "Andalusië"],
+  dusseldorf: ["Duitsland", "Germany", "Noordrijn-Westfalen"],
+  keulen: ["Duitsland", "Germany", "Noordrijn-Westfalen"],
+  frankfurt: ["Duitsland", "Germany", "Hessen"],
+  london: ["Verenigd Koninkrijk", "United Kingdom", "Engeland", "England", "UK"],
+  copenhagen: ["Denemarken", "Denmark"],
+  innsbruck: ["Oostenrijk", "Austria", "Tirol"],
+  vienna: ["Oostenrijk", "Austria"],
+  madrid: ["Spanje", "Spain"],
+  valencia: ["Spanje", "Spain"],
+  palma: ["Spanje", "Spain", "Mallorca", "Balearen"],
+  douglas: ["Isle of Man", "Man", "Verenigd Koninkrijk", "United Kingdom", "UK"],
+  paris: ["Frankrijk", "France"],
+  rome: ["Italië", "Italie", "Italy"],
+  amsterdam: ["Nederland", "Netherlands", "Holland"],
+  berlin: ["Duitsland", "Germany"],
+  lisbon: ["Portugal"],
+  budapest: ["Hongarije", "Hungary"],
+  venice: ["Italië", "Italie", "Italy"],
+  barcelona: ["Spanje", "Spain", "Catalonië", "Catalunya"],
+  prague: ["Tsjechië", "Tsjechie", "Czechia", "Czech Republic"],
+  munich: ["Duitsland", "Germany", "Beieren", "Bavaria"],
+  milan: ["Italië", "Italie", "Italy"],
+  athens: ["Griekenland", "Greece"],
+  edinburgh: ["Verenigd Koninkrijk", "United Kingdom", "Schotland", "Scotland", "UK"],
+};
+
 const cityPhotos = {
   malaga: {
     src: "assets/cities/malaga.jpg",
@@ -9313,7 +9342,14 @@ const renderTours = () => {
   const visibleTours = tours.filter((tour) => {
     const matchesCity = selectedCityId === "all" || tour.id === selectedCityId;
     const searchable = normalizeSearch(
-      [tour.id, tour.city, tour.title, tour.summary, ...tour.stops.map((stop) => stop.place)].join(" "),
+      [
+        tour.id,
+        tour.city,
+        tour.title,
+        tour.summary,
+        ...(tourCountries[tour.id] || []),
+        ...tour.stops.map((stop) => stop.place),
+      ].join(" "),
     );
     const matchesSearch = !normalizedSearch || searchable.includes(normalizedSearch);
     return matchesCity && matchesSearch;
