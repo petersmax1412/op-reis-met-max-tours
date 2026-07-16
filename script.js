@@ -2225,9 +2225,8 @@ const cityPhotos = {
   },
   cologne: {
     src: "assets/cities/cologne.jpg",
-    alt: "Keulen overdag met de Rijn en de Dom",
-    credit: "Dietmar Rabich, CC BY-SA 4.0",
-    source: "https://commons.wikimedia.org/wiki/File:K%C3%B6ln,_Stadtpanorama_--_2014_--_1857.jpg",
+    alt: "Keulen gefotografeerd door Max Peters",
+    credit: "Max Peters, eigen werk",
   },
   frankfurt: {
     src: "assets/cities/frankfurt.jpg",
@@ -2282,7 +2281,11 @@ const renderCityPhoto = (tour, modifier = "") => {
       <img src="${photo.src}" alt="${photo.alt}" loading="lazy" />
       <figcaption>
         Foto:
-        <a href="${photo.source}" target="_blank" rel="noopener noreferrer">${photo.credit}</a>
+        ${
+          photo.source
+            ? `<a href="${photo.source}" target="_blank" rel="noopener noreferrer">${photo.credit}</a>`
+            : `<span>${photo.credit}</span>`
+        }
       </figcaption>
     </figure>
   `;

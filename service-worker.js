@@ -1,4 +1,4 @@
-const cacheName = "stadsopdracht-v42";
+const cacheName = "stadsopdracht-v43";
 const filesToCache = [
   "./",
   "./index.html",
