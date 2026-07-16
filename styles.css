@@ -341,33 +341,64 @@ body.promo-active {
 
 .promo-question-card {
   background: #f7f3ea;
-  border-radius: 16px;
+  border: 1px solid rgba(18, 37, 63, 0.12);
+  border-radius: 8px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
   color: #12253f;
   display: grid;
-  gap: 10px;
+  gap: 9px;
   margin-bottom: 20px;
-  padding: 18px;
+  padding: 16px;
   text-align: left;
-  width: min(100%, 280px);
+  width: min(100%, 310px);
+}
+
+.promo-card-pill {
+  background: #dff7fb;
+  border-radius: 999px;
+  color: #10aeca;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  justify-self: start;
+  padding: 5px 9px;
 }
 
 .promo-question-card strong {
+  color: #13211f;
   font-size: 1rem;
+  line-height: 1.2;
 }
 
-.promo-question-card span {
-  color: rgba(18, 37, 63, 0.68);
-  font-size: 0.86rem;
+.promo-question-card p {
+  color: #66736d;
+  font-size: 0.8rem;
   font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
 }
 
-.promo-question-card .promo-answer {
-  background: rgba(31, 143, 91, 0.14);
-  border: 1px solid rgba(31, 143, 91, 0.28);
-  border-radius: 10px;
-  color: #176942;
-  padding: 10px 12px;
+.promo-choice {
+  background: #fff;
+  border: 1px solid #d9ddd3;
+  border-radius: 8px;
+  color: #13211f;
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.26;
+  padding: 9px 10px;
+}
+
+.promo-choice-correct {
+  background: #dcefe7;
+  border-color: #1f8f5b;
+}
+
+.promo-question-card small {
+  color: #66736d;
+  font-size: 0.72rem;
+  font-weight: 800;
 }
 
 .promo-unlock {

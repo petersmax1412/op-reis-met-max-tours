@@ -2708,16 +2708,5 @@ refreshApp();
 initPromoIntro();
 
 if ("serviceWorker" in navigator) {
-  let refreshing = false;
-
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-    if (refreshing) return;
-    refreshing = true;
-    window.location.reload();
-  });
-
-  navigator.serviceWorker
-    .register("service-worker.js")
-    .then((registration) => registration.update())
-    .catch(() => {});
+  navigator.serviceWorker.register("service-worker.js").catch(() => {});
 }
