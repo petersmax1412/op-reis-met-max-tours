@@ -227,24 +227,26 @@ const tours = [
         title: "Loop langs het water",
         place: "Rheinuferpromenade",
         coordinates: { lat: 51.226, lng: 6.769 },
-        assignment: "Zoek hoe de promenade de stad losmaakt van autoverkeer en dichter bij de rivier brengt.",
-        question: "Wat veranderde er voor Düsseldorf doordat de Rijn hier als promenade werd teruggegeven aan wandelaars?",
-        hint: "Let op lopen, kijken, zitten en langzaam bewegen.",
+        assignment:
+          "Kijk richting Altstadt en Rijn. Zoek hoe de promenade de stad weer direct met het water verbindt.",
+        question: "Waarom is de Rheinuferpromenade belangrijk voor hoe Düsseldorf de Rijn nu gebruikt?",
+        hint: "Denk aan de oude verkeersdruk aan de oever en aan wat je hier nu als voetganger kunt doen.",
         choices: [
           {
-            text: "Omdat mensen er kunnen wandelen, pauzeren en de stad vanaf afstand zien",
+            text: "De oever werd een verblijfsplek waar je de Altstadt, Rijn en skyline tegelijk ervaart",
             correct: true,
-            feedback: "Goed gezien. De promenade is tegelijk route, rustplek en uitzichtpunt.",
+            feedback:
+              "Goed gezien. De promenade maakte de Rijn weer onderdeel van het dagelijkse stadsleven: wandelen, zitten, kijken en oversteken horen hier bij elkaar.",
           },
           {
-            text: "Omdat er geen zicht op de stad is",
+            text: "Omdat de Rijn hier vooral achter gebouwen verstopt blijft",
             correct: false,
-            feedback: "Juist het zicht op stad en rivier maakt de promenade sterk.",
+            feedback: "Juist niet. De kracht van deze plek is dat je rivier, Altstadt en overkant open kunt lezen.",
           },
           {
-            text: "Omdat rivieren alleen voor scheepvaart bestaan",
+            text: "Omdat de promenade alleen bedoeld is als snelle fietsroute zonder verblijf",
             correct: false,
-            feedback: "Scheepvaart is belangrijk, maar moderne waterfronts worden ook publieke ruimtes.",
+            feedback: "Niet helemaal. Je ziet hier juist banken, trappen, terrassen en zichtpunten die langzaam gebruik uitnodigen.",
           },
         ],
       },
@@ -252,24 +254,26 @@ const tours = [
         title: "Lees de Königsallee",
         place: "Königsallee",
         coordinates: { lat: 51.2245, lng: 6.7782 },
-        assignment: "Kijk naar de gracht, bomen en winkels. Zoek wat hier luxe en rust tegelijk maakt.",
-        question: "Welk ontwerpdetail maakt de Königsallee tot de luxueuze 'Kö' in plaats van een gewone winkelstraat?",
-        hint: "Kijk niet alleen naar de etalages.",
+        assignment:
+          "Kijk naar de gracht, bomen, brede stoepen en etalages van de dure merken. Zoek hoe straatbeeld en luxe elkaar versterken.",
+        question: "Waarom zitten juist aan de Königsallee zoveel luxe winkels en dure merken?",
+        hint: "Let op bereikbaarheid, uitstraling, ruimte en het rustige water in het midden.",
         choices: [
           {
-            text: "De combinatie van gracht, bomenrijen en brede wandelruimte",
+            text: "Omdat de Kö prestige, zichtbaarheid en een chique verblijfsruimte combineert",
             correct: true,
-            feedback: "Ja. De straat verkoopt niet alleen winkels, maar ook sfeer en ruimte.",
+            feedback:
+              "Ja. Dure merken zitten graag waar het adres zelf al waarde heeft: de gracht, bomen, brede stoepen en rustige luxe-uitstraling maken de Kö een podium voor premium winkels.",
           },
           {
-            text: "Dat er helemaal geen winkels zijn",
+            text: "Omdat luxe merken juist graag in smalle, onzichtbare zijstraten zitten",
             correct: false,
-            feedback: "Er zijn juist veel winkels, maar de ruimtelijke opzet maakt het bijzonder.",
+            feedback: "Dat kan soms, maar de Kö draait juist om zichtbaarheid, etalages en het prestige van het adres.",
           },
           {
-            text: "Dat de straat geen groen gebruikt",
+            text: "Omdat de straat vooral goedkoop en functioneel is ingericht",
             correct: false,
-            feedback: "Kijk naar de bomen en de gracht. Groen is hier onderdeel van de uitstraling.",
+            feedback: "Kijk nog eens naar water, bomen en gevels. De hele inrichting ondersteunt juist een exclusieve sfeer.",
           },
         ],
       },
@@ -350,7 +354,8 @@ const tours = [
           {
             text: "Door de hoogte, donkere steen en duidelijke torens",
             correct: true,
-            feedback: "Precies. De Dom is niet alleen een gebouw, maar ook een oriëntatiepunt.",
+            feedback:
+              "Precies. Met torens van ongeveer 157 meter hoog is de Dom niet alleen een kerk, maar ook het dominante oriëntatiepunt van Keulen.",
           },
           {
             text: "Omdat hij bijna onzichtbaar is vanaf het plein",
@@ -393,24 +398,26 @@ const tours = [
         title: "Zoek het oude pleinleven",
         place: "Alter Markt",
         coordinates: { lat: 50.9386, lng: 6.9603 },
-        assignment: "Kijk naar gevels, terrassen en doorgangen. Zoek waar handel en ontmoeting zichtbaar blijven.",
-        question: "Wat verraadt op Alter Markt dat Keulen hier al lang pleinleven, handel en horeca mengt?",
-        hint: "Let op schaal, randen en routes naar het plein.",
+        assignment:
+          "Kijk naar de smalle gevels, terrassen en doorgangen rond het plein. Zoek hoe het plein nog steeds als huiskamer van de Altstadt werkt.",
+        question: "Wat maakt Alter Markt zo’n logisch centrum voor Keuls pleinleven?",
+        hint: "Let op de combinatie van oude handelsruimte, horeca en routes naar de Rijn.",
         choices: [
           {
-            text: "De omsloten ruimte met veel toegangen en actieve gevels",
+            text: "Het plein koppelt historische handelsruimte aan cafés, terrassen en looproutes door de Altstadt",
             correct: true,
-            feedback: "Ja. Zo’n plein werkt doordat mensen er makkelijk aankomen, blijven hangen en weer doorlopen.",
+            feedback:
+              "Ja. Alter Markt voelt niet toevallig levendig: de randen zijn actief, de Rijn ligt dichtbij en de routes door de oude stad komen hier vanzelf samen.",
           },
           {
-            text: "Dat er geen gebouwen omheen staan",
+            text: "Dat het plein vooral leeg en los van de Altstadt ligt",
             correct: false,
-            feedback: "De randen zijn juist belangrijk voor het pleinleven.",
+            feedback: "Nee, juist de aansluiting op de Altstadt en de actieve gevels houden het plein levendig.",
           },
           {
-            text: "Dat het volledig losstaat van de oude stad",
+            text: "Dat het plein vooral bedoeld is om verkeer zo snel mogelijk door te laten rijden",
             correct: false,
-            feedback: "Nee, het plein ligt juist verweven met de historische binnenstad.",
+            feedback: "Niet echt. Alter Markt werkt juist als verblijfsplek, niet als snelle verkeersruimte.",
           },
         ],
       },
@@ -418,24 +425,26 @@ const tours = [
         title: "Kijk naar bestuur in detail",
         place: "Historisches Rathaus",
         coordinates: { lat: 50.9389, lng: 6.9594 },
-        assignment: "Zoek beelden, torens of versieringen die iets vertellen over status.",
-        question: "Waarom past een rijk versierd Rathaus goed bij de oude stedelijke trots van Keulen?",
-        hint: "Denk aan trots, macht en zelfstandigheid.",
+        assignment:
+          "Zoek de toren, beelden en details. Bedenk waarom een stad haar bestuur zo opvallend zichtbaar wilde maken.",
+        question: "Wat wil het Historisches Rathaus van Keulen vooral laten zien?",
+        hint: "Denk aan een stad die eeuwenlang rijk, zelfstandig en politiek belangrijk wilde overkomen.",
         choices: [
           {
-            text: "Om stedelijke rijkdom en politieke betekenis zichtbaar te maken",
+            text: "Dat Keulen zichzelf zag als machtige handelsstad met een trots stadsbestuur",
             correct: true,
-            feedback: "Klopt. Architectuur was ook communicatie: kijk wat wij als stad kunnen.",
+            feedback:
+              "Klopt. Het Rathaus is bestuurlijke architectuur als visitekaartje: de stad liet met toren, beelden en versiering zien dat ze macht, geld en zelfbewustzijn had.",
           },
           {
-            text: "Omdat niemand het gebouw mocht herkennen",
+            text: "Dat het bestuur juist onzichtbaar en onbelangrijk wilde blijven",
             correct: false,
-            feedback: "Het moest juist herkenbaar en indrukwekkend zijn.",
+            feedback: "Nee, de herkenbaarheid en rijkdom van het gebouw zijn juist onderdeel van de boodschap.",
           },
           {
-            text: "Omdat bestuur vroeger niets met steden te maken had",
+            text: "Dat Keulen geen handelsstad was en weinig stedelijke macht had",
             correct: false,
-            feedback: "Steden bestuurden juist veel zelf, en dat wilden ze tonen.",
+            feedback: "Juist niet. Keulen was eeuwenlang een belangrijke handels- en bestuursstad aan de Rijn.",
           },
         ],
       },
@@ -581,24 +590,26 @@ const tours = [
         title: "Zoek Goethe in de stad",
         place: "Goethe-Haus",
         coordinates: { lat: 50.1114, lng: 8.6777 },
-        assignment: "Kijk naar de schaal van de straat en bedenk hoe een bekend persoon een plek verandert.",
-        question: "Waarom helpt het Goethe-Haus Frankfurt om meer te zijn dan alleen banken en skyline?",
-        hint: "Denk aan verhaal, herkenning en stadsmarketing.",
+        assignment:
+          "Kijk naar de schaal van het huis en de straat. Bedenk waarom Frankfurt juist dit persoonlijke verhaal bewaart.",
+        question: "Waarom is het Goethe-Haus belangrijk voor het verhaal dat Frankfurt over zichzelf vertelt?",
+        hint: "Denk aan Goethe als schrijver, geboorteplek en cultureel tegenwicht bij de financiële skyline.",
         choices: [
           {
-            text: "Omdat een persoonlijk verhaal de stad concreter maakt",
+            text: "Het geeft Frankfurt een cultureel gezicht naast banken, beurs en hoogbouw",
             correct: true,
-            feedback: "Mooi. Een stad wordt beter te onthouden via mensen en verhalen.",
+            feedback:
+              "Mooi. Goethe maakt Frankfurt menselijker en cultureler: niet alleen kapitaal en skyline, maar ook literatuur, jeugd en herinnering.",
           },
           {
-            text: "Omdat zulke huizen altijd groter zijn dan kerken",
+            text: "Omdat Goethe vooral bekend werd als bankier van Frankfurt",
             correct: false,
-            feedback: "Niet de grootte, maar het verhaal maakt de plek belangrijk.",
+            feedback: "Nee, Goethe is juist belangrijk als schrijver en denker. De plek werkt door zijn culturele verhaal.",
           },
           {
-            text: "Omdat literatuur niets met steden te maken heeft",
+            text: "Omdat geboortehuizen alleen belangrijk zijn als ze hoger zijn dan wolkenkrabbers",
             correct: false,
-            feedback: "Juist wel. Schrijvers kunnen sterk onderdeel worden van een stadsidentiteit.",
+            feedback: "Niet de hoogte, maar het verhaal maakt deze plek waardevol voor Frankfurt.",
           },
         ],
       },
@@ -613,7 +624,8 @@ const tours = [
           {
             text: "Frankfurt profileert zich als financieel en internationaal centrum",
             correct: true,
-            feedback: "Klopt. De skyline is een zichtbaar teken van economische rol.",
+            feedback:
+              "Klopt. De skyline is een zichtbaar teken van Frankfurts economische rol. Als je tijd hebt, moet je echt eens vanaf de Main Tower naar boven kijken: dan zie je de oude stad, de Main en het bankencluster in één beeld.",
           },
           {
             text: "Dat de stad geen economie heeft",
@@ -631,24 +643,26 @@ const tours = [
         title: "Eindig bij cultuur en status",
         place: "Alte Oper",
         coordinates: { lat: 50.1157, lng: 8.671 },
-        assignment: "Bekijk de gevel en het plein. Zoek hoe cultuur ook status kan uitstralen.",
-        question: "Waarom past de Alte Oper bij Frankfurt als stad van status, publiek en cultuur?",
-        hint: "Denk aan publieke cultuur, prestige en samenkomen.",
+        assignment:
+          "Bekijk de monumentale gevel en het plein ervoor. Zoek hoe het gebouw meer doet dan alleen concerten aankondigen.",
+        question: "Wat vertelt de Alte Oper over Frankfurt naast de financiële skyline?",
+        hint: "Let op de monumentale gevel, het plein en de manier waarop mensen hier samenkomen.",
         choices: [
           {
-            text: "Omdat cultuurgebouwen laten zien wat een stad belangrijk en waardevol vindt",
+            text: "Dat Frankfurt zich ook als cultuurstad en representatieve ontmoetingsplek wil tonen",
             correct: true,
-            feedback: "Precies. Cultuur is ook stadsidentiteit en prestige.",
+            feedback:
+              "Precies. De Alte Oper geeft Frankfurt prestige zonder banklogo’s: cultuur, architectuur en pleinruimte maken hier samen een ander soort stedelijke status.",
           },
           {
-            text: "Omdat niemand het gebouw hoeft te kunnen vinden",
+            text: "Dat cultuur in Frankfurt bewust uit het centrum is weggestopt",
             correct: false,
-            feedback: "Het gebouw is juist zichtbaar en makkelijk te herkennen.",
+            feedback: "Nee, de zichtbare ligging en monumentale gevel maken het gebouw juist nadrukkelijk aanwezig.",
           },
           {
-            text: "Omdat opera alleen buiten steden plaatsvindt",
+            text: "Dat het gebouw vooral een onopvallend kantoorpand is",
             correct: false,
-            feedback: "Operahuizen staan vaak midden in stedelijke culturele zones.",
+            feedback: "Kijk naar de gevel en het plein. Dit gebouw is juist gemaakt om publiek en prestige aan te trekken.",
           },
         ],
       },
@@ -660,10 +674,10 @@ const tours = [
     title: "London Central: pleinen, bruggen en macht",
     price: "€4,49",
     duration: "150 min",
-    distance: "5,8 km",
+    distance: "6,3 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een route door centraal London langs Trafalgar Square, Covent Garden, St Paul’s en de Thames.",
+      "Een route door centraal London langs Trafalgar Square, Covent Garden, Borough Market, St Paul’s en de Thames.",
     stops: [
       {
         title: "Start op Trafalgar Square",
@@ -716,27 +730,29 @@ const tours = [
         ],
       },
       {
-        title: "Lees een statig gebouw",
-        place: "Somerset House",
-        coordinates: { lat: 51.5111, lng: -0.1171 },
-        assignment: "Kijk naar de gevel en binnenplaats. Zoek wat symmetrie en schaal met je doen.",
-        question: "Wat laat Somerset House zien over officiële macht en cultuur langs de Strand?",
-        hint: "Denk aan orde, instituties en representatie.",
+        title: "Proef Borough Market",
+        place: "Borough Market",
+        coordinates: { lat: 51.5055, lng: -0.091 },
+        assignment:
+          "Kijk naar de markthal, de spoorbogen en de foodstalls. Zoek hoe oud marktgebruik en moderne foodcultuur door elkaar lopen.",
+        question: "Waarom past Borough Market zo goed bij London als oude handelsstad én moderne foodstad?",
+        hint: "Let op de ligging bij London Bridge, de spoorbogen en de mix van lokale en internationale producten.",
         choices: [
           {
-            text: "Orde, status en publieke cultuur",
+            text: "Omdat handel, stationsroutes en internationale eetcultuur hier op één plek samenkomen",
             correct: true,
-            feedback: "Ja. De architectuur stuurt je gevoel: rustig, formeel en indrukwekkend.",
+            feedback:
+              "Precies. Borough Market voelt modern door de foodcultuur, maar de plek past in een veel ouder Londens patroon van handel rond bruggen, routes en de Thames.",
           },
           {
-            text: "Alleen tijdelijke rommel",
+            text: "Omdat het vooral een stille woonstraat zonder marktkramen is",
             correct: false,
-            feedback: "Kijk naar de vaste opzet van gevel en binnenplaats.",
+            feedback: "Nee, juist de drukte, kramen en eetplekken maken duidelijk dat dit een marktomgeving is.",
           },
           {
-            text: "Dat architectuur nooit iets communiceert",
+            text: "Omdat de markt losstaat van treinroutes, bruggen en de rivier",
             correct: false,
-            feedback: "Architectuur communiceert hier juist heel duidelijk status en orde.",
+            feedback: "Kijk naar de ligging bij London Bridge en de spoorbogen. Routes zijn juist deel van het verhaal.",
           },
         ],
       },
@@ -745,23 +761,24 @@ const tours = [
         place: "St Paul’s Cathedral",
         coordinates: { lat: 51.5138, lng: -0.0984 },
         assignment: "Zoek een plek waar de koepel goed zichtbaar is en vergelijk hem met moderne gebouwen.",
-        question: "Waarom is de koepel van St Paul’s zo’n belangrijk historisch herkenningspunt in London?",
-        hint: "Denk aan herkenbaarheid, ceremonie en skyline.",
+        question: "Waarom kreeg St Paul’s zo’n sterke symbolische lading in het moderne London?",
+        hint: "Denk aan de Grote Brand, Wren, nationale ceremonies en het beeld van de koepel in de skyline.",
         choices: [
           {
-            text: "Hij is een historisch herkenningspunt met sterke symbolische waarde",
+            text: "De kathedraal werd na de Grote Brand herbouwd en groeide uit tot nationaal ceremonieel symbool",
             correct: true,
-            feedback: "Klopt. De koepel geeft London een historische verticale markering.",
+            feedback:
+              "Klopt. St Paul’s is niet alleen herkenbaar door de koepel; de herbouw na 1666 en de nationale ceremonies geven het gebouw extra historische lading.",
           },
           {
-            text: "Omdat hij ondergronds ligt",
+            text: "Omdat de kathedraal vooral gebouwd is als koninklijk woonpaleis",
             correct: false,
-            feedback: "Juist de zichtbaarheid boven de stad maakt hem belangrijk.",
+            feedback: "Nee, St Paul’s is een kathedraal. De koninklijke en nationale betekenis zit vooral in ceremonies en herinnering.",
           },
           {
-            text: "Omdat hij alleen als winkelcentrum bedoeld is",
+            text: "Omdat de koepel bewust lager bleef dan alle omliggende huizen",
             correct: false,
-            feedback: "Nee, de plek is religieus, ceremonieel en historisch geladen.",
+            feedback: "Niet echt. De koepel is juist bedoeld als krachtige verticale markering in het stadsbeeld.",
           },
         ],
       },
@@ -770,23 +787,24 @@ const tours = [
         place: "Millennium Bridge",
         coordinates: { lat: 51.5096, lng: -0.0984 },
         assignment: "Stop op de brug en kijk naar St Paul’s aan de ene kant en Tate Modern aan de andere.",
-        question: "Wat maakt de Millennium Bridge zo slim in de zichtlijn tussen St Paul’s en Tate Modern?",
-        hint: "Let op de rechte zichtlijn tussen twee belangrijke gebouwen.",
+        question: "Wat maakt de Millennium Bridge stedenbouwkundig interessant?",
+        hint: "Kijk hoe de brug een as maakt tussen St Paul’s, de Thames en Tate Modern.",
         choices: [
           {
-            text: "Hij verbindt religieuze historie met moderne cultuur in één zichtlijn",
+            text: "De brug maakt een directe voetgangersas tussen Wren’s kathedraal en de moderne kunst aan Bankside",
             correct: true,
-            feedback: "Mooi gezien. De brug maakt van lopen bijna een stadsles.",
+            feedback:
+              "Mooi gezien. De Millennium Bridge is niet alleen een oversteek; hij regisseert een wandeling van religieuze historie naar industriële herbestemming en moderne kunst.",
           },
           {
-            text: "Hij blokkeert alle zicht op de stad",
+            text: "De brug is vooral ontworpen om autoverkeer sneller naar de City te brengen",
             correct: false,
-            feedback: "De brug is juist gemaakt voor sterke zichtlijnen.",
+            feedback: "Nee, dit is juist een voetgangersbrug. De ervaring van lopen en kijken is essentieel.",
           },
           {
-            text: "Hij heeft niets met de rivier te maken",
+            text: "De brug volgt vooral een middeleeuwse stadsmuur en negeert St Paul’s",
             correct: false,
-            feedback: "Zonder de Thames en de oversteek werkt deze plek niet.",
+            feedback: "Niet goed. De zichtlijn naar St Paul’s is juist een van de sterkste ruimtelijke effecten.",
           },
         ],
       },
@@ -795,23 +813,24 @@ const tours = [
         place: "Tower Bridge",
         coordinates: { lat: 51.5055, lng: -0.0754 },
         assignment: "Kijk naar torens, brugdek en rivierverkeer. Zoek wat praktisch is en wat decoratief voelt.",
-        question: "Waarom werd Tower Bridge een icoon van London in plaats van alleen een praktische brug?",
-        hint: "Denk aan techniek én theater.",
+        question: "Waarom ziet Tower Bridge er historisch uit, terwijl hij technisch juist heel modern was voor zijn tijd?",
+        hint: "Let op de basculebrug, het scheepvaartverkeer en de relatie met de Tower of London.",
         choices: [
           {
-            text: "De brug combineert techniek, torens en een sterk historisch uiterlijk",
+            text: "De moderne beweegbare brug kreeg een neogotisch uiterlijk zodat hij bij de Tower of London paste",
             correct: true,
-            feedback: "Precies. Hij is functioneel, maar ziet eruit als een icoon.",
+            feedback:
+              "Precies. Tower Bridge is slimme techniek in historische kleding: de brug kon open voor schepen, maar moest visueel passen bij de middeleeuwse Tower ernaast.",
           },
           {
-            text: "Omdat hij helemaal geen torens heeft",
+            text: "Omdat het dezelfde brug is als London Bridge en nooit open kan",
             correct: false,
-            feedback: "De torens zijn juist het meest herkenbare onderdeel.",
+            feedback: "Nee, Tower Bridge is niet London Bridge en is juist beroemd als beweegbare basculebrug.",
           },
           {
-            text: "Omdat hij ver van de Thames ligt",
+            text: "Omdat de torens alleen later als reclamezuilen zijn toegevoegd",
             correct: false,
-            feedback: "Tower Bridge is onlosmakelijk verbonden met de Thames.",
+            feedback: "Niet klopt. De torens horen bij het ontwerp en dragen de herkenbare historische uitstraling.",
           },
         ],
       },
@@ -921,21 +940,21 @@ const deeperContextByPlace = {
   "Burgplatz en Schlossturm":
     "Burgplatz is een scharnier tussen de Rijn en de Altstadt. De Schlossturm herinnert aan de tijd waarin macht, rivierhandel en stadsontwikkeling op dezelfde plek samenkwamen.",
   Rheinuferpromenade:
-    "De Rheinuferpromenade is sterk omdat de stad de rivier weer als verblijfsruimte gebruikt. Waar verkeer en havenfuncties domineerden, lopen mensen nu langs de Rijn.",
+    "De Rheinuferpromenade is sterk omdat Düsseldorf de Rijn weer als verblijfsruimte gebruikt. De oever is niet alleen rand van de stad, maar een plek waar Altstadt, skyline en rivier samen zichtbaar worden.",
   Königsallee:
-    "De Kö gebruikt water, bomen en brede profielen om luxe ruimtelijk te maken. Het is niet alleen winkelen, maar een ontworpen stadsdecor.",
+    "De Kö gebruikt water, bomen en brede profielen om luxe ruimtelijk te maken. Dure merken zitten hier omdat het adres zelf status geeft: zien, gezien worden en rustig flaneren horen bij de winkelervaring.",
   Bolkerstraße:
     "De 'langste Theke' is een bijnaam voor de dichtheid aan cafés, brouwhuizen en Altbiercultuur. Dat uitgaansnetwerk is een belangrijk deel van Düsseldorfs identiteit.",
   Rheinturm:
     "De Lichtzeitpegel maakt techniek speels zichtbaar: de toren is observatiepunt, landmark en klok tegelijk. Dat past goed bij de moderne Rijnzone.",
   "Kölner Dom":
-    "De Dom is in Keulen meer dan een kerk. Door zijn schaal en ligging naast het station is hij vaak het eerste en sterkste beeld van de stad.",
+    "De Dom is in Keulen meer dan een kerk. Door zijn torens van ongeveer 157 meter en zijn ligging naast het station is hij vaak het eerste en sterkste beeld van de stad.",
   Hohenzollernbrücke:
     "Deze brug combineert treinverkeer, voetgangersroutes en liefdessloten. Daardoor wordt infrastructuur tegelijk een ritueel en uitzichtpunt.",
   "Alter Markt":
-    "Alter Markt laat het oude stedelijke ritme zien: handel, horeca, doorgangen en gevels maken samen een plein dat blijft functioneren als ontmoetingsplek.",
+    "Alter Markt laat het oude stedelijke ritme zien: handel, horeca, doorgangen naar de Altstadt en de nabijheid van de Rijn maken samen een plein dat blijft functioneren als ontmoetingsplek.",
   "Historisches Rathaus":
-    "Het Rathaus toont de stedelijke zelfstandigheid van Keulen. De toren en decoratie vertellen dat bestuur zichtbaar en indrukwekkend moest zijn.",
+    "Het Rathaus toont de stedelijke zelfstandigheid van Keulen. De toren, beelden en decoratie laten zien dat bestuur niet verstopt werd, maar als stedelijke macht zichtbaar moest zijn.",
   Eigelsteintorburg:
     "Een stadspoort was letterlijk een grens. Hier kun je voelen hoe middeleeuws Keulen toegang, handel en veiligheid controleerde.",
   Rheinauhafen:
@@ -947,23 +966,23 @@ const deeperContextByPlace = {
   "Eiserner Steg":
     "Vanaf de Eiserner Steg zie je Frankfurt in één beeld: oude stad, Main, musea en skyline. De brug maakt die lagen letterlijk oversteekbaar.",
   "Goethe-Haus":
-    "Goethes geboortehuis geeft Frankfurt een cultureel anker. Een individuele schrijver wordt zo onderdeel van het collectieve stadsverhaal.",
+    "Goethes geboortehuis geeft Frankfurt een cultureel anker naast banken en beurs. Een individuele schrijver wordt zo onderdeel van het collectieve stadsverhaal.",
   "Main Tower":
-    "De Main Tower maakt de financiële stad tastbaar. Frankfurt gebruikt hoogbouw sterker dan veel andere Duitse steden om internationale economie zichtbaar te maken.",
+    "De Main Tower maakt de financiële stad tastbaar. Frankfurt gebruikt hoogbouw sterker dan veel andere Duitse steden om internationale economie zichtbaar te maken; vanaf boven zie je pas echt hoe compact oude stad, Main en bankencluster bij elkaar liggen.",
   "Alte Oper":
-    "De Alte Oper toont hoe cultuur en prestige samenkomen. Het gebouw zegt: deze stad is niet alleen handel en banken, maar ook podium en publiek leven.",
+    "De Alte Oper toont hoe cultuur en prestige samenkomen. Het gebouw zegt: Frankfurt is niet alleen handel en banken, maar ook podium, pleinruimte en publiek leven.",
   "Trafalgar Square":
     "Trafalgar Square is ontworpen als nationaal podium. Monumenten, zichtlijnen en musea maken het plein politiek, ceremonieel en toeristisch tegelijk.",
   "Covent Garden":
     "Covent Garden veranderde van marktgebied naar cultuur- en winkelplek. De levendigheid komt uit die mix van handel, optreden en verblijf.",
-  "Somerset House":
-    "Somerset House gebruikt symmetrie en binnenplaats om gezag uit te stralen. Het voelt formeel omdat architectuur hier orde en instituties zichtbaar maakt.",
+  "Borough Market":
+    "Borough Market laat London als handelsstad proeven. Bij London Bridge komen oude marktcultuur, spoorbogen, toerisme en internationale foodcultuur bij elkaar.",
   "St Paul’s Cathedral":
-    "St Paul’s is een spiritueel en nationaal symbool. De koepel bleef lang een dominante skylinevorm en is nog steeds verbonden met ceremonie en wederopbouw.",
+    "St Paul’s is een spiritueel en nationaal symbool. De herbouw na de Grote Brand van 1666 en de koepel van Wren maken het gebouw belangrijker dan alleen een herkenbaar silhouet.",
   "Millennium Bridge":
-    "De Millennium Bridge is krachtig door zijn zichtlijn: St Paul’s en Tate Modern worden door lopen over de Thames in één verhaal gezet.",
+    "De Millennium Bridge is krachtig door zijn zichtlijn: St Paul’s, de Thames en Tate Modern worden door een voetgangersas in één verhaal gezet.",
   "Tower Bridge":
-    "Tower Bridge is herkenbaar omdat techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
+    "Tower Bridge is herkenbaar omdat moderne bascule-techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
 };
 
 const buildDeeperContext = (tour, stop) =>
