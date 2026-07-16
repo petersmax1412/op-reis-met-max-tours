@@ -3097,6 +3097,47 @@ const renderCityPhoto = (tour, modifier = "") => {
   `;
 };
 
+const renderExpertCelebration = (tour) => {
+  const photo = cityPhotos[tour.id];
+
+  return `
+    <section class="expert-celebration" aria-label="Tour voltooid">
+      <div class="expert-photo">
+        ${photo ? `<img src="${photo.src}" alt="${photo.alt}" />` : ""}
+        <span class="expert-shine"></span>
+        <div class="expert-brand">
+          <img src="assets/favicon.png" alt="" />
+          <span>Stadsopdracht</span>
+        </div>
+        <span class="expert-badge">Voltooid</span>
+        <div class="expert-overlay-copy">
+          <span>City badge</span>
+          <strong>Ik ben een expert in ${tour.city}</strong>
+        </div>
+      </div>
+      <div class="expert-copy">
+        <span class="pill">Laatste opdracht goed</span>
+        <h2>Je bent een expert in ${tour.city}</h2>
+        <p>
+          Je hebt alle stops afgerond, de stad stap voor stap bekeken en onderweg de belangrijkste
+          verhalen, details en plekken vrijgespeeld.
+        </p>
+        <div class="expert-share-footer">
+          <strong>Stadsopdracht</strong>
+          <span>stadsopdracht.nl</span>
+        </div>
+      </div>
+      <div class="expert-sparkles" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+  `;
+};
+
 const applyRuntimeMode = () => {
   const standalone = isStandaloneApp();
   document.body.classList.toggle("standalone-mode", standalone);
@@ -4407,6 +4448,7 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
           </div>
         `
         : `
+          ${renderExpertCelebration(tour)}
           <div class="hero-actions">
             <button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>
             <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
