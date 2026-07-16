@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/app-icon.svg" />
-    <link rel="stylesheet" href="styles.css?v=11" />
+    <link rel="stylesheet" href="styles.css?v=12" />
   </head>
   <body>
     <header class="app-shell">
@@ -27,7 +27,6 @@
         <a href="#mijn-tour">Mijn tour</a>
         <a href="#betaling">Betalen</a>
       </nav>
-      <div class="account-actions" data-account-actions></div>
     </header>
 
     <main id="home">
@@ -127,7 +126,7 @@
           <p>
             Koop de Málaga-route via een veilige betaalpagina. Na het openen van de betaalpagina
             zet de webapp je route klaar, zodat je direct kunt beginnen met de opdrachten in de
-            stad.
+            stad. Je aankoop en voortgang blijven op dit apparaat bewaard.
           </p>
         </div>
         <div class="payment-card">
@@ -135,7 +134,7 @@
           <ul>
             <li>Prijs per tour vanaf €4,49</li>
             <li>Betalen met iDEAL of Wero</li>
-            <li>Route wordt daarna op je toestel vrijgegeven</li>
+            <li>Route wordt daarna op dit apparaat vrijgegeven</li>
             <li>PWA voorbereid voor Android en iOS</li>
           </ul>
         </div>
@@ -155,14 +154,6 @@
       <div data-checkout-content></div>
     </dialog>
 
-    <dialog class="checkout-dialog" data-auth-dialog>
-      <form method="dialog">
-        <button class="icon-button" value="close" aria-label="Sluiten">×</button>
-      </form>
-      <div data-auth-content></div>
-    </dialog>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="script.js?v=11"></script>
+    <script src="script.js?v=12"></script>
   </body>
 </html>

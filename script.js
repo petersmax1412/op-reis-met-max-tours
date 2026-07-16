@@ -165,158 +165,24 @@ const tours = [
 ];
 
 const storageKey = "stadsopdracht-progress";
-const sessionStorageKey = "stadsopdracht-session";
-const supabaseConfig = {
-  url: "https://pkhyreudjcdkzhrjtdpi.supabase.co",
-  anonKey:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBraHlyZXVkamNka3pocmp0ZHBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxNDgyMzUsImV4cCI6MjA5OTcyNDIzNX0.S0R34ryoWYBMHU-8fYJsR73MLNK2gnANAgJPjZHqmBE",
-};
-
 const tourGrid = document.querySelector("[data-tour-grid]");
 const stopList = document.querySelector("[data-stop-list]");
 const assignmentPanel = document.querySelector("[data-assignment-panel]");
 const tourStatus = document.querySelector("[data-tour-status]");
-const accountActions = document.querySelector("[data-account-actions]");
 const installCallout = document.querySelector("[data-install-callout]");
 const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
-const authDialog = document.querySelector("[data-auth-dialog]");
-const authContent = document.querySelector("[data-auth-content]");
 
 let selectedTourId = null;
 let selectedStopIndex = 0;
 let userLocation = null;
 let locationMessage = "Locatie nog niet actief.";
 let paymentTimer = null;
-let authClient = null;
-let session = null;
-let remoteProgress = {};
-let authMessage = "";
 let deferredInstallPrompt = null;
 let installHelpVisible = false;
 
 const unlockRadiusMeters = 100;
 const paymentProcessingMs = 40000;
-
-const hasAccountStorage = () => Boolean(supabaseConfig.url && supabaseConfig.anonKey);
-
-const authHeaders = (accessToken = null) => ({
-  apikey: supabaseConfig.anonKey,
-  Authorization: `Bearer ${accessToken || supabaseConfig.anonKey}`,
-  "Content-Type": "application/json",
-});
-
-const readStoredSession = () => {
-  try {
-    return JSON.parse(localStorage.getItem(sessionStorageKey) || "null");
-  } catch {
-    return null;
-  }
-};
-
-const storeSession = (nextSession) => {
-  if (nextSession) {
-    localStorage.setItem(sessionStorageKey, JSON.stringify(nextSession));
-    return;
-  }
-
-  localStorage.removeItem(sessionStorageKey);
-};
-
-const createRestSupabaseClient = () => ({
-  auth: {
-    async signUp({ email, password }) {
-      const response = await fetch(`${supabaseConfig.url}/auth/v1/signup`, {
-        method: "POST",
-        headers: authHeaders(),
-        body: JSON.stringify({ email, password }),
-      });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok) return { data: {}, error: { message: payload.msg || payload.message || "Account maken mislukt." } };
-
-      return {
-        data: {
-          session: payload.access_token
-            ? {
-                access_token: payload.access_token,
-                refresh_token: payload.refresh_token,
-                user: payload.user,
-              }
-            : null,
-          user: payload.user,
-        },
-        error: null,
-      };
-    },
-    async signInWithPassword({ email, password }) {
-      const response = await fetch(`${supabaseConfig.url}/auth/v1/token?grant_type=password`, {
-        method: "POST",
-        headers: authHeaders(),
-        body: JSON.stringify({ email, password }),
-      });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok) return { data: {}, error: { message: payload.msg || payload.message || "Inloggen mislukt." } };
-
-      const nextSession = {
-        access_token: payload.access_token,
-        refresh_token: payload.refresh_token,
-        user: payload.user,
-      };
-      storeSession(nextSession);
-      return { data: { session: nextSession, user: payload.user }, error: null };
-    },
-    async getSession() {
-      return { data: { session: readStoredSession() }, error: null };
-    },
-    async signOut() {
-      storeSession(null);
-      return { error: null };
-    },
-    onAuthStateChange() {
-      return { data: { subscription: { unsubscribe() {} } } };
-    },
-  },
-  from(tableName) {
-    return {
-      async upsert(rows, options = {}) {
-        const query = options.onConflict ? `?on_conflict=${encodeURIComponent(options.onConflict)}` : "";
-        const response = await fetch(`${supabaseConfig.url}/rest/v1/${tableName}${query}`, {
-          method: "POST",
-          headers: {
-            ...authHeaders(session?.access_token),
-            Prefer: "resolution=merge-duplicates,return=minimal",
-          },
-          body: JSON.stringify(rows),
-        });
-
-        if (!response.ok) {
-          const payload = await response.json().catch(() => ({}));
-          return { data: null, error: { message: payload.message || "Opslaan mislukt." } };
-        }
-
-        return { data: null, error: null };
-      },
-      select(columns) {
-        return {
-          async eq(field, value) {
-            const response = await fetch(
-              `${supabaseConfig.url}/rest/v1/${tableName}?select=${encodeURIComponent(columns)}&${field}=eq.${encodeURIComponent(value)}`,
-              { headers: authHeaders(session?.access_token) },
-            );
-            const payload = await response.json().catch(() => []);
-            if (!response.ok) return { data: null, error: { message: payload.message || "Laden mislukt." } };
-            return { data: payload, error: null };
-          },
-        };
-      },
-    };
-  },
-});
-
-const createAuthClient = () =>
-  window.supabase?.createClient
-    ? window.supabase.createClient(supabaseConfig.url, supabaseConfig.anonKey)
-    : createRestSupabaseClient();
 
 const openDialog = (dialog) => {
   if (!dialog) return;
@@ -340,22 +206,8 @@ const closeDialog = (dialog) => {
   dialog.removeAttribute("open");
 };
 
-const getProgress = () => {
-  if (session) return remoteProgress;
-  return {};
-};
-
-const saveProgress = (progress) => {
-  if (!session || !authClient) {
-    localStorage.setItem(storageKey, JSON.stringify(progress));
-    return;
-  }
-
-  remoteProgress = progress;
-  syncProgress(progress).catch(() => {
-    showToast("Voortgang kon nu niet online worden opgeslagen.");
-  });
-};
+const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
+const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
 
 const isUnlocked = (tourId) => Boolean(getProgress()[tourId]?.unlocked);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
@@ -438,54 +290,7 @@ const showToast = (message) => {
   window.setTimeout(() => toast.remove(), 2600);
 };
 
-const syncProgress = async (progress) => {
-  if (!session || !authClient) return;
-
-  const rows = Object.entries(progress).map(([tourId, state]) => ({
-    user_id: session.user.id,
-    tour_id: tourId,
-    unlocked: Boolean(state.unlocked),
-    completed: state.completed || [],
-    purchased_at: state.unlocked ? new Date().toISOString() : null,
-  }));
-
-  if (!rows.length) return;
-
-  const { error } = await authClient.from("user_tours").upsert(rows, {
-    onConflict: "user_id,tour_id",
-  });
-
-  if (error) throw error;
-};
-
-const loadUserProgress = async () => {
-  if (!session || !authClient) {
-    remoteProgress = {};
-    return;
-  }
-
-  const { data, error } = await authClient
-    .from("user_tours")
-    .select("tour_id, unlocked, completed")
-    .eq("user_id", session.user.id);
-
-  if (error) {
-    remoteProgress = {};
-    showToast("Je account is geladen, maar voortgang nog niet.");
-    return;
-  }
-
-  remoteProgress = (data || []).reduce((progress, item) => {
-    progress[item.tour_id] = {
-      unlocked: Boolean(item.unlocked),
-      completed: item.completed || [],
-    };
-    return progress;
-  }, {});
-};
-
 const refreshApp = () => {
-  renderAccount();
   renderInstallCallout();
   renderTours();
   if (selectedTourId) {
@@ -503,39 +308,7 @@ const unlockTour = async (tourId) => {
   saveProgress(progress);
   renderTours();
   openTour(tourId);
-  showToast(session ? "Tour ontgrendeld voor je account." : "Tour ontgrendeld.");
-};
-
-const renderAccount = () => {
-  if (!accountActions) return;
-
-  if (!hasAccountStorage()) {
-    accountActions.innerHTML = `
-      <button class="button ghost small" type="button" data-open-auth="setup">
-        Account koppelen
-      </button>
-    `;
-    return;
-  }
-
-  if (session?.user) {
-    accountActions.innerHTML = `
-      <span class="account-email">${session.user.email}</span>
-      <button class="button ghost small" type="button" data-sign-out>
-        Uitloggen
-      </button>
-    `;
-    return;
-  }
-
-  accountActions.innerHTML = `
-    <button class="button ghost small" type="button" data-open-auth="login">
-      Inloggen
-    </button>
-    <button class="button primary small" type="button" data-open-auth="signup">
-      Account maken
-    </button>
-  `;
+  showToast("Tour ontgrendeld op dit apparaat.");
 };
 
 const isStandaloneApp = () =>
@@ -586,107 +359,6 @@ const renderInstallCallout = () => {
       </button>
     </div>
   `;
-};
-
-const renderAuthForm = (mode = "login") => {
-  const isSignup = mode === "signup";
-  const title = isSignup ? "Account maken" : "Inloggen";
-  const actionLabel = isSignup ? "Account maken" : "Inloggen";
-  const switchLabel = isSignup ? "Ik heb al een account" : "Nieuw account maken";
-  const switchMode = isSignup ? "login" : "signup";
-
-  authContent.innerHTML = `
-    <span class="pill">Account</span>
-    <h2>${title}</h2>
-    <p>
-      Log eerst in voordat je een route koopt. Zo bewaren we je aankoop en voortgang bij je account,
-      ook als je later op een ander toestel verdergaat.
-    </p>
-    ${authMessage ? `<p class="auth-message">${authMessage}</p>` : ""}
-    <form class="auth-form" data-auth-form="${mode}">
-      <label>
-        E-mailadres
-        <input name="email" type="email" autocomplete="email" required />
-      </label>
-      <label>
-        Wachtwoord
-        <input name="password" type="password" autocomplete="${
-          isSignup ? "new-password" : "current-password"
-        }" minlength="6" required />
-      </label>
-      <button class="button primary" type="submit">${actionLabel}</button>
-    </form>
-    <button class="text-button" type="button" data-open-auth="${switchMode}">
-      ${switchLabel}
-    </button>
-  `;
-};
-
-const openAuthDialog = (mode = "login", message = "") => {
-  authMessage = message;
-
-  if (!hasAccountStorage()) {
-    authContent.innerHTML = `
-      <span class="pill">Accountlaag</span>
-      <h2>Accounts nog koppelen</h2>
-      <p>
-        De app is voorbereid op accounts, aankopen en online voortgang. Vul straks de Supabase URL
-        en anon key in script.js in om inloggen en accountopslag live te zetten.
-      </p>
-      <p class="auth-message">Daarna moeten bezoekers eerst inloggen voordat ze kunnen betalen.</p>
-    `;
-    openDialog(authDialog);
-    return;
-  }
-
-  renderAuthForm(mode);
-  openDialog(authDialog);
-};
-
-const handleAuthSubmit = async (form) => {
-  if (!authClient) return;
-
-  const mode = form.dataset.authForm;
-  const formData = new FormData(form);
-  const email = String(formData.get("email") || "").trim();
-  const password = String(formData.get("password") || "");
-  const submitButton = form.querySelector("button[type='submit']");
-
-  submitButton.disabled = true;
-  submitButton.textContent = "Even wachten...";
-
-  const result =
-    mode === "signup"
-      ? await authClient.auth.signUp({ email, password })
-      : await authClient.auth.signInWithPassword({ email, password });
-
-  if (result.error) {
-    authMessage = result.error.message;
-    renderAuthForm(mode);
-    return;
-  }
-
-  if (mode === "signup" && !result.data.session) {
-    authMessage = "Account gemaakt. Controleer je e-mail en log daarna in.";
-    renderAuthForm("login");
-    return;
-  }
-
-  session = result.data.session || session;
-  storeSession(session);
-  await loadUserProgress();
-  closeDialog(authDialog);
-  refreshApp();
-  showToast(mode === "signup" ? "Account gemaakt." : "Je bent ingelogd.");
-};
-
-const signOut = async () => {
-  if (!authClient) return;
-  await authClient.auth.signOut();
-  session = null;
-  remoteProgress = {};
-  refreshApp();
-  showToast("Je bent uitgelogd.");
 };
 
 const renderTours = () => {
@@ -774,14 +446,11 @@ const renderAssignment = () => {
         </div>
         <div class="preview-locked">
           <strong>De opdrachten blijven verborgen tot na aankoop.</strong>
-          <span>Maak eerst een account. Daarna kun je betalen en wordt je voortgang online bewaard.</span>
+          <span>Na aankoop worden de route en voortgang op dit apparaat bewaard.</span>
         </div>
         <div class="hero-actions">
           <button class="button primary" type="button" data-buy-tour="${tour.id}">
             Koop en open route
-          </button>
-          <button class="button ghost" type="button" data-open-auth="signup">
-            Account maken
           </button>
         </div>
       </div>
@@ -881,11 +550,6 @@ const openCheckout = (tourId) => {
   const tour = tours.find((item) => item.id === tourId);
   if (!tour) return;
 
-  if (!session?.user) {
-    openAuthDialog("login", "Maak eerst een account of log in. Daarna kun je betalen en bewaren we je route.");
-    return;
-  }
-
   if (isUnlocked(tour.id)) {
     openTour(tour.id);
     return;
@@ -896,6 +560,10 @@ const openCheckout = (tourId) => {
     <h2>${tour.title}</h2>
     <p>${tour.summary}</p>
     <p><strong>Prijs: ${tour.price}</strong></p>
+    <p class="device-warning">
+      Let op: je aankoop en voortgang worden alleen op dit apparaat en in deze browser bewaard.
+      Gebruik bij voorkeur de geïnstalleerde webapp op je telefoon.
+    </p>
     <div class="hero-actions">
       <a class="button primary" href="${tour.paymentUrl}" target="_blank" rel="noopener" data-start-payment="${
         tour.id
@@ -925,6 +593,9 @@ const startPaymentProcessing = (tourId) => {
       Rond je betaling af in het geopende tabblad. Deze webapp geeft je route automatisch vrij
       zodra de verwerking klaar is.
     </p>
+    <p class="device-warning">
+      Bewaar deze webapp op hetzelfde apparaat. Daar blijft je route en voortgang beschikbaar.
+    </p>
     <div class="processing-card" role="status" aria-live="polite">
       <span class="processing-spinner" aria-hidden="true"></span>
       <strong>Even geduld</strong>
@@ -947,15 +618,11 @@ document.addEventListener("click", (event) => {
   const locationButton = event.target.closest("[data-use-location]");
   const startPayment = event.target.closest("[data-start-payment]");
   const closeCheckout = event.target.closest("[data-close-checkout]");
-  const openAuth = event.target.closest("[data-open-auth]");
-  const signOutButton = event.target.closest("[data-sign-out]");
   const installButton = event.target.closest("[data-install-app]");
   const installHelpButton = event.target.closest("[data-show-install-help]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
-  if (openAuth) openAuthDialog(openAuth.dataset.openAuth);
-  if (signOutButton) signOut();
   if (installHelpButton) {
     installHelpVisible = true;
     renderInstallCallout();
@@ -1021,35 +688,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("submit", (event) => {
-  const authForm = event.target.closest("[data-auth-form]");
-  if (!authForm) return;
-
-  event.preventDefault();
-  handleAuthSubmit(authForm);
-});
-
-const initAuth = async () => {
-  if (!hasAccountStorage()) {
-    refreshApp();
-    return;
-  }
-
-  authClient = createAuthClient();
-
-  const { data } = await authClient.auth.getSession();
-  session = data.session;
-  await loadUserProgress();
-
-  authClient.auth.onAuthStateChange(async (_event, nextSession) => {
-    session = nextSession;
-    await loadUserProgress();
-    refreshApp();
-  });
-
-  refreshApp();
-};
-
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   deferredInstallPrompt = event;
@@ -1062,7 +700,7 @@ window.addEventListener("appinstalled", () => {
   showToast("Webapp geïnstalleerd.");
 });
 
-initAuth();
+refreshApp();
 
 if ("serviceWorker" in navigator) {
   let refreshing = false;

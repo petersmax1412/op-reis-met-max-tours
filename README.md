@@ -7,25 +7,22 @@ Nieuwe conceptversie voor interactieve stadsrondleidingen op `stadsopdracht.nl`.
 - Mobiele webapp-layout voor Android en iOS
 - PWA-bestanden: `manifest.webmanifest`, `service-worker.js` en app-icon
 - Tourwinkel met prijzen
-- Accountflow voor inloggen en registreren
-- Aankoop en voortgang per account via Supabase
+- Aankoop en voortgang lokaal op hetzelfde apparaat
 - Interactieve stops met opdrachten, hints en voortgang
 - Rabobank-betaalverzoek met iDEAL/Wero-tekst
+- Installatie-oproep voor de webapp
 
-## Accounts koppelen
+## Voortgang bewaren
 
-De app is voorbereid op Supabase Auth en een `user_tours` tabel. Maak een Supabase-project aan,
-voer `SUPABASE_SETUP.sql` uit in de SQL editor en vul daarna bovenin `script.js` deze waarden in:
+De huidige versie gebruikt lokale browseropslag. Dat betekent:
 
-```js
-const supabaseConfig = {
-  url: "https://jouw-project.supabase.co",
-  anonKey: "jouw-public-anon-key",
-};
-```
+- de route blijft open op hetzelfde apparaat en in dezelfde browser;
+- de voortgang blijft bewaard zolang de gebruiker browserdata niet wist;
+- de aankoop wordt niet automatisch meegenomen naar een ander toestel.
 
-Zolang deze waarden leeg zijn, toont de app dat accounts nog gekoppeld moeten worden en kunnen
-bezoekers niet betalen.
+Daarom toont de checkout een duidelijke waarschuwing dat de aankoop alleen op dit apparaat werkt.
+De beste korte-termijnoplossing is klanten de webapp op hun telefoon te laten installeren voordat
+ze starten.
 
 ## Betalingen koppelen
 
@@ -35,9 +32,9 @@ In `script.js` staat per tour een veld `paymentUrl`. Daar staat nu het Rabobank 
 paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=...",
 ```
 
-De app vraagt eerst om inloggen. Daarna opent de betaalpagina en wordt de route na verwerking aan
-het account gekoppeld. Later kan dit worden vervangen door Mollie of Stripe met webhooks voor
-volledige betaalcontrole.
+Na het openen van de betaalpagina wordt de route na verwerking lokaal op dit apparaat vrijgegeven.
+Later kan dit worden vervangen door accounts, toegangscodes of Mollie/Stripe met webhooks voor
+volledige betaalcontrole en apparaat-overstijgende voortgang.
 
 ## Online zetten met Cloudflare Pages
 

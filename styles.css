@@ -86,24 +86,6 @@ button {
   gap: clamp(12px, 3vw, 28px);
 }
 
-.account-actions {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: flex-end;
-}
-
-.account-email {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 800;
-  max-width: 220px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .top-nav a,
 .bottom-nav a {
   color: var(--muted);
@@ -747,39 +729,6 @@ h3 {
   }
 }
 
-.auth-form {
-  display: grid;
-  gap: 14px;
-  margin: 18px 0;
-}
-
-.auth-form label {
-  color: var(--ink);
-  display: grid;
-  font-weight: 850;
-  gap: 7px;
-}
-
-.auth-form input {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  color: var(--ink);
-  font: inherit;
-  min-height: 46px;
-  padding: 10px 12px;
-  width: 100%;
-}
-
-.auth-message {
-  background: var(--mint);
-  border: 1px solid rgba(18, 49, 44, 0.16);
-  border-radius: 8px;
-  color: var(--green);
-  font-weight: 800;
-  padding: 12px;
-}
-
 .text-button {
   background: transparent;
   border: 0;
@@ -787,6 +736,15 @@ h3 {
   font-weight: 850;
   padding: 0;
   text-align: left;
+}
+
+.device-warning {
+  background: #fff7df;
+  border: 1px solid rgba(240, 191, 90, 0.58);
+  border-radius: 8px;
+  color: #5b4211 !important;
+  font-weight: 800;
+  padding: 12px;
 }
 
 .icon-button {
@@ -821,14 +779,6 @@ h3 {
 
 @media (max-width: 920px) {
   .top-nav {
-    display: none;
-  }
-
-  .account-actions {
-    margin-left: auto;
-  }
-
-  .account-email {
     display: none;
   }
 
