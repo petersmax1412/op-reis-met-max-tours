@@ -3138,6 +3138,162 @@ const renderExpertCelebration = (tour) => {
   `;
 };
 
+const loadShareImage = (src) =>
+  new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = reject;
+    image.src = src;
+  });
+
+const drawCoverImage = (context, image, x, y, width, height) => {
+  const sourceRatio = image.naturalWidth / image.naturalHeight;
+  const targetRatio = width / height;
+  const sourceWidth = sourceRatio > targetRatio ? image.naturalHeight * targetRatio : image.naturalWidth;
+  const sourceHeight = sourceRatio > targetRatio ? image.naturalHeight : image.naturalWidth / targetRatio;
+  const sourceX = (image.naturalWidth - sourceWidth) / 2;
+  const sourceY = (image.naturalHeight - sourceHeight) / 2;
+
+  context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, x, y, width, height);
+};
+
+const fillRoundedRect = (context, x, y, width, height, radius) => {
+  context.beginPath();
+  context.moveTo(x + radius, y);
+  context.lineTo(x + width - radius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + radius);
+  context.lineTo(x + width, y + height - radius);
+  context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  context.lineTo(x + radius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - radius);
+  context.lineTo(x, y + radius);
+  context.quadraticCurveTo(x, y, x + radius, y);
+  context.fill();
+};
+
+const wrapCanvasText = (context, text, x, y, maxWidth, lineHeight, maxLines = 3) => {
+  const words = text.split(" ");
+  const lines = [];
+  let line = "";
+
+  words.forEach((word) => {
+    const testLine = line ? `${line} ${word}` : word;
+    if (context.measureText(testLine).width > maxWidth && line) {
+      lines.push(line);
+      line = word;
+      return;
+    }
+    line = testLine;
+  });
+
+  if (line) lines.push(line);
+
+  lines.slice(0, maxLines).forEach((lineText, index) => {
+    context.fillText(lineText, x, y + index * lineHeight);
+  });
+};
+
+const createCompletionShareFile = async (tour) => {
+  const photo = cityPhotos[tour.id];
+  const canvas = document.createElement("canvas");
+  const width = 1080;
+  const height = 1350;
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext("2d");
+  const image = photo ? await loadShareImage(photo.src) : null;
+
+  const gradient = context.createLinearGradient(0, 0, 0, height);
+  gradient.addColorStop(0, "#10aeca");
+  gradient.addColorStop(1, "#09232a");
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, width, height);
+
+  if (image) {
+    drawCoverImage(context, image, 0, 0, width, height);
+    const overlay = context.createLinearGradient(0, 0, 0, height);
+    overlay.addColorStop(0, "rgba(9, 35, 42, 0.18)");
+    overlay.addColorStop(0.52, "rgba(9, 35, 42, 0.2)");
+    overlay.addColorStop(1, "rgba(9, 35, 42, 0.82)");
+    context.fillStyle = overlay;
+    context.fillRect(0, 0, width, height);
+  }
+
+  context.fillStyle = "rgba(255, 255, 255, 0.94)";
+  fillRoundedRect(context, 72, 72, 382, 86, 43);
+  context.fillStyle = "#087f91";
+  context.font = "900 34px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("Stadsopdracht", 142, 127);
+  context.fillStyle = "#10aeca";
+  fillRoundedRect(context, 92, 92, 46, 46, 12);
+  context.fillStyle = "#ffffff";
+  context.font = "900 28px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("S", 107, 126);
+
+  context.fillStyle = "rgba(255, 255, 255, 0.95)";
+  fillRoundedRect(context, 780, 82, 220, 64, 32);
+  context.fillStyle = "#087f91";
+  context.font = "900 30px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("Voltooid", 820, 124);
+
+  context.fillStyle = "rgba(255, 255, 255, 0.78)";
+  context.font = "900 30px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("CITY BADGE", 72, 874);
+  context.fillStyle = "#ffffff";
+  context.font = "900 82px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  wrapCanvasText(context, `Ik ben een expert in ${tour.city}`, 72, 970, 900, 88, 3);
+
+  context.fillStyle = "rgba(255, 255, 255, 0.92)";
+  fillRoundedRect(context, 72, 1196, 936, 88, 24);
+  context.fillStyle = "#09232a";
+  context.font = "900 32px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("Stadsopdracht", 112, 1252);
+  context.fillStyle = "#5c6f72";
+  context.font = "700 28px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("stadsopdracht.nl", 708, 1252);
+
+  const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", 0.92));
+  if (!blob) throw new Error("Kan deelafbeelding niet maken.");
+  return new File([blob], `stadsopdracht-${tour.id}-expert.jpg`, { type: "image/jpeg" });
+};
+
+const shareCompletionCard = async (tourId) => {
+  const tour = tours.find((item) => item.id === tourId);
+  if (!tour) return;
+
+  const button = document.querySelector(`[data-share-expert-card="${tourId}"]`);
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Deelkaart maken...";
+  }
+
+  try {
+    const file = await createCompletionShareFile(tour);
+    const shareData = {
+      files: [file],
+      title: `Ik ben een expert in ${tour.city}`,
+      text: `Ik heb de Stadsopdracht route in ${tour.city} voltooid.`,
+    };
+
+    if (navigator.canShare?.(shareData) && navigator.share) {
+      await navigator.share(shareData);
+      showToast("Deelvenster geopend.");
+    } else {
+      const url = URL.createObjectURL(file);
+      window.open(url, "_blank", "noopener");
+      window.setTimeout(() => URL.revokeObjectURL(url), 60000);
+      showToast("Delen lukt hier niet automatisch. De afbeelding is geopend.");
+    }
+  } catch {
+    showToast("Delen lukte niet. Probeer het nog een keer vanaf je telefoon.");
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = "Deel resultaat";
+    }
+  }
+};
+
 const applyRuntimeMode = () => {
   const standalone = isStandaloneApp();
   document.body.classList.toggle("standalone-mode", standalone);
@@ -4475,7 +4631,8 @@ const showExpertCompletionCard = (tourId) => {
   answerContent.innerHTML = `
     ${renderExpertCelebration(tour)}
     <div class="hero-actions">
-      <button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>
+      <button class="button primary" type="button" data-share-expert-card="${tour.id}">Deel resultaat</button>
+      <button class="button ghost" type="button" data-close-answer-dialog>Tour bekijken</button>
       <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
     </div>
   `;
@@ -4876,6 +5033,7 @@ document.addEventListener("click", (event) => {
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
   const arriveStop = event.target.closest("[data-arrive-stop]");
   const showExpertCard = event.target.closest("[data-show-expert-card]");
+  const shareExpertCard = event.target.closest("[data-share-expert-card]");
   const promoFinish = event.target.closest("[data-promo-finish]");
   const promoToggle = event.target.closest("[data-promo-toggle]");
 
@@ -4945,6 +5103,10 @@ document.addEventListener("click", (event) => {
 
   if (showExpertCard) {
     showExpertCompletionCard(showExpertCard.dataset.showExpertCard);
+  }
+
+  if (shareExpertCard) {
+    shareCompletionCard(shareExpertCard.dataset.shareExpertCard);
   }
 
   if (installHelpButton) {
