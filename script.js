@@ -1220,11 +1220,11 @@ const tours = [
     city: "Wenen",
     title: "Wenen Centrum: keizerlijke macht, muziek en Ringstraße",
     price: "€4,49",
-    duration: "160 min",
-    distance: "4,8 km",
+    duration: "180 min",
+    distance: "6,7 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een rijke route door Wenen langs Stephansdom, Hofburg, Heldenplatz, Staatsoper, Naschmarkt, Karlskirche en Stadtpark.",
+      "Een rijke route door Wenen langs Stephansdom, Hofburg, Heldenplatz, Staatsoper, Naschmarkt, Karlskirche, Stadtpark en Prater.",
     stops: [
       {
         title: "Start bij de Stephansdom",
@@ -1415,6 +1415,33 @@ const tours = [
           },
         ],
       },
+      {
+        title: "Eindig bij het reuzenrad",
+        place: "Prater Riesenrad",
+        coordinates: { lat: 48.2167, lng: 16.3959 },
+        assignment:
+          "Kijk naar het reuzenrad, de brede toegang tot het park en de sfeer van attracties. Zoek hoe Wenen hier veel speelser en volkser wordt.",
+        question: "Waarom hoort de Prater bij het verhaal van Wenen, naast paleizen, kerken en opera?",
+        hint: "Denk aan volksvermaak, publieke ontspanning en het iconische reuzenrad.",
+        choices: [
+          {
+            text: "De Prater laat Wenen zien als stad van publiek vermaak, ontspanning en populaire cultuur",
+            correct: true,
+            feedback:
+              "Precies. De Prater is de andere kant van keizerlijk Wenen: minder formeel, meer volks en speels. Het Riesenrad maakt die ontspanningscultuur meteen herkenbaar.",
+          },
+          {
+            text: "Omdat de Prater vooral een afgesloten paleistuin zonder bezoekers is",
+            correct: false,
+            feedback: "Nee, de Prater is juist sterk door publieke toegankelijkheid, attracties en vermaak.",
+          },
+          {
+            text: "Omdat het reuzenrad niets met de identiteit van Wenen te maken heeft",
+            correct: false,
+            feedback: "Niet goed. Het Riesenrad is een van de bekendste beelden van Wenen buiten de keizerlijke binnenstad.",
+          },
+        ],
+      },
     ],
   },
 ];
@@ -1497,6 +1524,7 @@ const stopUnlockRadii = {
   Naschmarkt: 110,
   Karlskirche: 90,
   Stadtpark: 120,
+  "Prater Riesenrad": 130,
 };
 
 const openDialog = (dialog) => {
@@ -1658,6 +1686,8 @@ const deeperContextByPlace = {
     "De Karlskirche is barokke stadsregie: koepel, zuilen, plein en water versterken elkaar. Het gebouw is niet alleen kerk, maar ook zorgvuldig geënsceneerde ruimte.",
   Stadtpark:
     "Stadtpark laat Wenen ontspannen na alle monumentaliteit. Muziekcultuur, groen en openbare ruimte komen samen in een plek die minder formeel is, maar nog steeds typisch Weens.",
+  "Prater Riesenrad":
+    "De Prater laat Wenen van zijn publieke en speelse kant zien. Het Riesenrad is niet keizerlijk of kerkelijk, maar juist populair, herkenbaar en verbonden met vrije tijd.",
 };
 
 const routeGuides = {
@@ -1843,6 +1873,10 @@ const routeGuides = {
     {
       route: "Loop vanaf Karlskirche richting Stadtpark via de oostelijke centrumrand.",
       watch: "Kijk hoe de route van barokke monumentaliteit naar groen, water en muziekherinnering beweegt.",
+    },
+    {
+      route: "Loop vanaf Stadtpark richting Wien Mitte en verder naar de Prater-ingang bij het Riesenrad.",
+      watch: "Let op hoe de stad verandert van nette centrumrand naar een grotere ontspanningszone met attracties en parkruimte.",
     },
   ],
 };
