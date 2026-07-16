@@ -15,7 +15,7 @@ const tours = [
         place: "Plaza de la Constitución",
         coordinates: { lat: 36.72121, lng: -4.42154 },
         assignment: "Kijk rond en zoek drie details die laten zien dat dit plein al eeuwen een ontmoetingsplek is.",
-        question: "Welk detail voelt het oudst: steen, gevel, straatpatroon of iets anders?",
+        question: "Welke aanwijzing rond Plaza de la Constitución vertelt het best dat dit plein al lang het hart van Málaga is?",
         hint: "Let op de randen van het plein, niet alleen op het midden.",
         choices: [
           {
@@ -65,7 +65,7 @@ const tours = [
         place: "Teatro Romano",
         coordinates: { lat: 36.72116, lng: -4.41666 },
         assignment: "Zoek een plek waar je tegelijk Romeinse resten en Moorse muren kunt zien.",
-        question: "Welke laag van de stad valt jou het meest op?",
+        question: "Welke combinatie maakt het Teatro Romano typisch voor Málaga als stad met meerdere tijdlagen?",
         hint: "Draai je rug niet te snel naar de heuvel achter het theater.",
         choices: [
           {
@@ -90,7 +90,7 @@ const tours = [
         place: "Alcazaba ingang",
         coordinates: { lat: 36.72137, lng: -4.41617 },
         assignment: "Stel je voor dat je de stad moest beschermen. Zoek drie redenen waarom deze plek slim gekozen is.",
-        question: "Wat helpt hier meer: hoogte, zicht, muren of routecontrole?",
+        question: "Waarom was juist deze plek bij de Alcazaba strategisch voor Málaga?",
         hint: "Kijk naar de verbinding tussen heuvel, stad en haven.",
         choices: [
           {
@@ -115,7 +115,7 @@ const tours = [
         place: "Plaza de la Merced",
         coordinates: { lat: 36.72309, lng: -4.41705 },
         assignment: "Zoek op het plein naar verwijzingen naar Picasso en noteer wat de stad met hem wil uitstralen.",
-        question: "Wordt Picasso hier vooral als kunstenaar, inwoner of symbool gebruikt?",
+        question: "Hoe gebruikt Málaga Picasso rond Plaza de la Merced vooral in het stadsverhaal?",
         hint: "Kijk naar beelden, gevels en toeristische routes rondom het plein.",
         choices: [
           {
@@ -140,7 +140,7 @@ const tours = [
         place: "Muelle Uno",
         coordinates: { lat: 36.71664, lng: -4.41464 },
         assignment: "Kijk terug richting stad en zoek hoe oud Málaga en nieuw Málaga elkaar hier raken.",
-        question: "Wat voelt hier het meest modern, en wat blijft duidelijk historisch?",
+        question: "Welk contrast zie je bij Muelle Uno tussen het nieuwe Málaga en de historische stad?",
         hint: "Vergelijk de looproute, het water, de skyline en de vestingmuur.",
         choices: [
           {
@@ -178,7 +178,7 @@ const tours = [
         place: "Marktplatz en Rathaus",
         coordinates: { lat: 51.2256, lng: 6.7712 },
         assignment: "Kijk naar het stadhuis en het ruiterstandbeeld. Zoek twee details die macht of bestuur uitstralen.",
-        question: "Waarom ligt een stadhuis vaak aan een centraal plein?",
+        question: "Wat vertellen het Rathaus en het Jan Wellem-beeld samen over de bestuurlijke rol van Düsseldorf?",
         hint: "Denk aan zichtbaarheid, bijeenkomsten en handel.",
         choices: [
           {
@@ -228,7 +228,7 @@ const tours = [
         place: "Rheinuferpromenade",
         coordinates: { lat: 51.226, lng: 6.769 },
         assignment: "Zoek hoe de promenade de stad losmaakt van autoverkeer en dichter bij de rivier brengt.",
-        question: "Waarom voelt een brede rivierpromenade vaak als een nieuw stadsplein?",
+        question: "Wat veranderde er voor Düsseldorf doordat de Rijn hier als promenade werd teruggegeven aan wandelaars?",
         hint: "Let op lopen, kijken, zitten en langzaam bewegen.",
         choices: [
           {
@@ -253,7 +253,7 @@ const tours = [
         place: "Königsallee",
         coordinates: { lat: 51.2245, lng: 6.7782 },
         assignment: "Kijk naar de gracht, bomen en winkels. Zoek wat hier luxe en rust tegelijk maakt.",
-        question: "Welk element maakt deze winkelstraat opvallend anders dan een gewone winkelstraat?",
+        question: "Welk ontwerpdetail maakt de Königsallee tot de luxueuze 'Kö' in plaats van een gewone winkelstraat?",
         hint: "Kijk niet alleen naar de etalages.",
         choices: [
           {
@@ -344,7 +344,7 @@ const tours = [
         place: "Kölner Dom",
         coordinates: { lat: 50.9413, lng: 6.9583 },
         assignment: "Loop een stukje achteruit en kijk hoe de Dom de ruimte om zich heen domineert.",
-        question: "Waarom werkt de Dom zo sterk als herkenningspunt?",
+        question: "Waarom is de Kölner Dom zo’n sterk eerste beeld van Keulen zodra je bij het station aankomt?",
         hint: "Let op hoogte, vorm en zichtbaarheid vanuit meerdere richtingen.",
         choices: [
           {
@@ -369,7 +369,7 @@ const tours = [
         place: "Hohenzollernbrücke",
         coordinates: { lat: 50.9419, lng: 6.9656 },
         assignment: "Zoek hoe reizigers, treinen en liefdessloten dezelfde brug op heel verschillende manieren gebruiken.",
-        question: "Wat maakt deze brug meer dan alleen infrastructuur?",
+        question: "Waarom is de Hohenzollernbrücke meer dan alleen de spoorbrug naast de Dom?",
         hint: "Kijk naar gebruik, ritueel en uitzicht.",
         choices: [
           {
@@ -394,7 +394,7 @@ const tours = [
         place: "Alter Markt",
         coordinates: { lat: 50.9386, lng: 6.9603 },
         assignment: "Kijk naar gevels, terrassen en doorgangen. Zoek waar handel en ontmoeting zichtbaar blijven.",
-        question: "Wat verraadt dat dit plein lang een ontmoetingsplek is geweest?",
+        question: "Wat verraadt op Alter Markt dat Keulen hier al lang pleinleven, handel en horeca mengt?",
         hint: "Let op schaal, randen en routes naar het plein.",
         choices: [
           {
@@ -419,7 +419,7 @@ const tours = [
         place: "Historisches Rathaus",
         coordinates: { lat: 50.9389, lng: 6.9594 },
         assignment: "Zoek beelden, torens of versieringen die iets vertellen over status.",
-        question: "Waarom versierden steden hun raadhuizen zo rijk?",
+        question: "Waarom past een rijk versierd Rathaus goed bij de oude stedelijke trots van Keulen?",
         hint: "Denk aan trots, macht en zelfstandigheid.",
         choices: [
           {
@@ -444,7 +444,7 @@ const tours = [
         place: "Eigelsteintorburg",
         coordinates: { lat: 50.9492, lng: 6.9574 },
         assignment: "Loop om de poort heen en stel je voor waar de oude stadsgrens liep.",
-        question: "Wat vertelt een stadspoort over middeleeuwse steden?",
+        question: "Wat vertelt de Eigelsteintorburg over de oude grenzen en toegangen van Keulen?",
         hint: "Denk aan bescherming, toegang en controle.",
         choices: [
           {
@@ -469,7 +469,7 @@ const tours = [
         place: "Rheinauhafen",
         coordinates: { lat: 50.9259, lng: 6.9659 },
         assignment: "Vergelijk de moderne gebouwen met de rivier en de oude stad achter je.",
-        question: "Wat laat Rheinauhafen zien over Keulen?",
+        question: "Wat laat Rheinauhafen zien over hoe Keulen zijn Rijn-oever opnieuw gebruikt?",
         hint: "Kijk naar hoe oude havenruimte een nieuw stadsdeel wordt.",
         choices: [
           {
@@ -507,7 +507,7 @@ const tours = [
         place: "Römerberg",
         coordinates: { lat: 50.1106, lng: 8.6821 },
         assignment: "Kijk naar de gevels en het plein. Zoek wat historisch voelt en wat later gereconstrueerd kan zijn.",
-        question: "Waarom is Römerberg zo belangrijk voor het beeld van Frankfurt?",
+        question: "Waarom is Römerberg belangrijk voor Frankfurt, juist naast het moderne financiële imago van de stad?",
         hint: "Denk aan markt, bestuur en stadsidentiteit.",
         choices: [
           {
@@ -532,7 +532,7 @@ const tours = [
         place: "Kaiserdom St. Bartholomäus",
         coordinates: { lat: 50.1103, lng: 8.6853 },
         assignment: "Zoek hoe de Dom zich onderscheidt van de moderne gebouwen verderop.",
-        question: "Wat maakt een kerktoren in een stad met wolkenkrabbers nog steeds belangrijk?",
+        question: "Waarom blijft de Kaiserdom belangrijk in Frankfurt, ook tussen de moderne hoogbouw?",
         hint: "Vergelijk ouderdom, symboolwaarde en herkenbaarheid.",
         choices: [
           {
@@ -557,7 +557,7 @@ const tours = [
         place: "Eiserner Steg",
         coordinates: { lat: 50.1081, lng: 8.6822 },
         assignment: "Stop halverwege de brug en kijk naar beide oevers.",
-        question: "Waarom is dit een goed punt om Frankfurt te begrijpen?",
+        question: "Waarom geeft de Eiserner Steg zo’n compleet beeld van Frankfurt aan de Main?",
         hint: "Je ziet oude stad, rivier en skyline tegelijk.",
         choices: [
           {
@@ -582,7 +582,7 @@ const tours = [
         place: "Goethe-Haus",
         coordinates: { lat: 50.1114, lng: 8.6777 },
         assignment: "Kijk naar de schaal van de straat en bedenk hoe een bekend persoon een plek verandert.",
-        question: "Waarom kan een geboortehuis toeristisch belangrijk worden?",
+        question: "Waarom helpt het Goethe-Haus Frankfurt om meer te zijn dan alleen banken en skyline?",
         hint: "Denk aan verhaal, herkenning en stadsmarketing.",
         choices: [
           {
@@ -607,7 +607,7 @@ const tours = [
         place: "Main Tower",
         coordinates: { lat: 50.1123, lng: 8.6721 },
         assignment: "Kijk omhoog en zoek verschillen tussen de schaal van de straat en de schaal van de torens.",
-        question: "Wat vertelt de skyline van Frankfurt vooral?",
+        question: "Wat vertelt de omgeving van de Main Tower over Frankfurt als financiële stad?",
         hint: "Denk aan banken, internationale uitstraling en hoogte.",
         choices: [
           {
@@ -632,7 +632,7 @@ const tours = [
         place: "Alte Oper",
         coordinates: { lat: 50.1157, lng: 8.671 },
         assignment: "Bekijk de gevel en het plein. Zoek hoe cultuur ook status kan uitstralen.",
-        question: "Waarom staat een operagebouw vaak zo prominent in een stad?",
+        question: "Waarom past de Alte Oper bij Frankfurt als stad van status, publiek en cultuur?",
         hint: "Denk aan publieke cultuur, prestige en samenkomen.",
         choices: [
           {
@@ -670,7 +670,7 @@ const tours = [
         place: "Trafalgar Square",
         coordinates: { lat: 51.508, lng: -0.1281 },
         assignment: "Kijk naar de kolom, beelden en zichtlijnen. Zoek hoe nationale geschiedenis hier zichtbaar wordt.",
-        question: "Waarom is Trafalgar Square meer dan alleen een plein?",
+        question: "Waarom werkt Trafalgar Square in London als nationaal podium in plaats van alleen als plein?",
         hint: "Let op monumenten, musea en demonstratieruimte.",
         choices: [
           {
@@ -695,7 +695,7 @@ const tours = [
         place: "Covent Garden",
         coordinates: { lat: 51.5117, lng: -0.124 },
         assignment: "Kijk hoe markt, winkels en straatoptredens samen sfeer maken.",
-        question: "Wat maakt Covent Garden levendig?",
+        question: "Wat maakt Covent Garden typisch Londens als mix van marktgeschiedenis en straatcultuur?",
         hint: "Let op gebruik: kopen, kijken, blijven staan en doorlopen.",
         choices: [
           {
@@ -720,7 +720,7 @@ const tours = [
         place: "Somerset House",
         coordinates: { lat: 51.5111, lng: -0.1171 },
         assignment: "Kijk naar de gevel en binnenplaats. Zoek wat symmetrie en schaal met je doen.",
-        question: "Wat straalt Somerset House vooral uit?",
+        question: "Wat laat Somerset House zien over officiële macht en cultuur langs de Strand?",
         hint: "Denk aan orde, instituties en representatie.",
         choices: [
           {
@@ -745,7 +745,7 @@ const tours = [
         place: "St Paul’s Cathedral",
         coordinates: { lat: 51.5138, lng: -0.0984 },
         assignment: "Zoek een plek waar de koepel goed zichtbaar is en vergelijk hem met moderne gebouwen.",
-        question: "Waarom is de koepel van St Paul’s zo belangrijk in het stadsbeeld?",
+        question: "Waarom is de koepel van St Paul’s zo’n belangrijk historisch herkenningspunt in London?",
         hint: "Denk aan herkenbaarheid, ceremonie en skyline.",
         choices: [
           {
@@ -770,7 +770,7 @@ const tours = [
         place: "Millennium Bridge",
         coordinates: { lat: 51.5096, lng: -0.0984 },
         assignment: "Stop op de brug en kijk naar St Paul’s aan de ene kant en Tate Modern aan de andere.",
-        question: "Wat maakt deze brug ruimtelijk slim?",
+        question: "Wat maakt de Millennium Bridge zo slim in de zichtlijn tussen St Paul’s en Tate Modern?",
         hint: "Let op de rechte zichtlijn tussen twee belangrijke gebouwen.",
         choices: [
           {
@@ -795,7 +795,7 @@ const tours = [
         place: "Tower Bridge",
         coordinates: { lat: 51.5055, lng: -0.0754 },
         assignment: "Kijk naar torens, brugdek en rivierverkeer. Zoek wat praktisch is en wat decoratief voelt.",
-        question: "Waarom is Tower Bridge zo herkenbaar?",
+        question: "Waarom werd Tower Bridge een icoon van London in plaats van alleen een praktische brug?",
         hint: "Denk aan techniek én theater.",
         choices: [
           {
@@ -828,6 +828,8 @@ const tourStatus = document.querySelector("[data-tour-status]");
 const installCallout = document.querySelector("[data-install-callout]");
 const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
+const answerDialog = document.querySelector("[data-answer-dialog]");
+const answerContent = document.querySelector("[data-answer-content]");
 const adminPanel = document.querySelector("[data-admin-panel]");
 
 let selectedTourId = null;
@@ -893,6 +895,80 @@ const formatDistance = (distance) => {
   if (distance < 1000) return `${distance} m`;
   return `${(distance / 1000).toFixed(1).replace(".", ",")} km`;
 };
+
+const getChoiceOrder = (tourId, stopIndex, choices) => {
+  const indexes = choices.map((_, index) => index);
+  const seed = [...tourId].reduce((total, char) => total + char.charCodeAt(0), stopIndex * 2 + 1);
+  const offset = (seed + 1) % indexes.length;
+  return [...indexes.slice(offset), ...indexes.slice(0, offset)];
+};
+
+const deeperContextByPlace = {
+  "Plaza de la Constitución":
+    "Dit plein was eeuwenlang een stedelijk knooppunt. In Málaga zie je hier hoe religie, handel en dagelijks leven via smalle straten naar één centrale ruimte trekken.",
+  "Catedral de Málaga":
+    "La Manquita is niet alleen een bijnaam, maar ook een geheugensteun: de onafgemaakte toren laat zien dat grote stadsprojecten vaak afhankelijk waren van geld, politiek en tijd.",
+  "Teatro Romano":
+    "Málaga is hier bijna als een stapel geschiedenis te lezen: Romeinse resten liggen onder de blik van de Moorse Alcazaba, midden in een moderne toeristische stad.",
+  "Alcazaba ingang":
+    "De Alcazaba controleerde zichtlijnen naar stad, heuvel en haven. Dat maakt de plek strategischer dan alleen een mooie oude muur.",
+  "Plaza de la Merced":
+    "Picasso wordt hier niet alleen als kunstenaar herinnerd, maar ook als stadsidentiteit. Málaga gebruikt zijn geboorteplek om cultuur en toerisme aan elkaar te koppelen.",
+  "Muelle Uno":
+    "Muelle Uno laat zien hoe een havenstad zichzelf vernieuwt: de oude stad blijft zichtbaar, maar de waterkant krijgt moderne functies voor wandelen, winkels en horeca.",
+  "Marktplatz en Rathaus":
+    "De Marktplatz koppelt bestuur aan openbare ruimte. Het ruiterstandbeeld van Jan Wellem en het Rathaus vertellen samen hoe Düsseldorf zichzelf als residentiestad presenteerde.",
+  "Burgplatz en Schlossturm":
+    "Burgplatz is een scharnier tussen de Rijn en de Altstadt. De Schlossturm herinnert aan de tijd waarin macht, rivierhandel en stadsontwikkeling op dezelfde plek samenkwamen.",
+  Rheinuferpromenade:
+    "De Rheinuferpromenade is sterk omdat de stad de rivier weer als verblijfsruimte gebruikt. Waar verkeer en havenfuncties domineerden, lopen mensen nu langs de Rijn.",
+  Königsallee:
+    "De Kö gebruikt water, bomen en brede profielen om luxe ruimtelijk te maken. Het is niet alleen winkelen, maar een ontworpen stadsdecor.",
+  Bolkerstraße:
+    "De 'langste Theke' is een bijnaam voor de dichtheid aan cafés, brouwhuizen en Altbiercultuur. Dat uitgaansnetwerk is een belangrijk deel van Düsseldorfs identiteit.",
+  Rheinturm:
+    "De Lichtzeitpegel maakt techniek speels zichtbaar: de toren is observatiepunt, landmark en klok tegelijk. Dat past goed bij de moderne Rijnzone.",
+  "Kölner Dom":
+    "De Dom is in Keulen meer dan een kerk. Door zijn schaal en ligging naast het station is hij vaak het eerste en sterkste beeld van de stad.",
+  Hohenzollernbrücke:
+    "Deze brug combineert treinverkeer, voetgangersroutes en liefdessloten. Daardoor wordt infrastructuur tegelijk een ritueel en uitzichtpunt.",
+  "Alter Markt":
+    "Alter Markt laat het oude stedelijke ritme zien: handel, horeca, doorgangen en gevels maken samen een plein dat blijft functioneren als ontmoetingsplek.",
+  "Historisches Rathaus":
+    "Het Rathaus toont de stedelijke zelfstandigheid van Keulen. De toren en decoratie vertellen dat bestuur zichtbaar en indrukwekkend moest zijn.",
+  Eigelsteintorburg:
+    "Een stadspoort was letterlijk een grens. Hier kun je voelen hoe middeleeuws Keulen toegang, handel en veiligheid controleerde.",
+  Rheinauhafen:
+    "Rheinauhafen laat zien hoe een oud havengebied nieuwe stedelijke waarde krijgt. De Rijn blijft de drager, maar de functies verschuiven naar wonen, werken en recreatie.",
+  Römerberg:
+    "Römerberg is belangrijk omdat Frankfurt hier zijn historische gezicht laat zien, naast een stad die veel moderner en financieeler bekendstaat.",
+  "Kaiserdom St. Bartholomäus":
+    "De Dom herinnert aan Frankfurt als kroningsstad. Daardoor gaat deze plek niet alleen over religie, maar ook over keizerlijke macht en ceremonie.",
+  "Eiserner Steg":
+    "Vanaf de Eiserner Steg zie je Frankfurt in één beeld: oude stad, Main, musea en skyline. De brug maakt die lagen letterlijk oversteekbaar.",
+  "Goethe-Haus":
+    "Goethes geboortehuis geeft Frankfurt een cultureel anker. Een individuele schrijver wordt zo onderdeel van het collectieve stadsverhaal.",
+  "Main Tower":
+    "De Main Tower maakt de financiële stad tastbaar. Frankfurt gebruikt hoogbouw sterker dan veel andere Duitse steden om internationale economie zichtbaar te maken.",
+  "Alte Oper":
+    "De Alte Oper toont hoe cultuur en prestige samenkomen. Het gebouw zegt: deze stad is niet alleen handel en banken, maar ook podium en publiek leven.",
+  "Trafalgar Square":
+    "Trafalgar Square is ontworpen als nationaal podium. Monumenten, zichtlijnen en musea maken het plein politiek, ceremonieel en toeristisch tegelijk.",
+  "Covent Garden":
+    "Covent Garden veranderde van marktgebied naar cultuur- en winkelplek. De levendigheid komt uit die mix van handel, optreden en verblijf.",
+  "Somerset House":
+    "Somerset House gebruikt symmetrie en binnenplaats om gezag uit te stralen. Het voelt formeel omdat architectuur hier orde en instituties zichtbaar maakt.",
+  "St Paul’s Cathedral":
+    "St Paul’s is een spiritueel en nationaal symbool. De koepel bleef lang een dominante skylinevorm en is nog steeds verbonden met ceremonie en wederopbouw.",
+  "Millennium Bridge":
+    "De Millennium Bridge is krachtig door zijn zichtlijn: St Paul’s en Tate Modern worden door lopen over de Thames in één verhaal gezet.",
+  "Tower Bridge":
+    "Tower Bridge is herkenbaar omdat techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
+};
+
+const buildDeeperContext = (tour, stop) =>
+  deeperContextByPlace[stop.place] ||
+  `Deze plek zegt iets typisch over ${tour.city}: niet alleen het losse gebouw of plein is belangrijk, maar vooral hoe ${stop.place} verbonden is met de geschiedenis, routes en identiteit van de stad. Door ter plekke naar details te kijken, zie je beter waarom juist deze stop in de route zit.`;
 
 const renderStopMap = (stop) => {
   const { lat, lng } = stop.coordinates;
@@ -1048,6 +1124,33 @@ const unlockTour = async (tourId) => {
   renderTours();
   openTour(tourId);
   showToast("Tour ontgrendeld op dit apparaat.");
+};
+
+const showCorrectAnswerDialog = (tour, stop, choice) => {
+  if (!answerContent) return;
+
+  const hasNextStop = selectedStopIndex < tour.stops.length - 1;
+  answerContent.innerHTML = `
+    <span class="pill">Goed antwoord</span>
+    <h2>${stop.title}</h2>
+    <p class="correct-answer-line">
+      <strong>Het goede antwoord:</strong> ${choice.text}
+    </p>
+    <p>${choice.feedback}</p>
+    <div class="deep-answer">
+      <h3>Waarom dit ertoe doet</h3>
+      <p>${buildDeeperContext(tour, stop)}</p>
+    </div>
+    <div class="hero-actions">
+      ${
+        hasNextStop
+          ? `<button class="button primary" type="button" data-next-stop>Volgende stop</button>`
+          : `<button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>`
+      }
+      <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
+    </div>
+  `;
+  openDialog(answerDialog);
 };
 
 const isStandaloneApp = () =>
@@ -1245,16 +1348,17 @@ const renderAssignment = () => {
           <h3>Vraag</h3>
           <p>${locationLocked && !done.includes(selectedStopIndex) ? "Deze vraag wordt zichtbaar zodra je bij de stop bent." : stop.question}</p>
           <div class="answer-options" role="group" aria-label="Antwoordopties">
-            ${stop.choices
-              .map(
-                (choice, choiceIndex) => `
+            ${getChoiceOrder(tour.id, selectedStopIndex, stop.choices)
+              .map((choiceIndex) => {
+                const choice = stop.choices[choiceIndex];
+                return `
                   <button class="answer-option" type="button" data-answer-choice="${choiceIndex}" ${
                     answerLocked ? "disabled" : ""
                   }>
                     ${choice.text}
                   </button>
-                `,
-              )
+                `;
+              })
               .join("")}
           </div>
           <p class="answer-feedback" data-answer-feedback>${
@@ -1371,6 +1475,8 @@ document.addEventListener("click", (event) => {
   const cityTab = event.target.closest("[data-city-tab]");
   const adminLogin = event.target.closest("[data-admin-login]");
   const adminLogout = event.target.closest("[data-admin-logout]");
+  const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
+  const nextStop = event.target.closest("[data-next-stop]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
@@ -1408,6 +1514,21 @@ document.addEventListener("click", (event) => {
     }
     showToast("Adminmodus uitgeschakeld.");
   }
+
+  if (closeAnswerDialog) {
+    closeDialog(answerDialog);
+  }
+
+  if (nextStop && selectedTourId) {
+    const tour = tours.find((item) => item.id === selectedTourId);
+    if (tour && selectedStopIndex < tour.stops.length - 1) {
+      selectedStopIndex += 1;
+      closeDialog(answerDialog);
+      renderStops();
+      renderAssignment();
+    }
+  }
+
   if (installHelpButton) {
     installHelpVisible = true;
     renderInstallCallout();
@@ -1460,8 +1581,8 @@ document.addEventListener("click", (event) => {
     progress[selectedTourId] = current;
     saveProgress(progress);
     renderStops();
-    window.setTimeout(renderAssignment, 900);
-    showToast("Goed antwoord. Opdracht opgeslagen.");
+    renderAssignment();
+    showCorrectAnswerDialog(tour, tour.stops[selectedStopIndex], choice);
   }
 
   if (startPayment) {
