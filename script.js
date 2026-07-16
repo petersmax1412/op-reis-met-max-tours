@@ -165,13 +165,13 @@ const tours = [
   {
     id: "dusseldorf",
     city: "Düsseldorf",
-    title: "Düsseldorf Altstadt: Rijn, macht en moderne lijnen",
+    title: "Düsseldorf Altstadt: Rijn, Altbier en lichtklok",
     price: "€4,49",
     duration: "120 min",
     distance: "4,1 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een stadswandeling van het Rathaus en de Rijn naar Königsallee, Hofgarten en de Rheinturm.",
+      "Een stadswandeling van het Rathaus en de Rijn naar Königsallee, de langste Theke en de lichtklok van de Rheinturm.",
     stops: [
       {
         title: "Start op de Marktplatz",
@@ -274,52 +274,55 @@ const tours = [
         ],
       },
       {
-        title: "Rust in de Hofgarten",
-        place: "Hofgarten",
-        coordinates: { lat: 51.229, lng: 6.7801 },
-        assignment: "Zoek een zichtlijn waar park en stad elkaar raken.",
-        question: "Waarom zijn stadsparken belangrijk in drukke centra?",
-        hint: "Denk aan tempo, geluid en oriëntatie.",
+        title: "Vind de langste Theke",
+        place: "Bolkerstraße",
+        coordinates: { lat: 51.2267, lng: 6.775 },
+        assignment:
+          "Loop door de Altstadt en zoek hoe cafés, brouwhuizen en terrassen bijna als één lange bar aanvoelen.",
+        question: "Waarom noemt Düsseldorf de Altstadt de längste Theke der Welt?",
+        hint: "Theke betekent bar of toog. Kijk hoeveel plekken om te drinken en te blijven hangen dicht op elkaar zitten.",
         choices: [
           {
-            text: "Ze geven rust, koelte en ruimte midden in de stad",
+            text: "Omdat er in een klein oud stadsdeel heel veel cafés, bars en brouwhuizen bij elkaar zitten",
             correct: true,
-            feedback: "Precies. Een park verandert hoe je een stad ervaart, niet alleen hoe hij eruitziet.",
+            feedback: "Precies. Het gaat niet om één letterlijke bar, maar om een aaneenschakeling van uitgaansplekken.",
           },
           {
-            text: "Ze maken een centrum altijd minder toegankelijk",
+            text: "Omdat er één houten bar door de hele stad loopt",
             correct: false,
-            feedback: "Meestal juist toegankelijker en prettiger, zeker voor wandelaars.",
+            feedback: "Leuke gedachte, maar de bijnaam is figuurlijk bedoeld: veel horeca op een klein oppervlak.",
           },
           {
-            text: "Ze zijn alleen bedoeld als versiering",
+            text: "Omdat de Altstadt vooral bekendstaat om kantoren zonder horeca",
             correct: false,
-            feedback: "Een park is mooi, maar heeft ook sociale, klimatologische en ruimtelijke functies.",
+            feedback: "Niet helemaal. Juist de concentratie van cafés, bars en Altbier-brouwhuizen maakt deze plek bekend.",
           },
         ],
       },
       {
-        title: "Eindig bij de skyline",
+        title: "Lees de lichtklok",
         place: "Rheinturm",
         coordinates: { lat: 51.2179, lng: 6.7616 },
-        assignment: "Kijk naar de toren en de MedienHafen. Zoek hoe Düsseldorf hier moderner wordt.",
-        question: "Wat laat de Rheinturm vooral zien?",
-        hint: "Vergelijk deze plek met de Altstadt aan het begin.",
+        assignment:
+          "Kijk naar de verticale rij lampjes op de toren. Zoek de groepen die samen uren, minuten en seconden vormen.",
+        question: "Wat geven de lampjes op de Rheinturm aan?",
+        hint: "De lichtstroken zijn geen versiering alleen: ze werken als een klok langs de toren.",
         choices: [
           {
-            text: "De stad gebruikt architectuur en hoogte om een moderne identiteit te tonen",
+            text: "Ze vormen een lichtklok die de actuele tijd aangeeft",
             correct: true,
-            feedback: "Klopt. Dit eindpunt laat een heel andere laag van Düsseldorf zien.",
+            feedback:
+              "Klopt. De Lichtzeitpegel toont de tijd met groepen lampjes voor uren, minuten en seconden.",
           },
           {
-            text: "Dat de oude stad hier volledig verdwenen is",
+            text: "Ze tellen hoeveel schepen er over de Rijn varen",
             correct: false,
-            feedback: "Niet helemaal. De moderne laag staat naast de oude, niet in plaats van alles.",
+            feedback: "Nee, de lampjes zijn gekoppeld aan tijd, niet aan scheepvaart.",
           },
           {
-            text: "Dat rivieren steden nooit veranderen",
+            text: "Ze geven alleen reclamekleuren aan",
             correct: false,
-            feedback: "Juist aan de Rijn zie je hoe stad, haven en skyline blijven veranderen.",
+            feedback: "Niet echt. De toren kan opvallen door licht, maar deze rij lampjes heeft een klokfunctie.",
           },
         ],
       },
