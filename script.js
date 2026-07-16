@@ -1185,6 +1185,60 @@ const getCurrentLocation = () => {
   );
 };
 
+const checkArrivalAtStop = (targetStopIndex) => {
+  const tour = tours.find((item) => item.id === selectedTourId);
+  const targetStop = tour?.stops[targetStopIndex];
+  const status = document.querySelector("[data-arrival-status]");
+  if (!tour || !targetStop) return;
+
+  if (isAdminMode()) {
+    selectedStopIndex = targetStopIndex;
+    closeDialog(answerDialog);
+    renderStops();
+    renderAssignment();
+    showToast("Adminmodus: volgende vraag geopend.");
+    return;
+  }
+
+  if (!("geolocation" in navigator)) {
+    if (status) status.textContent = "Je browser ondersteunt geen locatiebepaling.";
+    return;
+  }
+
+  if (status) status.textContent = "We controleren of je bij de volgende stop bent...";
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      userLocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+        accuracy: Math.round(position.coords.accuracy),
+      };
+
+      const distance = distanceInMeters(userLocation, targetStop.coordinates);
+      locationMessage = `Locatie actief, nauwkeurigheid ongeveer ${userLocation.accuracy} m.`;
+
+      if (distance !== null && distance <= unlockRadiusMeters) {
+        selectedStopIndex = targetStopIndex;
+        closeDialog(answerDialog);
+        renderStops();
+        renderAssignment();
+        showToast("Je bent er. De volgende vraag is geopend.");
+        return;
+      }
+
+      if (status) {
+        status.textContent = `Je bent nog ${formatDistance(distance)} van ${targetStop.place}. Binnen ${unlockRadiusMeters} meter opent de vraag.`;
+      }
+    },
+    () => {
+      locationMessage = "Locatie niet beschikbaar. Geef toestemming om de volgende vraag te openen.";
+      if (status) status.textContent = locationMessage;
+    },
+    { enableHighAccuracy: true, maximumAge: 10000, timeout: 12000 },
+  );
+};
+
 const showToast = (message) => {
   const toast = document.createElement("div");
   toast.className = "toast";
@@ -1296,6 +1350,8 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
   if (!answerContent) return;
 
   const hasNextStop = selectedStopIndex < tour.stops.length - 1;
+  const nextStop = hasNextStop ? tour.stops[selectedStopIndex + 1] : null;
+  const guide = hasNextStop ? routeGuides[tour.id]?.[selectedStopIndex] : null;
   answerContent.innerHTML = `
     <span class="pill">Goed antwoord</span>
     <h2>${stop.title}</h2>
@@ -1307,14 +1363,39 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
       <h3>Waarom dit ertoe doet</h3>
       <p>${buildDeeperContext(tour, stop)}</p>
     </div>
-    <div class="hero-actions">
-      ${
-        hasNextStop
-          ? `<button class="button primary" type="button" data-next-stop>Volgende stop</button>`
-          : `<button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>`
-      }
-      <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
-    </div>
+    ${
+      hasNextStop
+        ? `
+          <div class="next-route-card">
+            <span class="pill">Volgende locatie</span>
+            <h3>Loop naar stop ${selectedStopIndex + 2}: ${nextStop.title}</h3>
+            <p><strong>${nextStop.place}</strong></p>
+            ${renderStopMap(nextStop)}
+            <p>${guide?.route || `Loop rustig door naar ${nextStop.place}.`}</p>
+            <div class="walk-watch">
+              <strong>Let onderweg op</strong>
+              <span>${guide?.watch || "Kijk naar gevels, straatprofiel, drukte en zichtlijnen tussen de twee stops."}</span>
+            </div>
+            <p class="arrival-status" data-arrival-status>
+              Open de looproute, wandel naar de plek en druk daar op “Ik ben er”.
+            </p>
+            <div class="hero-actions">
+              <a class="button ghost" href="${getWalkingRouteUrl(stop, nextStop)}" target="_blank" rel="noopener">
+                Open looproute
+              </a>
+              <button class="button primary" type="button" data-arrive-stop="${selectedStopIndex + 1}">
+                Ik ben er
+              </button>
+            </div>
+          </div>
+        `
+        : `
+          <div class="hero-actions">
+            <button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>
+            <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
+          </div>
+        `
+    }
   `;
   openDialog(answerDialog);
 };
@@ -1643,7 +1724,7 @@ document.addEventListener("click", (event) => {
   const adminLogin = event.target.closest("[data-admin-login]");
   const adminLogout = event.target.closest("[data-admin-logout]");
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
-  const nextStop = event.target.closest("[data-next-stop]");
+  const arriveStop = event.target.closest("[data-arrive-stop]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
@@ -1686,14 +1767,8 @@ document.addEventListener("click", (event) => {
     closeDialog(answerDialog);
   }
 
-  if (nextStop && selectedTourId) {
-    const tour = tours.find((item) => item.id === selectedTourId);
-    if (tour && selectedStopIndex < tour.stops.length - 1) {
-      selectedStopIndex += 1;
-      closeDialog(answerDialog);
-      renderStops();
-      renderAssignment();
-    }
+  if (arriveStop) {
+    checkArrivalAtStop(Number(arriveStop.dataset.arriveStop));
   }
 
   if (installHelpButton) {
