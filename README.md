@@ -7,6 +7,7 @@ Nieuwe conceptversie voor interactieve stadsrondleidingen op `stadsopdracht.nl`.
 - Mobiele webapp-layout voor Android en iOS
 - PWA-bestanden: `manifest.webmanifest`, `service-worker.js` en app-icon
 - Tourwinkel met prijzen
+- Stedentabs voor Málaga, Düsseldorf, Keulen, Frankfurt en London
 - Aankoop en voortgang lokaal op hetzelfde apparaat
 - Interactieve stops met opdrachten, hints en voortgang
 - Rabobank-betaalverzoek met iDEAL/Wero-tekst

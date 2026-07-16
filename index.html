@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/app-icon.svg" />
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
   </head>
   <body>
     <header class="app-shell">
@@ -23,7 +23,7 @@
         <span>Stadsopdracht</span>
       </a>
       <nav class="top-nav" aria-label="Navigatie">
-        <a href="#tours">Málaga route</a>
+        <a href="#tours">Steden</a>
         <a href="#mijn-tour">Mijn tour</a>
         <a href="#betaling">Betalen</a>
       </nav>
@@ -32,15 +32,15 @@
     <main id="home">
       <section class="hero-app">
         <div class="hero-copy">
-          <p class="eyebrow">Startstad: Málaga</p>
-          <h1>Ontdek Málaga via opdrachten, plekken en verhalen.</h1>
+          <p class="eyebrow">Stadsroutes met opdrachten</p>
+          <h1>Ontdek steden via opdrachten, plekken en verhalen.</h1>
           <p>
-            Koop de eerste route voor een paar euro, open hem direct op je telefoon en voer bij elke
-            stop een korte opdracht uit. Zo kijk je beter naar het centrum, de haven, de Moorse
-            geschiedenis en de kleine details die je normaal mist.
+            Koop een route voor een paar euro, open hem direct op je telefoon en voer bij elke
+            stop een korte opdracht uit. Zo kijk je beter naar pleinen, bruggen, oude stadsdelen
+            en de kleine details die je normaal mist.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#tours">Bekijk Málaga route</a>
+            <a class="button primary" href="#tours">Bekijk steden</a>
             <button class="button ghost" type="button" data-open-tour="malaga">Bekijk preview</button>
           </div>
         </div>
@@ -69,7 +69,7 @@
       <section class="value-strip" aria-label="Hoe werkt het">
         <article>
           <strong>1</strong>
-          <span>Open Málaga</span>
+          <span>Kies een stad</span>
         </article>
         <article>
           <strong>2</strong>
@@ -91,14 +91,15 @@
         <div class="section-head">
           <div>
             <p class="eyebrow dark">Shop</p>
-            <h2>De eerste stadsopdracht: Málaga</h2>
+            <h2>Kies je stadsopdracht</h2>
           </div>
           <p>
-            We beginnen bewust met één sterke route. Korte stops, heldere opdrachten, lokale
+            Elke stad gebruikt hetzelfde webapp-concept: korte stops, heldere opdrachten, lokale
             context en voortgang die op je toestel bewaard blijft.
           </p>
         </div>
 
+        <div class="city-tabs" data-city-tabs aria-label="Kies een stad"></div>
         <div class="tour-grid" data-tour-grid></div>
       </section>
 
@@ -124,7 +125,7 @@
           <p class="eyebrow dark">Betalingen</p>
           <h2>Betaal eenvoudig met iDEAL of Wero</h2>
           <p>
-            Koop de Málaga-route via een veilige betaalpagina. Na het openen van de betaalpagina
+            Koop je stadsroute via een veilige betaalpagina. Na het openen van de betaalpagina
             zet de webapp je route klaar, zodat je direct kunt beginnen met de opdrachten in de
             stad. Je aankoop en voortgang blijven op dit apparaat bewaard.
           </p>
@@ -142,7 +143,7 @@
     </main>
 
     <footer class="bottom-nav" aria-label="Mobiele navigatie">
-      <a href="#tours">Málaga</a>
+      <a href="#tours">Steden</a>
       <a href="#mijn-tour">Mijn tour</a>
       <a href="#betaling">Betalen</a>
     </footer>
@@ -154,6 +155,6 @@
       <div data-checkout-content></div>
     </dialog>
 
-    <script src="script.js?v=12"></script>
+    <script src="script.js?v=13"></script>
   </body>
 </html>

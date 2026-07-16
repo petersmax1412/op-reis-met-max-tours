@@ -387,6 +387,44 @@ h3 {
   margin-bottom: 28px;
 }
 
+.city-tabs {
+  display: flex;
+  gap: 10px;
+  margin: -4px 0 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.city-tab {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  flex: 0 0 auto;
+  font-weight: 900;
+  min-height: 46px;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+.city-tab span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-left: 7px;
+}
+
+.city-tab.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+.city-tab.active span {
+  color: rgba(255, 255, 255, 0.76);
+}
+
 .tour-grid {
   display: grid;
   gap: 18px;
