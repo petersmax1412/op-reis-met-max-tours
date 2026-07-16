@@ -5,8 +5,10 @@
   --paper: #f7f5ef;
   --panel: #ffffff;
   --line: #d9ddd3;
-  --green: #12312c;
-  --mint: #dcefe7;
+  --green: #10aeca;
+  --mint: #dff7fb;
+  --success: #1f8f5b;
+  --success-soft: #dcefe7;
   --blue: #1d6d86;
   --coral: #d56545;
   --yellow: #f0bf5a;
@@ -699,8 +701,8 @@ h3 {
 }
 
 .answer-option.correct {
-  background: var(--mint);
-  border-color: var(--green);
+  background: var(--success-soft);
+  border-color: var(--success);
 }
 
 .answer-option.incorrect {
@@ -828,8 +830,8 @@ h3 {
 }
 
 .correct-answer-line {
-  background: var(--mint);
-  border: 1px solid rgba(18, 49, 44, 0.22);
+  background: var(--success-soft);
+  border: 1px solid rgba(31, 143, 91, 0.28);
   border-radius: 8px;
   color: var(--ink) !important;
   padding: 14px;

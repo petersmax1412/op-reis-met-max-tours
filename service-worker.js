@@ -1,12 +1,14 @@
-const cacheName = "stadsopdracht-v29";
+const cacheName = "stadsopdracht-v30";
 const filesToCache = [
   "./",
   "./index.html",
   "./styles.css",
   "./script.js",
   "./manifest.webmanifest",
-  "./assets/favicon.svg",
-  "./assets/app-icon.svg",
+  "./assets/favicon.png",
+  "./assets/apple-touch-icon.png",
+  "./assets/app-icon-192.png",
+  "./assets/app-icon-512.png",
   "./assets/hero-travel.jpg",
 ];
 
