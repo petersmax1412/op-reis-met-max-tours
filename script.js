@@ -1461,6 +1461,7 @@ const answerContent = document.querySelector("[data-answer-content]");
 const adminPanel = document.querySelector("[data-admin-panel]");
 const promoIntro = document.querySelector("[data-promo-intro]");
 const promoProgress = document.querySelector("[data-promo-progress]");
+const promoToggleButton = document.querySelector("[data-promo-toggle]");
 
 let selectedTourId = null;
 let selectedCityId = "all";
@@ -1471,13 +1472,15 @@ let paymentTimer = null;
 let deferredInstallPrompt = null;
 let installHelpVisible = false;
 let promoTimer = null;
+let promoPaused = false;
+let promoSceneIndex = 0;
 
 const defaultUnlockRadiusMeters = 70;
 const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
-const promoDurations = [3200, 3200, 3800, 5600, 3600, 3400, 4600];
+const promoDurations = [3200, 3200, 3800, 5600, 3800, 3400, 4600];
 const cityPhotos = {
   malaga: {
     src: "assets/cities/malaga.jpg",
@@ -1638,6 +1641,7 @@ const finishPromoIntro = () => {
   window.clearTimeout(promoTimer);
   sessionStorage.setItem(promoStorageKey, "true");
   document.body.classList.remove("promo-active");
+  document.body.classList.remove("promo-paused");
   promoIntro.classList.add("is-hidden");
   promoIntro.setAttribute("aria-hidden", "true");
 
@@ -1652,6 +1656,7 @@ const showPromoScene = (sceneIndex) => {
   const pins = [...promoIntro.querySelectorAll("[data-promo-pin]")];
   const progressItems = [...promoProgress.children];
   const duration = promoDurations[sceneIndex] || 3200;
+  promoSceneIndex = sceneIndex;
 
   scenes.forEach((scene, index) => {
     scene.classList.toggle("active", index === sceneIndex);
@@ -1669,7 +1674,7 @@ const showPromoScene = (sceneIndex) => {
   });
 
   window.clearTimeout(promoTimer);
-  if (sceneIndex < scenes.length - 1) {
+  if (!promoPaused && sceneIndex < scenes.length - 1) {
     promoTimer = window.setTimeout(() => showPromoScene(sceneIndex + 1), duration);
   }
 };
@@ -2338,6 +2343,17 @@ const renderWebInstallOnly = () => {
     : mobile
       ? "Op Android: open stadsopdracht.nl in Chrome en kies Installeren of Toevoegen aan startscherm."
       : "Pak je telefoon, open stadsopdracht.nl en installeer de webapp via Safari of Chrome.";
+  const helpSteps = `
+    <div class="web-install-steps">
+      <strong>Zo installeer je Stadsopdracht op je telefoon</strong>
+      <ol>
+        <li>Open <span>stadsopdracht.nl</span> op je telefoon.</li>
+        <li>iPhone: gebruik Safari, tik op Delen en kies Zet op beginscherm.</li>
+        <li>Android: gebruik Chrome, tik op het menu en kies Installeren of Toevoegen aan startscherm.</li>
+        <li>Open daarna Stadsopdracht vanaf je beginscherm.</li>
+      </ol>
+    </div>
+  `;
   webInstallOnly.innerHTML = `
     <div class="web-install-card">
       <img src="assets/app-icon-512.png" alt="Stadsopdracht" />
@@ -2350,18 +2366,16 @@ const renderWebInstallOnly = () => {
       ${mobile ? "" : `<p class="web-install-kicker">Open deze site op je telefoon om de app te installeren.</p>`}
       ${
         installHelpVisible || ios || !canInstall || !mobile
-          ? `<p class="web-install-help">${helpText}</p>`
+          ? `<p class="web-install-help">${helpText}</p>${installHelpVisible || !mobile ? helpSteps : ""}`
           : ""
       }
       <div class="web-install-actions">
         ${
           mobile
             ? `<button class="button primary" type="button" data-install-app>Installeer webapp</button>`
-            : `<button class="button primary" type="button" data-show-install-help>Hoe installeer ik op mobiel?</button>`
+            : ""
         }
-        <button class="button ghost" type="button" data-show-install-help>
-          Installatiehulp
-        </button>
+        ${mobile ? `<button class="button ghost" type="button" data-show-install-help>Installatiehulp</button>` : ""}
       </div>
     </div>
   `;
@@ -2664,9 +2678,24 @@ document.addEventListener("click", (event) => {
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
   const arriveStop = event.target.closest("[data-arrive-stop]");
   const promoFinish = event.target.closest("[data-promo-finish]");
+  const promoToggle = event.target.closest("[data-promo-toggle]");
 
   if (promoFinish) {
     finishPromoIntro();
+    return;
+  }
+
+  if (promoToggle) {
+    promoPaused = !promoPaused;
+    document.body.classList.toggle("promo-paused", promoPaused);
+    promoToggle.textContent = promoPaused ? "►" : "❚❚";
+    promoToggle.setAttribute("aria-label", promoPaused ? "Speel intro af" : "Pauzeer intro");
+    window.clearTimeout(promoTimer);
+
+    if (!promoPaused) {
+      showPromoScene(Math.min(promoSceneIndex + 1, promoDurations.length - 1));
+    }
+
     return;
   }
 

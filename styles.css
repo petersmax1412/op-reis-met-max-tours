@@ -46,6 +46,12 @@ body.promo-active {
   overflow: hidden;
 }
 
+body.promo-paused .promo-progress span.active::before,
+body.promo-paused .promo-walker,
+body.promo-paused .promo-city-bars span {
+  animation-play-state: paused;
+}
+
 body.browser-mode .app-shell,
 body.browser-mode main,
 body.browser-mode .bottom-nav {
@@ -135,11 +141,47 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   padding: 12px;
 }
 
+.web-install-steps {
+  background: rgba(18, 37, 63, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  color: #fff;
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+}
+
+.web-install-steps strong {
+  font-size: 0.95rem;
+}
+
+.web-install-steps ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.web-install-steps li {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.94rem;
+  font-weight: 760;
+}
+
+.web-install-steps span {
+  color: #fff;
+  font-weight: 930;
+}
+
 .web-install-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 4px;
+}
+
+.web-install-actions:empty {
+  display: none;
 }
 
 .web-install-actions .button.ghost {
@@ -218,6 +260,23 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   position: absolute;
   right: 14px;
   top: 28px;
+  z-index: 5;
+}
+
+.promo-control {
+  align-items: center;
+  background: rgba(18, 37, 63, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  bottom: 16px;
+  color: #f7f3ea;
+  display: flex;
+  font-size: 0.9rem;
+  height: 38px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  width: 38px;
   z-index: 5;
 }
 
@@ -610,6 +669,20 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   font-size: 2.3rem;
 }
 
+.promo-distance {
+  bottom: 26px;
+  color: rgba(18, 37, 63, 0.62);
+  font-size: 0.68rem;
+  font-weight: 900;
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.promo-distance-far {
+  opacity: 1;
+}
+
 .promo-scene.active .promo-lock {
   animation: promo-hide 280ms 1200ms ease forwards;
 }
@@ -622,12 +695,13 @@ body.browser-mode .promo-intro[hidden] + .web-install-only {
   top: 34px;
 }
 
-.promo-unlock small {
-  bottom: 26px;
-  color: rgba(18, 37, 63, 0.62);
-  font-size: 0.68rem;
-  font-weight: 900;
-  position: absolute;
+.promo-scene.active .promo-distance-far {
+  animation: promo-hide 280ms 1200ms ease forwards;
+}
+
+.promo-scene.active .promo-distance-near {
+  animation: promo-show 360ms 1450ms ease forwards;
+  color: var(--yellow);
 }
 
 .promo-city-bars {
