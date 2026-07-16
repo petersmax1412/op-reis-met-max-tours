@@ -165,6 +165,7 @@ const tours = [
 ];
 
 const storageKey = "stadsopdracht-progress";
+const sessionStorageKey = "stadsopdracht-session";
 const supabaseConfig = {
   url: "https://pkhyreudjcdkzhrjtdpi.supabase.co",
   anonKey:
@@ -176,6 +177,7 @@ const stopList = document.querySelector("[data-stop-list]");
 const assignmentPanel = document.querySelector("[data-assignment-panel]");
 const tourStatus = document.querySelector("[data-tour-status]");
 const accountActions = document.querySelector("[data-account-actions]");
+const installCallout = document.querySelector("[data-install-callout]");
 const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
 const authDialog = document.querySelector("[data-auth-dialog]");
@@ -190,12 +192,153 @@ let authClient = null;
 let session = null;
 let remoteProgress = {};
 let authMessage = "";
+let deferredInstallPrompt = null;
+let installHelpVisible = false;
 
 const unlockRadiusMeters = 100;
 const paymentProcessingMs = 40000;
 
-const hasAccountStorage = () =>
-  Boolean(supabaseConfig.url && supabaseConfig.anonKey && window.supabase?.createClient);
+const hasAccountStorage = () => Boolean(supabaseConfig.url && supabaseConfig.anonKey);
+
+const authHeaders = (accessToken = null) => ({
+  apikey: supabaseConfig.anonKey,
+  Authorization: `Bearer ${accessToken || supabaseConfig.anonKey}`,
+  "Content-Type": "application/json",
+});
+
+const readStoredSession = () => {
+  try {
+    return JSON.parse(localStorage.getItem(sessionStorageKey) || "null");
+  } catch {
+    return null;
+  }
+};
+
+const storeSession = (nextSession) => {
+  if (nextSession) {
+    localStorage.setItem(sessionStorageKey, JSON.stringify(nextSession));
+    return;
+  }
+
+  localStorage.removeItem(sessionStorageKey);
+};
+
+const createRestSupabaseClient = () => ({
+  auth: {
+    async signUp({ email, password }) {
+      const response = await fetch(`${supabaseConfig.url}/auth/v1/signup`, {
+        method: "POST",
+        headers: authHeaders(),
+        body: JSON.stringify({ email, password }),
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) return { data: {}, error: { message: payload.msg || payload.message || "Account maken mislukt." } };
+
+      return {
+        data: {
+          session: payload.access_token
+            ? {
+                access_token: payload.access_token,
+                refresh_token: payload.refresh_token,
+                user: payload.user,
+              }
+            : null,
+          user: payload.user,
+        },
+        error: null,
+      };
+    },
+    async signInWithPassword({ email, password }) {
+      const response = await fetch(`${supabaseConfig.url}/auth/v1/token?grant_type=password`, {
+        method: "POST",
+        headers: authHeaders(),
+        body: JSON.stringify({ email, password }),
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) return { data: {}, error: { message: payload.msg || payload.message || "Inloggen mislukt." } };
+
+      const nextSession = {
+        access_token: payload.access_token,
+        refresh_token: payload.refresh_token,
+        user: payload.user,
+      };
+      storeSession(nextSession);
+      return { data: { session: nextSession, user: payload.user }, error: null };
+    },
+    async getSession() {
+      return { data: { session: readStoredSession() }, error: null };
+    },
+    async signOut() {
+      storeSession(null);
+      return { error: null };
+    },
+    onAuthStateChange() {
+      return { data: { subscription: { unsubscribe() {} } } };
+    },
+  },
+  from(tableName) {
+    return {
+      async upsert(rows, options = {}) {
+        const query = options.onConflict ? `?on_conflict=${encodeURIComponent(options.onConflict)}` : "";
+        const response = await fetch(`${supabaseConfig.url}/rest/v1/${tableName}${query}`, {
+          method: "POST",
+          headers: {
+            ...authHeaders(session?.access_token),
+            Prefer: "resolution=merge-duplicates,return=minimal",
+          },
+          body: JSON.stringify(rows),
+        });
+
+        if (!response.ok) {
+          const payload = await response.json().catch(() => ({}));
+          return { data: null, error: { message: payload.message || "Opslaan mislukt." } };
+        }
+
+        return { data: null, error: null };
+      },
+      select(columns) {
+        return {
+          async eq(field, value) {
+            const response = await fetch(
+              `${supabaseConfig.url}/rest/v1/${tableName}?select=${encodeURIComponent(columns)}&${field}=eq.${encodeURIComponent(value)}`,
+              { headers: authHeaders(session?.access_token) },
+            );
+            const payload = await response.json().catch(() => []);
+            if (!response.ok) return { data: null, error: { message: payload.message || "Laden mislukt." } };
+            return { data: payload, error: null };
+          },
+        };
+      },
+    };
+  },
+});
+
+const createAuthClient = () =>
+  window.supabase?.createClient
+    ? window.supabase.createClient(supabaseConfig.url, supabaseConfig.anonKey)
+    : createRestSupabaseClient();
+
+const openDialog = (dialog) => {
+  if (!dialog) return;
+  if (dialog.open) return;
+
+  if (typeof dialog.showModal === "function") {
+    dialog.showModal();
+    return;
+  }
+
+  dialog.setAttribute("open", "");
+};
+
+const closeDialog = (dialog) => {
+  if (!dialog) return;
+  if (typeof dialog.close === "function") {
+    dialog.close();
+    return;
+  }
+
+  dialog.removeAttribute("open");
+};
 
 const getProgress = () => {
   if (session) return remoteProgress;
@@ -343,6 +486,7 @@ const loadUserProgress = async () => {
 
 const refreshApp = () => {
   renderAccount();
+  renderInstallCallout();
   renderTours();
   if (selectedTourId) {
     renderStops();
@@ -394,6 +538,56 @@ const renderAccount = () => {
   `;
 };
 
+const isStandaloneApp = () =>
+  window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
+
+const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+
+const renderInstallCallout = () => {
+  if (!installCallout) return;
+
+  if (isStandaloneApp()) {
+    installCallout.innerHTML = `
+      <div>
+        <span class="pill">Webapp actief</span>
+        <h2>Stadsopdracht staat klaar als app</h2>
+        <p>Open hem vanaf je beginscherm wanneer je in de stad loopt.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const canInstall = Boolean(deferredInstallPrompt);
+  const ios = isIosDevice();
+  installCallout.innerHTML = `
+    <div>
+      <span class="pill">Aanbevolen</span>
+      <h2>Installeer Stadsopdracht als webapp</h2>
+      <p>
+        Zet de route op je beginscherm voordat je vertrekt. Dan voelt hij als een gewone app en
+        kun je onderweg sneller verder met je opdrachten.
+      </p>
+      ${
+        installHelpVisible || ios
+          ? `<p class="install-help">${
+              ios
+                ? "Op iPhone: tik in Safari op Delen en kies daarna Zet op beginscherm."
+                : "Gebruik de install-knop van je browser of kies in het browsermenu Installeren."
+            }</p>`
+          : ""
+      }
+    </div>
+    <div class="install-actions">
+      <button class="button primary" type="button" data-install-app>
+        Installeer webapp
+      </button>
+      <button class="button ghost" type="button" data-show-install-help>
+        Hoe installeer ik?
+      </button>
+    </div>
+  `;
+};
+
 const renderAuthForm = (mode = "login") => {
   const isSignup = mode === "signup";
   const title = isSignup ? "Account maken" : "Inloggen";
@@ -441,12 +635,12 @@ const openAuthDialog = (mode = "login", message = "") => {
       </p>
       <p class="auth-message">Daarna moeten bezoekers eerst inloggen voordat ze kunnen betalen.</p>
     `;
-    authDialog.showModal();
+    openDialog(authDialog);
     return;
   }
 
   renderAuthForm(mode);
-  authDialog.showModal();
+  openDialog(authDialog);
 };
 
 const handleAuthSubmit = async (form) => {
@@ -479,8 +673,9 @@ const handleAuthSubmit = async (form) => {
   }
 
   session = result.data.session || session;
+  storeSession(session);
   await loadUserProgress();
-  authDialog.close();
+  closeDialog(authDialog);
   refreshApp();
   showToast(mode === "signup" ? "Account gemaakt." : "Je bent ingelogd.");
 };
@@ -529,6 +724,17 @@ const renderStops = () => {
   const tour = tours.find((item) => item.id === selectedTourId);
   if (!tour) return;
 
+  if (!isUnlocked(tour.id)) {
+    stopList.innerHTML = `
+      <div class="preview-stop-list">
+        <span class="pill">Preview</span>
+        <strong>${tour.city} Centro</strong>
+        <p>${tour.stops.length} opdrachten blijven verborgen tot na aankoop.</p>
+      </div>
+    `;
+    return;
+  }
+
   const done = completedStops(tour.id);
   stopList.innerHTML = tour.stops
     .map(
@@ -553,6 +759,36 @@ const renderAssignment = () => {
   const done = completedStops(tour.id);
   const progress = Math.round((done.length / tour.stops.length) * 100);
   const locked = !isUnlocked(tour.id);
+
+  if (locked) {
+    tourStatus.textContent = `${tour.title}: preview. Koop de route om stops, vragen en kaartjes te openen.`;
+    assignmentPanel.innerHTML = `
+      <div class="preview-panel">
+        <span class="pill">${tour.city}</span>
+        <h2>${tour.title}</h2>
+        <p>${tour.summary}</p>
+        <div class="tour-meta preview-meta">
+          <span>${tour.duration}</span>
+          <span>${tour.distance}</span>
+          <span>${tour.stops.length} opdrachten</span>
+        </div>
+        <div class="preview-locked">
+          <strong>De opdrachten blijven verborgen tot na aankoop.</strong>
+          <span>Maak eerst een account. Daarna kun je betalen en wordt je voortgang online bewaard.</span>
+        </div>
+        <div class="hero-actions">
+          <button class="button primary" type="button" data-buy-tour="${tour.id}">
+            Koop en open route
+          </button>
+          <button class="button ghost" type="button" data-open-auth="signup">
+            Account maken
+          </button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
   const distance = distanceInMeters(userLocation, stop.coordinates);
   const isNearby = distance !== null && distance <= unlockRadiusMeters;
   const locationLocked = !locked && !done.includes(selectedStopIndex) && !isNearby;
@@ -676,7 +912,7 @@ const openCheckout = (tourId) => {
     </p>
   `;
 
-  checkoutDialog.showModal();
+  openDialog(checkoutDialog);
 };
 
 const startPaymentProcessing = (tourId) => {
@@ -698,7 +934,7 @@ const startPaymentProcessing = (tourId) => {
 
   paymentTimer = window.setTimeout(() => {
     paymentTimer = null;
-    checkoutDialog.close();
+    closeDialog(checkoutDialog);
     unlockTour(tourId);
   }, paymentProcessingMs);
 };
@@ -713,11 +949,31 @@ document.addEventListener("click", (event) => {
   const closeCheckout = event.target.closest("[data-close-checkout]");
   const openAuth = event.target.closest("[data-open-auth]");
   const signOutButton = event.target.closest("[data-sign-out]");
+  const installButton = event.target.closest("[data-install-app]");
+  const installHelpButton = event.target.closest("[data-show-install-help]");
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
   if (openAuth) openAuthDialog(openAuth.dataset.openAuth);
   if (signOutButton) signOut();
+  if (installHelpButton) {
+    installHelpVisible = true;
+    renderInstallCallout();
+  }
+
+  if (installButton) {
+    if (!deferredInstallPrompt) {
+      installHelpVisible = true;
+      renderInstallCallout();
+      return;
+    }
+
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.finally(() => {
+      deferredInstallPrompt = null;
+      renderInstallCallout();
+    });
+  }
 
   if (stopButton) {
     selectedStopIndex = Number(stopButton.dataset.stopIndex);
@@ -761,7 +1017,7 @@ document.addEventListener("click", (event) => {
   }
 
   if (closeCheckout) {
-    checkoutDialog.close();
+    closeDialog(checkoutDialog);
   }
 });
 
@@ -779,7 +1035,7 @@ const initAuth = async () => {
     return;
   }
 
-  authClient = window.supabase.createClient(supabaseConfig.url, supabaseConfig.anonKey);
+  authClient = createAuthClient();
 
   const { data } = await authClient.auth.getSession();
   session = data.session;
@@ -794,8 +1050,31 @@ const initAuth = async () => {
   refreshApp();
 };
 
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  renderInstallCallout();
+});
+
+window.addEventListener("appinstalled", () => {
+  deferredInstallPrompt = null;
+  renderInstallCallout();
+  showToast("Webapp geïnstalleerd.");
+});
+
 initAuth();
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js").catch(() => {});
+  let refreshing = false;
+
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then((registration) => registration.update())
+    .catch(() => {});
 }

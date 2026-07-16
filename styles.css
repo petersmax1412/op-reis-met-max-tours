@@ -345,6 +345,54 @@ h3 {
   font-size: 2rem;
 }
 
+.install-callout {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 26px max(clamp(20px, 4vw, 34px), calc((100vw - 1220px) / 2 + 34px));
+}
+
+.install-callout:empty {
+  display: none;
+}
+
+.install-callout h2 {
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  margin-bottom: 10px;
+}
+
+.install-callout p {
+  color: var(--muted);
+  margin-bottom: 0;
+  max-width: 720px;
+}
+
+.install-help {
+  background: var(--mint);
+  border: 1px solid rgba(18, 49, 44, 0.18);
+  border-radius: 8px;
+  color: var(--green) !important;
+  font-weight: 800;
+  margin-top: 12px;
+  padding: 12px;
+}
+
+.install-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
 .section {
   margin: 0 auto;
   max-width: 1220px;
@@ -451,6 +499,17 @@ h3 {
   font-size: 0.9rem;
 }
 
+.preview-stop-list {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.preview-stop-list p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .assignment-panel {
   min-height: 420px;
   padding: clamp(22px, 4vw, 36px);
@@ -467,6 +526,38 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 18px;
+}
+
+.preview-panel {
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+}
+
+.preview-panel h2 {
+  margin-bottom: 0;
+}
+
+.preview-meta {
+  margin: 2px 0 6px;
+}
+
+.preview-locked {
+  background: #f2f5ed;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.preview-locked strong {
+  color: var(--ink);
+}
+
+.preview-locked span {
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .location-gate {
@@ -743,10 +834,15 @@ h3 {
 
   .hero-app,
   .section-head,
+  .install-callout,
   .payment-section,
   .tour-workspace,
   .assignment-layout {
     grid-template-columns: 1fr;
+  }
+
+  .install-actions {
+    justify-content: stretch;
   }
 
   .phone-preview {
