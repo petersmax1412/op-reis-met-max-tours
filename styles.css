@@ -72,6 +72,35 @@ body.admin-host .install-callout {
   display: none;
 }
 
+body.admin-host.admin-locked {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(57, 187, 239, 0.22), transparent 32%),
+    linear-gradient(145deg, #f4fbfd, #e6f6fa);
+}
+
+body.admin-host.admin-locked .app-shell,
+body.admin-host.admin-locked .bottom-nav,
+body.admin-host.admin-locked main > :not(.admin-section) {
+  display: none;
+}
+
+body.admin-host.admin-locked main {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+body.admin-host.admin-locked .admin-section {
+  padding: clamp(24px, 6vw, 64px);
+  width: 100%;
+}
+
+body.admin-host.admin-locked .admin-card {
+  box-shadow: 0 24px 70px rgba(18, 49, 44, 0.16);
+  margin: 0 auto;
+  max-width: 760px;
+}
+
 body.standalone-mode .promo-intro,
 body.standalone-mode .web-install-only {
   display: none;
@@ -1647,6 +1676,17 @@ h3 {
   height: 260px;
 }
 
+.intro-photo {
+  border-radius: 8px;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.intro-photo img {
+  height: 100%;
+  min-height: 280px;
+}
+
 .tour-meta {
   color: var(--muted);
   display: flex;
@@ -1767,6 +1807,80 @@ h3 {
 
 .preview-panel h2 {
   margin-bottom: 0;
+}
+
+.tour-intro-panel {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(280px, 0.48fr) minmax(0, 0.52fr);
+}
+
+.tour-intro-content {
+  display: grid;
+  gap: 16px;
+}
+
+.tour-intro-content h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.tour-intro-content p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.intro-facts {
+  display: grid;
+  gap: 10px;
+}
+
+.intro-facts article {
+  align-items: start;
+  background: #f2f5ed;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto minmax(0, 1fr);
+  padding: 14px;
+}
+
+.intro-facts strong {
+  align-items: center;
+  background: var(--blue);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.82rem;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.intro-facts span {
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.intro-howto {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.intro-howto h3 {
+  margin-bottom: 10px;
+}
+
+.intro-howto ul {
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .preview-meta {
@@ -2492,7 +2606,8 @@ h3 {
   .section-head,
   .install-callout,
   .tour-workspace,
-  .assignment-layout {
+  .assignment-layout,
+  .tour-intro-panel {
     grid-template-columns: 1fr;
   }
 

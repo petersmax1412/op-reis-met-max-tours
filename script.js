@@ -6338,6 +6338,7 @@ let promoSceneIndex = 0;
 const defaultUnlockRadiusMeters = 70;
 const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
+const adminIntroPreviewKey = "stadsopdracht-admin-intros";
 const adminUsername = "petersmax1412@gmail.com";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
@@ -6538,6 +6539,7 @@ const cityPhotos = {
 const isStandaloneApp = () =>
   window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
 const isAdminHost = () => window.location.hostname.toLowerCase() === "admin.stadsopdracht.nl";
+const getPublicSiteUrl = () => `${window.location.protocol}//stadsopdracht.nl/`;
 
 const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
 const isMobileDevice = () => /android|iphone|ipad|ipod/i.test(window.navigator.userAgent);
@@ -7044,8 +7046,10 @@ const sharePromoVideo = async (variant) => {
 
 const applyRuntimeMode = () => {
   const adminHost = isAdminHost();
+  const adminLocked = adminHost && !isAdminMode();
   const standalone = isStandaloneApp();
   document.body.classList.toggle("admin-host", adminHost);
+  document.body.classList.toggle("admin-locked", adminLocked);
   document.body.classList.toggle("standalone-mode", standalone && !adminHost);
   document.body.classList.toggle("browser-mode", !standalone && !adminHost);
 };
@@ -7360,7 +7364,9 @@ const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
 const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringify(progress));
 
 const isAdminMode = () => isAdminHost() && localStorage.getItem(adminStorageKey) === "active";
+const isAdminIntroPreview = () => isAdminMode() && localStorage.getItem(adminIntroPreviewKey) === "active";
 const isUnlocked = (tourId) => isAdminMode() || Boolean(getProgress()[tourId]?.unlocked);
+const hasSeenTourIntro = (tourId) => (isAdminMode() && !isAdminIntroPreview()) || Boolean(getProgress()[tourId]?.introSeen);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
 const getUnlockRadius = (stop) => stopUnlockRadii[stop.place] || defaultUnlockRadiusMeters;
 
@@ -7383,6 +7389,161 @@ const formatDistance = (distance) => {
   if (distance === null) return "Onbekend";
   if (distance < 1000) return `${distance} m`;
   return `${(distance / 1000).toFixed(1).replace(".", ",")} km`;
+};
+
+const cityIntroFacts = {
+  malaga: [
+    "Málaga is een van de oudste continu bewoonde steden van Europa, met Fenicische, Romeinse en Moorse lagen vlak bij elkaar.",
+    "De route laat je de overgang voelen van historisch centrum naar haven en strand.",
+    "Picasso werd in Málaga geboren; de stad gebruikt kunst en erfgoed steeds sterker als visitekaartje.",
+  ],
+  dusseldorf: [
+    "Düsseldorf leest als een stad tussen Altstadt, Rijnpromenade, luxe winkelstraten en moderne havenarchitectuur.",
+    "De Altstadt heet niet voor niets de längste Theke der Welt: horeca en Altbiercultuur zitten hier extreem dicht op elkaar.",
+    "Aan de Rijn zie je goed hoe de stad oude oevers en havengebieden opnieuw heeft ingericht.",
+  ],
+  keulen: [
+    "Keulen draait om de Dom, de Rijn en een oude handelsstad die telkens opnieuw is opgebouwd.",
+    "De Kölner Dom is ongeveer 157 meter hoog en bepaalt vanaf bijna elke kant het stadsbeeld.",
+    "Op deze route wissel je religie, kunst, bruggen, pleinen en moderne Rijnontwikkeling af.",
+  ],
+  frankfurt: [
+    "Frankfurt combineert oude handelspleinen met een skyline die in Europa vrij uitzonderlijk is.",
+    "De Main werkt als scheidslijn én verbinding tussen oude stad, musea en bankencluster.",
+    "Je ontdekt hier waarom Frankfurt tegelijk financieel, politiek en cultureel interessant is.",
+  ],
+  london: [
+    "London werkt in lagen: koninklijke symboliek, markten, theater, rechtspraak, bruggen en moderne cultuur liggen dicht bij elkaar.",
+    "De Thames is de ruggengraat van veel stadsverhalen in deze route.",
+    "Veel stops zijn beroemd, maar de opdrachten laten je vooral kijken naar zichtlijnen, functies en contrasten.",
+  ],
+  copenhagen: [
+    "Copenhagen voelt compact, maar de route schakelt snel tussen bestuur, koninklijke stad, haven en populaire iconen.",
+    "Veel plekken zijn voorbeelden van slim hergebruik: oude havenruimte wordt verblijf, kleur en toerisme.",
+    "De stad is ideaal om te wandelen omdat water, pleinen en paleisassen vaak logisch op elkaar aansluiten.",
+  ],
+  innsbruck: [
+    "Innsbruck is een Alpenstad waar oude macht, compacte straten en bergdecor continu door elkaar lopen.",
+    "De naam verwijst naar de brug over de Inn, dus routes en doorgang horen echt bij de identiteit van de stad.",
+    "Deze route laat je letten op hoe grootse Habsburgse symboliek in een kleine binnenstad past.",
+  ],
+  vienna: [
+    "Wenen is een stad van keizerlijke ruimte, muziek, parken en verrassend alledaagse plekken zoals markten en het Prater.",
+    "De Ringstraße maakt cultuur en macht zichtbaar als een reeks monumentale gebouwen.",
+    "De route wisselt formele grandeur af met groen, speelsheid en moderne eigenzinnigheid.",
+  ],
+  madrid: [
+    "Madrid begint hier bewust groen: Retiro laat de stad eerst als park- en verblijfstad zien.",
+    "Atocha is meer dan een station; de tropentuin maakt aankomst bijna een stedelijke oase.",
+    "Richting Plaza de España zie je Madrid veranderen van park en cultuur naar pleinen, hofstad en grootstedelijke assen.",
+  ],
+  valencia: [
+    "Valencia draait om handel, water, markten, sinaasappels, oude stad en futuristische architectuur.",
+    "De droge Turia-rivierbedding werd een lang park dat de stad op een heel eigen manier verbindt.",
+    "Deze route laat oud handelsvermogen en moderne publieksarchitectuur naast elkaar zien.",
+  ],
+  palma: [
+    "Palma verschijnt meteen als stad aan zee, met La Seu, haven, muren en water in één beeld.",
+    "De route combineert gotiek, Moorse resten, markten, modernisme en uitzichtpunten aan de oude stadsrand.",
+    "Omdat veel stops dicht bij elkaar liggen, kun je hier goed letten op kleine overgangen tussen smalle straten en open water.",
+  ],
+  douglas: [
+    "Douglas is een kuststad waar promenade, haven, eilandbestuur en Victoriaanse badplaatsgeschiedenis samenkomen.",
+    "De zee is hier geen decor, maar bepaalt zichtlijnen, routes en de sfeer van bijna elke stop.",
+    "Let onderweg op hoe eilandidentiteit zichtbaar wordt in openbare gebouwen, havens en uitzichtpunten.",
+  ],
+  paris: [
+    "Parijs laat macht, revolutie, kunst, boulevards en dagelijks stadsleven vaak in één straatbeeld zien.",
+    "De Seine helpt je de stad te oriënteren: bruggen, pleinen en monumenten krijgen betekenis door hun ligging.",
+    "De opdrachten zijn bedoeld om bekende plekken opnieuw te lezen, niet alleen af te vinken.",
+  ],
+  rome: [
+    "Rome is een stad waar oudheid, kerkelijke macht, pleinen en dagelijks verkeer letterlijk door elkaar lopen.",
+    "Veel plekken zijn geen losse monumenten, maar onderdelen van lange stedelijke assen en machtsverhalen.",
+    "Neem de tijd om lagen te vergelijken: Romeins, middeleeuws, barok en modern liggen vaak naast elkaar.",
+  ],
+  amsterdam: [
+    "Amsterdam draait om water, handel, grachten, gevels en slimme stedelijke organisatie.",
+    "De stad is compact, maar elk bruggetje verandert hoe je naar huizenrijen, kades en routes kijkt.",
+    "Deze route laat je letten op hoe rijkdom, dagelijks leven en infrastructuur samen een stadsbeeld vormen.",
+  ],
+  berlin: [
+    "Berlijn is een stad van breuken: keizertijd, oorlog, deling, hereniging en nieuwe stedelijke ruimte.",
+    "Monumenten en open plekken zijn hier vaak net zo belangrijk als gebouwen.",
+    "Let op hoe ruimtelijke leegte, brede assen en herdenkingsplekken samen het verhaal vertellen.",
+  ],
+  lisbon: [
+    "Lissabon wordt gevormd door heuvels, uitzichtpunten, aardbevingsgeschiedenis en de Taag.",
+    "De route laat je voelen hoe hoogteverschillen en pleinen de stad sturen.",
+    "Kijk onderweg naar tegels, trappen, zichtlijnen en de overgang tussen oude wijken en rivierfront.",
+  ],
+  budapest: [
+    "Budapest bestaat uit Buda en Pest, met de Donau als centrale scène.",
+    "Bruggen zijn hier meer dan oversteekplaatsen: ze verbinden heuvelstad, parlement, badcultuur en boulevards.",
+    "De route laat monumentale schaal afwisselen met uitzicht, water en stedelijke rituelen.",
+  ],
+  venice: [
+    "Venetië werkt anders dan bijna elke stad: water is straat, plein, grens en vervoersroute tegelijk.",
+    "Oriëntatie draait hier om bruggen, campi, kanalen en onverwachte doorkijkjes.",
+    "De opdrachten helpen om voorbij het ansichtkaartbeeld te kijken naar handel, macht en dagelijks gebruik.",
+  ],
+  barcelona: [
+    "Barcelona combineert middeleeuwse straten, modernisme, stranden, pleinen en uitgesproken stadsplanning.",
+    "Gaudí is belangrijk, maar de stad draait net zo goed om blokken, assen en publieke ruimte.",
+    "Let onderweg op contrasten tussen smal en breed, oud en modern, decoratie en functie.",
+  ],
+  prague: [
+    "Praag bouwt spanning op tussen rivier, bruggen, oude stad, burcht en astronomische symboliek.",
+    "De Moldau helpt je hoogte, macht en zichtlijnen te begrijpen.",
+    "Veel stops lijken sprookjesachtig, maar de opdrachten zoeken juist naar functie, macht en stedelijke logica.",
+  ],
+  munich: [
+    "München combineert hofstad, biercultuur, pleinen, kerken, markten en museale grandeur.",
+    "De binnenstad is goed te lopen, maar elke plek heeft een andere toon: ceremonieel, dagelijks of cultureel.",
+    "Let op hoe traditie en representatie in gevels, pleinen en horeca zichtbaar blijven.",
+  ],
+  milan: [
+    "Milaan is mode, handel, religieuze monumentaliteit en moderne stad in één compact centrum.",
+    "De route laat je schakelen tussen Dom, galerijen, opera, design en zakelijke stedelijkheid.",
+    "Let op hoe status hier vaak via materiaal, entree, ritme en adres wordt uitgestraald.",
+  ],
+  athens: [
+    "Athene is een stad waar klassieke oudheid, moderne straten en heuvels continu samen zichtbaar zijn.",
+    "De Akropolis is geen los object, maar een oriëntatiepunt dat veel wijken en routes beïnvloedt.",
+    "Deze route helpt je kijken naar lagen: tempels, pleinen, markten, uitzicht en hedendaags stadsleven.",
+  ],
+  edinburgh: [
+    "Edinburgh werkt met hoogte, rotsen, zichtlijnen en een sterk contrast tussen Old Town en New Town.",
+    "De stad voelt dramatisch omdat landschap en architectuur elkaar voortdurend versterken.",
+    "Let op trappen, closes, uitzichtpunten en hoe routes door hoogteverschil worden gestuurd.",
+  ],
+};
+
+const getCityIntroFacts = (tour) =>
+  cityIntroFacts[tour.id] || [
+    `${tour.city} ontdek je in deze route via ${tour.stops.length} opdrachten verspreid over ${tour.distance}.`,
+    `De wandeling begint bij ${tour.stops[0]?.place || "een herkenbaar startpunt"} en eindigt richting ${
+      tour.stops.at(-1)?.place || "een logisch eindpunt"
+    }.`,
+    "Bij elke stop kijk je eerst om je heen, daarna beantwoord je een korte vraag op locatie.",
+  ];
+
+const markTourIntroSeen = (tourId) => {
+  const progress = getProgress();
+  progress[tourId] = {
+    unlocked: progress[tourId]?.unlocked || isAdminMode(),
+    completed: progress[tourId]?.completed || [],
+    introSeen: true,
+  };
+  saveProgress(progress);
+};
+
+const resetTourIntros = () => {
+  const progress = getProgress();
+  Object.keys(progress).forEach((tourId) => {
+    if (progress[tourId]) progress[tourId].introSeen = false;
+  });
+  saveProgress(progress);
 };
 
 const getChoiceOrder = (tourId, stopIndex, choices) => {
@@ -9076,16 +9237,24 @@ const renderAdminPanel = () => {
   adminPanel.hidden = false;
 
   if (isAdminMode()) {
+    const introPreviewActive = isAdminIntroPreview();
     adminPanel.innerHTML = `
       <div class="admin-card active">
         <div>
           <span class="pill">Admin actief</span>
           <h2>Testmodus staat aan</h2>
-          <p>Aankoop en locatiecontrole worden overgeslagen op dit apparaat.</p>
+          <p>Aankoop en locatiecontrole worden overgeslagen op dit apparaat. Intro’s ${
+            introPreviewActive ? "worden nu wel getoond." : "worden standaard overgeslagen."
+          }</p>
         </div>
-        <button class="button ghost" type="button" data-admin-logout>
-          Uitloggen
-        </button>
+        <div class="admin-promo-actions">
+          <button class="button ${introPreviewActive ? "primary" : "ghost"}" type="button" data-admin-toggle-intros>
+            ${introPreviewActive ? "Intro’s aan" : "Intro’s testen"}
+          </button>
+          <button class="button ghost" type="button" data-admin-logout>
+            Uitloggen
+          </button>
+        </div>
       </div>
       <div class="admin-card promo-admin-card">
         <div>
@@ -9421,6 +9590,17 @@ const renderStops = () => {
     return;
   }
 
+  if (!hasSeenTourIntro(tour.id)) {
+    stopList.innerHTML = `
+      <div class="preview-stop-list route-intro-list">
+        <span class="pill">Introductie</span>
+        <strong>${tour.city} voorbereiden</strong>
+        <p>Lees eerst kort hoe deze route werkt. Daarna worden de stops geopend.</p>
+      </div>
+    `;
+    return;
+  }
+
   const done = completedStops(tour.id);
   const adminMode = isAdminMode();
   stopList.innerHTML = tour.stops
@@ -9439,13 +9619,54 @@ const renderStops = () => {
     .join("");
 };
 
+const renderTourIntro = (tour) => {
+  const facts = getCityIntroFacts(tour);
+  tourStatus.textContent = `${tour.title}: introductie voor je stadsopdracht.`;
+  assignmentPanel.innerHTML = `
+    <div class="tour-intro-panel">
+      ${renderCityPhoto(tour, "intro-photo")}
+      <div class="tour-intro-content">
+        <span class="pill">Welkom in ${tour.city}</span>
+        <h2>Voordat je begint</h2>
+        <p>
+          Je route is ontgrendeld. Lees eerst kort waar je op gaat letten en hoe Stadsopdracht onderweg werkt.
+        </p>
+        <div class="intro-facts">
+          ${facts
+            .map(
+              (fact, index) => `
+                <article>
+                  <strong>${index + 1}</strong>
+                  <span>${fact}</span>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="intro-howto">
+          <h3>Zo werkt de route</h3>
+          <ul>
+            <li>Loop naar de eerste stop en zet je locatie aan.</li>
+            <li>De vraag opent pas als je dicht genoeg bij de plek bent.</li>
+            <li>Na een goed antwoord krijg je extra uitleg, een tip en de route naar de volgende stop.</li>
+            <li>Je voortgang blijft op dit apparaat bewaard.</li>
+          </ul>
+        </div>
+        <div class="hero-actions">
+          <button class="button primary" type="button" data-start-tour-intro="${tour.id}">
+            Start route
+          </button>
+          <a class="button ghost" href="#tours">Andere stad kiezen</a>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
 const renderAssignment = () => {
   const tour = tours.find((item) => item.id === selectedTourId);
   if (!tour) return;
 
-  const stop = tour.stops[selectedStopIndex];
-  const done = completedStops(tour.id);
-  const progress = Math.round((done.length / tour.stops.length) * 100);
   const locked = !isUnlocked(tour.id);
 
   if (locked) {
@@ -9475,6 +9696,14 @@ const renderAssignment = () => {
     return;
   }
 
+  if (!hasSeenTourIntro(tour.id)) {
+    renderTourIntro(tour);
+    return;
+  }
+
+  const stop = tour.stops[selectedStopIndex];
+  const done = completedStops(tour.id);
+  const progress = Math.round((done.length / tour.stops.length) * 100);
   const distance = distanceInMeters(userLocation, stop.coordinates);
   const unlockRadiusMeters = getUnlockRadius(stop);
   const isNearby = distance !== null && distance <= unlockRadiusMeters;
@@ -9657,6 +9886,8 @@ document.addEventListener("click", (event) => {
   const cityTab = event.target.closest("[data-city-tab]");
   const adminLogin = event.target.closest("[data-admin-login]");
   const adminLogout = event.target.closest("[data-admin-logout]");
+  const adminToggleIntros = event.target.closest("[data-admin-toggle-intros]");
+  const startTourIntro = event.target.closest("[data-start-tour-intro]");
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
   const arriveStop = event.target.closest("[data-arrive-stop]");
   const showExpertCard = event.target.closest("[data-show-expert-card]");
@@ -9706,6 +9937,7 @@ document.addEventListener("click", (event) => {
     }
 
     localStorage.setItem(adminStorageKey, "active");
+    applyRuntimeMode();
     renderAdminPanel();
     renderTours();
     if (selectedTourId) {
@@ -9717,13 +9949,30 @@ document.addEventListener("click", (event) => {
 
   if (adminLogout) {
     localStorage.removeItem(adminStorageKey);
+    window.location.href = getPublicSiteUrl();
+  }
+
+  if (adminToggleIntros) {
+    if (isAdminIntroPreview()) {
+      localStorage.removeItem(adminIntroPreviewKey);
+      showToast("Intro’s worden weer overgeslagen in admin.");
+    } else {
+      resetTourIntros();
+      localStorage.setItem(adminIntroPreviewKey, "active");
+      showToast("Intro’s zijn actief in admin.");
+    }
     renderAdminPanel();
-    renderTours();
     if (selectedTourId) {
       renderStops();
       renderAssignment();
     }
-    showToast("Adminmodus uitgeschakeld.");
+  }
+
+  if (startTourIntro) {
+    markTourIntroSeen(startTourIntro.dataset.startTourIntro);
+    selectedStopIndex = 0;
+    renderStops();
+    renderAssignment();
   }
 
   if (closeAnswerDialog) {
