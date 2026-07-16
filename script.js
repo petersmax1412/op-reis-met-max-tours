@@ -4448,13 +4448,36 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
           </div>
         `
         : `
-          ${renderExpertCelebration(tour)}
+          <div class="next-route-card complete-route-card">
+            <span class="pill">Route afgerond</span>
+            <h3>Alle opdrachten zijn goed beantwoord</h3>
+            <p>
+              Bekijk nu je eindbadge als los deelbaar scherm. Ideaal voor een screenshot of story.
+            </p>
+          </div>
           <div class="hero-actions">
-            <button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>
+            <button class="button primary" type="button" data-show-expert-card="${tour.id}">
+              Voltooi de route
+            </button>
             <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
           </div>
         `
     }
+  `;
+  openDialog(answerDialog);
+};
+
+const showExpertCompletionCard = (tourId) => {
+  if (!answerContent) return;
+  const tour = tours.find((item) => item.id === tourId);
+  if (!tour) return;
+
+  answerContent.innerHTML = `
+    ${renderExpertCelebration(tour)}
+    <div class="hero-actions">
+      <button class="button primary" type="button" data-close-answer-dialog>Tour bekijken</button>
+      <button class="button ghost" type="button" data-close-answer-dialog>Sluiten</button>
+    </div>
   `;
   openDialog(answerDialog);
 };
@@ -4852,6 +4875,7 @@ document.addEventListener("click", (event) => {
   const adminLogout = event.target.closest("[data-admin-logout]");
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
   const arriveStop = event.target.closest("[data-arrive-stop]");
+  const showExpertCard = event.target.closest("[data-show-expert-card]");
   const promoFinish = event.target.closest("[data-promo-finish]");
   const promoToggle = event.target.closest("[data-promo-toggle]");
 
@@ -4917,6 +4941,10 @@ document.addEventListener("click", (event) => {
 
   if (arriveStop) {
     checkArrivalAtStop(Number(arriveStop.dataset.arriveStop));
+  }
+
+  if (showExpertCard) {
+    showExpertCompletionCard(showExpertCard.dataset.showExpertCard);
   }
 
   if (installHelpButton) {
