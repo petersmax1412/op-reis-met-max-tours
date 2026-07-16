@@ -612,6 +612,46 @@ h3 {
   gap: 10px;
 }
 
+.route-guide {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.route-guide.complete {
+  background: var(--mint);
+  border-color: rgba(18, 49, 44, 0.24);
+}
+
+.route-guide h3 {
+  margin-bottom: 0;
+}
+
+.route-guide p {
+  margin-bottom: 0;
+}
+
+.walk-watch {
+  background: #f2f5ed;
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+}
+
+.walk-watch strong {
+  color: var(--ink);
+}
+
+.walk-watch span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .stop-map {
   background: #e8efe8;
   border-radius: 8px;

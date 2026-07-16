@@ -677,7 +677,7 @@ const tours = [
     distance: "6,3 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Een route door centraal London langs Trafalgar Square, Covent Garden, Borough Market, St Paul’s en de Thames.",
+      "Een route door centraal London langs Trafalgar Square, Covent Garden, St Paul’s, Borough Market en de Thames.",
     stops: [
       {
         title: "Start op Trafalgar Square",
@@ -730,33 +730,6 @@ const tours = [
         ],
       },
       {
-        title: "Proef Borough Market",
-        place: "Borough Market",
-        coordinates: { lat: 51.5055, lng: -0.091 },
-        assignment:
-          "Kijk naar de markthal, de spoorbogen en de foodstalls. Zoek hoe oud marktgebruik en moderne foodcultuur door elkaar lopen.",
-        question: "Waarom past Borough Market zo goed bij London als oude handelsstad én moderne foodstad?",
-        hint: "Let op de ligging bij London Bridge, de spoorbogen en de mix van lokale en internationale producten.",
-        choices: [
-          {
-            text: "Omdat handel, stationsroutes en internationale eetcultuur hier op één plek samenkomen",
-            correct: true,
-            feedback:
-              "Precies. Borough Market voelt modern door de foodcultuur, maar de plek past in een veel ouder Londens patroon van handel rond bruggen, routes en de Thames.",
-          },
-          {
-            text: "Omdat het vooral een stille woonstraat zonder marktkramen is",
-            correct: false,
-            feedback: "Nee, juist de drukte, kramen en eetplekken maken duidelijk dat dit een marktomgeving is.",
-          },
-          {
-            text: "Omdat de markt losstaat van treinroutes, bruggen en de rivier",
-            correct: false,
-            feedback: "Kijk naar de ligging bij London Bridge en de spoorbogen. Routes zijn juist deel van het verhaal.",
-          },
-        ],
-      },
-      {
         title: "Kijk naar St Paul’s",
         place: "St Paul’s Cathedral",
         coordinates: { lat: 51.5138, lng: -0.0984 },
@@ -805,6 +778,33 @@ const tours = [
             text: "De brug volgt vooral een middeleeuwse stadsmuur en negeert St Paul’s",
             correct: false,
             feedback: "Niet goed. De zichtlijn naar St Paul’s is juist een van de sterkste ruimtelijke effecten.",
+          },
+        ],
+      },
+      {
+        title: "Proef Borough Market",
+        place: "Borough Market",
+        coordinates: { lat: 51.5055, lng: -0.091 },
+        assignment:
+          "Kijk naar de markthal, de spoorbogen en de foodstalls. Zoek hoe oud marktgebruik en moderne foodcultuur door elkaar lopen.",
+        question: "Waarom past Borough Market zo goed bij London als oude handelsstad én moderne foodstad?",
+        hint: "Let op de ligging bij London Bridge, de spoorbogen en de mix van lokale en internationale producten.",
+        choices: [
+          {
+            text: "Omdat handel, stationsroutes en internationale eetcultuur hier op één plek samenkomen",
+            correct: true,
+            feedback:
+              "Precies. Borough Market voelt modern door de foodcultuur, maar de plek past in een veel ouder Londens patroon van handel rond bruggen, routes en de Thames.",
+          },
+          {
+            text: "Omdat het vooral een stille woonstraat zonder marktkramen is",
+            correct: false,
+            feedback: "Nee, juist de drukte, kramen en eetplekken maken duidelijk dat dit een marktomgeving is.",
+          },
+          {
+            text: "Omdat de markt losstaat van treinroutes, bruggen en de rivier",
+            correct: false,
+            feedback: "Kijk naar de ligging bij London Bridge en de spoorbogen. Routes zijn juist deel van het verhaal.",
           },
         ],
       },
@@ -985,6 +985,119 @@ const deeperContextByPlace = {
     "Tower Bridge is herkenbaar omdat moderne bascule-techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
 };
 
+const routeGuides = {
+  malaga: [
+    {
+      route: "Loop via Calle Santa María richting de kathedraal en kijk onderweg naar de smalle winkelstraten die op het plein uitkomen.",
+      watch: "Let op hoe het straatprofiel plots opent zodra de kathedraal verschijnt.",
+    },
+    {
+      route: "Loop langs de zuidkant van de kathedraal richting Calle Císter en daarna naar het Teatro Romano.",
+      watch: "Zoek onderweg het verschil tussen kerkelijke monumentaliteit en de kleinere oude stadsstraten.",
+    },
+    {
+      route: "Blijf bij de voet van de heuvel en loop van het Teatro Romano naar de ingang van de Alcazaba.",
+      watch: "Let op hoe dicht Romeinse resten, Moorse vesting en moderne terrassen op elkaar liggen.",
+    },
+    {
+      route: "Loop via Calle Alcazabilla naar Plaza de la Merced.",
+      watch: "Kijk hoe de route van vesting en archeologie langzaam overgaat naar een levendig stadsplein.",
+    },
+    {
+      route: "Daal af richting Paseo del Parque en loop daarna door naar Muelle Uno aan het water.",
+      watch: "Let op de overgang van oude stad naar havenpromenade, palmen, verkeer en zeezicht.",
+    },
+  ],
+  dusseldorf: [
+    {
+      route: "Loop vanaf de Marktplatz richting Burgplatz en houd de Schlossturm als herkenningspunt aan.",
+      watch: "Let op hoe snel bestuur, Altstadt en Rijn elkaar hier raken.",
+    },
+    {
+      route: "Loop vanaf Burgplatz naar de Rheinuferpromenade en blijf zo dicht mogelijk langs het water.",
+      watch: "Kijk hoe de Altstadt vanaf de Rijn ineens meer als skyline dan als straat voelt.",
+    },
+    {
+      route: "Ga vanaf de promenade richting Heinrich-Heine-Allee en loop door naar de Königsallee.",
+      watch: "Let onderweg op de overgang van rivierstad naar winkel- en zakenstad.",
+    },
+    {
+      route: "Loop vanaf de Kö terug richting Altstadt, bijvoorbeeld via Flinger Straße of omliggende winkelstraten.",
+      watch: "Vergelijk de luxe etalages met de smallere, drukkere straten richting Bolkerstraße.",
+    },
+    {
+      route: "Volg vanaf Bolkerstraße de Altstadt terug naar de Rijn en loop zuidwaarts over de promenade richting Rheinturm.",
+      watch: "Let onderweg op hoe cafés, rivier, moderne kades en MedienHafen langzaam in elkaar overlopen.",
+    },
+  ],
+  keulen: [
+    {
+      route: "Loop vanaf de Dom naar de Hohenzollernbrücke en neem de trappen of route richting de voetgangerszijde.",
+      watch: "Kijk hoe station, Dom en brug samen één druk aankomstgebied vormen.",
+    },
+    {
+      route: "Keer terug richting de Altstadt en loop via de Rijnkant naar Alter Markt.",
+      watch: "Let op hoe de rivierpromenade overgaat in smalle straatjes en pleinen.",
+    },
+    {
+      route: "Loop vanaf Alter Markt een kort stuk richting het Historisches Rathaus.",
+      watch: "Zoek onderweg naar geveldetails die laten zien hoe dicht handel, horeca en bestuur bij elkaar lagen.",
+    },
+    {
+      route: "Loop noordwaarts richting Eigelstein en let op hoe de binnenstad minder toeristisch en alledaagser wordt.",
+      watch: "Vergelijk de grote pleinen met kleinere straten, winkels en woonroutes.",
+    },
+    {
+      route: "Ga vanaf Eigelsteintorburg terug richting de Rijn en volg daarna de oever zuidwaarts naar Rheinauhafen.",
+      watch: "Let op de lange verandering van middeleeuwse stadspoort naar moderne havenarchitectuur.",
+    },
+  ],
+  frankfurt: [
+    {
+      route: "Loop vanaf Römerberg richting de Kaiserdom via de oude stadskern.",
+      watch: "Let op hoe reconstructie, oude vormen en moderne functies door elkaar lopen.",
+    },
+    {
+      route: "Loop vanaf de Dom terug richting de Main en steek de Eiserner Steg op.",
+      watch: "Kijk onderweg hoe snel de stad van kerk en plein naar rivierfront verandert.",
+    },
+    {
+      route: "Steek terug naar de noordkant en loop via de binnenstad richting Goethe-Haus.",
+      watch: "Let op hoe de schaal kleiner en persoonlijker wordt dan bij rivier en skyline.",
+    },
+    {
+      route: "Loop vanaf Goethe-Haus richting het bankencluster en Main Tower.",
+      watch: "Kijk omhoog: de gevels, entrees en straatbreedtes worden zakelijker en verticaler.",
+    },
+    {
+      route: "Loop vanaf Main Tower richting Opernplatz en de Alte Oper.",
+      watch: "Let op de overgang van financiële torens naar cultuurplein en monumentale gevel.",
+    },
+  ],
+  london: [
+    {
+      route: "Loop vanaf Trafalgar Square via Strand richting Covent Garden.",
+      watch: "Let op theaters, smalle passages en hoe druk verkeer verandert in voetgangersgebied.",
+    },
+    {
+      route: "Loop vanaf Covent Garden richting Fleet Street en Ludgate Hill naar St Paul’s Cathedral.",
+      watch: "Kijk onderweg naar de overgang van theater- en winkelstad naar de City.",
+    },
+    {
+      route: "Loop vanaf St Paul’s recht richting de Millennium Bridge.",
+      watch: "Let op hoe de zichtlijn naar de Thames steeds sterker wordt.",
+    },
+    {
+      route: "Steek de Millennium Bridge over en loop via Bankside richting Borough Market.",
+      watch: "Kijk naar Tate Modern, spoorbogen, pakhuizen en foodstalls: dit is de zuidoever als werk- en cultuurgebied.",
+    },
+    {
+      route: "Loop vanaf Borough Market via London Bridge of de zuidelijke Thames-route richting Tower Bridge.",
+      watch: "Let op hoe marktdrukte, rivierzicht en iconische bruggen elkaar opvolgen.",
+    },
+  ],
+};
+
 const buildDeeperContext = (tour, stop) =>
   deeperContextByPlace[stop.place] ||
   `Deze plek zegt iets typisch over ${tour.city}: niet alleen het losse gebouw of plein is belangrijk, maar vooral hoe ${stop.place} verbonden is met de geschiedenis, routes en identiteit van de stad. Door ter plekke naar details te kijken, zie je beter waarom juist deze stop in de route zit.`;
@@ -1006,6 +1119,40 @@ const renderStopMap = (stop) => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+    </div>
+  `;
+};
+
+const getWalkingRouteUrl = (from, to) =>
+  `https://www.google.com/maps/dir/?api=1&origin=${from.coordinates.lat},${from.coordinates.lng}&destination=${to.coordinates.lat},${to.coordinates.lng}&travelmode=walking`;
+
+const renderRouteGuide = (tour, stopIndex) => {
+  const nextStop = tour.stops[stopIndex + 1];
+  if (!nextStop) {
+    return `
+      <div class="route-guide complete">
+        <span class="pill">Route klaar</span>
+        <h3>Je hebt de laatste stop bereikt</h3>
+        <p>Kijk nog één keer terug op de route en vergelijk waar je begon met waar je nu staat.</p>
+      </div>
+    `;
+  }
+
+  const guide = routeGuides[tour.id]?.[stopIndex];
+  const currentStop = tour.stops[stopIndex];
+
+  return `
+    <div class="route-guide">
+      <span class="pill">Onderweg</span>
+      <h3>Naar stop ${stopIndex + 2}: ${nextStop.title}</h3>
+      <p>${guide?.route || `Loop rustig door naar ${nextStop.place} en let onderweg op hoe de stad verandert.`}</p>
+      <div class="walk-watch">
+        <strong>Let onderweg op</strong>
+        <span>${guide?.watch || "Kijk naar gevels, straatprofiel, drukte en zichtlijnen tussen de twee stops."}</span>
+      </div>
+      <a class="button ghost small" href="${getWalkingRouteUrl(currentStop, nextStop)}" target="_blank" rel="noopener">
+        Open looproute
+      </a>
     </div>
   `;
 };
@@ -1397,6 +1544,7 @@ const renderAssignment = () => {
         <p class="map-caption">Actieve stop: ${selectedStopIndex + 1}. Afstand: ${
           adminMode ? "adminmodus" : formatDistance(distance)
         }.</p>
+        ${renderRouteGuide(tour, selectedStopIndex)}
         <h3>Hint</h3>
         <p>${stop.hint}</p>
         <h3>Waarom dit werkt</h3>
