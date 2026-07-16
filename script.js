@@ -3029,7 +3029,7 @@ const activityTipsByPlace = {
   "Gran Vía bij Telefónica": "Bezoek de Espacio Fundación Telefónica of kijk of er een musical draait aan Gran Vía.",
   "Templo de Debod": "Kom hier rond zonsondergang terug; het uitzicht richting Casa de Campo is dan het sterkst.",
   "Palacio Real de Madrid": "Bezoek de Sabatini-tuinen of het paleis zelf als je meer tijd hebt; dit is de hofstadlaag van Madrid.",
-  "Plaza de España Madrid": "Loop door naar het Palacio Real of de Sabatini-tuinen; beide liggen dichtbij en sluiten mooi aan op dit eindpunt.",
+  "Plaza de España Madrid": "Sluit af op het dakterras van RIU Plaza España voor een drankje en uitzicht over Gran Vía, het paleisgebied en de stad.",
 };
 
 const buildActivityTip = (tour, stop) =>
