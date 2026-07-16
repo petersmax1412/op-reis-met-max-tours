@@ -2443,6 +2443,289 @@ const tours = [
     ],
   },
   {
+    id: "palma",
+    city: "Palma de Mallorca",
+    title: "Palma: zeezicht, gotiek en Moorse stadslagen",
+    price: "€5,99",
+    duration: "190 min",
+    distance: "4,8 km",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    summary:
+      "Een mediterrane stadsroute langs Parc de la Mar, La Seu, Almudaina, Arabische resten, pleinen, modernisme, marktleven en de oude havenwijk.",
+    stops: [
+      {
+        title: "Start bij het water van de stad",
+        place: "Parc de la Mar Palma",
+        coordinates: { lat: 39.56642, lng: 2.64923 },
+        assignment:
+          "Ga bij het water staan en kijk naar de kathedraal, de stadsmuur en de baai. Zoek hoe Palma zichzelf hier als zeestad en monumentale hoofdstad tegelijk laat zien.",
+        question: "Waarom is Parc de la Mar een sterke startplek voor Palma?",
+        hint: "Vergelijk water, stadsmuur, kathedraal en de open ruimte aan zee.",
+        choices: [
+          {
+            text: "Omdat je hier meteen ziet hoe zee, stadsmuren en La Seu samen Palma’s silhouet vormen",
+            correct: true,
+            feedback:
+              "Precies. Parc de la Mar is geen gewoon park: het werkt als spiegel voor La Seu en als overgang tussen baai, oude muren en historische stad.",
+          },
+          {
+            text: "Omdat Palma hier vooral laat zien dat de zee geen rol speelt in de stad",
+            correct: false,
+            feedback: "Nee. Juist de ligging aan de baai maakt deze plek zo krachtig.",
+          },
+          {
+            text: "Omdat dit punt volledig losstaat van de kathedraal en de oude stad",
+            correct: false,
+            feedback: "Niet goed. De kathedraal, muren en oude stad zijn vanaf hier juist in één beeld te lezen.",
+          },
+        ],
+      },
+      {
+        title: "Kijk omhoog naar La Seu",
+        place: "La Seu Catedral de Mallorca",
+        coordinates: { lat: 39.56798, lng: 2.64833 },
+        assignment:
+          "Loop naar de kathedraal en bekijk de gevel, roosvensters en ligging boven de oude muren. Zoek waarom dit gebouw vanaf zee zo dominant werkt.",
+        question: "Wat maakt La Seu zo specifiek voor Palma?",
+        hint: "Let op de combinatie van gotische hoogte, licht, zeezicht en skyline.",
+        choices: [
+          {
+            text: "De kathedraal staat als gotisch herkenningspunt boven de baai en bepaalt het stadsbeeld",
+            correct: true,
+            feedback:
+              "Klopt. La Seu is niet alleen een kerk, maar het grote visuele anker van Palma: vanaf water, park en oude stad blijft de kathedraal de richting bepalen.",
+          },
+          {
+            text: "De kathedraal is vooral bekend omdat ze volledig ondergronds ligt",
+            correct: false,
+            feedback: "Nee, de kracht zit juist in hoogte, licht en zichtbaarheid.",
+          },
+          {
+            text: "La Seu is vooral een moderne winkelpassage zonder religieuze betekenis",
+            correct: false,
+            feedback: "Niet goed. Het gebouw is een religieus en stedelijk symbool van Mallorca.",
+          },
+        ],
+      },
+      {
+        title: "Zoek macht naast de kathedraal",
+        place: "Palau de l'Almudaina",
+        coordinates: { lat: 39.56854, lng: 2.64729 },
+        assignment:
+          "Bekijk het paleis van buiten en vergelijk de strakke vestingachtige vormen met de kathedraal ernaast. Zoek sporen van Arabische, middeleeuwse en koninklijke macht.",
+        question: "Waarom hoort de Almudaina direct naast La Seu in het verhaal van Palma?",
+        hint: "Denk aan macht, hof, oude citadel en de plek boven de baai.",
+        choices: [
+          {
+            text: "Omdat religieuze en wereldlijke macht hier letterlijk naast elkaar boven de baai staan",
+            correct: true,
+            feedback:
+              "Ja. De Almudaina maakt duidelijk dat deze plek niet alleen mooi is, maar ook bestuurlijk en strategisch belangrijk was.",
+          },
+          {
+            text: "Omdat het paleis vooral een moderne parkeergarage aan de rand van de stad is",
+            correct: false,
+            feedback: "Nee. De Almudaina is juist een historische machtsplek in het hart van Palma.",
+          },
+          {
+            text: "Omdat het paleis geen enkele relatie heeft met de oude stad of de zee",
+            correct: false,
+            feedback: "Niet goed. De ligging boven de baai is juist essentieel.",
+          },
+        ],
+      },
+      {
+        title: "Vind de stille Moorse laag",
+        place: "Banys Àrabs Palma",
+        coordinates: { lat: 39.56721, lng: 2.65196 },
+        assignment:
+          "Loop naar de Arabische baden en kijk naar de kleine schaal, tuin en overgebleven ruimte. Zoek waarom juist deze rustige plek belangrijk is in een stad vol grote monumenten.",
+        question: "Wat vertellen de Banys Àrabs dat La Seu en Almudaina minder direct laten zien?",
+        hint: "Denk aan Madina Mayurqa, watercultuur en alledaagser stedelijk leven.",
+        choices: [
+          {
+            text: "Ze maken de islamitische laag van Palma concreet op een kleine, tastbare plek",
+            correct: true,
+            feedback:
+              "Precies. Hier voel je Palma voor de christelijke stad veel directer: niet als groot skyline-monument, maar als overgebleven ruimte van water, badcultuur en stadslagen.",
+          },
+          {
+            text: "Ze bewijzen vooral dat Palma nooit Moorse invloed heeft gehad",
+            correct: false,
+            feedback: "Nee, deze plek is juist een van de duidelijkste resten van die laag.",
+          },
+          {
+            text: "Ze zijn gebouwd als modern stadion voor strandtoerisme",
+            correct: false,
+            feedback: "Niet goed. Kijk naar de schaal, vorm en historische functie.",
+          },
+        ],
+      },
+      {
+        title: "Sta op het bestuurlijke plein",
+        place: "Plaça de Cort",
+        coordinates: { lat: 39.56988, lng: 2.65048 },
+        assignment:
+          "Kijk naar het stadhuis, de gevel en de oude olijfboom op het plein. Zoek hoe Palma hier bestuur, symboliek en dagelijks stadsleven mengt.",
+        question: "Waarom is Plaça de Cort meer dan alleen een doorgangsplein?",
+        hint: "Let op het stadhuis, de olijfboom en de smalle straten die hier samenkomen.",
+        choices: [
+          {
+            text: "Omdat stedelijk bestuur, eiland-symboliek en oude binnenstad hier compact samenkomen",
+            correct: true,
+            feedback:
+              "Klopt. Plaça de Cort voelt klein, maar is bestuurlijk sterk: het stadhuis, de oude olijfboom en de straten maken het plein tot een civic hart.",
+          },
+          {
+            text: "Omdat hier vooral de luchthaven van Palma zichtbaar wordt",
+            correct: false,
+            feedback: "Nee, dit plein gaat juist over de historische binnenstad.",
+          },
+          {
+            text: "Omdat het plein bewust zonder gebouwen of herkenningspunten is ingericht",
+            correct: false,
+            feedback: "Niet goed. De herkenningspunten zijn juist de reden dat deze stop werkt.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar modernistisch Palma",
+        place: "Can Forteza Rey",
+        coordinates: { lat: 39.57023, lng: 2.65003 },
+        assignment:
+          "Bekijk de gevels rond Can Forteza Rey en zoek mozaïek, kleur, rondingen en decoratieve details. Vergelijk dit met de gotiek van La Seu.",
+        question: "Wat voegt Can Forteza Rey toe aan de route?",
+        hint: "Denk aan Palma rond 1900, stedelijke mode en decoratieve gevels.",
+        choices: [
+          {
+            text: "Het laat zien dat Palma naast middeleeuwse monumenten ook een sterke modernistische laag heeft",
+            correct: true,
+            feedback:
+              "Goed gezien. Palma is niet alleen kathedraal en paleis; rond 1900 kreeg de stad ook uitgesproken decoratieve gevels die Europese modernistische smaak vertalen naar de binnenstad.",
+          },
+          {
+            text: "Het gebouw laat vooral zien dat Palma nooit geveldecoratie gebruikte",
+            correct: false,
+            feedback: "Nee, kijk juist naar kleur, ritme en ornament.",
+          },
+          {
+            text: "Het is vooral een middeleeuwse stadspoort aan zee",
+            correct: false,
+            feedback: "Niet goed. Deze stop draait om modernisme in de stad.",
+          },
+        ],
+      },
+      {
+        title: "Proef de stad in de markt",
+        place: "Mercat de l'Olivar",
+        coordinates: { lat: 39.57328, lng: 2.65214 },
+        assignment:
+          "Loop rond de markt als die open is, of bekijk de entrees en omgeving. Zoek vis, vlees, groente, lokale producten en hoe bewoners de stad dagelijks gebruiken.",
+        question: "Waarom is Mercat de l'Olivar een goede tegenhanger van de monumenten?",
+        hint: "Let op dagelijks gebruik, eten en lokale producten in plaats van alleen gevels.",
+        choices: [
+          {
+            text: "Omdat je hier Palma als dagelijkse eet- en handelsstad ziet, niet alleen als monumentenstad",
+            correct: true,
+            feedback:
+              "Precies. De markt maakt de route menselijker: na macht, kerk en gevels zie je hier producten, ritme en lokaal gebruik.",
+          },
+          {
+            text: "Omdat de markt vooral een verlaten paleis zonder handel is",
+            correct: false,
+            feedback: "Nee. Juist het marktgebruik is de kern van deze stop.",
+          },
+          {
+            text: "Omdat eten en eilandcultuur in Palma geen relatie met elkaar hebben",
+            correct: false,
+            feedback: "Niet goed. Producten, vis en lokale keuken zijn juist een directe manier om Mallorca te begrijpen.",
+          },
+        ],
+      },
+      {
+        title: "Loop naar de oude handelswijk",
+        place: "La Llotja de Palma",
+        coordinates: { lat: 39.56802, lng: 2.64452 },
+        assignment:
+          "Bekijk La Llotja van buiten en kijk naar de straten eromheen. Zoek waarom een handelsgebouw zo dicht bij haven en oude stad logisch is.",
+        question: "Waarom past La Llotja zo goed bij Palma’s zeeverhaal?",
+        hint: "Llotja betekent handelsbeurs. Denk aan koopmanschap, haven en mediterrane routes.",
+        choices: [
+          {
+            text: "Omdat handel, haven en gotische representatie hier bij elkaar komen",
+            correct: true,
+            feedback:
+              "Ja. La Llotja laat zien dat Palma niet alleen naar zee keek voor uitzicht, maar ook voor handel, geld en verbindingen over de Middellandse Zee.",
+          },
+          {
+            text: "Omdat dit gebouw vooral een bergboerderij ver van de stad was",
+            correct: false,
+            feedback: "Nee, de ligging bij de oude havenzone is juist betekenisvol.",
+          },
+          {
+            text: "Omdat Palma historisch nooit met scheepvaart of handel te maken had",
+            correct: false,
+            feedback: "Niet goed. De Llotja wijst juist naar maritieme handel.",
+          },
+        ],
+      },
+      {
+        title: "Bekijk kunst in de vestingrand",
+        place: "Es Baluard",
+        coordinates: { lat: 39.57066, lng: 2.64172 },
+        assignment:
+          "Bekijk de vestingmuren en het museumgebied. Zoek hoe oude verdediging hier is veranderd in cultuur, uitzicht en publieke ruimte.",
+        question: "Wat maakt Es Baluard een slimme stop richting het einde?",
+        hint: "Let op muren, hoogte, uitzicht en hedendaagse kunst.",
+        choices: [
+          {
+            text: "De oude verdedigingsrand is hier hergebruikt als museum- en uitzichtplek",
+            correct: true,
+            feedback:
+              "Klopt. Es Baluard laat Palma’s oude militaire rand veranderen in een plek voor kunst en stadskijken. Dat is precies het soort hergebruik dat een route interessant maakt.",
+          },
+          {
+            text: "Omdat hier geen uitzicht, muren of cultuur te vinden zijn",
+            correct: false,
+            feedback: "Nee. De combinatie van vestingrand en museum maakt deze plek sterk.",
+          },
+          {
+            text: "Omdat Es Baluard midden in een ondergronds winkelcentrum ligt",
+            correct: false,
+            feedback: "Niet goed. Dit is juist een zichtbare plek op de rand van de oude stad.",
+          },
+        ],
+      },
+      {
+        title: "Eindig aan de havenpromenade",
+        place: "Passeig Marítim Palma",
+        coordinates: { lat: 39.56662, lng: 2.63779 },
+        assignment:
+          "Loop naar de havenpromenade en kijk terug richting La Seu, masten, water en stadsrand. Zoek hoe Palma als historische stad en jachthaven tegelijk werkt.",
+        question: "Waarom is de havenpromenade een logisch eindpunt voor deze Palma-route?",
+        hint: "Vergelijk je startbeeld bij Parc de la Mar met dit bredere havenbeeld.",
+        choices: [
+          {
+            text: "Omdat je hier de historische skyline terugziet, maar nu met havenleven, boten en avondlicht erbij",
+            correct: true,
+            feedback:
+              "Precies. De route begon met de stad aan het water en eindigt met hetzelfde thema groter en levendiger: La Seu, masten, boulevard en baai vallen samen.",
+          },
+          {
+            text: "Omdat je hier zo ver van zee staat dat de haven niet meer zichtbaar is",
+            correct: false,
+            feedback: "Nee, juist de haven en het water maken deze afsluiting logisch.",
+          },
+          {
+            text: "Omdat Palma hier verandert in een bergdorp zonder kustrelatie",
+            correct: false,
+            feedback: "Niet goed. De kustrelatie is hier juist maximaal zichtbaar.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "douglas",
     city: "Douglas",
     title: "Douglas: ferryhaven, Victoriaanse promenade en Manx identiteit",
@@ -2782,6 +3065,11 @@ const cityPhotos = {
     credit: "ChiralJon, CC BY 2.0",
     source: "https://commons.wikimedia.org/wiki/File:City_of_Arts_and_Sciences,_Valencia_(52395812264).jpg",
   },
+  palma: {
+    src: "assets/cities/palma.jpg",
+    alt: "Haven en skyline van Palma de Mallorca bij zonsondergang",
+    credit: "Max Peters, eigen werk",
+  },
 };
 
 const isStandaloneApp = () =>
@@ -2903,6 +3191,16 @@ const stopUnlockRadii = {
   "Parque Gulliver": 120,
   "Ciudad de las Artes y las Ciencias": 130,
   "Oceanogràfic Valencia": 130,
+  "Parc de la Mar Palma": 120,
+  "La Seu Catedral de Mallorca": 100,
+  "Palau de l'Almudaina": 90,
+  "Banys Àrabs Palma": 80,
+  "Plaça de Cort": 70,
+  "Can Forteza Rey": 70,
+  "Mercat de l'Olivar": 90,
+  "La Llotja de Palma": 80,
+  "Es Baluard": 110,
+  "Passeig Marítim Palma": 130,
   "Douglas Sea Terminal en havenbrug": 90,
   "Jubilee Clock Douglas": 70,
   "Tower of Refuge zichtpunt": 110,
@@ -3208,6 +3506,26 @@ const deeperContextByPlace = {
     "De Ciudad de las Artes y las Ciencias is Valencia als toekomstbeeld. Aan het einde van de oude rivierbedding zet de stad een spectaculair contrast naast haar handels- en watergeschiedenis.",
   "Oceanogràfic Valencia":
     "Oceanogràfic rondt de moderne oostelijke as af met water, educatie en attractiewaarde. Het laat het watermotief van huerta en Turia verschuiven naar zee en publiekscultuur.",
+  "Parc de la Mar Palma":
+    "Parc de la Mar is een slimme start omdat Palma hier meteen als stad aan zee verschijnt. Water, muren, La Seu en de baai vormen samen een openlucht-introductie tot de hele route.",
+  "La Seu Catedral de Mallorca":
+    "La Seu is Palma's sterkste skylinepunt. De gotische schaal, de ligging boven de baai en het licht in en rond het gebouw maken de kathedraal tot meer dan een losse bezienswaardigheid.",
+  "Palau de l'Almudaina":
+    "De Almudaina laat zien dat deze hoek van Palma eeuwenlang machtsruimte was. In de vorm van het paleis voel je nog de overgang van islamitische citadel naar koninklijke residentie.",
+  "Banys Àrabs Palma":
+    "De Banys Àrabs maken de Moorse laag van Palma tastbaar. Juist de kleine schaal is sterk: tussen grote monumenten krijg je hier een intiemer beeld van water, rust en dagelijks stedelijk gebruik.",
+  "Plaça de Cort":
+    "Plaça de Cort werkt als civiel hart van Palma. Het stadhuis, de oude olijfboom en de smalle straten eromheen maken bestuur, symboliek en dagelijkse looproutes tegelijk zichtbaar.",
+  "Can Forteza Rey":
+    "Can Forteza Rey voegt een kleurrijke modernistische laag toe aan de route. De decoratieve gevel laat zien dat Palma ook rond 1900 bewust aan een herkenbaar stedelijk gezicht bouwde.",
+  "Mercat de l'Olivar":
+    "Mercat de l'Olivar haalt Palma terug naar dagelijks gebruik. Tussen vis, groente, lokale producten en eetplekken wordt de eilandhoofdstad minder monumentaal en juist heel levend.",
+  "La Llotja de Palma":
+    "La Llotja maakt Palma als handelsstad zichtbaar. De gotische vorm en ligging bij de oude havenwijk laten zien hoe koopmanschap en mediterrane routes status kregen in steen.",
+  "Es Baluard":
+    "Es Baluard is sterk door hergebruik. Een oude vestingrand wordt hier museum, uitzichtpunt en publieke route, waardoor verdediging verandert in cultuur en stadskijken.",
+  "Passeig Marítim Palma":
+    "De havenpromenade rondt Palma af als stad van water en skyline. Vanaf hier zie je de route terug als één beeld: kathedraal, masten, boulevard, baai en avondlicht.",
   "Douglas Sea Terminal en havenbrug":
     "De Sea Terminal en havenbrug maken Douglas meteen praktisch en maritiem. Hier zie je hoe een eilandhoofdstad afhankelijk is van aankomst, vracht, reizigers en gecontroleerde doorgangen.",
   "Jubilee Clock Douglas":
@@ -3558,6 +3876,44 @@ const routeGuides = {
       watch: "Vergelijk de theatrale cultuurarchitectuur met het meer attractieachtige waterlandschap aan het einde.",
     },
   ],
+  palma: [
+    {
+      route: "Loop vanaf Parc de la Mar omhoog richting La Seu en kies de trappen of paden langs de oude muren.",
+      watch: "Let op hoe de kathedraal groter wordt terwijl het water achter je juist als spiegel en open ruimte blijft werken.",
+    },
+    {
+      route: "Loop vanaf La Seu langs de westkant naar het Palau de l'Almudaina.",
+      watch: "Vergelijk de gotische hoogte van de kathedraal met het compactere, vestingachtige paleis ernaast.",
+    },
+    {
+      route: "Loop vanaf de Almudaina terug langs de kathedraal en ga de oude stad in richting de Banys Àrabs.",
+      watch: "Kijk hoe de grote monumentale ruimte snel verandert in smalle, stille straten met oudere stadslagen.",
+    },
+    {
+      route: "Loop vanaf de Banys Àrabs via de oude binnenstad naar Plaça de Cort.",
+      watch: "Let op patios, bochten en smalle straatprofielen; Palma voelt hier meer als doolhof dan als boulevardstad.",
+    },
+    {
+      route: "Loop vanaf Plaça de Cort een kort stuk naar Can Forteza Rey en kijk onderweg naar de gevels rond het plein.",
+      watch: "Zoek hoe bestuur en stedelijke sierlijkheid bijna direct naast elkaar zitten.",
+    },
+    {
+      route: "Loop vanaf Can Forteza Rey noordwaarts naar Mercat de l'Olivar.",
+      watch: "Let op hoe winkelstraten, lokale drukte en dagelijkse boodschappen de monumentale route aardser maken.",
+    },
+    {
+      route: "Loop vanaf Mercat de l'Olivar terug richting het zuiden en westen naar La Llotja.",
+      watch: "Kijk hoe de stad weer richting oude havenwijk beweegt: straten worden smaller en horeca en koopmansgeschiedenis komen dichterbij.",
+    },
+    {
+      route: "Loop vanaf La Llotja via de oude havenwijk naar Es Baluard.",
+      watch: "Let op hoe gotische handel, restaurants en vestingmuren elkaar in korte afstand opvolgen.",
+    },
+    {
+      route: "Daal vanaf Es Baluard rustig af richting Passeig Marítim en de jachthaven.",
+      watch: "Kijk onderweg terug naar de stad: de muren, masten en kathedraal komen langzaam weer in één zichtlijn.",
+    },
+  ],
   douglas: [
     {
       route: "Loop vanaf de Sea Terminal langs de haven richting Victoria Street en de Jubilee Clock.",
@@ -3683,6 +4039,16 @@ const activityTipsByPlace = {
   "Parque Gulliver": "Neem hier even pauze als je met kinderen reist; dit is een van de meest speelse plekken in de Turia.",
   "Ciudad de las Artes y las Ciencias": "Neem de tijd voor foto's rond het water; vroeg of laat licht maakt de reflecties veel sterker.",
   "Oceanogràfic Valencia": "Plan Oceanogràfic als aparte activiteit als je met kinderen reist of meer over zeeleven wilt toevoegen.",
+  "Parc de la Mar Palma": "Kom hier rond zonsondergang terug voor het mooiste zicht op La Seu en de weerspiegeling in het water.",
+  "La Seu Catedral de Mallorca": "Bezoek La Seu van binnen als je tijd hebt; het licht, het grote roosvenster en de ingrepen van Gaudí maken de buitenkant nog interessanter.",
+  "Palau de l'Almudaina": "Loop door Hort del Rei naast het paleis of bezoek de Almudaina zelf als je de koninklijke laag van Palma beter wilt zien.",
+  "Banys Àrabs Palma": "Ga naar binnen als het open is; de tuin en de kleine ruimte maken de Moorse laag veel tastbaarder dan alleen van buiten.",
+  "Plaça de Cort": "Neem hier kort pauze bij een café en kijk naar de oude olijfboom; het plein is klein, maar blijft een goed observatiepunt.",
+  "Can Forteza Rey": "Loop ook even naar Gran Hotel CaixaForum in de buurt als je meer modernisme in Palma wilt zien.",
+  "Mercat de l'Olivar": "Proef iets kleins in of rond de markt, bijvoorbeeld ensaïmada, sobrasada of verse vis als je wat langer wilt blijven.",
+  "La Llotja de Palma": "Blijf in de wijk rond La Llotja voor tapas of een drankje; dit is een van de fijnste avonddelen van de oude stad.",
+  "Es Baluard": "Bezoek Es Baluard Museu of pak alleen het uitzicht vanaf de vestingrand; beide passen mooi bij deze stop.",
+  "Passeig Marítim Palma": "Sluit af met een drankje aan de haven of neem later een taxi/bus naar Castell de Bellver voor een hoger uitzicht over de baai.",
   "Douglas Sea Terminal en havenbrug": "Kijk later bij aankomst of vertrek van een ferry; dan voel je de rol van Douglas als eilandpoort het best.",
   "Jubilee Clock Douglas": "Loop even Victoria Street in; dan zie je hoe de klok winkelstad, haven en promenade aan elkaar knoopt.",
   "Tower of Refuge zichtpunt": "Loop bij laag of hoog tij nog eens terug naar het uitzichtpunt; de baai verandert dan zichtbaar.",

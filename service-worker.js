@@ -1,4 +1,4 @@
-const cacheName = "stadsopdracht-v53";
+const cacheName = "stadsopdracht-v54";
 const filesToCache = [
   "./",
   "./index.html",
@@ -20,6 +20,7 @@ const filesToCache = [
   "./assets/cities/vienna.jpg",
   "./assets/cities/madrid.jpg",
   "./assets/cities/valencia.jpg",
+  "./assets/cities/palma.jpg",
 ];
 
 self.addEventListener("install", (event) => {
