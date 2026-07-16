@@ -3294,6 +3294,280 @@ const shareCompletionCard = async (tourId) => {
   }
 };
 
+const getSupportedVideoType = () => {
+  const types = [
+    "video/mp4;codecs=h264",
+    "video/mp4",
+    "video/webm;codecs=vp9",
+    "video/webm;codecs=vp8",
+    "video/webm",
+  ];
+  return types.find((type) => window.MediaRecorder?.isTypeSupported(type)) || "";
+};
+
+const drawPromoBackground = (context, width, height, progress) => {
+  const gradient = context.createLinearGradient(0, 0, width, height);
+  gradient.addColorStop(0, "#10aeca");
+  gradient.addColorStop(0.52, "#087f91");
+  gradient.addColorStop(1, "#09232a");
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, width, height);
+
+  context.strokeStyle = "rgba(255, 255, 255, 0.14)";
+  context.lineWidth = 2;
+  for (let x = -120; x < width + 140; x += 150) {
+    context.beginPath();
+    context.moveTo(x + progress * 60, 0);
+    context.lineTo(x - 260 + progress * 60, height);
+    context.stroke();
+  }
+};
+
+const drawPromoBrand = (context) => {
+  context.fillStyle = "rgba(255, 255, 255, 0.94)";
+  fillRoundedRect(context, 70, 70, 390, 92, 46);
+  context.fillStyle = "#10aeca";
+  fillRoundedRect(context, 94, 93, 46, 46, 12);
+  context.fillStyle = "#fff";
+  context.font = "900 29px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("S", 109, 127);
+  context.fillStyle = "#087f91";
+  context.font = "900 35px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("Stadsopdracht", 154, 129);
+};
+
+const drawPromoFooter = (context, width) => {
+  context.fillStyle = "rgba(255, 255, 255, 0.92)";
+  fillRoundedRect(context, 70, 1748, width - 140, 104, 28);
+  context.fillStyle = "#09232a";
+  context.font = "900 34px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("Ontdek steden via opdrachten", 106, 1814);
+  context.fillStyle = "#5c6f72";
+  context.font = "800 28px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  context.fillText("stadsopdracht.nl", 742, 1814);
+};
+
+const drawPromoRoute = (context, progress) => {
+  const points = [
+    [130, 1320],
+    [130, 1120],
+    [410, 1120],
+    [410, 910],
+    [650, 910],
+    [650, 1180],
+    [885, 1180],
+    [885, 760],
+  ];
+  context.strokeStyle = "rgba(255, 255, 255, 0.2)";
+  context.lineWidth = 5;
+  context.setLineDash([18, 18]);
+  context.beginPath();
+  points.forEach(([x, y], index) => {
+    if (index === 0) context.moveTo(x, y);
+    else context.lineTo(x, y);
+  });
+  context.stroke();
+  context.setLineDash([]);
+
+  const lastPoint = Math.min(points.length - 1, Math.floor(progress * points.length));
+  points.forEach(([x, y], index) => {
+    context.fillStyle = index <= lastPoint ? "#ffb03b" : "rgba(255, 255, 255, 0.55)";
+    context.beginPath();
+    context.arc(x, y, index === lastPoint ? 18 : 12, 0, Math.PI * 2);
+    context.fill();
+  });
+};
+
+const drawPromoVideoFrame = (context, variant, progress, width, height) => {
+  drawPromoBackground(context, width, height, progress);
+  drawPromoBrand(context);
+  drawPromoFooter(context, width);
+
+  context.fillStyle = "#fff";
+  context.textBaseline = "alphabetic";
+
+  if (variant === "question") {
+    context.font = "900 70px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(context, "Los korte vragen op in de stad", 78, 330, 880, 78, 2);
+
+    context.fillStyle = "rgba(255, 255, 255, 0.95)";
+    fillRoundedRect(context, 78, 520, 924, 780, 34);
+    context.fillStyle = "#087f91";
+    context.font = "900 30px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    context.fillText("Opdracht 3", 126, 590);
+    context.fillStyle = "#09232a";
+    context.font = "900 43px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(
+      context,
+      "Waarom noemt Düsseldorf de Altstadt de längste Theke der Welt?",
+      126,
+      680,
+      800,
+      52,
+      4,
+    );
+
+    const answerProgress = progress > 0.48;
+    context.fillStyle = answerProgress ? "#dff6e8" : "#f3f7f8";
+    fillRoundedRect(context, 126, 900, 828, 142, 24);
+    context.fillStyle = answerProgress ? "#1f8f5b" : "#09232a";
+    context.font = "800 31px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(context, "Omdat er veel cafés, bars en brouwhuizen bij elkaar zitten", 156, 955, 700, 38, 2);
+    if (answerProgress) {
+      context.fillStyle = "#1f8f5b";
+      context.font = "900 50px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+      context.fillText("✓", 890, 988);
+    }
+
+    context.fillStyle = "#f3f7f8";
+    fillRoundedRect(context, 126, 1070, 828, 80, 22);
+    fillRoundedRect(context, 126, 1172, 828, 80, 22);
+    return;
+  }
+
+  if (variant === "unlock") {
+    context.font = "900 72px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(context, "Vragen openen pas op locatie", 78, 330, 880, 82, 2);
+    drawPromoRoute(context, progress);
+
+    const mapX = 175 + progress * 560;
+    context.fillStyle = "rgba(255, 255, 255, 0.92)";
+    fillRoundedRect(context, mapX, 820, 190, 150, 28);
+    context.fillStyle = "#10aeca";
+    context.beginPath();
+    context.arc(mapX + 95, 895, 30, 0, Math.PI * 2);
+    context.fill();
+
+    context.fillStyle = progress > 0.72 ? "#1f8f5b" : "#fff";
+    fillRoundedRect(context, 705, 975, 210, 190, 28);
+    context.strokeStyle = progress > 0.72 ? "#1f8f5b" : "#fff";
+    context.lineWidth = 18;
+    context.beginPath();
+    context.arc(810, 982, 58, Math.PI, 0);
+    context.stroke();
+    context.fillStyle = progress > 0.72 ? "#fff" : "#087f91";
+    context.font = "900 32px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    context.fillText(progress > 0.72 ? "Ontgrendeld" : "120 m", 724, 1220);
+    return;
+  }
+
+  if (variant === "install") {
+    context.fillStyle = "rgba(255, 255, 255, 0.96)";
+    fillRoundedRect(context, 316, 355, 448, 448, 92);
+    context.fillStyle = "#10aeca";
+    fillRoundedRect(context, 356, 395, 368, 368, 78);
+    context.fillStyle = "#ffffff";
+    context.font = "900 230px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    context.fillText("S", 471, 655);
+
+    context.fillStyle = "#fff";
+    context.font = "900 84px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(context, "Installeer nu", 92, 980, 880, 96, 2);
+    context.fillStyle = "rgba(255, 255, 255, 0.86)";
+    context.font = "800 44px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    wrapCanvasText(context, "Open stadsopdracht.nl en voeg de webapp toe aan je beginscherm.", 96, 1160, 850, 56, 3);
+
+    const pulse = 1 + Math.sin(progress * Math.PI * 6) * 0.035;
+    context.save();
+    context.translate(540, 1450);
+    context.scale(pulse, pulse);
+    context.fillStyle = "#ffb03b";
+    fillRoundedRect(context, -360, -62, 720, 124, 62);
+    context.fillStyle = "#09232a";
+    context.font = "900 44px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+    context.fillText("stadsopdracht.nl", -190, 16);
+    context.restore();
+    return;
+  }
+
+  context.font = "900 86px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  wrapCanvasText(context, "Jouw stad wordt het spel", 78, 420, 860, 94, 3);
+  context.fillStyle = "rgba(255, 255, 255, 0.82)";
+  context.font = "800 38px system-ui, -apple-system, BlinkMacSystemFont, sans-serif";
+  wrapCanvasText(context, "Koop een route, loop naar echte plekken en speel opdrachten vrij.", 82, 710, 830, 48, 3);
+  drawPromoRoute(context, progress);
+};
+
+const createPromoVideoFile = async (variant) => {
+  if (!window.MediaRecorder) throw new Error("Video opnemen wordt niet ondersteund.");
+  const mimeType = getSupportedVideoType();
+  if (!mimeType) throw new Error("Geen ondersteund videoformaat gevonden.");
+
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080;
+  canvas.height = 1920;
+  const context = canvas.getContext("2d");
+  const stream = canvas.captureStream(30);
+  const recorder = new MediaRecorder(stream, { mimeType, videoBitsPerSecond: 6500000 });
+  const chunks = [];
+  const duration = 7200;
+  const extension = mimeType.includes("mp4") ? "mp4" : "webm";
+
+  recorder.ondataavailable = (event) => {
+    if (event.data.size) chunks.push(event.data);
+  };
+
+  const finished = new Promise((resolve) => {
+    recorder.onstop = resolve;
+  });
+
+  recorder.start();
+  const startedAt = performance.now();
+
+  await new Promise((resolve) => {
+    const draw = (now) => {
+      const progress = Math.min(1, (now - startedAt) / duration);
+      drawPromoVideoFrame(context, variant, progress, canvas.width, canvas.height);
+      if (progress < 1) {
+        requestAnimationFrame(draw);
+        return;
+      }
+      resolve();
+    };
+    requestAnimationFrame(draw);
+  });
+
+  recorder.stop();
+  await finished;
+  stream.getTracks().forEach((track) => track.stop());
+  return new File(chunks, `stadsopdracht-promo-${variant}.${extension}`, { type: mimeType.split(";")[0] });
+};
+
+const sharePromoVideo = async (variant) => {
+  if (!isAdminMode()) return;
+  const button = document.querySelector(`[data-admin-promo="${variant}"]`);
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Filmpje maken...";
+  }
+
+  try {
+    const file = await createPromoVideoFile(variant);
+    const shareData = {
+      files: [file],
+      title: "Stadsopdracht promo",
+      text: "Promo voor Stadsopdracht.",
+    };
+
+    if (navigator.canShare?.(shareData) && navigator.share) {
+      await navigator.share(shareData);
+      showToast("Deelvenster geopend.");
+    } else {
+      const url = URL.createObjectURL(file);
+      window.open(url, "_blank", "noopener");
+      window.setTimeout(() => URL.revokeObjectURL(url), 120000);
+      showToast("Delen lukt hier niet automatisch. Het filmpje is geopend.");
+    }
+  } catch {
+    showToast("Filmpje maken lukte niet in deze browser.");
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = button.dataset.promoLabel || "Promo";
+    }
+  }
+};
+
 const applyRuntimeMode = () => {
   const standalone = isStandaloneApp();
   document.body.classList.toggle("standalone-mode", standalone);
@@ -4505,6 +4779,27 @@ const renderAdminPanel = () => {
           Uitloggen
         </button>
       </div>
+      <div class="admin-card promo-admin-card">
+        <div>
+          <span class="pill">Promo</span>
+          <h2>Deelbare promotiefilmpjes</h2>
+          <p>Maak verticale video’s voor Instagram, TikTok of stories. Op mobiel opent direct het deelvenster.</p>
+        </div>
+        <div class="admin-promo-actions">
+          <button class="button primary" type="button" data-admin-promo="install" data-promo-label="Installeer nu">
+            Installeer nu
+          </button>
+          <button class="button ghost" type="button" data-admin-promo="intro" data-promo-label="App intro">
+            App intro
+          </button>
+          <button class="button ghost" type="button" data-admin-promo="question" data-promo-label="Voorbeeldvraag">
+            Voorbeeldvraag
+          </button>
+          <button class="button ghost" type="button" data-admin-promo="unlock" data-promo-label="Locatie unlock">
+            Locatie unlock
+          </button>
+        </div>
+      </div>
     `;
     return;
   }
@@ -5034,6 +5329,7 @@ document.addEventListener("click", (event) => {
   const arriveStop = event.target.closest("[data-arrive-stop]");
   const showExpertCard = event.target.closest("[data-show-expert-card]");
   const shareExpertCard = event.target.closest("[data-share-expert-card]");
+  const adminPromo = event.target.closest("[data-admin-promo]");
   const promoFinish = event.target.closest("[data-promo-finish]");
   const promoToggle = event.target.closest("[data-promo-toggle]");
 
@@ -5107,6 +5403,10 @@ document.addEventListener("click", (event) => {
 
   if (shareExpertCard) {
     shareCompletionCard(shareExpertCard.dataset.shareExpertCard);
+  }
+
+  if (adminPromo) {
+    sharePromoVideo(adminPromo.dataset.adminPromo);
   }
 
   if (installHelpButton) {
