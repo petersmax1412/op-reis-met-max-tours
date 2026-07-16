@@ -1453,6 +1453,7 @@ const stopList = document.querySelector("[data-stop-list]");
 const assignmentPanel = document.querySelector("[data-assignment-panel]");
 const tourStatus = document.querySelector("[data-tour-status]");
 const installCallout = document.querySelector("[data-install-callout]");
+const webInstallOnly = document.querySelector("[data-web-install-only]");
 const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
 const answerDialog = document.querySelector("[data-answer-dialog]");
@@ -1477,6 +1478,17 @@ const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
 const promoDurations = [3200, 3200, 3800, 4200, 3600, 3400, 4600];
+
+const isStandaloneApp = () =>
+  window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
+
+const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+
+const applyRuntimeMode = () => {
+  const standalone = isStandaloneApp();
+  document.body.classList.toggle("standalone-mode", standalone);
+  document.body.classList.toggle("browser-mode", !standalone);
+};
 
 const stopUnlockRadii = {
   "Plaza de la Constitución": 60,
@@ -1597,6 +1609,11 @@ const showPromoScene = (sceneIndex) => {
 
 const initPromoIntro = () => {
   if (!promoIntro || !promoProgress) return;
+
+  if (isStandaloneApp()) {
+    promoIntro.hidden = true;
+    return;
+  }
 
   if (sessionStorage.getItem(promoStorageKey) === "true") {
     promoIntro.hidden = true;
@@ -2243,52 +2260,55 @@ const showCorrectAnswerDialog = (tour, stop, choice) => {
   openDialog(answerDialog);
 };
 
-const isStandaloneApp = () =>
-  window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
+const renderWebInstallOnly = () => {
+  if (!webInstallOnly) return;
 
-const isIosDevice = () => /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+  const canInstall = Boolean(deferredInstallPrompt);
+  const ios = isIosDevice();
+  webInstallOnly.innerHTML = `
+    <div class="web-install-card">
+      <img src="assets/app-icon-512.png" alt="Stadsopdracht" />
+      <span class="promo-eyebrow">Installeer de webapp</span>
+      <h1>Open Stadsopdracht vanaf je beginscherm</h1>
+      <p>
+        De routes, locatiechecks en voortgang werken straks in de geïnstalleerde webapp. In de
+        gewone browser tonen we alleen deze introductie en installatiehulp.
+      </p>
+      ${
+        installHelpVisible || ios || !canInstall
+          ? `<p class="web-install-help">${
+              ios
+                ? "Op iPhone: open deze pagina in Safari, tik op Delen en kies Zet op beginscherm."
+                : "Gebruik de install-knop van je browser of kies in het browsermenu Installeren / Toevoegen aan startscherm."
+            }</p>`
+          : ""
+      }
+      <div class="web-install-actions">
+        <button class="button primary" type="button" data-install-app>
+          Installeer webapp
+        </button>
+        <button class="button ghost" type="button" data-show-install-help>
+          Hoe installeer ik?
+        </button>
+      </div>
+    </div>
+  `;
+};
 
 const renderInstallCallout = () => {
   if (!installCallout) return;
 
-  if (isStandaloneApp()) {
-    installCallout.innerHTML = `
-      <div>
-        <span class="pill">Webapp actief</span>
-        <h2>Stadsopdracht staat klaar als app</h2>
-        <p>Open hem vanaf je beginscherm wanneer je in de stad loopt.</p>
-      </div>
-    `;
+  if (!isStandaloneApp()) {
+    installCallout.innerHTML = "";
+    renderWebInstallOnly();
     return;
   }
 
-  const canInstall = Boolean(deferredInstallPrompt);
-  const ios = isIosDevice();
   installCallout.innerHTML = `
     <div>
-      <span class="pill">Aanbevolen</span>
-      <h2>Installeer Stadsopdracht als webapp</h2>
-      <p>
-        Zet de route op je beginscherm voordat je vertrekt. Dan voelt hij als een gewone app en
-        kun je onderweg sneller verder met je opdrachten.
-      </p>
-      ${
-        installHelpVisible || ios
-          ? `<p class="install-help">${
-              ios
-                ? "Op iPhone: tik in Safari op Delen en kies daarna Zet op beginscherm."
-                : "Gebruik de install-knop van je browser of kies in het browsermenu Installeren."
-            }</p>`
-          : ""
-      }
-    </div>
-    <div class="install-actions">
-      <button class="button primary" type="button" data-install-app>
-        Installeer webapp
-      </button>
-      <button class="button ghost" type="button" data-show-install-help>
-        Hoe installeer ik?
-      </button>
+      <span class="pill">Webapp actief</span>
+      <h2>Stadsopdracht staat klaar als app</h2>
+      <p>Open hem vanaf je beginscherm wanneer je in de stad loopt.</p>
     </div>
   `;
 };
@@ -2700,10 +2720,12 @@ window.addEventListener("beforeinstallprompt", (event) => {
 
 window.addEventListener("appinstalled", () => {
   deferredInstallPrompt = null;
+  applyRuntimeMode();
   renderInstallCallout();
   showToast("Webapp geïnstalleerd.");
 });
 
+applyRuntimeMode();
 refreshApp();
 initPromoIntro();
 
