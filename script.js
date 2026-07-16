@@ -838,6 +838,208 @@ const tours = [
       },
     ],
   },
+  {
+    id: "copenhagen",
+    city: "Copenhagen",
+    title: "Copenhagen Centrum: haven, hof en waterstad",
+    price: "€4,49",
+    duration: "145 min",
+    distance: "4,6 km",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    summary:
+      "Een wandelroute langs Rådhuspladsen, Tivoli, Christiansborg, Nyhavn, Amalienborg, Marmorkirken en de waterkant.",
+    stops: [
+      {
+        title: "Start op Rådhuspladsen",
+        place: "Rådhuspladsen",
+        coordinates: { lat: 55.6758, lng: 12.5683 },
+        assignment:
+          "Kijk naar het stadhuis, de brede ruimte en de stromen fietsers, voetgangers en verkeer. Zoek hoe dit plein als poort naar de binnenstad werkt.",
+        question: "Waarom is Rådhuspladsen een goed startpunt om Copenhagen als stad te begrijpen?",
+        hint: "Let op bestuur, aankomst, verkeersstromen en de overgang naar winkelstraten.",
+        choices: [
+          {
+            text: "Het plein koppelt bestuur, aankomst, verkeer en binnenstad aan elkaar",
+            correct: true,
+            feedback:
+              "Precies. Rådhuspladsen is geen rustig decorplein, maar een stedelijk scharnierpunt: stadhuis, routes, winkels en dagelijks stadsleven komen hier samen.",
+          },
+          {
+            text: "Omdat het plein vooral ver buiten de stad ligt",
+            correct: false,
+            feedback: "Nee, het ligt juist op een drukke overgang tussen centrum, Tivoli en winkelgebied.",
+          },
+          {
+            text: "Omdat er bijna geen verkeer of stedelijke functies zichtbaar zijn",
+            correct: false,
+            feedback: "Kijk nog eens naar fietsers, auto’s, voetgangers en het stadhuis. Juist die mix maakt de plek interessant.",
+          },
+        ],
+      },
+      {
+        title: "Lees Tivoli van buiten",
+        place: "Tivoli Gardens",
+        coordinates: { lat: 55.6736, lng: 12.5681 },
+        assignment:
+          "Blijf buiten bij de ingang en kijk naar gevel, verlichting, hekken en sfeer. Zoek hoe de attractie al vanaf de straat onderdeel van de stad wordt.",
+        question: "Wat maakt Tivoli bijzonder in het stadsbeeld, ook als je niet naar binnen gaat?",
+        hint: "Let op de ligging direct naast station, stadhuisplein en drukke wegen.",
+        choices: [
+          {
+            text: "Een pretparkachtige wereld ligt hier midden in de compacte stad",
+            correct: true,
+            feedback:
+              "Klopt. Tivoli werkt juist door het contrast: achter een stedelijke rand begint een wereld van licht, tuinen en vermaak, pal naast station en centrum.",
+          },
+          {
+            text: "Het ligt zo ver buiten Copenhagen dat je het niet als stadsplek kunt lezen",
+            correct: false,
+            feedback: "Nee, Tivoli ligt opvallend centraal. De kracht zit juist in die binnenstedelijke ligging.",
+          },
+          {
+            text: "Het gebouw is vooral een onzichtbare kantoorwand",
+            correct: false,
+            feedback: "Niet echt. De gevel en entree zijn gemaakt om nieuwsgierigheid en verblijfssfeer op te roepen.",
+          },
+        ],
+      },
+      {
+        title: "Sta op het machtseiland",
+        place: "Christiansborg Slot",
+        coordinates: { lat: 55.6763, lng: 12.5806 },
+        assignment:
+          "Kijk naar de bruggen, binnenplaatsen en grote gevels. Zoek waarom dit complex meer is dan alleen een paleis.",
+        question: "Waarom is Christiansborg Slot politiek zo belangrijk voor Denemarken?",
+        hint: "Denk aan parlement, regering en rechtspraak op één historisch eiland.",
+        choices: [
+          {
+            text: "Hier komen parlement, regering en hoogste rechtspraak rond hetzelfde paleiscomplex samen",
+            correct: true,
+            feedback:
+              "Ja. Christiansborg is uitzonderlijk omdat meerdere staatsmachten hier ruimtelijk dicht bij elkaar zitten. De plek maakt macht letterlijk zichtbaar op Slotsholmen.",
+          },
+          {
+            text: "Omdat het alleen een winkelcentrum zonder politieke functie is",
+            correct: false,
+            feedback: "Nee, dit is juist een van de belangrijkste bestuurlijke plekken van Denemarken.",
+          },
+          {
+            text: "Omdat de plek ver van de historische binnenstad is weggehaald",
+            correct: false,
+            feedback: "Niet goed. Slotsholmen ligt juist midden tussen centrum, kanalen en oude handelsroutes.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar Nyhavn als oude werkhaven",
+        place: "Nyhavn",
+        coordinates: { lat: 55.6798, lng: 12.591 },
+        assignment:
+          "Kijk voorbij de kleuren en terrassen. Zoek sporen dat dit ooit een functionele haven- en handelsplek was.",
+        question: "Waarom is Nyhavn meer dan alleen een kleurrijke fotoplek?",
+        hint: "Let op water, kades, pakhuizen, schepen en horeca.",
+        choices: [
+          {
+            text: "De oude havenfunctie is veranderd in een toeristische verblijfsplek",
+            correct: true,
+            feedback:
+              "Precies. Nyhavn werkt omdat je de oude handelslaag nog voelt, terwijl de huidige functie vooral eten, kijken, wandelen en fotograferen is.",
+          },
+          {
+            text: "Omdat het kanaal nooit met handel of schepen te maken had",
+            correct: false,
+            feedback: "Nee, het water en de kades vertellen juist dat scheepvaart en handel hier belangrijk waren.",
+          },
+          {
+            text: "Omdat alle gevels vooral moderne glazen kantoren zijn",
+            correct: false,
+            feedback: "Kijk naar de smalle historische gevels. Die dragen juist sterk bij aan het karakter van Nyhavn.",
+          },
+        ],
+      },
+      {
+        title: "Lees de koninklijke ruimte",
+        place: "Amalienborg Slotsplads",
+        coordinates: { lat: 55.684, lng: 12.593 },
+        assignment:
+          "Ga op het plein staan en kijk naar de vier paleisgevels. Zoek hoe symmetrie, openheid en bewaking samen werken.",
+        question: "Wat maakt Amalienborg Slotsplads anders dan een gewoon stadsplein?",
+        hint: "Let op de vier gebouwen rondom het plein en de zichtlijn richting kerk en water.",
+        choices: [
+          {
+            text: "Het plein is tegelijk koninklijke woonplek, ceremonieel decor en publieke ruimte",
+            correct: true,
+            feedback:
+              "Klopt. Amalienborg voelt formeel door de vier bijna gelijke paleizen, maar blijft toegankelijk genoeg om de monarchie heel direct in de stad te plaatsen.",
+          },
+          {
+            text: "Omdat het plein volledig losstaat van de koninklijke familie",
+            correct: false,
+            feedback: "Nee, dit is juist een centrale plek in het Deense koninklijke verhaal.",
+          },
+          {
+            text: "Omdat het plein geen duidelijke vorm of zichtlijnen heeft",
+            correct: false,
+            feedback: "Kijk naar de symmetrie en de as richting Marmorkirken. De ruimtelijke ordening is juist heel sterk.",
+          },
+        ],
+      },
+      {
+        title: "Vergelijk koepel en paleis-as",
+        place: "Frederik’s Church",
+        coordinates: { lat: 55.6849, lng: 12.5899 },
+        assignment:
+          "Blijf buiten en kijk hoe de koepel in de as van Amalienborg staat. Zoek waarom de kerk groter voelt dan de straat eromheen.",
+        question: "Waarom past Frederik’s Church zo goed bij de route vanaf Amalienborg?",
+        hint: "Kijk naar de grote koepel en de korte zichtlijn vanaf het paleisplein.",
+        choices: [
+          {
+            text: "De kerk maakt de koninklijke as monumentaler en geeft de buurt een herkenbaar eindpunt",
+            correct: true,
+            feedback:
+              "Goed gezien. De Marmorkirken werkt als ruimtelijk anker: de koepel geeft gewicht aan de paleisomgeving en helpt je oriënteren in de wijk Frederiksstaden.",
+          },
+          {
+            text: "Omdat de kerk alleen zichtbaar is vanuit een afgesloten binnenplaats",
+            correct: false,
+            feedback: "Nee, juist vanaf de straat en de as bij Amalienborg is de koepel duidelijk te lezen.",
+          },
+          {
+            text: "Omdat de kerk vooral laag en onopvallend tussen winkels verstopt zit",
+            correct: false,
+            feedback: "Niet echt. De koepel is juist een van de opvallendste vormen in dit deel van Copenhagen.",
+          },
+        ],
+      },
+      {
+        title: "Eindig aan de waterkant",
+        place: "Den Lille Havfrue",
+        coordinates: { lat: 55.6929, lng: 12.5993 },
+        assignment:
+          "Kijk naar de schaal van het beeld, de havenrand en de route die je net hebt gelopen. Zoek waarom zo’n klein beeld toch zo groot kan worden in stadsmarketing.",
+        question: "Waarom is Den Lille Havfrue zo’n sterk symbool van Copenhagen, ondanks haar kleine formaat?",
+        hint: "Denk aan sprookje, havenstad, waterkant en herkenbaarheid.",
+        choices: [
+          {
+            text: "Het beeld koppelt Andersen, sprookjescultuur en de havenrand aan één herkenbaar icoon",
+            correct: true,
+            feedback:
+              "Precies. De kracht zit niet in grootte, maar in verhaal en ligging: een klein beeld aan het water kan een hele stad herkenbaar maken.",
+          },
+          {
+            text: "Omdat het beeld vooral beroemd is doordat het enorm hoog boven de stad uitsteekt",
+            correct: false,
+            feedback: "Juist niet. Veel bezoekers zijn verrast door de bescheiden schaal.",
+          },
+          {
+            text: "Omdat het beeld niets met water, verhalen of Copenhagen te maken heeft",
+            correct: false,
+            feedback: "Nee, juist de combinatie van verhaal, havenrand en stad maakt het beeld zo bekend.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 const storageKey = "stadsopdracht-progress";
@@ -898,6 +1100,13 @@ const stopUnlockRadii = {
   "Millennium Bridge": 110,
   "Borough Market": 80,
   "Tower Bridge": 120,
+  Rådhuspladsen: 70,
+  "Tivoli Gardens": 80,
+  "Christiansborg Slot": 90,
+  Nyhavn: 90,
+  "Amalienborg Slotsplads": 90,
+  "Frederik’s Church": 70,
+  "Den Lille Havfrue": 120,
 };
 
 const openDialog = (dialog) => {
@@ -1019,6 +1228,20 @@ const deeperContextByPlace = {
     "De Millennium Bridge is krachtig door zijn zichtlijn: St Paul’s, de Thames en Tate Modern worden door een voetgangersas in één verhaal gezet.",
   "Tower Bridge":
     "Tower Bridge is herkenbaar omdat moderne bascule-techniek een historisch kostuum kreeg. Hij moest werken als beweegbare brug, maar ook passen bij de Tower of London ernaast.",
+  Rådhuspladsen:
+    "Rådhuspladsen laat Copenhagen als functionerende hoofdstad zien: bestuur, verkeer, metro, winkels en toerisme zitten hier niet apart, maar vormen samen de entree tot de binnenstad.",
+  "Tivoli Gardens":
+    "Tivoli is bijzonder omdat vermaak niet aan de rand van de stad ligt, maar midden in het centrum. De gevel werkt als belofte: achter de stedelijke drukte begint een afgesloten wereld van licht, tuinen en attracties.",
+  "Christiansborg Slot":
+    "Christiansborg maakt staatsmacht ruimtelijk zichtbaar. Op Slotsholmen zitten parlement, regering en hoogste rechtspraak dicht bij elkaar, waardoor het eiland voelt als een bestuurlijk hart.",
+  Nyhavn:
+    "Nyhavn is een goed voorbeeld van hergebruik van havenruimte. Wat ooit praktisch en handelsgericht was, is nu een toeristische plek waar kleur, water, terrassen en schepen het stadsbeeld dragen.",
+  "Amalienborg Slotsplads":
+    "Amalienborg werkt door beheersing: vier paleizen, een open achthoekige ruimte en zichtlijnen richting kerk en haven. Daardoor voelt monarchie hier tegelijk formeel en dichtbij.",
+  "Frederik’s Church":
+    "Frederik’s Church, vaak Marmorkirken genoemd, versterkt de as van Frederiksstaden. De koepel geeft de wijk een herkenbaar middelpunt en maakt de route vanaf Amalienborg logisch leesbaar.",
+  "Den Lille Havfrue":
+    "Den Lille Havfrue bewijst dat een icoon niet groot hoeft te zijn. Het beeld verbindt H.C. Andersen, sprookjescultuur en de havenrand tot een herkenbaar eindbeeld van Copenhagen.",
 };
 
 const routeGuides = {
@@ -1130,6 +1353,32 @@ const routeGuides = {
     {
       route: "Loop vanaf Borough Market via London Bridge of de zuidelijke Thames-route richting Tower Bridge.",
       watch: "Let op hoe marktdrukte, rivierzicht en iconische bruggen elkaar opvolgen.",
+    },
+  ],
+  copenhagen: [
+    {
+      route: "Loop vanaf Rådhuspladsen richting de hoofdingang van Tivoli aan de rand van het plein.",
+      watch: "Let op hoe het stadhuisplein, verkeer en de speelse gevel van Tivoli bijna tegen elkaar aan liggen.",
+    },
+    {
+      route: "Loop vanaf Tivoli terug richting het centrum en volg de route via de binnenstad naar Slotsholmen en Christiansborg Slot.",
+      watch: "Kijk onderweg hoe Copenhagen wisselt van vermaak en winkelstraten naar bestuur, bruggen en paleisachtige gevels.",
+    },
+    {
+      route: "Loop vanaf Christiansborg via Holmens Kanal richting Kongens Nytorv en door naar Nyhavn.",
+      watch: "Let op de overgang van machtseiland en kanalen naar de kleurrijke havengevels van Nyhavn.",
+    },
+    {
+      route: "Volg vanaf Nyhavn de route richting Amaliehaven en Amalienborg Slotsplads.",
+      watch: "Kijk hoe de drukke havenrand langzaam overgaat in een veel formelere koninklijke ruimte.",
+    },
+    {
+      route: "Loop vanaf Amalienborg een kort stuk via Frederiksgade naar Frederik’s Church.",
+      watch: "Let op de zichtlijn: de koepel lijkt bijna als eindpunt van het paleisplein te werken.",
+    },
+    {
+      route: "Loop vanaf Frederik’s Church via Esplanaden en langs de rand van Kastellet richting Den Lille Havfrue.",
+      watch: "Let op hoe de stad opener wordt: vestinggroen, havenwater en wandelpaden nemen het over van paleisstraten.",
     },
   ],
 };
