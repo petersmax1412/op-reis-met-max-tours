@@ -449,7 +449,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees Groß St. Martin van buiten",
+        title: "Bekijk Groß St. Martin van buiten",
         place: "Groß St. Martin",
         coordinates: { lat: 50.9383, lng: 6.9621 },
         assignment:
@@ -877,7 +877,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees Tivoli van buiten",
+        title: "Bekijk Tivoli van buiten",
         place: "Tivoli Gardens",
         coordinates: { lat: 55.6736, lng: 12.5681 },
         assignment:
@@ -1079,7 +1079,7 @@ const tours = [
         ],
       },
       {
-        title: "Lees de Hofburg van buiten",
+        title: "Bekijk de Hofburg van buiten",
         place: "Hofburg Innsbruck",
         coordinates: { lat: 47.2693, lng: 11.3946 },
         assignment:
