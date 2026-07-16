@@ -2776,6 +2776,12 @@ const cityPhotos = {
     credit: "vpogarcia, CC BY-SA 2.0",
     source: "https://commons.wikimedia.org/wiki/File:Palacio_de_Cristal,_Retiro,_Madrid.jpg",
   },
+  valencia: {
+    src: "assets/cities/valencia.jpg",
+    alt: "Ciudad de las Artes y las Ciencias in Valencia met water en moderne architectuur",
+    credit: "ChiralJon, CC BY 2.0",
+    source: "https://commons.wikimedia.org/wiki/File:City_of_Arts_and_Sciences,_Valencia_(52395812264).jpg",
+  },
 };
 
 const isStandaloneApp = () =>
