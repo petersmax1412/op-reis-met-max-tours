@@ -1675,13 +1675,27 @@ h3 {
   padding: 12px;
 }
 
+.transit-option {
+  background: var(--mint);
+  border: 1px solid rgba(16, 174, 202, 0.18);
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+}
+
 .walk-watch strong {
   color: var(--ink);
 }
 
-.walk-watch span {
+.walk-watch span,
+.transit-option span {
   color: var(--muted);
   font-weight: 700;
+}
+
+.transit-option strong {
+  color: var(--blue);
 }
 
 .stop-map {

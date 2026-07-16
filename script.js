@@ -1444,6 +1444,208 @@ const tours = [
       },
     ],
   },
+  {
+    id: "madrid",
+    city: "Madrid",
+    title: "Madrid: park, stationsoase en koninklijke assen",
+    price: "€4,49",
+    duration: "170 min",
+    distance: "6,4 km",
+    paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    summary:
+      "Een route van Retiro Park via de tropische oase van Puerta de Atocha naar Sol, Gran Vía, Templo de Debod en Plaza de España.",
+    stops: [
+      {
+        title: "Begin bij het Retiro-meer",
+        place: "Estanque Grande del Retiro",
+        coordinates: { lat: 40.41696, lng: -3.68432 },
+        assignment:
+          "Kijk naar het water, de bootjes, de randen en het monument van Alfonso XII. Zoek waarom dit meer tegelijk recreatie en stadsdecor is.",
+        question: "Waarom is het Estanque Grande zo’n sterk startpunt voor Madrid?",
+        hint: "Let op water, zichtlijnen, rust en de monumentale rand.",
+        choices: [
+          {
+            text: "Omdat natuur, ontspanning en koninklijke stadsdecoratie hier samenkomen",
+            correct: true,
+            feedback:
+              "Precies. Retiro voelt ontspannen, maar is niet zomaar natuur: het park komt uit een koninklijke context en gebruikt water, zichtlijnen en monumenten om de stad rust én grandeur te geven.",
+          },
+          {
+            text: "Omdat dit vooral een modern zakendistrict zonder parkfunctie is",
+            correct: false,
+            feedback: "Nee, juist de parkfunctie en het historische decor maken deze plek sterk.",
+          },
+          {
+            text: "Omdat Madrid hier direct aan zee ligt",
+            correct: false,
+            feedback: "Niet goed. Madrid ligt landinwaarts; het water werkt hier juist als ontworpen stadsrust.",
+          },
+        ],
+      },
+      {
+        title: "Zoek glas tussen de bomen",
+        place: "Palacio de Cristal",
+        coordinates: { lat: 40.41356, lng: -3.68206 },
+        assignment:
+          "Bekijk het gebouw van buiten en zoek hoe glas, ijzer, water en bomen samen een bijna lichte tentoonstellingsplek maken.",
+        question: "Wat maakt het Palacio de Cristal typisch voor een stad die cultuur en parklandschap wil verbinden?",
+        hint: "Kijk naar materiaal, licht, water en de ligging midden in Retiro.",
+        choices: [
+          {
+            text: "Het gebouw gebruikt glas, ijzer en water om natuur en tentoonstelling in elkaar te schuiven",
+            correct: true,
+            feedback:
+              "Ja. Het Palacio de Cristal was gebouwd als glazen tentoonstellingsarchitectuur, maar werkt nu vooral als poëtisch punt in het park: techniek, licht, kunst en landschap versterken elkaar.",
+          },
+          {
+            text: "Omdat het gebouw expres helemaal ondergronds is gemaakt",
+            correct: false,
+            feedback: "Nee, de kracht zit juist in zichtbaarheid, transparantie en reflectie.",
+          },
+          {
+            text: "Omdat het alleen als gewoon treinstation is ontworpen",
+            correct: false,
+            feedback: "Niet goed. Het is een parkpaviljoen en tentoonstellingsplek, geen station.",
+          },
+        ],
+      },
+      {
+        title: "Vind de oase van Atocha",
+        place: "Puerta de Atocha tropentuin",
+        coordinates: { lat: 40.40663, lng: -3.69076 },
+        assignment:
+          "Zoek de tropische tuin in of bij de oude stationshal. Vergelijk de drukte van reizen met de rust van planten en glas.",
+        question: "Waarom voelt Puerta de Atocha als meer dan alleen een station?",
+        hint: "Let op oud stationsglas, reizigersstromen, wachtruimte en de tropische tuin.",
+        choices: [
+          {
+            text: "Omdat de oude hal reizen, architectuur en een onverwachte binnentuin combineert",
+            correct: true,
+            feedback:
+              "Klopt. Atocha is een mobiliteitsknooppunt, maar de oude hal maakt wachten bijna stedelijk theater: treinen, glasarchitectuur en tropisch groen geven Madrid hier een onverwachte oase.",
+          },
+          {
+            text: "Omdat er geen treinverbindingen meer zijn",
+            correct: false,
+            feedback: "Nee, Atocha is juist een belangrijk station. De verrassing zit in de combinatie met de tuin.",
+          },
+          {
+            text: "Omdat de tuin midden op een snelweg ligt",
+            correct: false,
+            feedback: "Niet goed. De tuin hoort bij de stationsruimte en verzacht juist de drukte van reizen.",
+          },
+        ],
+      },
+      {
+        title: "Sta midden op Puerta del Sol",
+        place: "Puerta del Sol",
+        coordinates: { lat: 40.41694, lng: -3.70353 },
+        assignment:
+          "Zoek het Casa de Correos, de klok, Kilometer Zero en de beer met de aardbeiboom. Noteer waarom dit plein zo’n stadsicoon is.",
+        question: "Waarom werkt Puerta del Sol als symbolisch middelpunt van Madrid?",
+        hint: "Let op routes, klok, nationale afstandsmeting en herkenbare stadsbeelden.",
+        choices: [
+          {
+            text: "Omdat routes, tijd, nationale oriëntatie en stadsidentiteit hier samenkomen",
+            correct: true,
+            feedback:
+              "Precies. Sol is niet alleen druk: de klok, Kilometer Zero en de omliggende straten maken het plein tot een plek waar Madrid zichzelf als centrum laat voelen.",
+          },
+          {
+            text: "Omdat Sol vooral een stille buitenwijk zonder verkeer is",
+            correct: false,
+            feedback: "Nee, juist de drukte en centrale routes maken Sol belangrijk.",
+          },
+          {
+            text: "Omdat het plein alleen bekend is door een haven",
+            correct: false,
+            feedback: "Niet goed. Madrid heeft geen zeehaven; Sol draait om centrumfunctie, tijd en oriëntatie.",
+          },
+        ],
+      },
+      {
+        title: "Loop de Gran Vía op",
+        place: "Gran Vía bij Telefónica",
+        coordinates: { lat: 40.42027, lng: -3.70162 },
+        assignment:
+          "Kijk omhoog naar gevels, torens, theaters en reclames. Zoek hoe Madrid hier zichzelf modern en stedelijk presenteert.",
+        question: "Waarom werd Gran Vía zo’n moderne visitekaartstraat van Madrid?",
+        hint: "Let op schaal, theaters, verkeer, gevels en de vroege hoogbouw.",
+        choices: [
+          {
+            text: "Omdat de straat brede stadsdoorbraak, entertainment en moderne architectuur samenbrengt",
+            correct: true,
+            feedback:
+              "Goed gezien. Gran Vía is Madrid als grootstedelijk gebaar: brede straat, winkels, theaters, gevels en vroege torens maken hier van beweging een show.",
+          },
+          {
+            text: "Omdat alle gebouwen bewust laag en onzichtbaar zijn gehouden",
+            correct: false,
+            feedback: "Nee, juist de hoogte, gevels en zichtbaarheid maken Gran Vía opvallend.",
+          },
+          {
+            text: "Omdat de straat vooral door weilanden loopt",
+            correct: false,
+            feedback: "Niet echt. Dit is een van de meest stedelijke stukken van Madrid.",
+          },
+        ],
+      },
+      {
+        title: "Kijk naar het westen bij Debod",
+        place: "Templo de Debod",
+        coordinates: { lat: 40.42401, lng: -3.71778 },
+        assignment:
+          "Bekijk de tempel van buiten en draai daarna richting uitzichtpunt. Zoek waarom deze plek totaal anders voelt dan Gran Vía.",
+        question: "Waarom is Templo de Debod zo’n opvallende stop in Madrid?",
+        hint: "Denk aan herplaatsing, open ruimte, zonsondergang en uitzicht richting het westen.",
+        choices: [
+          {
+            text: "Omdat een Egyptische tempel hier als herplaatst monument én uitkijkpunt werkt",
+            correct: true,
+            feedback:
+              "Precies. Debod is bijzonder omdat het niet uit Madrid zelf komt, maar door zijn plek wel een Madrileens ritueel is geworden: wandelen, kijken, zonsondergang en uitzicht.",
+          },
+          {
+            text: "Omdat de tempel een metrostation onder de grond is",
+            correct: false,
+            feedback: "Nee, dit gaat om een zichtbaar historisch monument in open parkruimte.",
+          },
+          {
+            text: "Omdat er vanaf hier geen enkel uitzicht is",
+            correct: false,
+            feedback: "Niet goed. Juist het uitzicht richting westen maakt deze stop sterk.",
+          },
+        ],
+      },
+      {
+        title: "Eindig op Plaza de España",
+        place: "Plaza de España Madrid",
+        coordinates: { lat: 40.42331, lng: -3.71224 },
+        assignment:
+          "Kijk naar het plein, de torens, de groene inrichting en het monument voor Cervantes. Zoek hoe oud verhaal en moderne stad hier samenkomen.",
+        question: "Waarom is Plaza de España een logisch eindpunt voor deze route?",
+        hint: "Vergelijk park, centrumdrukte, hoogbouw, literatuur en de ligging aan het westelijke centrum.",
+        choices: [
+          {
+            text: "Omdat het plein Madrid als moderne stad en literaire herinneringsplek tegelijk laat zien",
+            correct: true,
+            feedback:
+              "Ja. Na Retiro, Atocha, Sol en Gran Vía eindig je hier bij een plein dat stedelijke schaal, groen, hoogbouw en Cervantes bij elkaar brengt: Madrid als verhalenstad én moderne hoofdstad.",
+          },
+          {
+            text: "Omdat het plein ver buiten Madrid in een ander land ligt",
+            correct: false,
+            feedback: "Nee, dit is juist een belangrijk plein aan de westkant van het centrum.",
+          },
+          {
+            text: "Omdat er geen monumenten of herkenningspunten staan",
+            correct: false,
+            feedback: "Niet goed. Het Cervantes-monument en de omliggende gebouwen maken het plein herkenbaar.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 const storageKey = "stadsopdracht-progress";
@@ -1531,6 +1733,12 @@ const cityPhotos = {
     credit: "MrPanyGoff, CC BY-SA 3.0",
     source: "https://commons.wikimedia.org/wiki/File:Panorama_from_Belvedere_-_Vienna.jpg",
   },
+  madrid: {
+    src: "assets/cities/madrid.jpg",
+    alt: "Palacio de Cristal in het Retiro Park in Madrid",
+    credit: "vpogarcia, CC BY-SA 2.0",
+    source: "https://commons.wikimedia.org/wiki/File:Palacio_de_Cristal,_Retiro,_Madrid.jpg",
+  },
 };
 
 const isStandaloneApp = () =>
@@ -1612,6 +1820,13 @@ const stopUnlockRadii = {
   Karlskirche: 90,
   Stadtpark: 120,
   "Prater Riesenrad": 130,
+  "Estanque Grande del Retiro": 100,
+  "Palacio de Cristal": 90,
+  "Puerta de Atocha tropentuin": 120,
+  "Puerta del Sol": 100,
+  "Gran Vía bij Telefónica": 90,
+  "Templo de Debod": 120,
+  "Plaza de España Madrid": 110,
 };
 
 const openDialog = (dialog) => {
@@ -1836,6 +2051,20 @@ const deeperContextByPlace = {
     "Stadtpark laat Wenen ontspannen na alle monumentaliteit. Muziekcultuur, groen en openbare ruimte komen samen in een plek die minder formeel is, maar nog steeds typisch Weens.",
   "Prater Riesenrad":
     "De Prater laat Wenen van zijn publieke en speelse kant zien. Het Riesenrad is niet keizerlijk of kerkelijk, maar juist populair, herkenbaar en verbonden met vrije tijd.",
+  "Estanque Grande del Retiro":
+    "Het Estanque Grande laat Retiro meteen goed begrijpen: dit is geen wild natuurgebied, maar een ontworpen stadspark waar water, monumenten en ontspanning samen een koninklijk decor vormen.",
+  "Palacio de Cristal":
+    "Het Palacio de Cristal verbindt Madrid met 19e-eeuwse tentoonstellingscultuur. Glas en ijzer waren modern, maar door de ligging aan water en bomen voelt het gebouw tegelijk licht en landschappelijk.",
+  "Puerta de Atocha tropentuin":
+    "Atocha is interessant omdat infrastructuur hier meer is dan doorstromen. De tropische tuin verandert de oude hal in een verblijfsplek, waardoor reizen, wachten en stadsarchitectuur zachter aanvoelen.",
+  "Puerta del Sol":
+    "Puerta del Sol is Madrid als middelpunt: klok, Kilometer Zero, herkenbare symbolen en winkelstraten maken het plein tot een plek waar lokale identiteit en nationale oriëntatie samenkomen.",
+  "Gran Vía bij Telefónica":
+    "Gran Vía is de grote moderne stadsdoorbraak van Madrid. De straat gebruikt breedte, gevels, theaters en vroege hoogbouw om de hoofdstad grootstedelijker en spectaculairder te laten voelen.",
+  "Templo de Debod":
+    "Templo de Debod is een verplaatst monument dat door zijn Madrileense plek nieuwe betekenis krijgt. Het westelijke uitzicht, de open ruimte en de zonsondergang maken het een geliefde stadsritueelplek.",
+  "Plaza de España Madrid":
+    "Plaza de España brengt meerdere Madrid-lagen samen: Cervantes en Don Quichot als verhaal, hoogbouw als moderniteit, en een vernieuwd plein als groene schakel aan de rand van Gran Vía.",
 };
 
 const routeGuides = {
@@ -2027,6 +2256,34 @@ const routeGuides = {
       watch: "Let op hoe de stad verandert van nette centrumrand naar een grotere ontspanningszone met attracties en parkruimte.",
     },
   ],
+  madrid: [
+    {
+      route: "Start aan de rand van het Estanque Grande en loop rustig zuidwaarts door Retiro richting Palacio de Cristal.",
+      watch: "Let op hoe drukke stadsranden verdwijnen zodra water, bomen en parkpaden de route overnemen.",
+    },
+    {
+      route: "Loop vanaf Palacio de Cristal via de westelijke parkpaden richting de uitgang bij Alfonso XII en daal af naar Puerta de Atocha.",
+      watch: "Kijk hoe Madrid verandert van parklandschap naar musea, verkeer en grote stationsruimte.",
+    },
+    {
+      route:
+        "Loop vanaf Atocha via Paseo del Prado, Neptuno en de Barrio de las Letras richting Puerta del Sol. Is dit stuk te lang of wil je tijd winnen, neem dan metro lijn 1 vanaf Atocha of Estación del Arte richting Sol.",
+      watch: "Onderweg zie je de overgang van station naar museumas, literair kwartier en uiteindelijk het drukke hart van Madrid.",
+      transit: "Metro-optie: neem lijn 1 vanaf Atocha of Estación del Arte naar Sol en pak de route daar weer op.",
+    },
+    {
+      route: "Loop vanaf Puerta del Sol via Calle de la Montera of Calle Preciados richting Gran Vía en zoek het Telefónica-gebouw als herkenningspunt.",
+      watch: "Let op hoe het plein overgaat in winkelstraten en daarna in een bredere, meer theatrale stadsboulevard.",
+    },
+    {
+      route: "Volg Gran Vía westwaarts richting Plaza de España, maar buig eerst door naar Templo de Debod via Plaza de España en het parkgebied erachter.",
+      watch: "Kijk hoe de stad van drukke winkel- en theaterstraat langzaam opener wordt richting uitzichtpunt en park.",
+    },
+    {
+      route: "Loop vanaf Templo de Debod terug richting Plaza de España en eindig bij het Cervantes-monument.",
+      watch: "Vergelijk het rustige uitzichtpunt met de stedelijke schaal van het plein, de torens en de start van Gran Vía.",
+    },
+  ],
 };
 
 const buildDeeperContext = (tour, stop) =>
@@ -2081,6 +2338,11 @@ const renderRouteGuide = (tour, stopIndex) => {
         <strong>Let onderweg op</strong>
         <span>${guide?.watch || "Kijk naar gevels, straatprofiel, drukte en zichtlijnen tussen de twee stops."}</span>
       </div>
+      ${
+        guide?.transit
+          ? `<div class="transit-option"><strong>Metro-optie</strong><span>${guide.transit}</span></div>`
+          : ""
+      }
       <a class="button ghost small" href="${getWalkingRouteUrl(currentStop, nextStop)}" target="_blank" rel="noopener">
         Open looproute
       </a>
