@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/app-icon.svg" />
-    <link rel="stylesheet" href="styles.css?v=13" />
+    <link rel="stylesheet" href="styles.css?v=14" />
   </head>
   <body>
     <header class="app-shell">
@@ -41,14 +41,14 @@
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#tours">Bekijk steden</a>
-            <button class="button ghost" type="button" data-open-tour="malaga">Bekijk preview</button>
+            <a class="button ghost" href="#tours">Kies een route</a>
           </div>
         </div>
 
         <div class="phone-preview" aria-label="Voorbeeld van de webapp">
           <div class="phone-top">
-            <span>Málaga Centro</span>
-            <strong>62%</strong>
+            <span>Stadsopdracht App</span>
+            <strong>5 steden</strong>
           </div>
           <div class="route-map" aria-hidden="true">
             <span class="map-line"></span>
@@ -58,10 +58,10 @@
             <span class="pin">4</span>
           </div>
           <article class="task-card">
-            <span class="pill">6 verborgen stops</span>
-            <h2>Málaga Centro</h2>
-            <p>Ontgrendel de route en ontdek onderweg welke opdrachten bij de plekken horen.</p>
-            <button class="button primary small" type="button" data-open-tour="malaga">Bekijk preview</button>
+            <span class="pill">Routes per stad</span>
+            <h2>Kies je stad</h2>
+            <p>Ontgrendel een route en ontdek onderweg welke opdrachten bij de plekken horen.</p>
+            <a class="button primary small" href="#tours">Bekijk routes</a>
           </article>
         </div>
       </section>
@@ -155,6 +155,6 @@
       <div data-checkout-content></div>
     </dialog>
 
-    <script src="script.js?v=13"></script>
+    <script src="script.js?v=14"></script>
   </body>
 </html>

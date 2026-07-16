@@ -827,7 +827,7 @@ const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutContent = document.querySelector("[data-checkout-content]");
 
 let selectedTourId = null;
-let selectedCityId = "malaga";
+let selectedCityId = "all";
 let selectedStopIndex = 0;
 let userLocation = null;
 let locationMessage = "Locatie nog niet actief.";
@@ -955,14 +955,27 @@ const resetWorkspace = () => {
 const renderCityTabs = () => {
   if (!cityTabs) return;
 
-  cityTabs.innerHTML = tours
+  const cityOptions = [
+    {
+      id: "all",
+      label: "Alle steden",
+      meta: `${tours.length} routes`,
+    },
+    ...tours.map((tour) => ({
+      id: tour.id,
+      label: tour.city,
+      meta: `${tour.stops.length} stops`,
+    })),
+  ];
+
+  cityTabs.innerHTML = cityOptions
     .map(
-      (tour) => `
-        <button class="city-tab ${tour.id === selectedCityId ? "active" : ""}" type="button" data-city-tab="${
-          tour.id
+      (city) => `
+        <button class="city-tab ${city.id === selectedCityId ? "active" : ""}" type="button" data-city-tab="${
+          city.id
         }">
-          ${tour.city}
-          <span>${tour.stops.length} stops</span>
+          ${city.label}
+          <span>${city.meta}</span>
         </button>
       `,
     )
@@ -1045,7 +1058,7 @@ const renderInstallCallout = () => {
 
 const renderTours = () => {
   tourGrid.innerHTML = tours
-    .filter((tour) => tour.id === selectedCityId)
+    .filter((tour) => selectedCityId === "all" || tour.id === selectedCityId)
     .map((tour) => {
       const unlocked = isUnlocked(tour.id);
       return `
