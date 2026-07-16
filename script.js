@@ -168,7 +168,7 @@ const tours = [
     title: "Düsseldorf Altstadt: Rijn, Altbier en lichtklok",
     price: "€4,49",
     duration: "120 min",
-    distance: "4,1 km",
+    distance: "3,0 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
       "Een stadswandeling van het Rathaus en de Rijn naar Königsallee, de langste Theke en de lichtklok van de Rheinturm.",
@@ -224,29 +224,28 @@ const tours = [
         ],
       },
       {
-        title: "Loop langs het water",
-        place: "Rheinuferpromenade",
-        coordinates: { lat: 51.226, lng: 6.769 },
+        title: "Vind de langste Theke",
+        place: "Bolkerstraße",
+        coordinates: { lat: 51.2267, lng: 6.775 },
         assignment:
-          "Kijk richting Altstadt en Rijn. Zoek hoe de promenade de stad weer direct met het water verbindt.",
-        question: "Waarom is de Rheinuferpromenade belangrijk voor hoe Düsseldorf de Rijn nu gebruikt?",
-        hint: "Denk aan de oude verkeersdruk aan de oever en aan wat je hier nu als voetganger kunt doen.",
+          "Loop door de Altstadt en zoek hoe cafés, brouwhuizen en terrassen bijna als één lange bar aanvoelen.",
+        question: "Waarom noemt Düsseldorf de Altstadt de längste Theke der Welt?",
+        hint: "Theke betekent bar of toog. Kijk hoeveel plekken om te drinken en te blijven hangen dicht op elkaar zitten.",
         choices: [
           {
-            text: "De oever werd een verblijfsplek waar je de Altstadt, Rijn en skyline tegelijk ervaart",
+            text: "Omdat er in een klein oud stadsdeel heel veel cafés, bars en brouwhuizen bij elkaar zitten",
             correct: true,
-            feedback:
-              "Goed gezien. De promenade maakte de Rijn weer onderdeel van het dagelijkse stadsleven: wandelen, zitten, kijken en oversteken horen hier bij elkaar.",
+            feedback: "Precies. Het gaat niet om één letterlijke bar, maar om een aaneenschakeling van uitgaansplekken.",
           },
           {
-            text: "Omdat de Rijn hier vooral achter gebouwen verstopt blijft",
+            text: "Omdat er één houten bar door de hele stad loopt",
             correct: false,
-            feedback: "Juist niet. De kracht van deze plek is dat je rivier, Altstadt en overkant open kunt lezen.",
+            feedback: "Leuke gedachte, maar de bijnaam is figuurlijk bedoeld: veel horeca op een klein oppervlak.",
           },
           {
-            text: "Omdat de promenade alleen bedoeld is als snelle fietsroute zonder verblijf",
+            text: "Omdat de Altstadt vooral bekendstaat om kantoren zonder horeca",
             correct: false,
-            feedback: "Niet helemaal. Je ziet hier juist banken, trappen, terrassen en zichtpunten die langzaam gebruik uitnodigen.",
+            feedback: "Niet helemaal. Juist de concentratie van cafés, bars en Altbier-brouwhuizen maakt deze plek bekend.",
           },
         ],
       },
@@ -278,28 +277,29 @@ const tours = [
         ],
       },
       {
-        title: "Vind de langste Theke",
-        place: "Bolkerstraße",
-        coordinates: { lat: 51.2267, lng: 6.775 },
+        title: "Loop langs het water",
+        place: "Rheinuferpromenade bij KIT",
+        coordinates: { lat: 51.2208, lng: 6.7694 },
         assignment:
-          "Loop door de Altstadt en zoek hoe cafés, brouwhuizen en terrassen bijna als één lange bar aanvoelen.",
-        question: "Waarom noemt Düsseldorf de Altstadt de längste Theke der Welt?",
-        hint: "Theke betekent bar of toog. Kijk hoeveel plekken om te drinken en te blijven hangen dicht op elkaar zitten.",
+          "Kijk richting Rijn, Altstadt en Rheinturm. Zoek hoe de promenade de stad direct met het water verbindt.",
+        question: "Waarom is dit stuk Rheinuferpromenade logisch op weg naar de Rheinturm?",
+        hint: "Denk aan de oude verkeersdruk aan de oever en aan wat je hier nu als voetganger kunt doen.",
         choices: [
           {
-            text: "Omdat er in een klein oud stadsdeel heel veel cafés, bars en brouwhuizen bij elkaar zitten",
+            text: "De oever wordt hier een verblijfsroute tussen Altstadt, Rijn en moderne skyline",
             correct: true,
-            feedback: "Precies. Het gaat niet om één letterlijke bar, maar om een aaneenschakeling van uitgaansplekken.",
+            feedback:
+              "Goed gezien. Dit stuk promenade maakt de Rijn onderdeel van de wandeling: je loopt niet om, maar leest onderweg de overgang naar Rheinturm en MedienHafen.",
           },
           {
-            text: "Omdat er één houten bar door de hele stad loopt",
+            text: "Omdat je hier door de Rijn moet oversteken om de toren te bereiken",
             correct: false,
-            feedback: "Leuke gedachte, maar de bijnaam is figuurlijk bedoeld: veel horeca op een klein oppervlak.",
+            feedback: "Nee, je blijft juist aan dezelfde oever. Zo vermijden we onnodige omwegen over bruggen of water.",
           },
           {
-            text: "Omdat de Altstadt vooral bekendstaat om kantoren zonder horeca",
+            text: "Omdat de promenade vooral achter gebouwen verstopt ligt",
             correct: false,
-            feedback: "Niet helemaal. Juist de concentratie van cafés, bars en Altbier-brouwhuizen maakt deze plek bekend.",
+            feedback: "Juist niet. De open oever en zichtlijnen maken dit stuk sterk.",
           },
         ],
       },
@@ -338,10 +338,10 @@ const tours = [
     title: "Keulen Centrum: dom, Rijn en verborgen stadslagen",
     price: "€4,49",
     duration: "130 min",
-    distance: "4,4 km",
+    distance: "3,2 km",
     paymentUrl: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
     summary:
-      "Ontdek Keulen via de Dom, de Rijnbrug, oude pleinen, stadspoorten en de moderne havenrand.",
+      "Ontdek Keulen via de Dom, de Rijnbrug, oude pleinen, Groß St. Martin en de moderne havenrand.",
     stops: [
       {
         title: "Begin bij de Dom",
@@ -449,27 +449,29 @@ const tours = [
         ],
       },
       {
-        title: "Vind de stadspoort",
-        place: "Eigelsteintorburg",
-        coordinates: { lat: 50.9492, lng: 6.9574 },
-        assignment: "Loop om de poort heen en stel je voor waar de oude stadsgrens liep.",
-        question: "Wat vertelt de Eigelsteintorburg over de oude grenzen en toegangen van Keulen?",
-        hint: "Denk aan bescherming, toegang en controle.",
+        title: "Lees Groß St. Martin van buiten",
+        place: "Groß St. Martin",
+        coordinates: { lat: 50.9383, lng: 6.9621 },
+        assignment:
+          "Blijf buiten op het plein en kijk hoe de toren boven de smalle Altstadt-straten uitsteekt.",
+        question: "Waarom is Groß St. Martin een goede buitenstop tussen Rathaus en Rijn?",
+        hint: "Je hoeft het gebouw niet in. Kijk naar de toren, de schaal van de straten en de ligging bij de oude handelsstad.",
         choices: [
           {
-            text: "Wie naar binnen wilde, kwam langs controle en verdediging",
+            text: "De kerk markeert de oude Altstadt en leidt je logisch richting Rijn zonder een grote omweg",
             correct: true,
-            feedback: "Precies. Een poort was tegelijk toegang, grens en machtsmiddel.",
+            feedback:
+              "Precies. Groß St. Martin werkt goed vanaf buiten: de toren helpt je oriënteren en de ligging houdt de route compact richting Rijn.",
           },
           {
-            text: "Dat steden vroeger geen grenzen hadden",
+            text: "Omdat je alleen binnen iets van de plek kunt begrijpen",
             correct: false,
-            feedback: "Veel middeleeuwse steden hadden juist muren, poorten en duidelijke toegangen.",
+            feedback: "Nee, de buitenkant en ligging vertellen juist al veel over schaal, oriëntatie en oude stad.",
           },
           {
-            text: "Dat poorten alleen decoratie waren",
+            text: "Omdat de kerk ver buiten de historische binnenstad ligt",
             correct: false,
-            feedback: "Ze konden mooi zijn, maar hun oorspronkelijke functie was praktisch en defensief.",
+            feedback: "Niet goed. Groß St. Martin staat juist midden in de oude stad, dicht bij Alter Markt en de Rijn.",
           },
         ],
       },
@@ -860,10 +862,43 @@ let paymentTimer = null;
 let deferredInstallPrompt = null;
 let installHelpVisible = false;
 
-const unlockRadiusMeters = 100;
+const defaultUnlockRadiusMeters = 70;
 const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
+
+const stopUnlockRadii = {
+  "Plaza de la Constitución": 60,
+  "Catedral de Málaga": 80,
+  "Teatro Romano": 60,
+  "Alcazaba ingang": 70,
+  "Plaza de la Merced": 60,
+  "Muelle Uno": 90,
+  "Marktplatz en Rathaus": 60,
+  "Burgplatz en Schlossturm": 70,
+  Bolkerstraße: 60,
+  Königsallee: 80,
+  "Rheinuferpromenade bij KIT": 90,
+  Rheinturm: 90,
+  "Kölner Dom": 90,
+  Hohenzollernbrücke: 120,
+  "Alter Markt": 60,
+  "Historisches Rathaus": 60,
+  "Groß St. Martin": 70,
+  Rheinauhafen: 100,
+  Römerberg: 60,
+  "Kaiserdom St. Bartholomäus": 70,
+  "Eiserner Steg": 100,
+  "Goethe-Haus": 60,
+  "Main Tower": 70,
+  "Alte Oper": 80,
+  "Trafalgar Square": 90,
+  "Covent Garden": 80,
+  "St Paul’s Cathedral": 100,
+  "Millennium Bridge": 110,
+  "Borough Market": 80,
+  "Tower Bridge": 120,
+};
 
 const openDialog = (dialog) => {
   if (!dialog) return;
@@ -893,6 +928,7 @@ const saveProgress = (progress) => localStorage.setItem(storageKey, JSON.stringi
 const isAdminMode = () => localStorage.getItem(adminStorageKey) === "active";
 const isUnlocked = (tourId) => isAdminMode() || Boolean(getProgress()[tourId]?.unlocked);
 const completedStops = (tourId) => getProgress()[tourId]?.completed || [];
+const getUnlockRadius = (stop) => stopUnlockRadii[stop.place] || defaultUnlockRadiusMeters;
 
 const toRad = (value) => (value * Math.PI) / 180;
 
@@ -939,7 +975,7 @@ const deeperContextByPlace = {
     "De Marktplatz koppelt bestuur aan openbare ruimte. Het ruiterstandbeeld van Jan Wellem en het Rathaus vertellen samen hoe Düsseldorf zichzelf als residentiestad presenteerde.",
   "Burgplatz en Schlossturm":
     "Burgplatz is een scharnier tussen de Rijn en de Altstadt. De Schlossturm herinnert aan de tijd waarin macht, rivierhandel en stadsontwikkeling op dezelfde plek samenkwamen.",
-  Rheinuferpromenade:
+  "Rheinuferpromenade bij KIT":
     "De Rheinuferpromenade is sterk omdat Düsseldorf de Rijn weer als verblijfsruimte gebruikt. De oever is niet alleen rand van de stad, maar een plek waar Altstadt, skyline en rivier samen zichtbaar worden.",
   Königsallee:
     "De Kö gebruikt water, bomen en brede profielen om luxe ruimtelijk te maken. Dure merken zitten hier omdat het adres zelf status geeft: zien, gezien worden en rustig flaneren horen bij de winkelervaring.",
@@ -955,8 +991,8 @@ const deeperContextByPlace = {
     "Alter Markt laat het oude stedelijke ritme zien: handel, horeca, doorgangen naar de Altstadt en de nabijheid van de Rijn maken samen een plein dat blijft functioneren als ontmoetingsplek.",
   "Historisches Rathaus":
     "Het Rathaus toont de stedelijke zelfstandigheid van Keulen. De toren, beelden en decoratie laten zien dat bestuur niet verstopt werd, maar als stedelijke macht zichtbaar moest zijn.",
-  Eigelsteintorburg:
-    "Een stadspoort was letterlijk een grens. Hier kun je voelen hoe middeleeuws Keulen toegang, handel en veiligheid controleerde.",
+  "Groß St. Martin":
+    "Groß St. Martin is een sterke buitenstop omdat de toren boven de Altstadt uitsteekt. Je ziet zonder naar binnen te gaan hoe kerk, plein, smalle straten en Rijn dicht bij elkaar liggen.",
   Rheinauhafen:
     "Rheinauhafen laat zien hoe een oud havengebied nieuwe stedelijke waarde krijgt. De Rijn blijft de drager, maar de functies verschuiven naar wonen, werken en recreatie.",
   Römerberg:
@@ -1014,20 +1050,20 @@ const routeGuides = {
       watch: "Let op hoe snel bestuur, Altstadt en Rijn elkaar hier raken.",
     },
     {
-      route: "Loop vanaf Burgplatz naar de Rheinuferpromenade en blijf zo dicht mogelijk langs het water.",
-      watch: "Kijk hoe de Altstadt vanaf de Rijn ineens meer als skyline dan als straat voelt.",
+      route: "Loop vanaf Burgplatz de Altstadt in richting Bolkerstraße.",
+      watch: "Let op hoe de open ruimte aan de Rijn meteen overgaat in smalle straten vol cafés en brouwhuizen.",
     },
     {
-      route: "Ga vanaf de promenade richting Heinrich-Heine-Allee en loop door naar de Königsallee.",
-      watch: "Let onderweg op de overgang van rivierstad naar winkel- en zakenstad.",
+      route: "Loop vanaf Bolkerstraße via de winkelstraten richting Königsallee.",
+      watch: "Vergelijk onderweg de drukke Altstadt-sfeer met de rustigere, luxere uitstraling van de Kö.",
     },
     {
-      route: "Loop vanaf de Kö terug richting Altstadt, bijvoorbeeld via Flinger Straße of omliggende winkelstraten.",
-      watch: "Vergelijk de luxe etalages met de smallere, drukkere straten richting Bolkerstraße.",
+      route: "Loop vanaf de Kö richting de Rijn en kies het stuk promenade bij KIT als tussenpunt naar de Rheinturm.",
+      watch: "Let op hoe winkelstad, parkachtige randen en rivierzicht in elkaar overlopen.",
     },
     {
-      route: "Volg vanaf Bolkerstraße de Altstadt terug naar de Rijn en loop zuidwaarts over de promenade richting Rheinturm.",
-      watch: "Let onderweg op hoe cafés, rivier, moderne kades en MedienHafen langzaam in elkaar overlopen.",
+      route: "Volg vanaf de promenade de Rijn zuidwaarts richting Rheinturm.",
+      watch: "Je blijft aan dezelfde oever: let op hoe de kade steeds moderner wordt richting MedienHafen.",
     },
   ],
   keulen: [
@@ -1044,12 +1080,12 @@ const routeGuides = {
       watch: "Zoek onderweg naar geveldetails die laten zien hoe dicht handel, horeca en bestuur bij elkaar lagen.",
     },
     {
-      route: "Loop noordwaarts richting Eigelstein en let op hoe de binnenstad minder toeristisch en alledaagser wordt.",
-      watch: "Vergelijk de grote pleinen met kleinere straten, winkels en woonroutes.",
+      route: "Loop vanaf het Rathaus richting Groß St. Martin en blijf buiten rond de kerk en het plein.",
+      watch: "Let op de toren als oriëntatiepunt en op hoe smal de oude straten richting Rijn worden.",
     },
     {
-      route: "Ga vanaf Eigelsteintorburg terug richting de Rijn en volg daarna de oever zuidwaarts naar Rheinauhafen.",
-      watch: "Let op de lange verandering van middeleeuwse stadspoort naar moderne havenarchitectuur.",
+      route: "Loop vanaf Groß St. Martin richting de Rijn en volg de oever zuidwaarts naar Rheinauhafen.",
+      watch: "Je hoeft geen gebouwen in: kijk buiten naar de overgang van oude Altstadt naar moderne havenrand.",
     },
   ],
   frankfurt: [
@@ -1216,6 +1252,7 @@ const checkArrivalAtStop = (targetStopIndex) => {
       };
 
       const distance = distanceInMeters(userLocation, targetStop.coordinates);
+      const unlockRadiusMeters = getUnlockRadius(targetStop);
       locationMessage = `Locatie actief, nauwkeurigheid ongeveer ${userLocation.accuracy} m.`;
 
       if (distance !== null && distance <= unlockRadiusMeters) {
@@ -1549,6 +1586,7 @@ const renderAssignment = () => {
   }
 
   const distance = distanceInMeters(userLocation, stop.coordinates);
+  const unlockRadiusMeters = getUnlockRadius(stop);
   const isNearby = distance !== null && distance <= unlockRadiusMeters;
   const adminMode = isAdminMode();
   const locationLocked = !adminMode && !locked && !done.includes(selectedStopIndex) && !isNearby;
