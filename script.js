@@ -1477,7 +1477,7 @@ const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
 const promoStorageKey = "stadsopdracht-promo-seen";
-const promoDurations = [3200, 3200, 3800, 4200, 3600, 3400, 4600];
+const promoDurations = [3200, 3200, 3800, 5600, 3600, 3400, 4600];
 
 const isStandaloneApp = () =>
   window.matchMedia?.("(display-mode: standalone)").matches || window.navigator.standalone === true;
