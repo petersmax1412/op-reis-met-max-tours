@@ -2955,3353 +2955,3353 @@ const tours = [
     ],
   },
 {
-  "id": "paris",
-  "city": "Parijs",
-  "title": "Parijs: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Parijs met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Eiffeltoren",
-      "place": "Eiffeltoren",
-      "coordinates": {
-        "lat": 48.85241,
-        "lng": 2.35383
+    "id": "paris",
+    "city": "Parijs",
+    "title": "Parijs: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "14,0 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Parijs met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Montmartre",
+        "place": "Montmartre",
+        "coordinates": {
+          "lat": 48.8872,
+          "lng": 2.3394
+        },
+        "assignment": "Kijk rustig rond bij Montmartre en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat groeit er halverwege de heuvel, vlak bij de Sacré-Cœur?",
+        "hint": "Rue des Saules.",
+        "choices": [
+          {
+            "text": "De enige nog bestaande wijngaard van Parijs",
+            "correct": true,
+            "feedback": "Goed gezien. De Clos Montmartre produceert nog steeds jaarlijks een kleine oogst wijn."
+          },
+          {
+            "text": "Een historische moestuin van de monniken",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een boomgaard die ooit bij het paleis hoorde",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Eiffeltoren en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat vind je helemaal bovenin de toren, verstopt achter glas?",
-      "hint": "Kijk op de derde verdieping.",
-      "choices": [
-        {
-          "text": "Een verborgen weerstation",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Palais Garnier (Opera)",
+        "place": "Palais Garnier (Opera)",
+        "coordinates": {
+          "lat": 48.87197,
+          "lng": 2.3316
         },
-        {
-          "text": "Het geheime appartement van Gustave Eiffel, met wassen beelden van hem en Thomas Edison",
-          "correct": true,
-          "feedback": "Goed gezien. Eiffel liet hier een klein privévertrek inrichten om VIP's te ontvangen."
-        },
-        {
-          "text": "Een oude telegraafkamer uit WOI",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Notre-Dame",
-      "place": "Notre-Dame",
-      "coordinates": {
-        "lat": 48.85357,
-        "lng": 2.35691
+        "assignment": "Kijk rustig rond bij Palais Garnier (Opera) en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat ligt er verstopt onder dit operagebouw?",
+        "hint": "Dit hoor je pas als je het navraagt of het verhaal kent van \"Phantom of the Opera\".",
+        "choices": [
+          {
+            "text": "Een echt ondergronds waterreservoir/\"meer\"",
+            "correct": true,
+            "feedback": "Goed gezien. De Parijse brandweer gebruikt dit bassin nog steeds om te oefenen met duiken."
+          },
+          {
+            "text": "Een tweede, kleinere geheime operazaal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een verzegelde crypte van de architect",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Notre-Dame voordat je antwoord geeft.",
-      "question": "Wat ligt er in de bestrating precies vóór de hoofdingang?",
-      "hint": "Kijk naar beneden, niet naar de gevel.",
-      "choices": [
-        {
-          "text": "Point Zéro, het punt van waaruit alle afstanden in Frankrijk gemeten worden",
-          "correct": true,
-          "feedback": "Goed gezien. Alle wegwijzers \"X km van Parijs\" in Frankrijk verwijzen naar dit exacte punt."
+      {
+        "title": "Ga naar Place de la Concorde",
+        "place": "Place de la Concorde",
+        "coordinates": {
+          "lat": 48.86563,
+          "lng": 2.32124
         },
-        {
-          "text": "Een middeleeuwse zonnewijzer",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De grafsteen van de architect",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Louvre (glazen piramide)",
-      "place": "Louvre (glazen piramide)",
-      "coordinates": {
-        "lat": 48.85698,
-        "lng": 2.35889
+        "assignment": "Kijk rustig rond bij Place de la Concorde en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat staat er in het midden van het plein, en hoe oud is het echt?",
+        "hint": "Kijk naar de obelisk en de tekst op de sokkel.",
+        "choices": [
+          {
+            "text": "De Luxor-obelisk, ruim 3.000 jaar oud",
+            "correct": true,
+            "feedback": "Goed gezien. Het origineel komt echt uit de Luxor-tempel in Egypte en werd in 1836 aan Frankrijk geschonken."
+          },
+          {
+            "text": "Een replica van een Egyptische obelisk, gemaakt in de 19e eeuw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een obelisk uit het oude Rome, veroverd door Napoleon",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Zoek bij Louvre (glazen piramide) naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
-      "question": "Er is nog een tweede, omgekeerde piramide. Waar?",
-      "hint": "Ga het winkelcentrum onder het plein in (Carrousel du Louvre).",
-      "choices": [
-        {
-          "text": "Ondersteboven van het plafond, met de punt bijna tot de vloer",
-          "correct": true,
-          "feedback": "Goed gezien. De Pyramide Inversée is een van de bekendste \"verborgen\" fotomomenten van het museum."
+      {
+        "title": "Ga naar Arc de Triomphe",
+        "place": "Arc de Triomphe",
+        "coordinates": {
+          "lat": 48.87379,
+          "lng": 2.29503
         },
-        {
-          "text": "Onder het water van de fontein op het plein",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Verborgen achter een muur in de Egyptische vleugel",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Montmartre",
-      "place": "Montmartre",
-      "coordinates": {
-        "lat": 48.86153,
-        "lng": 2.35824
+        "assignment": "Kijk rustig rond bij Arc de Triomphe en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat brandt er eeuwig onder de boog?",
+        "hint": "Kijk op de grond in het midden.",
+        "choices": [
+          {
+            "text": "Een gaslamp uit de bouwtijd van de boog",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De vlam bij het Graf van de Onbekende Soldaat",
+            "correct": true,
+            "feedback": "Goed gezien. De vlam wordt elke avond om 18:30 opnieuw aangestoken, al sinds 1923."
+          },
+          {
+            "text": "Een ceremoniële olielamp voor gesneuvelde generaals",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Montmartre en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat groeit er halverwege de heuvel, vlak bij de Sacré-Cœur?",
-      "hint": "Rue des Saules.",
-      "choices": [
-        {
-          "text": "De enige nog bestaande wijngaard van Parijs",
-          "correct": true,
-          "feedback": "Goed gezien. De Clos Montmartre produceert nog steeds jaarlijks een kleine oogst wijn."
+      {
+        "title": "Ga naar Eiffeltoren",
+        "place": "Eiffeltoren",
+        "coordinates": {
+          "lat": 48.85826,
+          "lng": 2.2945
         },
-        {
-          "text": "Een historische moestuin van de monniken",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een boomgaard die ooit bij het paleis hoorde",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Arc de Triomphe",
-      "place": "Arc de Triomphe",
-      "coordinates": {
-        "lat": 48.86095,
-        "lng": 2.35335
+        "assignment": "Kijk rustig rond bij Eiffeltoren en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat vind je helemaal bovenin de toren, verstopt achter glas?",
+        "hint": "Kijk op de derde verdieping.",
+        "choices": [
+          {
+            "text": "Een verborgen weerstation",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het geheime appartement van Gustave Eiffel, met wassen beelden van hem en Thomas Edison",
+            "correct": true,
+            "feedback": "Goed gezien. Eiffel liet hier een klein privévertrek inrichten om VIP's te ontvangen."
+          },
+          {
+            "text": "Een oude telegraafkamer uit WOI",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Arc de Triomphe en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat brandt er eeuwig onder de boog?",
-      "hint": "Kijk op de grond in het midden.",
-      "choices": [
-        {
-          "text": "Een gaslamp uit de bouwtijd van de boog",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Musée d'Orsay",
+        "place": "Musée d'Orsay",
+        "coordinates": {
+          "lat": 48.85996,
+          "lng": 2.32656
         },
-        {
-          "text": "De vlam bij het Graf van de Onbekende Soldaat",
-          "correct": true,
-          "feedback": "Goed gezien. De vlam wordt elke avond om 18:30 opnieuw aangestoken, al sinds 1923."
-        },
-        {
-          "text": "Een ceremoniële olielamp voor gesneuvelde generaals",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Pont Neuf",
-      "place": "Pont Neuf",
-      "coordinates": {
-        "lat": 48.86182,
-        "lng": 2.35017
+        "assignment": "Kijk rustig rond bij Musée d'Orsay en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat is het bekende fotomoment binnenin dit voormalige treinstation?",
+        "hint": "Loop naar het bovenste niveau, aan de achterkant.",
+        "choices": [
+          {
+            "text": "Je kunt door de reusachtige stationsklok heen naar buiten kijken",
+            "correct": true,
+            "feedback": "Goed gezien. Het museum zit in het oude Gare d'Orsay, en de enorme klok is bewaard gebleven."
+          },
+          {
+            "text": "Er hangt een originele stoomlocomotief aan het plafond",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Er ligt een spoor met echte rails midden door het museum",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Pont Neuf en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "Wat klopt er niet aan de naam van deze brug?",
-      "hint": "\"Neuf\" betekent \"nieuw\".",
-      "choices": [
-        {
-          "text": "Het is juist de oudste nog bestaande brug van Parijs",
-          "correct": true,
-          "feedback": "Goed gezien. Ondanks de naam is dit al sinds 1607 de oudste overgebleven brug van de stad."
+      {
+        "title": "Ga naar Louvre (glazen piramide)",
+        "place": "Louvre (glazen piramide)",
+        "coordinates": {
+          "lat": 48.86061,
+          "lng": 2.33764
         },
-        {
-          "text": "De brug is nooit echt afgebouwd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Hij ligt niet over de Seine maar over een zijkanaal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Musée d'Orsay",
-      "place": "Musée d'Orsay",
-      "coordinates": {
-        "lat": 48.86023,
-        "lng": 2.34657
+        "assignment": "Zoek bij Louvre (glazen piramide) naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
+        "question": "Er is nog een tweede, omgekeerde piramide. Waar?",
+        "hint": "Ga het winkelcentrum onder het plein in (Carrousel du Louvre).",
+        "choices": [
+          {
+            "text": "Ondersteboven van het plafond, met de punt bijna tot de vloer",
+            "correct": true,
+            "feedback": "Goed gezien. De Pyramide Inversée is een van de bekendste \"verborgen\" fotomomenten van het museum."
+          },
+          {
+            "text": "Onder het water van de fontein op het plein",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Verborgen achter een muur in de Egyptische vleugel",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Musée d'Orsay en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat is het bekende fotomoment binnenin dit voormalige treinstation?",
-      "hint": "Loop naar het bovenste niveau, aan de achterkant.",
-      "choices": [
-        {
-          "text": "Je kunt door de reusachtige stationsklok heen naar buiten kijken",
-          "correct": true,
-          "feedback": "Goed gezien. Het museum zit in het oude Gare d'Orsay, en de enorme klok is bewaard gebleven."
+      {
+        "title": "Ga naar Pont Neuf",
+        "place": "Pont Neuf",
+        "coordinates": {
+          "lat": 48.85731,
+          "lng": 2.34138
         },
-        {
-          "text": "Er hangt een originele stoomlocomotief aan het plafond",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Er ligt een spoor met echte rails midden door het museum",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Panthéon",
-      "place": "Panthéon",
-      "coordinates": {
-        "lat": 48.85616,
-        "lng": 2.34441
+        "assignment": "Loop een stukje over of langs Pont Neuf en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "Wat klopt er niet aan de naam van deze brug?",
+        "hint": "\"Neuf\" betekent \"nieuw\".",
+        "choices": [
+          {
+            "text": "Het is juist de oudste nog bestaande brug van Parijs",
+            "correct": true,
+            "feedback": "Goed gezien. Ondanks de naam is dit al sinds 1607 de oudste overgebleven brug van de stad."
+          },
+          {
+            "text": "De brug is nooit echt afgebouwd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Hij ligt niet over de Seine maar over een zijkanaal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Panthéon en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat hangt er in het midden van de koepelzaal te zwaaien?",
-      "hint": "Kijk omhoog, naar het middenpunt van de ruimte.",
-      "choices": [
-        {
-          "text": "Foucaults slinger, die de rotatie van de aarde aantoont",
-          "correct": true,
-          "feedback": "Goed gezien. Léon Foucault installeerde hier in 1851 zijn beroemde experiment."
+      {
+        "title": "Ga naar Notre-Dame",
+        "place": "Notre-Dame",
+        "coordinates": {
+          "lat": 48.85297,
+          "lng": 2.3499
         },
-        {
-          "text": "Een historische luchtballon uit de Franse Revolutie",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een gouden kroonluchter uit de tijd van Napoleon",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Palais Garnier (Opera)",
-      "place": "Palais Garnier (Opera)",
-      "coordinates": {
-        "lat": 48.85375,
-        "lng": 2.34871
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Notre-Dame voordat je antwoord geeft.",
+        "question": "Wat ligt er in de bestrating precies vóór de hoofdingang?",
+        "hint": "Kijk naar beneden, niet naar de gevel.",
+        "choices": [
+          {
+            "text": "Point Zéro, het punt van waaruit alle afstanden in Frankrijk gemeten worden",
+            "correct": true,
+            "feedback": "Goed gezien. Alle wegwijzers \"X km van Parijs\" in Frankrijk verwijzen naar dit exacte punt."
+          },
+          {
+            "text": "Een middeleeuwse zonnewijzer",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De grafsteen van de architect",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Palais Garnier (Opera) en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat ligt er verstopt onder dit operagebouw?",
-      "hint": "Dit hoor je pas als je het navraagt of het verhaal kent van \"Phantom of the Opera\".",
-      "choices": [
-        {
-          "text": "Een echt ondergronds waterreservoir/\"meer\"",
-          "correct": true,
-          "feedback": "Goed gezien. De Parijse brandweer gebruikt dit bassin nog steeds om te oefenen met duiken."
+      {
+        "title": "Ga naar Panthéon",
+        "place": "Panthéon",
+        "coordinates": {
+          "lat": 48.84622,
+          "lng": 2.34641
         },
-        {
-          "text": "Een tweede, kleinere geheime operazaal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een verzegelde crypte van de architect",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Place de la Concorde",
-      "place": "Place de la Concorde",
-      "coordinates": {
-        "lat": 48.85118,
-        "lng": 2.35077
-      },
-      "assignment": "Kijk rustig rond bij Place de la Concorde en zoek het detail dat deze plek typisch maakt voor Parijs.",
-      "question": "Wat staat er in het midden van het plein, en hoe oud is het echt?",
-      "hint": "Kijk naar de obelisk en de tekst op de sokkel.",
-      "choices": [
-        {
-          "text": "De Luxor-obelisk, ruim 3.000 jaar oud",
-          "correct": true,
-          "feedback": "Goed gezien. Het origineel komt echt uit de Luxor-tempel in Egypte en werd in 1836 aan Frankrijk geschonken."
-        },
-        {
-          "text": "Een replica van een Egyptische obelisk, gemaakt in de 19e eeuw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een obelisk uit het oude Rome, veroverd door Napoleon",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Panthéon en zoek het detail dat deze plek typisch maakt voor Parijs.",
+        "question": "Wat hangt er in het midden van de koepelzaal te zwaaien?",
+        "hint": "Kijk omhoog, naar het middenpunt van de ruimte.",
+        "choices": [
+          {
+            "text": "Foucaults slinger, die de rotatie van de aarde aantoont",
+            "correct": true,
+            "feedback": "Goed gezien. Léon Foucault installeerde hier in 1851 zijn beroemde experiment."
+          },
+          {
+            "text": "Een historische luchtballon uit de Franse Revolutie",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een gouden kroonluchter uit de tijd van Napoleon",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "rome",
-  "city": "Rome",
-  "title": "Rome: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Rome met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Colosseum",
-      "place": "Colosseum",
-      "coordinates": {
-        "lat": 41.89094,
-        "lng": 12.4919
+    "id": "rome",
+    "city": "Rome",
+    "title": "Rome: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "7,4 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Rome met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Colosseum",
+        "place": "Colosseum",
+        "coordinates": {
+          "lat": 41.89021,
+          "lng": 12.49223
+        },
+        "assignment": "Kijk rustig rond bij Colosseum en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Waar verschenen de wilde dieren ineens midden in de arena?",
+        "hint": "Kijk naar het blootliggende ondergrondse deel.",
+        "choices": [
+          {
+            "text": "Via een netwerk van hijsplatforms in de hypogeum",
+            "correct": true,
+            "feedback": "Goed gezien. Onder de arenavloer zat een complex systeem van liften en luiken."
+          },
+          {
+            "text": "Via een tunnel die rechtstreeks naar de rivier de Tiber liep",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ze werden losgelaten vanaf de bovenste tribune",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Colosseum en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Waar verschenen de wilde dieren ineens midden in de arena?",
-      "hint": "Kijk naar het blootliggende ondergrondse deel.",
-      "choices": [
-        {
-          "text": "Via een netwerk van hijsplatforms in de hypogeum",
-          "correct": true,
-          "feedback": "Goed gezien. Onder de arenavloer zat een complex systeem van liften en luiken."
+      {
+        "title": "Ga naar Circus Maximus",
+        "place": "Circus Maximus",
+        "coordinates": {
+          "lat": 41.88605,
+          "lng": 12.48528
         },
-        {
-          "text": "Via een tunnel die rechtstreeks naar de rivier de Tiber liep",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Ze werden losgelaten vanaf de bovenste tribune",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Trevifontein",
-      "place": "Trevifontein",
-      "coordinates": {
-        "lat": 41.90098,
-        "lng": 12.48328
+        "assignment": "Kijk rustig rond bij Circus Maximus en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Wat kun je hier nog steeds herkennen van de oude functie?",
+        "hint": "Kijk naar de vorm van het hele grasveld.",
+        "choices": [
+          {
+            "text": "De langgerekte ovale vorm van het antieke racecircuit",
+            "correct": true,
+            "feedback": "Goed gezien. Van de tribunes zelf is weinig over, maar de vorm van de renbaan is nog duidelijk zichtbaar."
+          },
+          {
+            "text": "De originele stenen tribunes, deels bewaard",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Restanten van de keizerlijke loge, nog rechtop",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Trevifontein en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Hoe moet je je muntje precies gooien voor geluk?",
-      "hint": "Let op hoe andere toeristen het doen.",
-      "choices": [
-        {
-          "text": "Met beide handen tegelijk, oog in oog met het beeld",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Bocca della Verità",
+        "place": "Bocca della Verità",
+        "coordinates": {
+          "lat": 41.88816,
+          "lng": 12.48178
         },
-        {
-          "text": "Met je rechterhand over je linkerschouder, met je rug naar de fontein",
-          "correct": true,
-          "feedback": "Goed gezien. Zo gooi je volgens de traditie een munt om ooit terug te keren naar Rome."
-        },
-        {
-          "text": "Met je linkerhand, terwijl je een wens hardop uitspreekt",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Pantheon",
-      "place": "Pantheon",
-      "coordinates": {
-        "lat": 41.89862,
-        "lng": 12.47683
+        "assignment": "Kijk rustig rond bij Bocca della Verità en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Wat gebeurt er volgens de legende als een leugenaar zijn hand in de mond van dit marmeren masker steekt?",
+        "hint": "Zoek het masker in de portiek van Santa Maria in Cosmedin.",
+        "choices": [
+          {
+            "text": "Zijn hand wordt eraf gebeten",
+            "correct": true,
+            "feedback": "Goed gezien. Een populaire middeleeuwse legende, ooit gebruikt om verdachten te \"testen\"."
+          },
+          {
+            "text": "Zijn hand verandert in steen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Hij moet een boetedoening aan de kerk betalen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Pantheon en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Waarom is de vloer een beetje bol en heeft die kleine gaatjes?",
-      "hint": "Kijk omhoog naar het gat in de koepel (oculus).",
-      "choices": [
-        {
-          "text": "Voor de afwatering, want als het regent, regent het naar binnen",
-          "correct": true,
-          "feedback": "Goed gezien. De oculus is de enige lichtbron en heeft geen glas, dus regen komt gewoon naar binnen."
+      {
+        "title": "Ga naar Campo de' Fiori",
+        "place": "Campo de' Fiori",
+        "coordinates": {
+          "lat": 41.89556,
+          "lng": 12.47219
         },
-        {
-          "text": "Om de akoestiek van de ruimte te verbeteren",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Vanwege verzakking van het gebouw door de eeuwen heen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Spaanse Trappen",
-      "place": "Spaanse Trappen",
-      "coordinates": {
-        "lat": 41.90607,
-        "lng": 12.48287
+        "assignment": "Kijk rustig rond bij Campo de' Fiori en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Wiens standbeeld staat hier midden op het plein, en waarom?",
+        "hint": "Kijk naar het beeld met de kap over het hoofd.",
+        "choices": [
+          {
+            "text": "Giordano Bruno, hier levend verbrand voor ketterij in 1600",
+            "correct": true,
+            "feedback": "Goed gezien. Het beeld kijkt bewust in de richting van het Vaticaan."
+          },
+          {
+            "text": "Julius Caesar, op de plek waar hij ooit sprak",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een onbekende monnik, symbool van de marktzegen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Spaanse Trappen en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Hoeveel treden moet je op naar de kerk boven?",
-      "hint": "Gewoon tellen tijdens het beklimmen.",
-      "choices": [
-        {
-          "text": "100",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Piazza Navona",
+        "place": "Piazza Navona",
+        "coordinates": {
+          "lat": 41.89916,
+          "lng": 12.47308
         },
-        {
-          "text": "135",
-          "correct": true,
-          "feedback": "Goed gezien. 135 treden naar de Trinità dei Monti-kerk."
-        },
-        {
-          "text": "150",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Sint-Pietersplein",
-      "place": "Sint-Pietersplein",
-      "coordinates": {
-        "lat": 41.89767,
-        "lng": 12.48408
+        "assignment": "Neem even de tijd om de randen van Piazza Navona te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Bij de Vierstromenfontein: welke figuur houdt zijn hand voor zijn gezicht, en volgens de legende waarom?",
+        "hint": "Kijk naar het standbeeld gericht richting de kerk.",
+        "choices": [
+          {
+            "text": "De Nijl, omdat zijn bron toen nog onbekend was",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Rio de la Plata, uit angst voor instortende bouwsteigers",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Rio de la Plata, omdat hij niet naar Borromini's kerkgevel wilde kijken",
+            "correct": true,
+            "feedback": "Goed gezien. Leuk verhaal, al klopt de tijdlijn niet helemaal - de fontein was er eerder dan de gevel."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Sint-Pietersplein te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Vanaf welke plek lijkt de zuilengalerij plotseling nog maar één rij zuilen?",
-      "hint": "Zoek de ronde stenen schijf in het plaveisel tussen de fontein en het obelisk.",
-      "choices": [
-        {
-          "text": "Vanaf de ronde stenen schijf tussen fontein en obelisk",
-          "correct": true,
-          "feedback": "Goed gezien. Bernini's colonnade is zo ontworpen dat vanaf dat exacte punt vier rijen zuilen optisch samenvallen tot één."
+      {
+        "title": "Ga naar Pantheon",
+        "place": "Pantheon",
+        "coordinates": {
+          "lat": 41.89861,
+          "lng": 12.47687
         },
-        {
-          "text": "Vanaf de trappen van de basiliek zelf",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Vanaf het balkon waar de paus verschijnt",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Piazza Navona",
-      "place": "Piazza Navona",
-      "coordinates": {
-        "lat": 41.89893,
-        "lng": 12.47312
+        "assignment": "Kijk rustig rond bij Pantheon en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Waarom is de vloer een beetje bol en heeft die kleine gaatjes?",
+        "hint": "Kijk omhoog naar het gat in de koepel (oculus).",
+        "choices": [
+          {
+            "text": "Voor de afwatering, want als het regent, regent het naar binnen",
+            "correct": true,
+            "feedback": "Goed gezien. De oculus is de enige lichtbron en heeft geen glas, dus regen komt gewoon naar binnen."
+          },
+          {
+            "text": "Om de akoestiek van de ruimte te verbeteren",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Vanwege verzakking van het gebouw door de eeuwen heen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Piazza Navona te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Bij de Vierstromenfontein: welke figuur houdt zijn hand voor zijn gezicht, en volgens de legende waarom?",
-      "hint": "Kijk naar het standbeeld gericht richting de kerk.",
-      "choices": [
-        {
-          "text": "De Nijl, omdat zijn bron toen nog onbekend was",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Trevifontein",
+        "place": "Trevifontein",
+        "coordinates": {
+          "lat": 41.90093,
+          "lng": 12.48331
         },
-        {
-          "text": "De Rio de la Plata, uit angst voor instortende bouwsteigers",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Rio de la Plata, omdat hij niet naar Borromini's kerkgevel wilde kijken",
-          "correct": true,
-          "feedback": "Goed gezien. Leuk verhaal, al klopt de tijdlijn niet helemaal - de fontein was er eerder dan de gevel."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Bocca della Verità",
-      "place": "Bocca della Verità",
-      "coordinates": {
-        "lat": 41.89695,
-        "lng": 12.4773
+        "assignment": "Kijk rustig rond bij Trevifontein en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Hoe moet je je muntje precies gooien voor geluk?",
+        "hint": "Let op hoe andere toeristen het doen.",
+        "choices": [
+          {
+            "text": "Met beide handen tegelijk, oog in oog met het beeld",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Met je rechterhand over je linkerschouder, met je rug naar de fontein",
+            "correct": true,
+            "feedback": "Goed gezien. Zo gooi je volgens de traditie een munt om ooit terug te keren naar Rome."
+          },
+          {
+            "text": "Met je linkerhand, terwijl je een wens hardop uitspreekt",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Bocca della Verità en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Wat gebeurt er volgens de legende als een leugenaar zijn hand in de mond van dit marmeren masker steekt?",
-      "hint": "Zoek het masker in de portiek van Santa Maria in Cosmedin.",
-      "choices": [
-        {
-          "text": "Zijn hand wordt eraf gebeten",
-          "correct": true,
-          "feedback": "Goed gezien. Een populaire middeleeuwse legende, ooit gebruikt om verdachten te \"testen\"."
+      {
+        "title": "Ga naar Spaanse Trappen",
+        "place": "Spaanse Trappen",
+        "coordinates": {
+          "lat": 41.90599,
+          "lng": 12.48278
         },
-        {
-          "text": "Zijn hand verandert in steen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Hij moet een boetedoening aan de kerk betalen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Circus Maximus",
-      "place": "Circus Maximus",
-      "coordinates": {
-        "lat": 41.89288,
-        "lng": 12.47514
+        "assignment": "Kijk rustig rond bij Spaanse Trappen en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Hoeveel treden moet je op naar de kerk boven?",
+        "hint": "Gewoon tellen tijdens het beklimmen.",
+        "choices": [
+          {
+            "text": "100",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "135",
+            "correct": true,
+            "feedback": "Goed gezien. 135 treden naar de Trinità dei Monti-kerk."
+          },
+          {
+            "text": "150",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Circus Maximus en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Wat kun je hier nog steeds herkennen van de oude functie?",
-      "hint": "Kijk naar de vorm van het hele grasveld.",
-      "choices": [
-        {
-          "text": "De langgerekte ovale vorm van het antieke racecircuit",
-          "correct": true,
-          "feedback": "Goed gezien. Van de tribunes zelf is weinig over, maar de vorm van de renbaan is nog duidelijk zichtbaar."
+      {
+        "title": "Ga naar Castel Sant'Angelo",
+        "place": "Castel Sant'Angelo",
+        "coordinates": {
+          "lat": 41.90306,
+          "lng": 12.46628
         },
-        {
-          "text": "De originele stenen tribunes, deels bewaard",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Restanten van de keizerlijke loge, nog rechtop",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Castel Sant'Angelo",
-      "place": "Castel Sant'Angelo",
-      "coordinates": {
-        "lat": 41.89047,
-        "lng": 12.47944
+        "assignment": "Kijk rustig rond bij Castel Sant'Angelo en zoek het detail dat deze plek typisch maakt voor Rome.",
+        "question": "Welke geheime verbinding loopt hiervandaan naar het Vaticaan?",
+        "hint": "Kijk naar de verhoogde, overdekte gang bovenop de muur.",
+        "choices": [
+          {
+            "text": "De Passetto di Borgo, een vluchtroute voor de paus",
+            "correct": true,
+            "feedback": "Goed gezien. Meerdere pausen zijn via deze verhoogde gang gevlucht tijdens belegeringen."
+          },
+          {
+            "text": "Een ondergrondse catacombe die rechtstreeks naar de Sixtijnse Kapel leidt",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een tunnel onder de Tiber door",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Castel Sant'Angelo en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Welke geheime verbinding loopt hiervandaan naar het Vaticaan?",
-      "hint": "Kijk naar de verhoogde, overdekte gang bovenop de muur.",
-      "choices": [
-        {
-          "text": "De Passetto di Borgo, een vluchtroute voor de paus",
-          "correct": true,
-          "feedback": "Goed gezien. Meerdere pausen zijn via deze verhoogde gang gevlucht tijdens belegeringen."
+      {
+        "title": "Ga naar Sint-Pietersplein",
+        "place": "Sint-Pietersplein",
+        "coordinates": {
+          "lat": 41.90217,
+          "lng": 12.45731
         },
-        {
-          "text": "Een ondergrondse catacombe die rechtstreeks naar de Sixtijnse Kapel leidt",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een tunnel onder de Tiber door",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Campo de' Fiori",
-      "place": "Campo de' Fiori",
-      "coordinates": {
-        "lat": 41.8879,
-        "lng": 12.4815
-      },
-      "assignment": "Kijk rustig rond bij Campo de' Fiori en zoek het detail dat deze plek typisch maakt voor Rome.",
-      "question": "Wiens standbeeld staat hier midden op het plein, en waarom?",
-      "hint": "Kijk naar het beeld met de kap over het hoofd.",
-      "choices": [
-        {
-          "text": "Giordano Bruno, hier levend verbrand voor ketterij in 1600",
-          "correct": true,
-          "feedback": "Goed gezien. Het beeld kijkt bewust in de richting van het Vaticaan."
-        },
-        {
-          "text": "Julius Caesar, op de plek waar hij ooit sprak",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een onbekende monnik, symbool van de marktzegen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Neem even de tijd om de randen van Sint-Pietersplein te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Vanaf welke plek lijkt de zuilengalerij plotseling nog maar één rij zuilen?",
+        "hint": "Zoek de ronde stenen schijf in het plaveisel tussen de fontein en het obelisk.",
+        "choices": [
+          {
+            "text": "Vanaf de ronde stenen schijf tussen fontein en obelisk",
+            "correct": true,
+            "feedback": "Goed gezien. Bernini's colonnade is zo ontworpen dat vanaf dat exacte punt vier rijen zuilen optisch samenvallen tot één."
+          },
+          {
+            "text": "Vanaf de trappen van de basiliek zelf",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Vanaf het balkon waar de paus verschijnt",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "amsterdam",
-  "city": "Amsterdam",
-  "title": "Amsterdam: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "128 min",
-  "distance": "3,3 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Amsterdam met 6 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Anne Frank Huis",
-      "place": "Anne Frank Huis",
-      "coordinates": {
-        "lat": 52.36341,
-        "lng": 4.90573
+    "id": "amsterdam",
+    "city": "Amsterdam",
+    "title": "Amsterdam: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "128 min",
+    "distance": "3,8 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Amsterdam met 6 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Anne Frank Huis",
+        "place": "Anne Frank Huis",
+        "coordinates": {
+          "lat": 52.37522,
+          "lng": 4.88398
+        },
+        "assignment": "Kijk rustig rond bij Anne Frank Huis en zoek het detail dat deze plek typisch maakt voor Amsterdam.",
+        "question": "Wat verbergt de toegang tot het Achterhuis?",
+        "hint": "Kijk in de kantoorruimte op de eerste verdieping.",
+        "choices": [
+          {
+            "text": "Een draaibare boekenkast",
+            "correct": true,
+            "feedback": "Goed gezien. De boekenkast draait om de deur naar de schuilplek aan het zicht te onttrekken."
+          },
+          {
+            "text": "Een losse vloerplank met trapgat",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een dubbele wand achter een schilderij",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Anne Frank Huis en zoek het detail dat deze plek typisch maakt voor Amsterdam.",
-      "question": "Wat verbergt de toegang tot het Achterhuis?",
-      "hint": "Kijk in de kantoorruimte op de eerste verdieping.",
-      "choices": [
-        {
-          "text": "Een draaibare boekenkast",
-          "correct": true,
-          "feedback": "Goed gezien. De boekenkast draait om de deur naar de schuilplek aan het zicht te onttrekken."
+      {
+        "title": "Ga naar Westerkerk",
+        "place": "Westerkerk",
+        "coordinates": {
+          "lat": 52.37447,
+          "lng": 4.88398
         },
-        {
-          "text": "Een losse vloerplank met trapgat",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een dubbele wand achter een schilderij",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Rijksmuseum",
-      "place": "Rijksmuseum",
-      "coordinates": {
-        "lat": 52.36675,
-        "lng": 4.90963
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Westerkerk voordat je antwoord geeft.",
+        "question": "Wat staat er bovenop de Westertoren, en waar verwijst het naar?",
+        "hint": "Kijk helemaal boven in de spits.",
+        "choices": [
+          {
+            "text": "De blauw-rood-gouden Keizerskroon van Maximiliaan van Oostenrijk",
+            "correct": true,
+            "feedback": "Goed gezien. Maximiliaan schonk de stad het recht zijn kroon als symbool te gebruiken."
+          },
+          {
+            "text": "Een gouden haan als symbool van waakzaamheid",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het stadswapen van Amsterdam in verguld brons",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Zoek bij Rijksmuseum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
-      "question": "Hoe kun je dwars door het museum heen fietsen zonder entree te betalen?",
-      "hint": "Zoek de doorgang aan de voorkant.",
-      "choices": [
-        {
-          "text": "Via de Rijksmuseumpassage, een openbare tunnel dwars door het gebouw",
-          "correct": true,
-          "feedback": "Goed gezien. De passage is een openbare doorgang, ooit zelfs bedreigd met sluiting vanwege verkeersdrukte."
+      {
+        "title": "Ga naar Dam / Koninklijk Paleis",
+        "place": "Dam / Koninklijk Paleis",
+        "coordinates": {
+          "lat": 52.37316,
+          "lng": 4.89133
         },
-        {
-          "text": "Via de ondergrondse fietsenstalling die uitkomt bij het Museumplein",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Via een poort die alleen 's nachts open is",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Westerkerk",
-      "place": "Westerkerk",
-      "coordinates": {
-        "lat": 52.37282,
-        "lng": 4.90829
+        "assignment": "Loop langs de buitenkant van Dam / Koninklijk Paleis en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Waarop staat dit hele gebouw eigenlijk, gezien de drassige grond?",
+        "hint": "Dit kun je navragen bij een gids of op het infobord ter plekke.",
+        "choices": [
+          {
+            "text": "Op een fundering van massief graniet, aangevoerd uit Scandinavië",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Op 13.659 houten heipalen",
+            "correct": true,
+            "feedback": "Goed gezien. Een bekend Amsterdams gezegde luidt zelfs dat de halve stad \"op palen\" staat."
+          },
+          {
+            "text": "Op een betonnen plaat die pas in de 20e eeuw is aangelegd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Westerkerk voordat je antwoord geeft.",
-      "question": "Wat staat er bovenop de Westertoren, en waar verwijst het naar?",
-      "hint": "Kijk helemaal boven in de spits.",
-      "choices": [
-        {
-          "text": "De blauw-rood-gouden Keizerskroon van Maximiliaan van Oostenrijk",
-          "correct": true,
-          "feedback": "Goed gezien. Maximiliaan schonk de stad het recht zijn kroon als symbool te gebruiken."
+      {
+        "title": "Ga naar Bloemenmarkt",
+        "place": "Bloemenmarkt",
+        "coordinates": {
+          "lat": 52.36695,
+          "lng": 4.89374
         },
-        {
-          "text": "Een gouden haan als symbool van waakzaamheid",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het stadswapen van Amsterdam in verguld brons",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Bloemenmarkt",
-      "place": "Bloemenmarkt",
-      "coordinates": {
-        "lat": 52.37487,
-        "lng": 4.90127
+        "assignment": "Neem even de tijd om de randen van Bloemenmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat is hier uniek vergeleken met andere bloemenmarkten?",
+        "hint": "Kijk naar hoe de kraampjes zijn opgesteld boven het water.",
+        "choices": [
+          {
+            "text": "Het is 's werelds enige drijvende bloemenmarkt",
+            "correct": true,
+            "feedback": "Goed gezien. De kraampjes staan letterlijk op woonboten in de gracht."
+          },
+          {
+            "text": "Het is de grootste bloemenmarkt van Europa",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Alle kramen zijn hier verplicht familiebedrijven",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Bloemenmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat is hier uniek vergeleken met andere bloemenmarkten?",
-      "hint": "Kijk naar hoe de kraampjes zijn opgesteld boven het water.",
-      "choices": [
-        {
-          "text": "Het is 's werelds enige drijvende bloemenmarkt",
-          "correct": true,
-          "feedback": "Goed gezien. De kraampjes staan letterlijk op woonboten in de gracht."
+      {
+        "title": "Ga naar Magere Brug",
+        "place": "Magere Brug",
+        "coordinates": {
+          "lat": 52.36355,
+          "lng": 4.90219
         },
-        {
-          "text": "Het is de grootste bloemenmarkt van Europa",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Alle kramen zijn hier verplicht familiebedrijven",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Magere Brug",
-      "place": "Magere Brug",
-      "coordinates": {
-        "lat": 52.36828,
-        "lng": 4.89965
+        "assignment": "Loop een stukje over of langs Magere Brug en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "Wat gebeurt er 's avonds met deze brug?",
+        "hint": "Kom terug na zonsondergang.",
+        "choices": [
+          {
+            "text": "Duizenden kleine lampjes langs de contouren gaan aan",
+            "correct": true,
+            "feedback": "Goed gezien. De verlichting maakt de Magere Brug 's avonds een van de meest gefotografeerde plekken van de stad."
+          },
+          {
+            "text": "De brug draait automatisch open voor het scheepvaartverkeer",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Er klinkt een carillon vanaf de brugwachtershuisjes",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Magere Brug en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "Wat gebeurt er 's avonds met deze brug?",
-      "hint": "Kom terug na zonsondergang.",
-      "choices": [
-        {
-          "text": "Duizenden kleine lampjes langs de contouren gaan aan",
-          "correct": true,
-          "feedback": "Goed gezien. De verlichting maakt de Magere Brug 's avonds een van de meest gefotografeerde plekken van de stad."
+      {
+        "title": "Ga naar Rijksmuseum",
+        "place": "Rijksmuseum",
+        "coordinates": {
+          "lat": 52.35999,
+          "lng": 4.88522
         },
-        {
-          "text": "De brug draait automatisch open voor het scheepvaartverkeer",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Er klinkt een carillon vanaf de brugwachtershuisjes",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Dam / Koninklijk Paleis",
-      "place": "Dam / Koninklijk Paleis",
-      "coordinates": {
-        "lat": 52.36323,
-        "lng": 4.90059
-      },
-      "assignment": "Loop langs de buitenkant van Dam / Koninklijk Paleis en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Waarop staat dit hele gebouw eigenlijk, gezien de drassige grond?",
-      "hint": "Dit kun je navragen bij een gids of op het infobord ter plekke.",
-      "choices": [
-        {
-          "text": "Op een fundering van massief graniet, aangevoerd uit Scandinavië",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Op 13.659 houten heipalen",
-          "correct": true,
-          "feedback": "Goed gezien. Een bekend Amsterdams gezegde luidt zelfs dat de halve stad \"op palen\" staat."
-        },
-        {
-          "text": "Op een betonnen plaat die pas in de 20e eeuw is aangelegd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Zoek bij Rijksmuseum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
+        "question": "Hoe kun je dwars door het museum heen fietsen zonder entree te betalen?",
+        "hint": "Zoek de doorgang aan de voorkant.",
+        "choices": [
+          {
+            "text": "Via de Rijksmuseumpassage, een openbare tunnel dwars door het gebouw",
+            "correct": true,
+            "feedback": "Goed gezien. De passage is een openbare doorgang, ooit zelfs bedreigd met sluiting vanwege verkeersdrukte."
+          },
+          {
+            "text": "Via de ondergrondse fietsenstalling die uitkomt bij het Museumplein",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Via een poort die alleen 's nachts open is",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "berlin",
-  "city": "Berlijn",
-  "title": "Berlijn: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Berlijn met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Brandenburger Tor",
-      "place": "Brandenburger Tor",
-      "coordinates": {
-        "lat": 52.51581,
-        "lng": 13.40663
+    "id": "berlin",
+    "city": "Berlijn",
+    "title": "Berlijn: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "11,0 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Berlijn met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Siegessäule (Tiergarten)",
+        "place": "Siegessäule (Tiergarten)",
+        "coordinates": {
+          "lat": 52.51449,
+          "lng": 13.35012
+        },
+        "assignment": "Kijk rustig rond bij Siegessäule (Tiergarten) en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Wat staat er bovenop deze zuil, en welke bijnaam heeft het beeld?",
+        "hint": "Kijk helemaal omhoog, het beeld is verguld.",
+        "choices": [
+          {
+            "text": "Een vergulde engel, bekend als \"Goldelse\"",
+            "correct": true,
+            "feedback": "Goed gezien. De vergulde overwinningsengel is al sinds 1873 een herkenningspunt van de stad."
+          },
+          {
+            "text": "Een Pruisische adelaar, bekend als \"Der Alte Fritz\"",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Keizer Wilhelm I te paard",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Brandenburger Tor en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Wie ontvoerde het beeld bovenop de poort ooit naar Parijs?",
-      "hint": "Kijk naar de Quadriga (godin in wagen met vier paarden) bovenop.",
-      "choices": [
-        {
-          "text": "Napoleon, in 1806",
-          "correct": true,
-          "feedback": "Goed gezien. Pas na Napoleons nederlaag keerde het beeld terug naar Berlijn."
+      {
+        "title": "Ga naar Reichstag",
+        "place": "Reichstag",
+        "coordinates": {
+          "lat": 52.51862,
+          "lng": 13.37619
         },
-        {
-          "text": "Keizer Wilhelm II, als geschenk aan Frankrijk",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De nazi's, tijdens de bezetting van Parijs",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Reichstag",
-      "place": "Reichstag",
-      "coordinates": {
-        "lat": 52.51697,
-        "lng": 13.40971
+        "assignment": "Kijk rustig rond bij Reichstag en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Waarom kun je door de glazen koepel recht naar beneden kijken, de vergaderzaal in?",
+        "hint": "Loop de spiraalvormige oprit in de koepel omhoog.",
+        "choices": [
+          {
+            "text": "Puur voor het uitzicht over de stad",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Symbool van transparantie: het volk staat boven de politiek",
+            "correct": true,
+            "feedback": "Goed gezien. De koepel is een bewust ontworpen statement over open bestuur na de Duitse hereniging."
+          },
+          {
+            "text": "Om natuurlijke ventilatie in de zaal te garanderen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Reichstag en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Waarom kun je door de glazen koepel recht naar beneden kijken, de vergaderzaal in?",
-      "hint": "Loop de spiraalvormige oprit in de koepel omhoog.",
-      "choices": [
-        {
-          "text": "Puur voor het uitzicht over de stad",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Brandenburger Tor",
+        "place": "Brandenburger Tor",
+        "coordinates": {
+          "lat": 52.51627,
+          "lng": 13.3777
         },
-        {
-          "text": "Symbool van transparantie: het volk staat boven de politiek",
-          "correct": true,
-          "feedback": "Goed gezien. De koepel is een bewust ontworpen statement over open bestuur na de Duitse hereniging."
-        },
-        {
-          "text": "Om natuurlijke ventilatie in de zaal te garanderen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar East Side Gallery",
-      "place": "East Side Gallery",
-      "coordinates": {
-        "lat": 52.52038,
-        "lng": 13.41169
+        "assignment": "Kijk rustig rond bij Brandenburger Tor en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Wie ontvoerde het beeld bovenop de poort ooit naar Parijs?",
+        "hint": "Kijk naar de Quadriga (godin in wagen met vier paarden) bovenop.",
+        "choices": [
+          {
+            "text": "Napoleon, in 1806",
+            "correct": true,
+            "feedback": "Goed gezien. Pas na Napoleons nederlaag keerde het beeld terug naar Berlijn."
+          },
+          {
+            "text": "Keizer Wilhelm II, als geschenk aan Frankrijk",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De nazi's, tijdens de bezetting van Parijs",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij East Side Gallery en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Welk beroemd tafereel toont twee staatsmannen die elkaar zoenen?",
-      "hint": "Zoek het langste overgebleven stuk Berlijnse Muur.",
-      "choices": [
-        {
-          "text": "De \"Bruderkuss\" tussen Brezjnev en Honecker",
-          "correct": true,
-          "feedback": "Goed gezien. Dit muurschilderij is een van de meest gefotografeerde plekken van Berlijn."
+      {
+        "title": "Ga naar Holocaust-Mahnmal",
+        "place": "Holocaust-Mahnmal",
+        "coordinates": {
+          "lat": 52.51395,
+          "lng": 13.37869
         },
-        {
-          "text": "Een fictieve ontmoeting tussen Kennedy en Chroesjtsjov",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een zoen tussen Oost- en West-Duitse grenswachten in 1989",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Checkpoint Charlie",
-      "place": "Checkpoint Charlie",
-      "coordinates": {
-        "lat": 52.52493,
-        "lng": 13.41104
+        "assignment": "Kijk rustig rond bij Holocaust-Mahnmal en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Hoeveel betonnen zuilen (stelae) telt dit monument, en wat valt op aan de grond?",
+        "hint": "Loop tussen de zuilen door, richting het midden.",
+        "choices": [
+          {
+            "text": "2.711 zuilen, en de grond golft omhoog en omlaag",
+            "correct": true,
+            "feedback": "Goed gezien. Hoe verder je het veld in loopt, hoe hoger de zuilen worden en hoe dieper de grond zakt."
+          },
+          {
+            "text": "1.933 zuilen, verwijzend naar het jaar 1933",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "6.000.000 losse stenen, verspreid over het hele veld",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Checkpoint Charlie en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Wat staat er op het bekende bordje, en in hoeveel talen?",
-      "hint": "Kijk bij de replica-grenspost.",
-      "choices": [
-        {
-          "text": "\"You are leaving the American sector\", in vier talen",
-          "correct": true,
-          "feedback": "Goed gezien. Het bordje staat in het Engels, Russisch, Frans en Duits."
+      {
+        "title": "Ga naar Gendarmenmarkt",
+        "place": "Gendarmenmarkt",
+        "coordinates": {
+          "lat": 52.5138,
+          "lng": 13.39267
         },
-        {
-          "text": "\"Halt! Grenzgebiet\", alleen in het Duits",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "\"Welcome to West Berlin\", in twee talen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Fernsehturm",
-      "place": "Fernsehturm",
-      "coordinates": {
-        "lat": 52.52435,
-        "lng": 13.40615
+        "assignment": "Neem even de tijd om de randen van Gendarmenmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "De twee koepeltorens lijken identiek. Wat is het verschil?",
+        "hint": "Vergelijk de Deutscher Dom en de Französischer Dom.",
+        "choices": [
+          {
+            "text": "Ze zijn in werkelijkheid wel exact identiek gebouwd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ondanks het gespiegelde uiterlijk verschillen bouwjaar, functie en details",
+            "correct": true,
+            "feedback": "Goed gezien. Ze zijn bewust als \"tweeling\" ontworpen, maar zeker geen exacte kopie van elkaar."
+          },
+          {
+            "text": "Eén toren is een naoorlogse betonnen kopie",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Fernsehturm en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Wanneer verschijnt er een kruisvorm op de metalen bol, en welke bijnaam kreeg dat?",
-      "hint": "Kijk bij zonnig weer naar de bol.",
-      "choices": [
-        {
-          "text": "'s Nachts door de verlichting, bekend als \"de Sterrenbol\"",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Checkpoint Charlie",
+        "place": "Checkpoint Charlie",
+        "coordinates": {
+          "lat": 52.50744,
+          "lng": 13.39037
         },
-        {
-          "text": "Bij zonnig weer door reflectie, bekend als \"de Wraak van de Paus\"",
-          "correct": true,
-          "feedback": "Goed gezien. Tot ergernis van het atheïstische DDR-regime vormde het zonlicht een kruis op de bol."
-        },
-        {
-          "text": "Alleen met kerst, bekend als \"het Kerstkruis\"",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Gendarmenmarkt",
-      "place": "Gendarmenmarkt",
-      "coordinates": {
-        "lat": 52.52522,
-        "lng": 13.40297
+        "assignment": "Kijk rustig rond bij Checkpoint Charlie en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Wat staat er op het bekende bordje, en in hoeveel talen?",
+        "hint": "Kijk bij de replica-grenspost.",
+        "choices": [
+          {
+            "text": "\"You are leaving the American sector\", in vier talen",
+            "correct": true,
+            "feedback": "Goed gezien. Het bordje staat in het Engels, Russisch, Frans en Duits."
+          },
+          {
+            "text": "\"Halt! Grenzgebiet\", alleen in het Duits",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "\"Welcome to West Berlin\", in twee talen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Gendarmenmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "De twee koepeltorens lijken identiek. Wat is het verschil?",
-      "hint": "Vergelijk de Deutscher Dom en de Französischer Dom.",
-      "choices": [
-        {
-          "text": "Ze zijn in werkelijkheid wel exact identiek gebouwd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Pergamonmuseum (Museumsinsel)",
+        "place": "Pergamonmuseum (Museumsinsel)",
+        "coordinates": {
+          "lat": 52.52118,
+          "lng": 13.3969
         },
-        {
-          "text": "Ondanks het gespiegelde uiterlijk verschillen bouwjaar, functie en details",
-          "correct": true,
-          "feedback": "Goed gezien. Ze zijn bewust als \"tweeling\" ontworpen, maar zeker geen exacte kopie van elkaar."
-        },
-        {
-          "text": "Eén toren is een naoorlogse betonnen kopie",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Pergamonmuseum (Museumsinsel)",
-      "place": "Pergamonmuseum (Museumsinsel)",
-      "coordinates": {
-        "lat": 52.52363,
-        "lng": 13.39937
+        "assignment": "Zoek bij Pergamonmuseum (Museumsinsel) naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
+        "question": "Welke complete antieke poort staat hier binnen levensgroot opgebouwd?",
+        "hint": "Loop de hoofdzaal in.",
+        "choices": [
+          {
+            "text": "De Ishtarpoort van Babylon",
+            "correct": true,
+            "feedback": "Goed gezien. De poort is stukje bij beetje gereconstrueerd uit originele Babylonische tegels."
+          },
+          {
+            "text": "De Poort van Damascus",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Triomfboog van Palmyra",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Zoek bij Pergamonmuseum (Museumsinsel) naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
-      "question": "Welke complete antieke poort staat hier binnen levensgroot opgebouwd?",
-      "hint": "Loop de hoofdzaal in.",
-      "choices": [
-        {
-          "text": "De Ishtarpoort van Babylon",
-          "correct": true,
-          "feedback": "Goed gezien. De poort is stukje bij beetje gereconstrueerd uit originele Babylonische tegels."
+      {
+        "title": "Ga naar Berliner Dom",
+        "place": "Berliner Dom",
+        "coordinates": {
+          "lat": 52.51917,
+          "lng": 13.401
         },
-        {
-          "text": "De Poort van Damascus",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Triomfboog van Palmyra",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Berliner Dom",
-      "place": "Berliner Dom",
-      "coordinates": {
-        "lat": 52.51956,
-        "lng": 13.39721
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Berliner Dom voordat je antwoord geeft.",
+        "question": "Wat vind je in de crypte onder de kathedraal?",
+        "hint": "Ga de trap af onder de hoofdzaal.",
+        "choices": [
+          {
+            "text": "Tientallen sarcofagen van de Hohenzollern-familie",
+            "correct": true,
+            "feedback": "Goed gezien. Dit is een van de grootste vorstelijke grafkelders van Europa."
+          },
+          {
+            "text": "De restanten van een Romeins fort",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een verzameling middeleeuwse reliekschrijnen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Berliner Dom voordat je antwoord geeft.",
-      "question": "Wat vind je in de crypte onder de kathedraal?",
-      "hint": "Ga de trap af onder de hoofdzaal.",
-      "choices": [
-        {
-          "text": "Tientallen sarcofagen van de Hohenzollern-familie",
-          "correct": true,
-          "feedback": "Goed gezien. Dit is een van de grootste vorstelijke grafkelders van Europa."
+      {
+        "title": "Ga naar Fernsehturm",
+        "place": "Fernsehturm",
+        "coordinates": {
+          "lat": 52.52082,
+          "lng": 13.40942
         },
-        {
-          "text": "De restanten van een Romeins fort",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een verzameling middeleeuwse reliekschrijnen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Holocaust-Mahnmal",
-      "place": "Holocaust-Mahnmal",
-      "coordinates": {
-        "lat": 52.51715,
-        "lng": 13.40151
+        "assignment": "Kijk rustig rond bij Fernsehturm en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Wanneer verschijnt er een kruisvorm op de metalen bol, en welke bijnaam kreeg dat?",
+        "hint": "Kijk bij zonnig weer naar de bol.",
+        "choices": [
+          {
+            "text": "'s Nachts door de verlichting, bekend als \"de Sterrenbol\"",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Bij zonnig weer door reflectie, bekend als \"de Wraak van de Paus\"",
+            "correct": true,
+            "feedback": "Goed gezien. Tot ergernis van het atheïstische DDR-regime vormde het zonlicht een kruis op de bol."
+          },
+          {
+            "text": "Alleen met kerst, bekend als \"het Kerstkruis\"",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Holocaust-Mahnmal en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Hoeveel betonnen zuilen (stelae) telt dit monument, en wat valt op aan de grond?",
-      "hint": "Loop tussen de zuilen door, richting het midden.",
-      "choices": [
-        {
-          "text": "2.711 zuilen, en de grond golft omhoog en omlaag",
-          "correct": true,
-          "feedback": "Goed gezien. Hoe verder je het veld in loopt, hoe hoger de zuilen worden en hoe dieper de grond zakt."
+      {
+        "title": "Ga naar East Side Gallery",
+        "place": "East Side Gallery",
+        "coordinates": {
+          "lat": 52.505,
+          "lng": 13.4397
         },
-        {
-          "text": "1.933 zuilen, verwijzend naar het jaar 1933",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "6.000.000 losse stenen, verspreid over het hele veld",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Siegessäule (Tiergarten)",
-      "place": "Siegessäule (Tiergarten)",
-      "coordinates": {
-        "lat": 52.51458,
-        "lng": 13.40357
-      },
-      "assignment": "Kijk rustig rond bij Siegessäule (Tiergarten) en zoek het detail dat deze plek typisch maakt voor Berlijn.",
-      "question": "Wat staat er bovenop deze zuil, en welke bijnaam heeft het beeld?",
-      "hint": "Kijk helemaal omhoog, het beeld is verguld.",
-      "choices": [
-        {
-          "text": "Een vergulde engel, bekend als \"Goldelse\"",
-          "correct": true,
-          "feedback": "Goed gezien. De vergulde overwinningsengel is al sinds 1873 een herkenningspunt van de stad."
-        },
-        {
-          "text": "Een Pruisische adelaar, bekend als \"Der Alte Fritz\"",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Keizer Wilhelm I te paard",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij East Side Gallery en zoek het detail dat deze plek typisch maakt voor Berlijn.",
+        "question": "Welk beroemd tafereel toont twee staatsmannen die elkaar zoenen?",
+        "hint": "Zoek het langste overgebleven stuk Berlijnse Muur.",
+        "choices": [
+          {
+            "text": "De \"Bruderkuss\" tussen Brezjnev en Honecker",
+            "correct": true,
+            "feedback": "Goed gezien. Dit muurschilderij is een van de meest gefotografeerde plekken van Berlijn."
+          },
+          {
+            "text": "Een fictieve ontmoeting tussen Kennedy en Chroesjtsjov",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een zoen tussen Oost- en West-Duitse grenswachten in 1989",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "lisbon",
-  "city": "Lissabon",
-  "title": "Lissabon: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "128 min",
-  "distance": "3,3 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Lissabon met 6 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Torre de Belém",
-      "place": "Torre de Belém",
-      "coordinates": {
-        "lat": 38.71811,
-        "lng": -9.13767
+    "id": "lisbon",
+    "city": "Lissabon",
+    "title": "Lissabon: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "128 min",
+    "distance": "4,2 km wandelen + tram/trein",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Lissabon met 6 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Torre de Belém",
+        "place": "Torre de Belém",
+        "coordinates": {
+          "lat": 38.69158,
+          "lng": -9.216
+        },
+        "assignment": "Kijk rustig rond bij Torre de Belém en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Welk ongewoon dier staat er in steen uitgehouwen op de toren?",
+        "hint": "Kijk aan de buitenkant, onderaan.",
+        "choices": [
+          {
+            "text": "Een olifant",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een neushoorn",
+            "correct": true,
+            "feedback": "Goed gezien. Een van de vroegste afbeeldingen van een neushoorn in de Europese kunst."
+          },
+          {
+            "text": "Een krokodil",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Torre de Belém en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Welk ongewoon dier staat er in steen uitgehouwen op de toren?",
-      "hint": "Kijk aan de buitenkant, onderaan.",
-      "choices": [
-        {
-          "text": "Een olifant",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Mosteiro dos Jerónimos",
+        "place": "Mosteiro dos Jerónimos",
+        "coordinates": {
+          "lat": 38.6979,
+          "lng": -9.2068
         },
-        {
-          "text": "Een neushoorn",
-          "correct": true,
-          "feedback": "Goed gezien. Een van de vroegste afbeeldingen van een neushoorn in de Europese kunst."
-        },
-        {
-          "text": "Een krokodil",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Mosteiro dos Jerónimos",
-      "place": "Mosteiro dos Jerónimos",
-      "coordinates": {
-        "lat": 38.72145,
-        "lng": -9.13377
+        "assignment": "Kijk rustig rond bij Mosteiro dos Jerónimos en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Wiens graf staat vlak bij de ingang van de kerk?",
+        "hint": "Kijk direct na binnenkomst, links of rechts.",
+        "choices": [
+          {
+            "text": "Het graf van koning Manuel I",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het graf van ontdekkingsreiziger Vasco da Gama",
+            "correct": true,
+            "feedback": "Goed gezien. Het klooster werd mede gefinancierd met belasting op de specerijenhandel die zijn reis opleverde."
+          },
+          {
+            "text": "Het graf van de architect van het klooster",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Mosteiro dos Jerónimos en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Wiens graf staat vlak bij de ingang van de kerk?",
-      "hint": "Kijk direct na binnenkomst, links of rechts.",
-      "choices": [
-        {
-          "text": "Het graf van koning Manuel I",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Praça do Comércio",
+        "place": "Praça do Comércio",
+        "coordinates": {
+          "lat": 38.7075,
+          "lng": -9.1364
         },
-        {
-          "text": "Het graf van ontdekkingsreiziger Vasco da Gama",
-          "correct": true,
-          "feedback": "Goed gezien. Het klooster werd mede gefinancierd met belasting op de specerijenhandel die zijn reis opleverde."
-        },
-        {
-          "text": "Het graf van de architect van het klooster",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Tram 28",
-      "place": "Tram 28",
-      "coordinates": {
-        "lat": 38.72752,
-        "lng": -9.13511
+        "assignment": "Kijk rustig rond bij Praça do Comércio en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Waarom staat hier een standbeeld van een koning te paard?",
+        "hint": "Kijk naar het beeld met zijn rug naar de rivier.",
+        "choices": [
+          {
+            "text": "Koning José I; hier stond het koninklijk paleis tot de aardbeving van 1755",
+            "correct": true,
+            "feedback": "Goed gezien. Het plein heette vroeger zelfs Terreiro do Paço, \"paleisplein\"."
+          },
+          {
+            "text": "Koning Manuel I, ter ere van de ontdekkingsreizen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het is geen koning maar een veldheer uit de onafhankelijkheidsoorlog",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Tram 28 en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Wat zie je vaak aan de zijkanten van de tram in de smalle straatjes?",
-      "hint": "Kijk naar de tram terwijl die een bocht neemt.",
-      "choices": [
-        {
-          "text": "Schuurplekken/krassen van het rakelings langsschrapen",
-          "correct": true,
-          "feedback": "Goed gezien. De straten zijn zo smal dat de tram soms letterlijk de gevels raakt."
+      {
+        "title": "Ga naar Elevador de Santa Justa",
+        "place": "Elevador de Santa Justa",
+        "coordinates": {
+          "lat": 38.71214,
+          "lng": -9.13939
         },
-        {
-          "text": "Reclame-stickers van lokale winkels",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Kleine spiegels om fietsers te zien aankomen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Castelo de São Jorge",
-      "place": "Castelo de São Jorge",
-      "coordinates": {
-        "lat": 38.72957,
-        "lng": -9.14213
+        "assignment": "Kijk rustig rond bij Elevador de Santa Justa en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Wie ontwierp deze ijzeren lift, en van wie leerde hij het vak?",
+        "hint": "Kijk naar de stijl - lijkt die je bekend voor?",
+        "choices": [
+          {
+            "text": "Raoul Mesnier du Ponsard, een leerling van Gustave Eiffel",
+            "correct": true,
+            "feedback": "Goed gezien. De ijzerconstructie doet niet toevallig aan de Eiffeltoren denken."
+          },
+          {
+            "text": "Gustave Eiffel zelf, als bijbaantje in Portugal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een lokale Portugese ingenieur zonder buitenlandse invloed",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Castelo de São Jorge en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Welk dier loopt er vrij rond op het kasteelterrein?",
-      "hint": "Kijk op de binnenplaatsen.",
-      "choices": [
-        {
-          "text": "Pauwen",
-          "correct": true,
-          "feedback": "Goed gezien. De pauwen lopen hier al decennia vrij rond tussen de bezoekers."
+      {
+        "title": "Ga naar Tram 28",
+        "place": "Tram 28",
+        "coordinates": {
+          "lat": 38.7169,
+          "lng": -9.1367
         },
-        {
-          "text": "Wilde geiten",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Ganzen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Praça do Comércio",
-      "place": "Praça do Comércio",
-      "coordinates": {
-        "lat": 38.72298,
-        "lng": -9.14375
+        "assignment": "Kijk rustig rond bij Tram 28 en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Wat zie je vaak aan de zijkanten van de tram in de smalle straatjes?",
+        "hint": "Kijk naar de tram terwijl die een bocht neemt.",
+        "choices": [
+          {
+            "text": "Schuurplekken/krassen van het rakelings langsschrapen",
+            "correct": true,
+            "feedback": "Goed gezien. De straten zijn zo smal dat de tram soms letterlijk de gevels raakt."
+          },
+          {
+            "text": "Reclame-stickers van lokale winkels",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Kleine spiegels om fietsers te zien aankomen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Praça do Comércio en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Waarom staat hier een standbeeld van een koning te paard?",
-      "hint": "Kijk naar het beeld met zijn rug naar de rivier.",
-      "choices": [
-        {
-          "text": "Koning José I; hier stond het koninklijk paleis tot de aardbeving van 1755",
-          "correct": true,
-          "feedback": "Goed gezien. Het plein heette vroeger zelfs Terreiro do Paço, \"paleisplein\"."
+      {
+        "title": "Ga naar Castelo de São Jorge",
+        "place": "Castelo de São Jorge",
+        "coordinates": {
+          "lat": 38.7139,
+          "lng": -9.1335
         },
-        {
-          "text": "Koning Manuel I, ter ere van de ontdekkingsreizen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het is geen koning maar een veldheer uit de onafhankelijkheidsoorlog",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Elevador de Santa Justa",
-      "place": "Elevador de Santa Justa",
-      "coordinates": {
-        "lat": 38.71793,
-        "lng": -9.14281
-      },
-      "assignment": "Kijk rustig rond bij Elevador de Santa Justa en zoek het detail dat deze plek typisch maakt voor Lissabon.",
-      "question": "Wie ontwierp deze ijzeren lift, en van wie leerde hij het vak?",
-      "hint": "Kijk naar de stijl - lijkt die je bekend voor?",
-      "choices": [
-        {
-          "text": "Raoul Mesnier du Ponsard, een leerling van Gustave Eiffel",
-          "correct": true,
-          "feedback": "Goed gezien. De ijzerconstructie doet niet toevallig aan de Eiffeltoren denken."
-        },
-        {
-          "text": "Gustave Eiffel zelf, als bijbaantje in Portugal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een lokale Portugese ingenieur zonder buitenlandse invloed",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Castelo de São Jorge en zoek het detail dat deze plek typisch maakt voor Lissabon.",
+        "question": "Welk dier loopt er vrij rond op het kasteelterrein?",
+        "hint": "Kijk op de binnenplaatsen.",
+        "choices": [
+          {
+            "text": "Pauwen",
+            "correct": true,
+            "feedback": "Goed gezien. De pauwen lopen hier al decennia vrij rond tussen de bezoekers."
+          },
+          {
+            "text": "Wilde geiten",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ganzen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "budapest",
-  "city": "Boedapest",
-  "title": "Boedapest: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Boedapest met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Parlementsgebouw",
-      "place": "Parlementsgebouw",
-      "coordinates": {
-        "lat": 47.49371,
-        "lng": 19.04183
+    "id": "budapest",
+    "city": "Boedapest",
+    "title": "Boedapest: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "7,6 km wandelen + metro/tram",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Boedapest met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Heldenplein",
+        "place": "Heldenplein",
+        "coordinates": {
+          "lat": 47.5149,
+          "lng": 19.0778
+        },
+        "assignment": "Neem even de tijd om de randen van Heldenplein te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wie staat er boven op de hoge zuil in het midden?",
+        "hint": "Kijk helemaal omhoog.",
+        "choices": [
+          {
+            "text": "Aartsengel Gabriël",
+            "correct": true,
+            "feedback": "Goed gezien. Onderaan de zuil staan de zeven stamhoofden, met Gabriël erboven."
+          },
+          {
+            "text": "Koning Stefanus I",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Hongaarse vrijheidsgodin",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Parlementsgebouw en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Waarom is dit gebouw precies 96 meter hoog?",
-      "hint": "Kijk op een informatiebord bij het gebouw.",
-      "choices": [
-        {
-          "text": "Verwijzing naar het jaar 896, de stichting van Hongarije",
-          "correct": true,
-          "feedback": "Goed gezien. Ook de Sint-Stefansbasiliek is precies even hoog, met dezelfde symboliek."
+      {
+        "title": "Ga naar Széchenyi-bad",
+        "place": "Széchenyi-bad",
+        "coordinates": {
+          "lat": 47.5189,
+          "lng": 19.0827
         },
-        {
-          "text": "Zodat het exact even hoog is als de Vissersbastion-torens",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Toeval, de architect wilde gewoon een rond getal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Kettingbrug",
-      "place": "Kettingbrug",
-      "coordinates": {
-        "lat": 47.49487,
-        "lng": 19.04491
+        "assignment": "Kijk rustig rond bij Széchenyi-bad en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Wat doen veel bezoekers hier opvallend, terwijl ze in het buitenbad hangen?",
+        "hint": "Kijk naar de kleine drijvende tafeltjes.",
+        "choices": [
+          {
+            "text": "Schaken, midden in het warme buitenwater",
+            "correct": true,
+            "feedback": "Goed gezien. Het schaken in het buitenbad is een van de bekendste beelden van dit thermaalbad."
+          },
+          {
+            "text": "Kaarten, op drijvende speeltafels",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Lezen, met waterdichte boeken",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Kettingbrug en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "Wat missen de stenen leeuwen bij de brug volgens de stadslegende?",
-      "hint": "Kijk goed in hun bek.",
-      "choices": [
-        {
-          "text": "Een tong",
-          "correct": true,
-          "feedback": "Goed gezien. Een fabeltje trouwens - ze hebben wel degelijk een tong, je ziet die van beneden af alleen niet goed."
+      {
+        "title": "Ga naar Grote Synagoge (Dohány utca)",
+        "place": "Grote Synagoge (Dohány utca)",
+        "coordinates": {
+          "lat": 47.4959,
+          "lng": 19.0606
         },
-        {
-          "text": "Een oog",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een klauw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Vissersbastion",
-      "place": "Vissersbastion",
-      "coordinates": {
-        "lat": 47.49828,
-        "lng": 19.04689
+        "assignment": "Kijk rustig rond bij Grote Synagoge (Dohány utca) en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Wat hangt er in de tuin achter de synagoge, met namen erop?",
+        "hint": "Zoek de metalen \"boom\" in de tuin.",
+        "choices": [
+          {
+            "text": "De Boom des Levens, met namen van slachtoffers op de blaadjes",
+            "correct": true,
+            "feedback": "Goed gezien. Dit is de grootste synagoge van Europa, met een indrukwekkend herdenkingsmonument in de tuin."
+          },
+          {
+            "text": "Een gedenkmuur met alleen Hebreeuwse tekst, zonder namen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een verzameling grafstenen uit de 18e eeuw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Vissersbastion en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Hoeveel torentjes telt dit bouwwerk, en waar staan ze symbool voor?",
-      "hint": "Tel de torens vanaf het plein.",
-      "choices": [
-        {
-          "text": "Zeven, voor de zeven Hongaarse stichtende stammen",
-          "correct": true,
-          "feedback": "Goed gezien. De torens verwijzen naar de zeven Magyaarse stammen die Hongarije stichtten."
+      {
+        "title": "Ga naar Grote Markthal",
+        "place": "Grote Markthal",
+        "coordinates": {
+          "lat": 47.487,
+          "lng": 19.0583
         },
-        {
-          "text": "Tien, voor de tien Hongaarse koningen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Vier, voor de vier windrichtingen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Heldenplein",
-      "place": "Heldenplein",
-      "coordinates": {
-        "lat": 47.50283,
-        "lng": 19.04624
+        "assignment": "Neem even de tijd om de randen van Grote Markthal te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat valt op aan het dak van dit gebouw?",
+        "hint": "Kijk omhoog voor je naar binnen gaat.",
+        "choices": [
+          {
+            "text": "Het kleurrijke, glanzende Zsolnay-tegeldak",
+            "correct": true,
+            "feedback": "Goed gezien. De felgekleurde Zsolnay-tegels zijn typisch Hongaarse art nouveau."
+          },
+          {
+            "text": "Een volledig glazen koepeldak",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een plat dak met een verborgen daktuin",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Heldenplein te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wie staat er boven op de hoge zuil in het midden?",
-      "hint": "Kijk helemaal omhoog.",
-      "choices": [
-        {
-          "text": "Aartsengel Gabriël",
-          "correct": true,
-          "feedback": "Goed gezien. Onderaan de zuil staan de zeven stamhoofden, met Gabriël erboven."
+      {
+        "title": "Ga naar Gellértberg / Citadella",
+        "place": "Gellértberg / Citadella",
+        "coordinates": {
+          "lat": 47.4867,
+          "lng": 19.045
         },
-        {
-          "text": "Koning Stefanus I",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Hongaarse vrijheidsgodin",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Széchenyi-bad",
-      "place": "Széchenyi-bad",
-      "coordinates": {
-        "lat": 47.50225,
-        "lng": 19.04135
+        "assignment": "Kijk rustig rond bij Gellértberg / Citadella en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Welk groot beeld is al van ver in de stad te zien, boven op de heuvel?",
+        "hint": "Kijk omhoog vanaf de Donau-oevers.",
+        "choices": [
+          {
+            "text": "Het Vrijheidsbeeld (Liberty Statue), met de palmtak",
+            "correct": true,
+            "feedback": "Goed gezien. Het beeld stond oorspronkelijk symbool voor de Sovjet-bevrijding, later herduid als algemeen vrijheidssymbool."
+          },
+          {
+            "text": "Een reusachtig standbeeld van Sint Stefanus",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een kopie van het Vrijheidsbeeld van New York",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Széchenyi-bad en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Wat doen veel bezoekers hier opvallend, terwijl ze in het buitenbad hangen?",
-      "hint": "Kijk naar de kleine drijvende tafeltjes.",
-      "choices": [
-        {
-          "text": "Schaken, midden in het warme buitenwater",
-          "correct": true,
-          "feedback": "Goed gezien. Het schaken in het buitenbad is een van de bekendste beelden van dit thermaalbad."
+      {
+        "title": "Ga naar Burcht van Buda",
+        "place": "Burcht van Buda",
+        "coordinates": {
+          "lat": 47.4962,
+          "lng": 19.0396
         },
-        {
-          "text": "Kaarten, op drijvende speeltafels",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Lezen, met waterdichte boeken",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Grote Markthal",
-      "place": "Grote Markthal",
-      "coordinates": {
-        "lat": 47.50312,
-        "lng": 19.03817
+        "assignment": "Loop langs de buitenkant van Burcht van Buda en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Waarmee kun je de heuvel op naar het kasteel, als alternatief voor de trap?",
+        "hint": "Zoek de kleine, oude kabelbaan bij de Kettingbrug.",
+        "choices": [
+          {
+            "text": "De Budavári Sikló, een van de oudste kabelspoorbanen van Europa",
+            "correct": true,
+            "feedback": "Goed gezien. Deze funicular dateert al uit 1870."
+          },
+          {
+            "text": "Een openbare buitenlift uit de jaren '70",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een tandradbaan die alleen 's zomers rijdt",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Grote Markthal te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat valt op aan het dak van dit gebouw?",
-      "hint": "Kijk omhoog voor je naar binnen gaat.",
-      "choices": [
-        {
-          "text": "Het kleurrijke, glanzende Zsolnay-tegeldak",
-          "correct": true,
-          "feedback": "Goed gezien. De felgekleurde Zsolnay-tegels zijn typisch Hongaarse art nouveau."
+      {
+        "title": "Ga naar Vissersbastion",
+        "place": "Vissersbastion",
+        "coordinates": {
+          "lat": 47.502,
+          "lng": 19.0348
         },
-        {
-          "text": "Een volledig glazen koepeldak",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een plat dak met een verborgen daktuin",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Burcht van Buda",
-      "place": "Burcht van Buda",
-      "coordinates": {
-        "lat": 47.50153,
-        "lng": 19.03457
+        "assignment": "Kijk rustig rond bij Vissersbastion en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Hoeveel torentjes telt dit bouwwerk, en waar staan ze symbool voor?",
+        "hint": "Tel de torens vanaf het plein.",
+        "choices": [
+          {
+            "text": "Zeven, voor de zeven Hongaarse stichtende stammen",
+            "correct": true,
+            "feedback": "Goed gezien. De torens verwijzen naar de zeven Magyaarse stammen die Hongarije stichtten."
+          },
+          {
+            "text": "Tien, voor de tien Hongaarse koningen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Vier, voor de vier windrichtingen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop langs de buitenkant van Burcht van Buda en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Waarmee kun je de heuvel op naar het kasteel, als alternatief voor de trap?",
-      "hint": "Zoek de kleine, oude kabelbaan bij de Kettingbrug.",
-      "choices": [
-        {
-          "text": "De Budavári Sikló, een van de oudste kabelspoorbanen van Europa",
-          "correct": true,
-          "feedback": "Goed gezien. Deze funicular dateert al uit 1870."
+      {
+        "title": "Ga naar Kettingbrug",
+        "place": "Kettingbrug",
+        "coordinates": {
+          "lat": 47.4989,
+          "lng": 19.0437
         },
-        {
-          "text": "Een openbare buitenlift uit de jaren '70",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een tandradbaan die alleen 's zomers rijdt",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Grote Synagoge (Dohány utca)",
-      "place": "Grote Synagoge (Dohány utca)",
-      "coordinates": {
-        "lat": 47.49746,
-        "lng": 19.03241
+        "assignment": "Loop een stukje over of langs Kettingbrug en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "Wat missen de stenen leeuwen bij de brug volgens de stadslegende?",
+        "hint": "Kijk goed in hun bek.",
+        "choices": [
+          {
+            "text": "Een tong",
+            "correct": true,
+            "feedback": "Goed gezien. Een fabeltje trouwens - ze hebben wel degelijk een tong, je ziet die van beneden af alleen niet goed."
+          },
+          {
+            "text": "Een oog",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een klauw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Grote Synagoge (Dohány utca) en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Wat hangt er in de tuin achter de synagoge, met namen erop?",
-      "hint": "Zoek de metalen \"boom\" in de tuin.",
-      "choices": [
-        {
-          "text": "De Boom des Levens, met namen van slachtoffers op de blaadjes",
-          "correct": true,
-          "feedback": "Goed gezien. Dit is de grootste synagoge van Europa, met een indrukwekkend herdenkingsmonument in de tuin."
+      {
+        "title": "Ga naar Schoenen aan de Donau",
+        "place": "Schoenen aan de Donau",
+        "coordinates": {
+          "lat": 47.5038,
+          "lng": 19.0449
         },
-        {
-          "text": "Een gedenkmuur met alleen Hebreeuwse tekst, zonder namen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een verzameling grafstenen uit de 18e eeuw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Schoenen aan de Donau",
-      "place": "Schoenen aan de Donau",
-      "coordinates": {
-        "lat": 47.49505,
-        "lng": 19.03671
+        "assignment": "Kijk rustig rond bij Schoenen aan de Donau en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Waarom staan hier tientallen ijzeren schoentjes langs de rivieroever?",
+        "hint": "Kijk naar de oever zelf, niet naar een gebouw.",
+        "choices": [
+          {
+            "text": "Ter nagedachtenis aan Joden die hier tijdens WOII werden doodgeschoten",
+            "correct": true,
+            "feedback": "Goed gezien. Slachtoffers moesten hun schoenen uittrekken voor ze in de Donau werden geschoten; dit sobere monument herdenkt hen."
+          },
+          {
+            "text": "Ter ere van vissers die in de rivier zijn verdronken",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een kunstinstallatie over de schoenindustrie van Boedapest",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Schoenen aan de Donau en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Waarom staan hier tientallen ijzeren schoentjes langs de rivieroever?",
-      "hint": "Kijk naar de oever zelf, niet naar een gebouw.",
-      "choices": [
-        {
-          "text": "Ter nagedachtenis aan Joden die hier tijdens WOII werden doodgeschoten",
-          "correct": true,
-          "feedback": "Goed gezien. Slachtoffers moesten hun schoenen uittrekken voor ze in de Donau werden geschoten; dit sobere monument herdenkt hen."
+      {
+        "title": "Ga naar Parlementsgebouw",
+        "place": "Parlementsgebouw",
+        "coordinates": {
+          "lat": 47.507,
+          "lng": 19.0452
         },
-        {
-          "text": "Ter ere van vissers die in de rivier zijn verdronken",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een kunstinstallatie over de schoenindustrie van Boedapest",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Gellértberg / Citadella",
-      "place": "Gellértberg / Citadella",
-      "coordinates": {
-        "lat": 47.49248,
-        "lng": 19.03877
-      },
-      "assignment": "Kijk rustig rond bij Gellértberg / Citadella en zoek het detail dat deze plek typisch maakt voor Boedapest.",
-      "question": "Welk groot beeld is al van ver in de stad te zien, boven op de heuvel?",
-      "hint": "Kijk omhoog vanaf de Donau-oevers.",
-      "choices": [
-        {
-          "text": "Het Vrijheidsbeeld (Liberty Statue), met de palmtak",
-          "correct": true,
-          "feedback": "Goed gezien. Het beeld stond oorspronkelijk symbool voor de Sovjet-bevrijding, later herduid als algemeen vrijheidssymbool."
-        },
-        {
-          "text": "Een reusachtig standbeeld van Sint Stefanus",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een kopie van het Vrijheidsbeeld van New York",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Parlementsgebouw en zoek het detail dat deze plek typisch maakt voor Boedapest.",
+        "question": "Waarom is dit gebouw precies 96 meter hoog?",
+        "hint": "Kijk op een informatiebord bij het gebouw.",
+        "choices": [
+          {
+            "text": "Verwijzing naar het jaar 896, de stichting van Hongarije",
+            "correct": true,
+            "feedback": "Goed gezien. Ook de Sint-Stefansbasiliek is precies even hoog, met dezelfde symboliek."
+          },
+          {
+            "text": "Zodat het exact even hoog is als de Vissersbastion-torens",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Toeval, de architect wilde gewoon een rond getal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "venice",
-  "city": "Venetië",
-  "title": "Venetië: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "128 min",
-  "distance": "3,3 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Venetië met 6 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij San Marcoplein",
-      "place": "San Marcoplein",
-      "coordinates": {
-        "lat": 45.43661,
-        "lng": 12.31713
+    "id": "venice",
+    "city": "Venetië",
+    "title": "Venetië: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "128 min",
+    "distance": "1,2 km wandelen + vaporetto",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Venetië met 6 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij San Marcoplein",
+        "place": "San Marcoplein",
+        "coordinates": {
+          "lat": 45.43417,
+          "lng": 12.33847
+        },
+        "assignment": "Neem even de tijd om de randen van San Marcoplein te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat is er bijzonder aan de campanile (klokkentoren) hier?",
+        "hint": "Let op hoe \"oud\" hij er precies uitziet.",
+        "choices": [
+          {
+            "text": "Hij is volledig van hout, verborgen achter een stenen gevel",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De originele toren stortte in 1902 in; dit is een reconstructie",
+            "correct": true,
+            "feedback": "Goed gezien. Wat je nu ziet is dus geen middeleeuws origineel, maar een vroeg 20e-eeuwse herbouw."
+          },
+          {
+            "text": "Hij staat expres een halve meter scheef, net als in Pisa",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van San Marcoplein te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat is er bijzonder aan de campanile (klokkentoren) hier?",
-      "hint": "Let op hoe \"oud\" hij er precies uitziet.",
-      "choices": [
-        {
-          "text": "Hij is volledig van hout, verborgen achter een stenen gevel",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Basiliek San Marco",
+        "place": "Basiliek San Marco",
+        "coordinates": {
+          "lat": 45.43456,
+          "lng": 12.33971
         },
-        {
-          "text": "De originele toren stortte in 1902 in; dit is een reconstructie",
-          "correct": true,
-          "feedback": "Goed gezien. Wat je nu ziet is dus geen middeleeuws origineel, maar een vroeg 20e-eeuwse herbouw."
-        },
-        {
-          "text": "Hij staat expres een halve meter scheef, net als in Pisa",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Basiliek San Marco",
-      "place": "Basiliek San Marco",
-      "coordinates": {
-        "lat": 45.43995,
-        "lng": 12.32103
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Basiliek San Marco voordat je antwoord geeft.",
+        "question": "De vier bronzen paarden op het balkon - zijn dat de originelen?",
+        "hint": "Kijk goed, dit zijn kopieën.",
+        "choices": [
+          {
+            "text": "Ja, ze staan er al sinds de 13e eeuw onveranderd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Nee, de echte staan binnen in het museum, uit de wind",
+            "correct": true,
+            "feedback": "Goed gezien. De originelen (geroofd uit Constantinopel) zijn te kwetsbaar voor buiten."
+          },
+          {
+            "text": "Nee, de echte zijn verloren gegaan tijdens Napoleons plundering",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Basiliek San Marco voordat je antwoord geeft.",
-      "question": "De vier bronzen paarden op het balkon - zijn dat de originelen?",
-      "hint": "Kijk goed, dit zijn kopieën.",
-      "choices": [
-        {
-          "text": "Ja, ze staan er al sinds de 13e eeuw onveranderd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Dogenpaleis",
+        "place": "Dogenpaleis",
+        "coordinates": {
+          "lat": 45.4337,
+          "lng": 12.34039
         },
-        {
-          "text": "Nee, de echte staan binnen in het museum, uit de wind",
-          "correct": true,
-          "feedback": "Goed gezien. De originelen (geroofd uit Constantinopel) zijn te kwetsbaar voor buiten."
-        },
-        {
-          "text": "Nee, de echte zijn verloren gegaan tijdens Napoleons plundering",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Dogenpaleis",
-      "place": "Dogenpaleis",
-      "coordinates": {
-        "lat": 45.44602,
-        "lng": 12.31969
+        "assignment": "Loop langs de buitenkant van Dogenpaleis en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Waarom heet de kleine brug ernaast de \"Brug der Zuchten\"?",
+        "hint": "Kijk door de kleine getraliede raampjes van de brug.",
+        "choices": [
+          {
+            "text": "Gevangenen zagen hier voor het laatst Venetië, vandaar hun zucht",
+            "correct": true,
+            "feedback": "Goed gezien. De brug verbond het paleis met de gevangenis erachter."
+          },
+          {
+            "text": "Verliefde stelletjes zouden hier hun liefde verzuchten",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De brug kraakt en \"zucht\" bij hoogwater",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop langs de buitenkant van Dogenpaleis en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Waarom heet de kleine brug ernaast de \"Brug der Zuchten\"?",
-      "hint": "Kijk door de kleine getraliede raampjes van de brug.",
-      "choices": [
-        {
-          "text": "Gevangenen zagen hier voor het laatst Venetië, vandaar hun zucht",
-          "correct": true,
-          "feedback": "Goed gezien. De brug verbond het paleis met de gevangenis erachter."
+      {
+        "title": "Ga naar Rialtobrug",
+        "place": "Rialtobrug",
+        "coordinates": {
+          "lat": 45.43804,
+          "lng": 12.33592
         },
-        {
-          "text": "Verliefde stelletjes zouden hier hun liefde verzuchten",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De brug kraakt en \"zucht\" bij hoogwater",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Rialtobrug",
-      "place": "Rialtobrug",
-      "coordinates": {
-        "lat": 45.44807,
-        "lng": 12.31267
+        "assignment": "Loop een stukje over of langs Rialtobrug en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "Wat zit er verstopt in de brug zelf?",
+        "hint": "Loop over de brug, niet er alleen onderdoor.",
+        "choices": [
+          {
+            "text": "Winkeltjes aan weerszijden van het middenpad",
+            "correct": true,
+            "feedback": "Goed gezien. De brug is zo breed dat er een hele winkelstraat op past."
+          },
+          {
+            "text": "Een kleine kapel in het midden",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een oude waterput voor scheepslieden",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Rialtobrug en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "Wat zit er verstopt in de brug zelf?",
-      "hint": "Loop over de brug, niet er alleen onderdoor.",
-      "choices": [
-        {
-          "text": "Winkeltjes aan weerszijden van het middenpad",
-          "correct": true,
-          "feedback": "Goed gezien. De brug is zo breed dat er een hele winkelstraat op past."
+      {
+        "title": "Ga naar Canal Grande",
+        "place": "Canal Grande",
+        "coordinates": {
+          "lat": 45.4375,
+          "lng": 12.3355
         },
-        {
-          "text": "Een kleine kapel in het midden",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een oude waterput voor scheepslieden",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Canal Grande",
-      "place": "Canal Grande",
-      "coordinates": {
-        "lat": 45.44148,
-        "lng": 12.31105
+        "assignment": "Kijk rustig rond bij Canal Grande en zoek het detail dat deze plek typisch maakt voor Venetië.",
+        "question": "Waarom zwaaien gondeliers vaak met één hand tijdens het varen?",
+        "hint": "Kijk hoe ze bochten nemen bij kruisingen.",
+        "choices": [
+          {
+            "text": "Als groet naar toeristen voor de fooi",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Als waarschuwing naar ander verkeer bij blinde hoeken",
+            "correct": true,
+            "feedback": "Goed gezien. Er hangen geen verkeerslichten boven het water, dus dit is hun manier van communiceren."
+          },
+          {
+            "text": "Om het evenwicht op de gondel te bewaren",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Canal Grande en zoek het detail dat deze plek typisch maakt voor Venetië.",
-      "question": "Waarom zwaaien gondeliers vaak met één hand tijdens het varen?",
-      "hint": "Kijk hoe ze bochten nemen bij kruisingen.",
-      "choices": [
-        {
-          "text": "Als groet naar toeristen voor de fooi",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+      {
+        "title": "Ga naar Burano",
+        "place": "Burano",
+        "coordinates": {
+          "lat": 45.4855,
+          "lng": 12.4169
         },
-        {
-          "text": "Als waarschuwing naar ander verkeer bij blinde hoeken",
-          "correct": true,
-          "feedback": "Goed gezien. Er hangen geen verkeerslichten boven het water, dus dit is hun manier van communiceren."
-        },
-        {
-          "text": "Om het evenwicht op de gondel te bewaren",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Burano",
-      "place": "Burano",
-      "coordinates": {
-        "lat": 45.43643,
-        "lng": 12.31199
-      },
-      "assignment": "Kijk rustig rond bij Burano en zoek het detail dat deze plek typisch maakt voor Venetië.",
-      "question": "Waarom zijn de huisjes hier zo fel gekleurd?",
-      "hint": "Kijk naar het uitzicht vanaf het water.",
-      "choices": [
-        {
-          "text": "Zodat vissers hun eigen huis makkelijk herkenden door de mist",
-          "correct": true,
-          "feedback": "Goed gezien. Elke kleurencombinatie was oorspronkelijk aan één familie/huis gekoppeld."
-        },
-        {
-          "text": "Verplicht door de doge om armoede te verbergen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Om toeristen te trekken sinds de jaren '60",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Burano en zoek het detail dat deze plek typisch maakt voor Venetië.",
+        "question": "Waarom zijn de huisjes hier zo fel gekleurd?",
+        "hint": "Kijk naar het uitzicht vanaf het water.",
+        "choices": [
+          {
+            "text": "Zodat vissers hun eigen huis makkelijk herkenden door de mist",
+            "correct": true,
+            "feedback": "Goed gezien. Elke kleurencombinatie was oorspronkelijk aan één familie/huis gekoppeld."
+          },
+          {
+            "text": "Verplicht door de doge om armoede te verbergen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Om toeristen te trekken sinds de jaren '60",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "barcelona",
-  "city": "Barcelona",
-  "title": "Barcelona: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Barcelona met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Sagrada Familia",
-      "place": "Sagrada Familia",
-      "coordinates": {
-        "lat": 41.38321,
-        "lng": 2.17023
+    "id": "barcelona",
+    "city": "Barcelona",
+    "title": "Barcelona: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "9,5 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Barcelona met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Park Güell",
+        "place": "Park Güell",
+        "coordinates": {
+          "lat": 41.4145,
+          "lng": 2.1527
+        },
+        "assignment": "Kijk rustig rond bij Park Güell en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Welk dier ligt er in mozaïek op de trap bij de ingang?",
+        "hint": "Kijk naar het gekleurde beeldje halverwege de trap.",
+        "choices": [
+          {
+            "text": "Een salamander/draak (\"El Drac\")",
+            "correct": true,
+            "feedback": "Goed gezien. Dit mozaïekdier is een van de meest gefotografeerde plekken van Barcelona."
+          },
+          {
+            "text": "Een slang",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een kikker",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Sagrada Familia voordat je antwoord geeft.",
-      "question": "De twee hoofdgevels zien er totaal anders uit. Welke is somber en hoekig, en waarom?",
-      "hint": "Vergelijk de oostkant met de westkant.",
-      "choices": [
-        {
-          "text": "De Passiegevel, opzettelijk kaal en hard om het lijden van Christus te tonen",
-          "correct": true,
-          "feedback": "Goed gezien. De Geboortegevel is juist rijk versierd door Gaudí zelf; de Passiegevel kwam later, in een compleet andere stijl."
+      {
+        "title": "Ga naar Sagrada Familia",
+        "place": "Sagrada Familia",
+        "coordinates": {
+          "lat": 41.40363,
+          "lng": 2.17436
         },
-        {
-          "text": "De Geboortegevel, sober gehouden uit geldgebrek tijdens de bouw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Gloriegevel, nog onvoltooid en daarom kaal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Park Güell",
-      "place": "Park Güell",
-      "coordinates": {
-        "lat": 41.38437,
-        "lng": 2.17331
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Sagrada Familia voordat je antwoord geeft.",
+        "question": "De twee hoofdgevels zien er totaal anders uit. Welke is somber en hoekig, en waarom?",
+        "hint": "Vergelijk de oostkant met de westkant.",
+        "choices": [
+          {
+            "text": "De Passiegevel, opzettelijk kaal en hard om het lijden van Christus te tonen",
+            "correct": true,
+            "feedback": "Goed gezien. De Geboortegevel is juist rijk versierd door Gaudí zelf; de Passiegevel kwam later, in een compleet andere stijl."
+          },
+          {
+            "text": "De Geboortegevel, sober gehouden uit geldgebrek tijdens de bouw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Gloriegevel, nog onvoltooid en daarom kaal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Park Güell en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Welk dier ligt er in mozaïek op de trap bij de ingang?",
-      "hint": "Kijk naar het gekleurde beeldje halverwege de trap.",
-      "choices": [
-        {
-          "text": "Een salamander/draak (\"El Drac\")",
-          "correct": true,
-          "feedback": "Goed gezien. Dit mozaïekdier is een van de meest gefotografeerde plekken van Barcelona."
+      {
+        "title": "Ga naar Sagrada Familia (Passiegevel, extra)",
+        "place": "Sagrada Familia (Passiegevel, extra)",
+        "coordinates": {
+          "lat": 41.4032,
+          "lng": 2.1752
         },
-        {
-          "text": "Een slang",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een kikker",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Casa Batlló",
-      "place": "Casa Batlló",
-      "coordinates": {
-        "lat": 41.38778,
-        "lng": 2.17529
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Sagrada Familia (Passiegevel, extra) voordat je antwoord geeft.",
+        "question": "Wat is bijzonder aan het getallenvierkant op de gevel?",
+        "hint": "Zoek het vierkant met cijfers naast de ingang van de Passiegevel.",
+        "choices": [
+          {
+            "text": "Elke rij, kolom en diagonaal telt op tot 33, de leeftijd van Christus bij zijn dood",
+            "correct": true,
+            "feedback": "Goed gezien. Het is een \"magisch vierkant\", ontworpen door beeldhouwer Subirachs."
+          },
+          {
+            "text": "De cijfers vormen samen het bouwjaar van de kerk",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het is een kalender die de kerkelijke feestdagen aangeeft",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Casa Batlló en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Waar verwijst de vorm van het dak en de schoorsteen naar?",
-      "hint": "Kijk omhoog vanaf de straat.",
-      "choices": [
-        {
-          "text": "De legende van Sint-Joris en de draak",
-          "correct": true,
-          "feedback": "Goed gezien. Het dak lijkt op de rug van een draak, de schoorsteen op een zwaard."
+      {
+        "title": "Ga naar Casa Milà (La Pedrera)",
+        "place": "Casa Milà (La Pedrera)",
+        "coordinates": {
+          "lat": 41.39539,
+          "lng": 2.16196
         },
-        {
-          "text": "Een golf in zee, ter ere van Gaudí's liefde voor de kust",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De vorm van een slapende reus",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar La Boqueria (markt aan La Rambla)",
-      "place": "La Boqueria (markt aan La Rambla)",
-      "coordinates": {
-        "lat": 41.39233,
-        "lng": 2.17464
+        "assignment": "Kijk rustig rond bij Casa Milà (La Pedrera) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Wat valt op aan de gevel als je goed kijkt naar de lijnen?",
+        "hint": "Sta op straatniveau en kijk langs de hele gevel.",
+        "choices": [
+          {
+            "text": "Er zit geen enkele rechte lijn in",
+            "correct": true,
+            "feedback": "Goed gezien. Gaudí ontwierp de golvende, natuurlijke steengevel met opzet zonder rechte hoeken."
+          },
+          {
+            "text": "Alle ramen hebben exact dezelfde vorm",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De gevel is symmetrisch in twee identieke helften",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van La Boqueria (markt aan La Rambla) te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat zie je in de vloer direct bij de hoofdingang?",
-      "hint": "Kijk naar beneden voor je verder de markt in loopt.",
-      "choices": [
-        {
-          "text": "Een groot rond mozaïek",
-          "correct": true,
-          "feedback": "Goed gezien. Het mozaïek markeert de hoofdentree van deze beroemde markthal."
+      {
+        "title": "Ga naar Casa Batlló",
+        "place": "Casa Batlló",
+        "coordinates": {
+          "lat": 41.39164,
+          "lng": 2.16499
         },
-        {
-          "text": "Een gedenkplaat voor de oprichter",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Restanten van een Romeinse vloer",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Barri Gòtic (brug in Carrer del Bisbe)",
-      "place": "Barri Gòtic (brug in Carrer del Bisbe)",
-      "coordinates": {
-        "lat": 41.39175,
-        "lng": 2.16975
+        "assignment": "Kijk rustig rond bij Casa Batlló en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Waar verwijst de vorm van het dak en de schoorsteen naar?",
+        "hint": "Kijk omhoog vanaf de straat.",
+        "choices": [
+          {
+            "text": "De legende van Sint-Joris en de draak",
+            "correct": true,
+            "feedback": "Goed gezien. Het dak lijkt op de rug van een draak, de schoorsteen op een zwaard."
+          },
+          {
+            "text": "Een golf in zee, ter ere van Gaudí's liefde voor de kust",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De vorm van een slapende reus",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Barri Gòtic (brug in Carrer del Bisbe) en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "De brug oogt middeleeuws. Hoe oud is hij echt?",
-      "hint": "Zoek een jaartal of inscriptie in de buurt.",
-      "choices": [
-        {
-          "text": "Gebouwd in 1928, dus veel jonger dan hij lijkt",
-          "correct": true,
-          "feedback": "Goed gezien. De neogotische brug is een vroeg 20e-eeuwse toevoeging, ontworpen om oud te lijken."
+      {
+        "title": "Ga naar Palau de la Música Catalana",
+        "place": "Palau de la Música Catalana",
+        "coordinates": {
+          "lat": 41.3875,
+          "lng": 2.1753
         },
-        {
-          "text": "Echt middeleeuws, 14e eeuw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Gebouwd door de Romeinen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Montjuïc (Font Màgica)",
-      "place": "Montjuïc (Font Màgica)",
-      "coordinates": {
-        "lat": 41.39262,
-        "lng": 2.16657
+        "assignment": "Kijk rustig rond bij Palau de la Música Catalana en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Wat zie je als je in de concertzaal omhoog kijkt?",
+        "hint": "Kijk recht boven het podium.",
+        "choices": [
+          {
+            "text": "Een omgekeerde koepel van glas-in-lood die de zon voorstelt",
+            "correct": true,
+            "feedback": "Goed gezien. Het glazen \"zonlicht\" is het beroemdste element van deze modernistische concertzaal."
+          },
+          {
+            "text": "Een plafond volledig beschilderd met wolken",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een open dak dat bij mooi weer opengaat",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Montjuïc (Font Màgica) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Wat gebeurt er 's avonds met deze fontein?",
-      "hint": "Kom terug na zonsondergang, in het weekend.",
-      "choices": [
-        {
-          "text": "Een licht- en muziekshow met dansende waterstralen",
-          "correct": true,
-          "feedback": "Goed gezien. De Font Màgica draait sinds de Wereldtentoonstelling van 1929 shows op muziek."
+      {
+        "title": "Ga naar Plaça Nova (Barri Gòtic)",
+        "place": "Plaça Nova (Barri Gòtic)",
+        "coordinates": {
+          "lat": 41.384,
+          "lng": 2.1761
         },
-        {
-          "text": "De fontein wordt dan uitgezet voor onderhoud",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Ze verandert dan van kleur naar puur rood, als eerbetoon aan Catalonië",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Sagrada Familia (Passiegevel, extra)",
-      "place": "Sagrada Familia (Passiegevel, extra)",
-      "coordinates": {
-        "lat": 41.39103,
-        "lng": 2.16297
+        "assignment": "Kijk rustig rond bij Plaça Nova (Barri Gòtic) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Wat staat hier nog overeind van de oorspronkelijke stadsmuur?",
+        "hint": "Kijk naar de twee ronde torens naast de kathedraal.",
+        "choices": [
+          {
+            "text": "Romeinse torens/muurresten van de oude stadspoort",
+            "correct": true,
+            "feedback": "Goed gezien. Barcelona (Barcino) was ooit een Romeinse stad, en deze torens horen bij de oude stadspoort."
+          },
+          {
+            "text": "Een middeleeuwse waterput",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een fragment van het Moorse fort",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Sagrada Familia (Passiegevel, extra) voordat je antwoord geeft.",
-      "question": "Wat is bijzonder aan het getallenvierkant op de gevel?",
-      "hint": "Zoek het vierkant met cijfers naast de ingang van de Passiegevel.",
-      "choices": [
-        {
-          "text": "Elke rij, kolom en diagonaal telt op tot 33, de leeftijd van Christus bij zijn dood",
-          "correct": true,
-          "feedback": "Goed gezien. Het is een \"magisch vierkant\", ontworpen door beeldhouwer Subirachs."
+      {
+        "title": "Ga naar Barri Gòtic (brug in Carrer del Bisbe)",
+        "place": "Barri Gòtic (brug in Carrer del Bisbe)",
+        "coordinates": {
+          "lat": 41.38379,
+          "lng": 2.17664
         },
-        {
-          "text": "De cijfers vormen samen het bouwjaar van de kerk",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het is een kalender die de kerkelijke feestdagen aangeeft",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Casa Milà (La Pedrera)",
-      "place": "Casa Milà (La Pedrera)",
-      "coordinates": {
-        "lat": 41.38696,
-        "lng": 2.16081
+        "assignment": "Loop een stukje over of langs Barri Gòtic (brug in Carrer del Bisbe) en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "De brug oogt middeleeuws. Hoe oud is hij echt?",
+        "hint": "Zoek een jaartal of inscriptie in de buurt.",
+        "choices": [
+          {
+            "text": "Gebouwd in 1928, dus veel jonger dan hij lijkt",
+            "correct": true,
+            "feedback": "Goed gezien. De neogotische brug is een vroeg 20e-eeuwse toevoeging, ontworpen om oud te lijken."
+          },
+          {
+            "text": "Echt middeleeuws, 14e eeuw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Gebouwd door de Romeinen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Casa Milà (La Pedrera) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Wat valt op aan de gevel als je goed kijkt naar de lijnen?",
-      "hint": "Sta op straatniveau en kijk langs de hele gevel.",
-      "choices": [
-        {
-          "text": "Er zit geen enkele rechte lijn in",
-          "correct": true,
-          "feedback": "Goed gezien. Gaudí ontwierp de golvende, natuurlijke steengevel met opzet zonder rechte hoeken."
+      {
+        "title": "Ga naar La Boqueria (markt aan La Rambla)",
+        "place": "La Boqueria (markt aan La Rambla)",
+        "coordinates": {
+          "lat": 41.38174,
+          "lng": 2.17162
         },
-        {
-          "text": "Alle ramen hebben exact dezelfde vorm",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De gevel is symmetrisch in twee identieke helften",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Plaça Nova (Barri Gòtic)",
-      "place": "Plaça Nova (Barri Gòtic)",
-      "coordinates": {
-        "lat": 41.38455,
-        "lng": 2.16511
+        "assignment": "Neem even de tijd om de randen van La Boqueria (markt aan La Rambla) te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat zie je in de vloer direct bij de hoofdingang?",
+        "hint": "Kijk naar beneden voor je verder de markt in loopt.",
+        "choices": [
+          {
+            "text": "Een groot rond mozaïek",
+            "correct": true,
+            "feedback": "Goed gezien. Het mozaïek markeert de hoofdentree van deze beroemde markthal."
+          },
+          {
+            "text": "Een gedenkplaat voor de oprichter",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Restanten van een Romeinse vloer",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Plaça Nova (Barri Gòtic) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Wat staat hier nog overeind van de oorspronkelijke stadsmuur?",
-      "hint": "Kijk naar de twee ronde torens naast de kathedraal.",
-      "choices": [
-        {
-          "text": "Romeinse torens/muurresten van de oude stadspoort",
-          "correct": true,
-          "feedback": "Goed gezien. Barcelona (Barcino) was ooit een Romeinse stad, en deze torens horen bij de oude stadspoort."
+      {
+        "title": "Ga naar Montjuïc (Font Màgica)",
+        "place": "Montjuïc (Font Màgica)",
+        "coordinates": {
+          "lat": 41.3712,
+          "lng": 2.1517
         },
-        {
-          "text": "Een middeleeuwse waterput",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een fragment van het Moorse fort",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Palau de la Música Catalana",
-      "place": "Palau de la Música Catalana",
-      "coordinates": {
-        "lat": 41.38198,
-        "lng": 2.16717
-      },
-      "assignment": "Kijk rustig rond bij Palau de la Música Catalana en zoek het detail dat deze plek typisch maakt voor Barcelona.",
-      "question": "Wat zie je als je in de concertzaal omhoog kijkt?",
-      "hint": "Kijk recht boven het podium.",
-      "choices": [
-        {
-          "text": "Een omgekeerde koepel van glas-in-lood die de zon voorstelt",
-          "correct": true,
-          "feedback": "Goed gezien. Het glazen \"zonlicht\" is het beroemdste element van deze modernistische concertzaal."
-        },
-        {
-          "text": "Een plafond volledig beschilderd met wolken",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een open dak dat bij mooi weer opengaat",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Montjuïc (Font Màgica) en zoek het detail dat deze plek typisch maakt voor Barcelona.",
+        "question": "Wat gebeurt er 's avonds met deze fontein?",
+        "hint": "Kom terug na zonsondergang, in het weekend.",
+        "choices": [
+          {
+            "text": "Een licht- en muziekshow met dansende waterstralen",
+            "correct": true,
+            "feedback": "Goed gezien. De Font Màgica draait sinds de Wereldtentoonstelling van 1929 shows op muziek."
+          },
+          {
+            "text": "De fontein wordt dan uitgezet voor onderhoud",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ze verandert dan van kleur naar puur rood, als eerbetoon aan Catalonië",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "prague",
-  "city": "Praag",
-  "title": "Praag: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Praag met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Karelsbrug",
-      "place": "Karelsbrug",
-      "coordinates": {
-        "lat": 50.07131,
-        "lng": 14.43943
+    "id": "prague",
+    "city": "Praag",
+    "title": "Praag: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "7,3 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Praag met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Petřín-toren",
+        "place": "Petřín-toren",
+        "coordinates": {
+          "lat": 50.0835,
+          "lng": 14.3951
+        },
+        "assignment": "Kijk rustig rond bij Petřín-toren en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Waar lijkt deze toren sterk op, en waarom?",
+        "hint": "Kijk naar de vorm, hoogte en het bouwjaar.",
+        "choices": [
+          {
+            "text": "Een schaalmodel (1:5) van de Eiffeltoren, gebouwd in hetzelfde jaar als de Wereldtentoonstelling van Parijs",
+            "correct": true,
+            "feedback": "Goed gezien. De toren werd in 1891 gebouwd, na een bezoek van Tsjechische toeristen aan de Parijse Wereldtentoonstelling."
+          },
+          {
+            "text": "De Big Ben, als eerbetoon aan Engelse toeristen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Sint-Vitustoren, als kleinere kopie",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop een stukje over of langs Karelsbrug en kijk hoe water, stad en verkeer hier samenkomen.",
-      "question": "Welk van de 30 beelden is duidelijk lichter/glanzender dan de rest, en waarom?",
-      "hint": "Het is het 8e beeld vanaf de Oude Stad-kant.",
-      "choices": [
-        {
-          "text": "Johannes van Nepomuk, doordat mensen hem al eeuwen aanraken voor geluk",
-          "correct": true,
-          "feedback": "Goed gezien. De sokkel is op die plek gepolijst door talloze handen."
+      {
+        "title": "Ga naar Praagse Burcht",
+        "place": "Praagse Burcht",
+        "coordinates": {
+          "lat": 50.0911,
+          "lng": 14.4016
         },
-        {
-          "text": "De Kruisiging, door dagelijkse reiniging vanwege religieuze diensten",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Wrede Turk, door zonlicht dat er direct op valt",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Astronomische Klok",
-      "place": "Astronomische Klok",
-      "coordinates": {
-        "lat": 50.07247,
-        "lng": 14.44251
+        "assignment": "Loop langs de buitenkant van Praagse Burcht en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Wie ontwierp de uniformen van de kasteelwacht die je hier ziet?",
+        "hint": "Let op tijdens de wisseling van de wacht om 12 uur 's middags.",
+        "choices": [
+          {
+            "text": "Theodor Pištěk, een Oscarwinnaar voor kostuumontwerp",
+            "correct": true,
+            "feedback": "Goed gezien. Pištěk won een Oscar voor de kostuums in de film Amadeus."
+          },
+          {
+            "text": "Karel Gott, de bekende Tsjechische zanger",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Alfons Mucha",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Astronomische Klok en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Welke figuur luidt elk heel uur de klok?",
-      "hint": "Kijk naar de figuren direct naast de wijzerplaat.",
-      "choices": [
-        {
-          "text": "Het skelet dat de Dood voorstelt",
-          "correct": true,
-          "feedback": "Goed gezien. De Dood trekt aan een koord voordat de apostelenparade begint."
+      {
+        "title": "Ga naar Sint-Vituskathedraal",
+        "place": "Sint-Vituskathedraal",
+        "coordinates": {
+          "lat": 50.09088,
+          "lng": 14.40055
         },
-        {
-          "text": "De Turk",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een van de twaalf apostelen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Praagse Burcht",
-      "place": "Praagse Burcht",
-      "coordinates": {
-        "lat": 50.07588,
-        "lng": 14.44449
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Sint-Vituskathedraal voordat je antwoord geeft.",
+        "question": "Welk glas-in-loodraam is duidelijk anders van stijl dan de rest?",
+        "hint": "Het is het derde raam vanaf de ingang.",
+        "choices": [
+          {
+            "text": "Het raam ontworpen door Alfons Mucha, in Art Nouveau-stijl",
+            "correct": true,
+            "feedback": "Goed gezien. Mucha's felle kleuren en vloeiende figuren steken sterk af tegen de rest van de gotische ramen."
+          },
+          {
+            "text": "Het raam met de Boheemse kroon",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het raam met het wapen van Praag",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop langs de buitenkant van Praagse Burcht en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Wie ontwierp de uniformen van de kasteelwacht die je hier ziet?",
-      "hint": "Let op tijdens de wisseling van de wacht om 12 uur 's middags.",
-      "choices": [
-        {
-          "text": "Theodor Pištěk, een Oscarwinnaar voor kostuumontwerp",
-          "correct": true,
-          "feedback": "Goed gezien. Pištěk won een Oscar voor de kostuums in de film Amadeus."
+      {
+        "title": "Ga naar Gouden Straatje (Zlatá ulička)",
+        "place": "Gouden Straatje (Zlatá ulička)",
+        "coordinates": {
+          "lat": 50.0918,
+          "lng": 14.4046
         },
-        {
-          "text": "Karel Gott, de bekende Tsjechische zanger",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Alfons Mucha",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Gouden Straatje (Zlatá ulička)",
-      "place": "Gouden Straatje (Zlatá ulička)",
-      "coordinates": {
-        "lat": 50.08043,
-        "lng": 14.44384
+        "assignment": "Kijk rustig rond bij Gouden Straatje (Zlatá ulička) en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Welke beroemde schrijver woonde hier ooit?",
+        "hint": "Kijk naar de huisnummers van de kleine gekleurde huisjes.",
+        "choices": [
+          {
+            "text": "Franz Kafka",
+            "correct": true,
+            "feedback": "Goed gezien. Kafka woonde en werkte hier korte tijd op nummer 22."
+          },
+          {
+            "text": "Milan Kundera",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Karel Čapek",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Gouden Straatje (Zlatá ulička) en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Welke beroemde schrijver woonde hier ooit?",
-      "hint": "Kijk naar de huisnummers van de kleine gekleurde huisjes.",
-      "choices": [
-        {
-          "text": "Franz Kafka",
-          "correct": true,
-          "feedback": "Goed gezien. Kafka woonde en werkte hier korte tijd op nummer 22."
+      {
+        "title": "Ga naar Karelsbrug",
+        "place": "Karelsbrug",
+        "coordinates": {
+          "lat": 50.08648,
+          "lng": 14.41143
         },
-        {
-          "text": "Milan Kundera",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Karel Čapek",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Sint-Vituskathedraal",
-      "place": "Sint-Vituskathedraal",
-      "coordinates": {
-        "lat": 50.07985,
-        "lng": 14.43895
+        "assignment": "Loop een stukje over of langs Karelsbrug en kijk hoe water, stad en verkeer hier samenkomen.",
+        "question": "Welk van de 30 beelden is duidelijk lichter/glanzender dan de rest, en waarom?",
+        "hint": "Het is het 8e beeld vanaf de Oude Stad-kant.",
+        "choices": [
+          {
+            "text": "Johannes van Nepomuk, doordat mensen hem al eeuwen aanraken voor geluk",
+            "correct": true,
+            "feedback": "Goed gezien. De sokkel is op die plek gepolijst door talloze handen."
+          },
+          {
+            "text": "De Kruisiging, door dagelijkse reiniging vanwege religieuze diensten",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De Wrede Turk, door zonlicht dat er direct op valt",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Sint-Vituskathedraal voordat je antwoord geeft.",
-      "question": "Welk glas-in-loodraam is duidelijk anders van stijl dan de rest?",
-      "hint": "Het is het derde raam vanaf de ingang.",
-      "choices": [
-        {
-          "text": "Het raam ontworpen door Alfons Mucha, in Art Nouveau-stijl",
-          "correct": true,
-          "feedback": "Goed gezien. Mucha's felle kleuren en vloeiende figuren steken sterk af tegen de rest van de gotische ramen."
+      {
+        "title": "Ga naar Oudestadsplein - Jan Hus-monument",
+        "place": "Oudestadsplein - Jan Hus-monument",
+        "coordinates": {
+          "lat": 50.08745,
+          "lng": 14.42116
         },
-        {
-          "text": "Het raam met de Boheemse kroon",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het raam met het wapen van Praag",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Joodse Wijk (Josefov) - Oude Joodse Begraafplaats",
-      "place": "Joodse Wijk (Josefov) - Oude Joodse Begraafplaats",
-      "coordinates": {
-        "lat": 50.08072,
-        "lng": 14.43577
+        "assignment": "Neem even de tijd om de randen van Oudestadsplein - Jan Hus-monument te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Op welke exacte symbolische datum werd dit standbeeld onthuld?",
+        "hint": "Zoek een jaartal/datum op de sokkel.",
+        "choices": [
+          {
+            "text": "Precies 500 jaar na de verbranding van Jan Hus, op 6 juli 1915",
+            "correct": true,
+            "feedback": "Goed gezien. Hus werd in 1415 als ketter verbrand; het monument werd exact een halve eeuw eerder gepland dan onthuld."
+          },
+          {
+            "text": "Op de honderdste verjaardag van de Tsjechische onafhankelijkheid",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Op de dag dat de astronomische klok 500 jaar bestond",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Joodse Wijk (Josefov) - Oude Joodse Begraafplaats en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Waarom liggen de grafstenen hier zo dicht op elkaar en scheef?",
-      "hint": "Kijk naar hoeveel stenen er op een klein oppervlak staan.",
-      "choices": [
-        {
-          "text": "Omdat er tot wel 12 lagen graven boven elkaar liggen, door ruimtegebrek",
-          "correct": true,
-          "feedback": "Goed gezien. Joden mochten eeuwenlang niet buiten dit kleine gebied begraven worden, dus stapelden de lagen zich op."
+      {
+        "title": "Ga naar Astronomische Klok",
+        "place": "Astronomische Klok",
+        "coordinates": {
+          "lat": 50.08702,
+          "lng": 14.42068
         },
-        {
-          "text": "Omdat de grond hier verzakt is door de eeuwen heen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Om esthetische redenen, als kunstzinnige opstelling",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Vyšehrad",
-      "place": "Vyšehrad",
-      "coordinates": {
-        "lat": 50.07913,
-        "lng": 14.43217
+        "assignment": "Kijk rustig rond bij Astronomische Klok en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Welke figuur luidt elk heel uur de klok?",
+        "hint": "Kijk naar de figuren direct naast de wijzerplaat.",
+        "choices": [
+          {
+            "text": "Het skelet dat de Dood voorstelt",
+            "correct": true,
+            "feedback": "Goed gezien. De Dood trekt aan een koord voordat de apostelenparade begint."
+          },
+          {
+            "text": "De Turk",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een van de twaalf apostelen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Vyšehrad en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Welke twee beroemde Tsjechen liggen hier begraven, op de nationale begraafplaats?",
-      "hint": "Zoek de graven bij de Sint-Petrus-en-Pauluskerk.",
-      "choices": [
-        {
-          "text": "Componist Antonín Dvořák en schilder Alfons Mucha",
-          "correct": true,
-          "feedback": "Goed gezien. Vyšehrad geldt als de legendarische bakermat van Praag en herbergt het \"Slavín\", het ereperk van de natie."
+      {
+        "title": "Ga naar Joodse Wijk (Josefov) - Oude Joodse Begraafplaats",
+        "place": "Joodse Wijk (Josefov) - Oude Joodse Begraafplaats",
+        "coordinates": {
+          "lat": 50.0899,
+          "lng": 14.417
         },
-        {
-          "text": "Karel IV en Jan Hus",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Franz Kafka en Milan Kundera",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Petřín-toren",
-      "place": "Petřín-toren",
-      "coordinates": {
-        "lat": 50.07506,
-        "lng": 14.43001
+        "assignment": "Kijk rustig rond bij Joodse Wijk (Josefov) - Oude Joodse Begraafplaats en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Waarom liggen de grafstenen hier zo dicht op elkaar en scheef?",
+        "hint": "Kijk naar hoeveel stenen er op een klein oppervlak staan.",
+        "choices": [
+          {
+            "text": "Omdat er tot wel 12 lagen graven boven elkaar liggen, door ruimtegebrek",
+            "correct": true,
+            "feedback": "Goed gezien. Joden mochten eeuwenlang niet buiten dit kleine gebied begraven worden, dus stapelden de lagen zich op."
+          },
+          {
+            "text": "Omdat de grond hier verzakt is door de eeuwen heen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Om esthetische redenen, als kunstzinnige opstelling",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Petřín-toren en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Waar lijkt deze toren sterk op, en waarom?",
-      "hint": "Kijk naar de vorm, hoogte en het bouwjaar.",
-      "choices": [
-        {
-          "text": "Een schaalmodel (1:5) van de Eiffeltoren, gebouwd in hetzelfde jaar als de Wereldtentoonstelling van Parijs",
-          "correct": true,
-          "feedback": "Goed gezien. De toren werd in 1891 gebouwd, na een bezoek van Tsjechische toeristen aan de Parijse Wereldtentoonstelling."
+      {
+        "title": "Ga naar Dansend Huis (Tančící dům)",
+        "place": "Dansend Huis (Tančící dům)",
+        "coordinates": {
+          "lat": 50.07554,
+          "lng": 14.4142
         },
-        {
-          "text": "De Big Ben, als eerbetoon aan Engelse toeristen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De Sint-Vitustoren, als kleinere kopie",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Dansend Huis (Tančící dům)",
-      "place": "Dansend Huis (Tančící dům)",
-      "coordinates": {
-        "lat": 50.07265,
-        "lng": 14.43431
+        "assignment": "Kijk rustig rond bij Dansend Huis (Tančící dům) en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Welke bijnaam kreeg dit gebouw, en waarom?",
+        "hint": "Kijk naar de vorm van de twee torens.",
+        "choices": [
+          {
+            "text": "\"Fred en Ginger\", omdat het twee dansende figuren lijkt te tonen",
+            "correct": true,
+            "feedback": "Goed gezien. De vloeiende glazen toren en de stevige stenen toren samen doen denken aan een dansend paar."
+          },
+          {
+            "text": "\"De Fles\", vanwege de ronde vorm",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "\"De Golf\", naar de rivier ernaast",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Dansend Huis (Tančící dům) en zoek het detail dat deze plek typisch maakt voor Praag.",
-      "question": "Welke bijnaam kreeg dit gebouw, en waarom?",
-      "hint": "Kijk naar de vorm van de twee torens.",
-      "choices": [
-        {
-          "text": "\"Fred en Ginger\", omdat het twee dansende figuren lijkt te tonen",
-          "correct": true,
-          "feedback": "Goed gezien. De vloeiende glazen toren en de stevige stenen toren samen doen denken aan een dansend paar."
+      {
+        "title": "Ga naar Vyšehrad",
+        "place": "Vyšehrad",
+        "coordinates": {
+          "lat": 50.0644,
+          "lng": 14.4177
         },
-        {
-          "text": "\"De Fles\", vanwege de ronde vorm",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "\"De Golf\", naar de rivier ernaast",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Oudestadsplein - Jan Hus-monument",
-      "place": "Oudestadsplein - Jan Hus-monument",
-      "coordinates": {
-        "lat": 50.07008,
-        "lng": 14.43637
-      },
-      "assignment": "Neem even de tijd om de randen van Oudestadsplein - Jan Hus-monument te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Op welke exacte symbolische datum werd dit standbeeld onthuld?",
-      "hint": "Zoek een jaartal/datum op de sokkel.",
-      "choices": [
-        {
-          "text": "Precies 500 jaar na de verbranding van Jan Hus, op 6 juli 1915",
-          "correct": true,
-          "feedback": "Goed gezien. Hus werd in 1415 als ketter verbrand; het monument werd exact een halve eeuw eerder gepland dan onthuld."
-        },
-        {
-          "text": "Op de honderdste verjaardag van de Tsjechische onafhankelijkheid",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Op de dag dat de astronomische klok 500 jaar bestond",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Vyšehrad en zoek het detail dat deze plek typisch maakt voor Praag.",
+        "question": "Welke twee beroemde Tsjechen liggen hier begraven, op de nationale begraafplaats?",
+        "hint": "Zoek de graven bij de Sint-Petrus-en-Pauluskerk.",
+        "choices": [
+          {
+            "text": "Componist Antonín Dvořák en schilder Alfons Mucha",
+            "correct": true,
+            "feedback": "Goed gezien. Vyšehrad geldt als de legendarische bakermat van Praag en herbergt het \"Slavín\", het ereperk van de natie."
+          },
+          {
+            "text": "Karel IV en Jan Hus",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Franz Kafka en Milan Kundera",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "munich",
-  "city": "München",
-  "title": "München: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door München met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Neues Rathaus (Marienplatz)",
-      "place": "Neues Rathaus (Marienplatz)",
-      "coordinates": {
-        "lat": 48.13091,
-        "lng": 11.58363
+    "id": "munich",
+    "city": "München",
+    "title": "München: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "7,8 km wandelen + U-Bahn/tram",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door München met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Allianz Arena",
+        "place": "Allianz Arena",
+        "coordinates": {
+          "lat": 48.2188,
+          "lng": 11.6247
+        },
+        "assignment": "Kijk rustig rond bij Allianz Arena en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Wat gebeurt er met de buitenkant van het stadion, afhankelijk van de wedstrijd?",
+        "hint": "Kijk naar de gevel op wedstrijddagen.",
+        "choices": [
+          {
+            "text": "De gevel verandert van kleur, bijvoorbeeld rood voor Bayern of blauw voor 1860 München",
+            "correct": true,
+            "feedback": "Goed gezien. De duizenden opblaasbare panelen kunnen per wedstrijd van kleur wisselen."
+          },
+          {
+            "text": "De gevel opent volledig als een dak",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Er verschijnen lichtprojecties van spelersnamen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Neues Rathaus (Marienplatz) en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Wat gebeurt er dagelijks om 11 uur met het Glockenspiel?",
-      "hint": "Kijk omhoog naar de toren.",
-      "choices": [
-        {
-          "text": "Bewegende figuren spelen een ridderstoernooi en een dansscène na",
-          "correct": true,
-          "feedback": "Goed gezien. De figuren beelden een 16e-eeuws ridderfeest en de \"Schäfflertanz\" (kuipersdans) uit."
+      {
+        "title": "Ga naar BMW Welt / BMW Museum",
+        "place": "BMW Welt / BMW Museum",
+        "coordinates": {
+          "lat": 48.1769,
+          "lng": 11.5563
         },
-        {
-          "text": "Een levensgrote haan kraait drie keer",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Er komt een miniatuur Oktoberfeststoet voorbij",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Frauenkirche",
-      "place": "Frauenkirche",
-      "coordinates": {
-        "lat": 48.13207,
-        "lng": 11.58671
+        "assignment": "Zoek bij BMW Welt / BMW Museum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
+        "question": "Waar verwijst de vorm van de \"vier-cilinder\" toren naar?",
+        "hint": "Kijk naar de vorm van het hoofdkantoor ernaast.",
+        "choices": [
+          {
+            "text": "Vier motorcilinders, het hart van een verbrandingsmotor",
+            "correct": true,
+            "feedback": "Goed gezien. De vier ronde torens stellen letterlijk vier cilinders voor."
+          },
+          {
+            "text": "De vier ringen van een ander automerk, als eerbetoon",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Vier windrichtingen, symbool voor wereldwijde export",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Frauenkirche voordat je antwoord geeft.",
-      "question": "Wat is de \"Teufelstritt\", en waar vind je hem?",
-      "hint": "Kijk naar de vloertegels net na de hoofdingang.",
-      "choices": [
-        {
-          "text": "Een zwarte voetafdruk in de vloer, volgens de legende van de duivel zelf",
-          "correct": true,
-          "feedback": "Goed gezien. De legende zegt dat de duivel hier stampte toen hij zag dat de kerk toch ramen had."
+      {
+        "title": "Ga naar Olympiapark",
+        "place": "Olympiapark",
+        "coordinates": {
+          "lat": 48.1733,
+          "lng": 11.5464
         },
-        {
-          "text": "Een gescheurde tegel door een aardbeving",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een brandplek van een kaars uit de middeleeuwen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Englischer Garten (Eisbach)",
-      "place": "Englischer Garten (Eisbach)",
-      "coordinates": {
-        "lat": 48.13548,
-        "lng": 11.58869
+        "assignment": "Kijk rustig rond bij Olympiapark en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Waar is het opvallende tentvormige dak op geïnspireerd?",
+        "hint": "Kijk naar de vorm van het dak boven het stadion.",
+        "choices": [
+          {
+            "text": "Spinnenwebben/zeilstructuren, ontworpen door architect Frei Otto",
+            "correct": true,
+            "feedback": "Goed gezien. Het dak werd gebouwd voor de Olympische Spelen van 1972 en is nog steeds baanbrekend qua constructie."
+          },
+          {
+            "text": "De Alpentoppen rondom München",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Traditionele Beierse berghutten",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Englischer Garten (Eisbach) en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Wat doen mensen hier al decennialang, midden in de stad?",
-      "hint": "Zoek de brug over het riviertje vlak bij Haus der Kunst.",
-      "choices": [
-        {
-          "text": "Surfen op een permanente staande golf",
-          "correct": true,
-          "feedback": "Goed gezien. De Eisbach-golf is wereldberoemd onder stadssurfers."
+      {
+        "title": "Ga naar Englischer Garten (Eisbach)",
+        "place": "Englischer Garten (Eisbach)",
+        "coordinates": {
+          "lat": 48.1435,
+          "lng": 11.5878
         },
-        {
-          "text": "Vissen op forel, een oude traditie",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Zwemmen met een officiële zwemvergunning",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Schloss Nymphenburg (Schönheitengalerie)",
-      "place": "Schloss Nymphenburg (Schönheitengalerie)",
-      "coordinates": {
-        "lat": 48.14003,
-        "lng": 11.58804
+        "assignment": "Kijk rustig rond bij Englischer Garten (Eisbach) en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Wat doen mensen hier al decennialang, midden in de stad?",
+        "hint": "Zoek de brug over het riviertje vlak bij Haus der Kunst.",
+        "choices": [
+          {
+            "text": "Surfen op een permanente staande golf",
+            "correct": true,
+            "feedback": "Goed gezien. De Eisbach-golf is wereldberoemd onder stadssurfers."
+          },
+          {
+            "text": "Vissen op forel, een oude traditie",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Zwemmen met een officiële zwemvergunning",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop langs de buitenkant van Schloss Nymphenburg (Schönheitengalerie) en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Wat hangt er in deze speciale zaal, en wie liet het maken?",
-      "hint": "Zoek de zaal met 36 vrouwenportretten.",
-      "choices": [
-        {
-          "text": "Portretten van de mooiste vrouwen van München, verzameld door koning Ludwig I",
-          "correct": true,
-          "feedback": "Goed gezien. Ludwig I liet uit heel Beieren vrouwen schilderen die hij mooi vond, ongeacht hun afkomst."
+      {
+        "title": "Ga naar Frauenkirche",
+        "place": "Frauenkirche",
+        "coordinates": {
+          "lat": 48.1386,
+          "lng": 11.5736
         },
-        {
-          "text": "Portretten van alle Beierse koninginnen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Zelfportretten van hofschilders",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Viktualienmarkt",
-      "place": "Viktualienmarkt",
-      "coordinates": {
-        "lat": 48.13945,
-        "lng": 11.58315
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Frauenkirche voordat je antwoord geeft.",
+        "question": "Wat is de \"Teufelstritt\", en waar vind je hem?",
+        "hint": "Kijk naar de vloertegels net na de hoofdingang.",
+        "choices": [
+          {
+            "text": "Een zwarte voetafdruk in de vloer, volgens de legende van de duivel zelf",
+            "correct": true,
+            "feedback": "Goed gezien. De legende zegt dat de duivel hier stampte toen hij zag dat de kerk toch ramen had."
+          },
+          {
+            "text": "Een gescheurde tegel door een aardbeving",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een brandplek van een kaars uit de middeleeuwen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Viktualienmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat vertellen de symbolen op de meiboom (Maibaum)?",
-      "hint": "Kijk omhoog naar de beschilderde paal.",
-      "choices": [
-        {
-          "text": "De verschillende ambachten en gilden van München",
-          "correct": true,
-          "feedback": "Goed gezien. Elk beschilderd paneel toont een ander traditioneel beroep uit de stad."
+      {
+        "title": "Ga naar Neues Rathaus (Marienplatz)",
+        "place": "Neues Rathaus (Marienplatz)",
+        "coordinates": {
+          "lat": 48.1374,
+          "lng": 11.5755
         },
-        {
-          "text": "De geschiedenis van het Oktoberfest",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De adellijke families van Beieren",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Hofbräuhaus",
-      "place": "Hofbräuhaus",
-      "coordinates": {
-        "lat": 48.14032,
-        "lng": 11.57997
+        "assignment": "Kijk rustig rond bij Neues Rathaus (Marienplatz) en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Wat gebeurt er dagelijks om 11 uur met het Glockenspiel?",
+        "hint": "Kijk omhoog naar de toren.",
+        "choices": [
+          {
+            "text": "Bewegende figuren spelen een ridderstoernooi en een dansscène na",
+            "correct": true,
+            "feedback": "Goed gezien. De figuren beelden een 16e-eeuws ridderfeest en de \"Schäfflertanz\" (kuipersdans) uit."
+          },
+          {
+            "text": "Een levensgrote haan kraait drie keer",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Er komt een miniatuur Oktoberfeststoet voorbij",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Hofbräuhaus en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Sinds welk jaar bestaat dit beroemde bierhuis al?",
-      "hint": "Zoek een jaartal op de gevel of het plafond.",
-      "choices": [
-        {
-          "text": "1589",
-          "correct": true,
-          "feedback": "Goed gezien. Het Hofbräuhaus werd opgericht als hofbrouwerij van de Beierse hertogen."
+      {
+        "title": "Ga naar Viktualienmarkt",
+        "place": "Viktualienmarkt",
+        "coordinates": {
+          "lat": 48.1351,
+          "lng": 11.5765
         },
-        {
-          "text": "1810",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "1900",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Olympiapark",
-      "place": "Olympiapark",
-      "coordinates": {
-        "lat": 48.13873,
-        "lng": 11.57637
+        "assignment": "Neem even de tijd om de randen van Viktualienmarkt te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat vertellen de symbolen op de meiboom (Maibaum)?",
+        "hint": "Kijk omhoog naar de beschilderde paal.",
+        "choices": [
+          {
+            "text": "De verschillende ambachten en gilden van München",
+            "correct": true,
+            "feedback": "Goed gezien. Elk beschilderd paneel toont een ander traditioneel beroep uit de stad."
+          },
+          {
+            "text": "De geschiedenis van het Oktoberfest",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De adellijke families van Beieren",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Olympiapark en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Waar is het opvallende tentvormige dak op geïnspireerd?",
-      "hint": "Kijk naar de vorm van het dak boven het stadion.",
-      "choices": [
-        {
-          "text": "Spinnenwebben/zeilstructuren, ontworpen door architect Frei Otto",
-          "correct": true,
-          "feedback": "Goed gezien. Het dak werd gebouwd voor de Olympische Spelen van 1972 en is nog steeds baanbrekend qua constructie."
+      {
+        "title": "Ga naar Hofbräuhaus",
+        "place": "Hofbräuhaus",
+        "coordinates": {
+          "lat": 48.1376,
+          "lng": 11.5799
         },
-        {
-          "text": "De Alpentoppen rondom München",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Traditionele Beierse berghutten",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar BMW Welt / BMW Museum",
-      "place": "BMW Welt / BMW Museum",
-      "coordinates": {
-        "lat": 48.13466,
-        "lng": 11.57421
+        "assignment": "Kijk rustig rond bij Hofbräuhaus en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Sinds welk jaar bestaat dit beroemde bierhuis al?",
+        "hint": "Zoek een jaartal op de gevel of het plafond.",
+        "choices": [
+          {
+            "text": "1589",
+            "correct": true,
+            "feedback": "Goed gezien. Het Hofbräuhaus werd opgericht als hofbrouwerij van de Beierse hertogen."
+          },
+          {
+            "text": "1810",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "1900",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Zoek bij BMW Welt / BMW Museum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
-      "question": "Waar verwijst de vorm van de \"vier-cilinder\" toren naar?",
-      "hint": "Kijk naar de vorm van het hoofdkantoor ernaast.",
-      "choices": [
-        {
-          "text": "Vier motorcilinders, het hart van een verbrandingsmotor",
-          "correct": true,
-          "feedback": "Goed gezien. De vier ronde torens stellen letterlijk vier cilinders voor."
+      {
+        "title": "Ga naar Asamkirche",
+        "place": "Asamkirche",
+        "coordinates": {
+          "lat": 48.135,
+          "lng": 11.5698
         },
-        {
-          "text": "De vier ringen van een ander automerk, als eerbetoon",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Vier windrichtingen, symbool voor wereldwijde export",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Asamkirche",
-      "place": "Asamkirche",
-      "coordinates": {
-        "lat": 48.13225,
-        "lng": 11.57851
+        "assignment": "Kijk rustig rond bij Asamkirche en zoek het detail dat deze plek typisch maakt voor München.",
+        "question": "Wat is bijzonder aan de locatie van deze kerk?",
+        "hint": "Kijk goed naar de gevel tussen de huizen.",
+        "choices": [
+          {
+            "text": "Het is een piepklein, extreem versierd privékerkje, geklemd tussen woonhuizen",
+            "correct": true,
+            "feedback": "Goed gezien. De gebroeders Asam bouwden de kerk letterlijk als privékapel naast hun eigen huis."
+          },
+          {
+            "text": "Het is de enige kerk van München zonder toren",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De kerk staat helemaal ondergronds",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Asamkirche en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Wat is bijzonder aan de locatie van deze kerk?",
-      "hint": "Kijk goed naar de gevel tussen de huizen.",
-      "choices": [
-        {
-          "text": "Het is een piepklein, extreem versierd privékerkje, geklemd tussen woonhuizen",
-          "correct": true,
-          "feedback": "Goed gezien. De gebroeders Asam bouwden de kerk letterlijk als privékapel naast hun eigen huis."
+      {
+        "title": "Ga naar Schloss Nymphenburg (Schönheitengalerie)",
+        "place": "Schloss Nymphenburg (Schönheitengalerie)",
+        "coordinates": {
+          "lat": 48.1583,
+          "lng": 11.5033
         },
-        {
-          "text": "Het is de enige kerk van München zonder toren",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De kerk staat helemaal ondergronds",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Allianz Arena",
-      "place": "Allianz Arena",
-      "coordinates": {
-        "lat": 48.12968,
-        "lng": 11.58057
-      },
-      "assignment": "Kijk rustig rond bij Allianz Arena en zoek het detail dat deze plek typisch maakt voor München.",
-      "question": "Wat gebeurt er met de buitenkant van het stadion, afhankelijk van de wedstrijd?",
-      "hint": "Kijk naar de gevel op wedstrijddagen.",
-      "choices": [
-        {
-          "text": "De gevel verandert van kleur, bijvoorbeeld rood voor Bayern of blauw voor 1860 München",
-          "correct": true,
-          "feedback": "Goed gezien. De duizenden opblaasbare panelen kunnen per wedstrijd van kleur wisselen."
-        },
-        {
-          "text": "De gevel opent volledig als een dak",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Er verschijnen lichtprojecties van spelersnamen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Loop langs de buitenkant van Schloss Nymphenburg (Schönheitengalerie) en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Wat hangt er in deze speciale zaal, en wie liet het maken?",
+        "hint": "Zoek de zaal met 36 vrouwenportretten.",
+        "choices": [
+          {
+            "text": "Portretten van de mooiste vrouwen van München, verzameld door koning Ludwig I",
+            "correct": true,
+            "feedback": "Goed gezien. Ludwig I liet uit heel Beieren vrouwen schilderen die hij mooi vond, ongeacht hun afkomst."
+          },
+          {
+            "text": "Portretten van alle Beierse koninginnen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Zelfportretten van hofschilders",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "milan",
-  "city": "Milaan",
-  "title": "Milaan: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Milaan met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Duomo di Milano",
-      "place": "Duomo di Milano",
-      "coordinates": {
-        "lat": 45.46001,
-        "lng": 9.19163
+    "id": "milan",
+    "city": "Milaan",
+    "title": "Milaan: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "7,4 km wandelen + metro",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Milaan met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Stadio San Siro (Giuseppe Meazza)",
+        "place": "Stadio San Siro (Giuseppe Meazza)",
+        "coordinates": {
+          "lat": 45.4781,
+          "lng": 9.124
+        },
+        "assignment": "Kijk rustig rond bij Stadio San Siro (Giuseppe Meazza) en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wat is opvallend aan de elf cilindrische torens rondom dit stadion?",
+        "hint": "Kijk naar de buitenkant van het stadion, bij het beklimmen naar de tribunes.",
+        "choices": [
+          {
+            "text": "Ze hebben spiraalvormige (helicoïdale) opritten die naar de bovenste ring leiden",
+            "correct": true,
+            "feedback": "Goed gezien. Het stadion wordt gedeeld door aartsrivalen AC Milan en Inter, en is vernoemd naar Giuseppe Meazza, die voor beide clubs speelde."
+          },
+          {
+            "text": "Elke toren is vernoemd naar een andere wereldkampioen voetbal",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ze zijn allemaal van glas, als enige stadion van Italië",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk naar de gevel, de hoogte en de details rond Duomo di Milano voordat je antwoord geeft.",
-      "question": "Wat kun je doen als je helemaal boven op het dak komt?",
-      "hint": "Koop een ticket voor het dakterras, niet alleen de kerk zelf.",
-      "choices": [
-        {
-          "text": "Tussen duizenden torentjes en beelden lopen, met de gouden Madonnina in zicht",
-          "correct": true,
-          "feedback": "Goed gezien. Het dakterras is een van de weinige plekken waar je zo dicht tussen de gotische spitsen kunt lopen."
+      {
+        "title": "Ga naar Santa Maria delle Grazie",
+        "place": "Santa Maria delle Grazie",
+        "coordinates": {
+          "lat": 45.4659,
+          "lng": 9.171
         },
-        {
-          "text": "Een klok bekijken die groter is dan die van Praag",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De originele glas-in-loodramen van dichtbij zien liggen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Galleria Vittorio Emanuele II",
-      "place": "Galleria Vittorio Emanuele II",
-      "coordinates": {
-        "lat": 45.46117,
-        "lng": 9.19471
+        "assignment": "Kijk rustig rond bij Santa Maria delle Grazie en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Waarom moet je hier altijd van tevoren reserveren?",
+        "hint": "Zoek het schilderij op de eetzaalmuur van het klooster.",
+        "choices": [
+          {
+            "text": "Voor een tijdslot om Het Laatste Avondmaal van Da Vinci te zien",
+            "correct": true,
+            "feedback": "Goed gezien. Het muurschilderij is zo kwetsbaar dat bezoekersaantallen strikt beperkt worden."
+          },
+          {
+            "text": "Voor toegang tot de kloostertuin",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Voor een plek in de dagelijkse mis",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Galleria Vittorio Emanuele II en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wat doen mensen op het mozaïek van de stier in de vloer?",
-      "hint": "Zoek het mozaïek van een gehoornd dier op de kruising.",
-      "choices": [
-        {
-          "text": "Ronddraaien op hun hak op de \"edele delen\" van de stier, voor geluk",
-          "correct": true,
-          "feedback": "Goed gezien. Het is een bekend, wat ondeugend Milanees ritueel voor geluk."
+      {
+        "title": "Ga naar Basilica di Sant'Ambrogio",
+        "place": "Basilica di Sant'Ambrogio",
+        "coordinates": {
+          "lat": 45.4624,
+          "lng": 9.1759
         },
-        {
-          "text": "Er een muntje op gooien",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het mozaïek aanraken met hun linkerhand",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Teatro alla Scala",
-      "place": "Teatro alla Scala",
-      "coordinates": {
-        "lat": 45.46458,
-        "lng": 9.19669
+        "assignment": "Kijk rustig rond bij Basilica di Sant'Ambrogio en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wat ligt er volgens de legende te wachten op het Laatste Oordeel, hoog op een zuil in de kerk?",
+        "hint": "Kijk in het middenschip, links, bij de derde pilaar.",
+        "choices": [
+          {
+            "text": "Een bronzen slang, die dan tot leven zou komen en terugkeert naar Jeruzalem",
+            "correct": true,
+            "feedback": "Goed gezien. De slang zou volgens de legende teruggaan naar het Dal van Josafat, waar Mozes hem ooit zou hebben gemaakt."
+          },
+          {
+            "text": "Een verguld kruis dat dan zou gaan stralen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een marmeren duif die dan zou gaan vliegen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Teatro alla Scala en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Waar kun je, zonder een voorstelling te zien, toch een indruk krijgen van dit operahuis?",
-      "hint": "Zoek het aangrenzende museum.",
-      "choices": [
-        {
-          "text": "In het La Scala-museum, met kostuums, instrumenten en een blik in de zaal",
-          "correct": true,
-          "feedback": "Goed gezien. Het museum grenst direct aan de theaterzaal en biedt vaak ook zicht op het podium."
+      {
+        "title": "Ga naar Navigli",
+        "place": "Navigli",
+        "coordinates": {
+          "lat": 45.4525,
+          "lng": 9.1743
         },
-        {
-          "text": "Via een openbare rondleiding die elk uur start",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Vanaf het dakterras van de Galleria ernaast",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Santa Maria delle Grazie",
-      "place": "Santa Maria delle Grazie",
-      "coordinates": {
-        "lat": 45.46913,
-        "lng": 9.19604
+        "assignment": "Kijk rustig rond bij Navigli en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wat is bijzonder aan dit kanalenstelsel, afgezien van de sfeer?",
+        "hint": "Kijk naar hoe recht/kunstmatig de waterwegen lopen.",
+        "choices": [
+          {
+            "text": "Leonardo da Vinci hielp mee aan het ontwerp van sluizen voor dit kanalensysteem",
+            "correct": true,
+            "feedback": "Goed gezien. Da Vinci werkte lange tijd in Milaan en droeg bij aan het sluizenontwerp."
+          },
+          {
+            "text": "Het is het enige kanalensysteem van Italië",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De kanalen werden pas na WOII aangelegd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Santa Maria delle Grazie en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Waarom moet je hier altijd van tevoren reserveren?",
-      "hint": "Zoek het schilderij op de eetzaalmuur van het klooster.",
-      "choices": [
-        {
-          "text": "Voor een tijdslot om Het Laatste Avondmaal van Da Vinci te zien",
-          "correct": true,
-          "feedback": "Goed gezien. Het muurschilderij is zo kwetsbaar dat bezoekersaantallen strikt beperkt worden."
+      {
+        "title": "Ga naar Castello Sforzesco",
+        "place": "Castello Sforzesco",
+        "coordinates": {
+          "lat": 45.4705,
+          "lng": 9.1795
         },
-        {
-          "text": "Voor toegang tot de kloostertuin",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Voor een plek in de dagelijkse mis",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Castello Sforzesco",
-      "place": "Castello Sforzesco",
-      "coordinates": {
-        "lat": 45.46855,
-        "lng": 9.19115
+        "assignment": "Kijk rustig rond bij Castello Sforzesco en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Welk onvoltooid meesterwerk van Michelangelo staat hier?",
+        "hint": "Zoek de speciale zaal met dit beeld.",
+        "choices": [
+          {
+            "text": "De Rondanini Pietà, zijn allerlaatste, onafgemaakte werk",
+            "correct": true,
+            "feedback": "Goed gezien. Michelangelo werkte tot vlak voor zijn dood aan dit beeld."
+          },
+          {
+            "text": "Een onvoltooide David",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een onvoltooid fresco van het Laatste Oordeel",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Castello Sforzesco en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Welk onvoltooid meesterwerk van Michelangelo staat hier?",
-      "hint": "Zoek de speciale zaal met dit beeld.",
-      "choices": [
-        {
-          "text": "De Rondanini Pietà, zijn allerlaatste, onafgemaakte werk",
-          "correct": true,
-          "feedback": "Goed gezien. Michelangelo werkte tot vlak voor zijn dood aan dit beeld."
+      {
+        "title": "Ga naar Cimitero Monumentale",
+        "place": "Cimitero Monumentale",
+        "coordinates": {
+          "lat": 45.4842,
+          "lng": 9.1797
         },
-        {
-          "text": "Een onvoltooide David",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een onvoltooid fresco van het Laatste Oordeel",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Navigli",
-      "place": "Navigli",
-      "coordinates": {
-        "lat": 45.46942,
-        "lng": 9.18797
+        "assignment": "Kijk rustig rond bij Cimitero Monumentale en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wiens praalgraf staat centraal in het Famedio, de imposante ingang van deze begraafplaats?",
+        "hint": "Loop de grote trap op naar het neogotische gebouw bij de ingang.",
+        "choices": [
+          {
+            "text": "Schrijver Alessandro Manzoni, als eerste die hier werd bijgezet",
+            "correct": true,
+            "feedback": "Goed gezien. Het Famedio geldt als het \"pantheon\" van beroemde Milanezen, met Manzoni op de ereplek."
+          },
+          {
+            "text": "Componist Giuseppe Verdi",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Alleen onbekende, anonieme weldoeners van de stad",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Navigli en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wat is bijzonder aan dit kanalenstelsel, afgezien van de sfeer?",
-      "hint": "Kijk naar hoe recht/kunstmatig de waterwegen lopen.",
-      "choices": [
-        {
-          "text": "Leonardo da Vinci hielp mee aan het ontwerp van sluizen voor dit kanalensysteem",
-          "correct": true,
-          "feedback": "Goed gezien. Da Vinci werkte lange tijd in Milaan en droeg bij aan het sluizenontwerp."
+      {
+        "title": "Ga naar Bosco Verticale",
+        "place": "Bosco Verticale",
+        "coordinates": {
+          "lat": 45.4853,
+          "lng": 9.1907
         },
-        {
-          "text": "Het is het enige kanalensysteem van Italië",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De kanalen werden pas na WOII aangelegd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Basilica di Sant'Ambrogio",
-      "place": "Basilica di Sant'Ambrogio",
-      "coordinates": {
-        "lat": 45.46783,
-        "lng": 9.18437
+        "assignment": "Kijk rustig rond bij Bosco Verticale en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wie onderhoudt de honderden bomen en duizenden planten op de gevels van deze twee woontorens?",
+        "hint": "Kijk omhoog - je ziet ze soms letterlijk aan touwen langs de gevel hangen.",
+        "choices": [
+          {
+            "text": "Gespecialiseerde \"flying gardeners\" die de torens beklimmen met klimtuig",
+            "correct": true,
+            "feedback": "Goed gezien. Deze \"vliegende tuinlieden\" abseilen langs de gevel om de duizenden planten te snoeien en verzorgen."
+          },
+          {
+            "text": "Een volledig geautomatiseerd robotsysteem, zonder mensen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De bewoners zelf, om beurten volgens een rooster",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Basilica di Sant'Ambrogio en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wat ligt er volgens de legende te wachten op het Laatste Oordeel, hoog op een zuil in de kerk?",
-      "hint": "Kijk in het middenschip, links, bij de derde pilaar.",
-      "choices": [
-        {
-          "text": "Een bronzen slang, die dan tot leven zou komen en terugkeert naar Jeruzalem",
-          "correct": true,
-          "feedback": "Goed gezien. De slang zou volgens de legende teruggaan naar het Dal van Josafat, waar Mozes hem ooit zou hebben gemaakt."
+      {
+        "title": "Ga naar Teatro alla Scala",
+        "place": "Teatro alla Scala",
+        "coordinates": {
+          "lat": 45.4676,
+          "lng": 9.1895
         },
-        {
-          "text": "Een verguld kruis dat dan zou gaan stralen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een marmeren duif die dan zou gaan vliegen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Cimitero Monumentale",
-      "place": "Cimitero Monumentale",
-      "coordinates": {
-        "lat": 45.46376,
-        "lng": 9.18221
+        "assignment": "Kijk rustig rond bij Teatro alla Scala en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Waar kun je, zonder een voorstelling te zien, toch een indruk krijgen van dit operahuis?",
+        "hint": "Zoek het aangrenzende museum.",
+        "choices": [
+          {
+            "text": "In het La Scala-museum, met kostuums, instrumenten en een blik in de zaal",
+            "correct": true,
+            "feedback": "Goed gezien. Het museum grenst direct aan de theaterzaal en biedt vaak ook zicht op het podium."
+          },
+          {
+            "text": "Via een openbare rondleiding die elk uur start",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Vanaf het dakterras van de Galleria ernaast",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Cimitero Monumentale en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wiens praalgraf staat centraal in het Famedio, de imposante ingang van deze begraafplaats?",
-      "hint": "Loop de grote trap op naar het neogotische gebouw bij de ingang.",
-      "choices": [
-        {
-          "text": "Schrijver Alessandro Manzoni, als eerste die hier werd bijgezet",
-          "correct": true,
-          "feedback": "Goed gezien. Het Famedio geldt als het \"pantheon\" van beroemde Milanezen, met Manzoni op de ereplek."
+      {
+        "title": "Ga naar Galleria Vittorio Emanuele II",
+        "place": "Galleria Vittorio Emanuele II",
+        "coordinates": {
+          "lat": 45.4659,
+          "lng": 9.19
         },
-        {
-          "text": "Componist Giuseppe Verdi",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Alleen onbekende, anonieme weldoeners van de stad",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Bosco Verticale",
-      "place": "Bosco Verticale",
-      "coordinates": {
-        "lat": 45.46135,
-        "lng": 9.18651
+        "assignment": "Kijk rustig rond bij Galleria Vittorio Emanuele II en zoek het detail dat deze plek typisch maakt voor Milaan.",
+        "question": "Wat doen mensen op het mozaïek van de stier in de vloer?",
+        "hint": "Zoek het mozaïek van een gehoornd dier op de kruising.",
+        "choices": [
+          {
+            "text": "Ronddraaien op hun hak op de \"edele delen\" van de stier, voor geluk",
+            "correct": true,
+            "feedback": "Goed gezien. Het is een bekend, wat ondeugend Milanees ritueel voor geluk."
+          },
+          {
+            "text": "Er een muntje op gooien",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het mozaïek aanraken met hun linkerhand",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Bosco Verticale en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wie onderhoudt de honderden bomen en duizenden planten op de gevels van deze twee woontorens?",
-      "hint": "Kijk omhoog - je ziet ze soms letterlijk aan touwen langs de gevel hangen.",
-      "choices": [
-        {
-          "text": "Gespecialiseerde \"flying gardeners\" die de torens beklimmen met klimtuig",
-          "correct": true,
-          "feedback": "Goed gezien. Deze \"vliegende tuinlieden\" abseilen langs de gevel om de duizenden planten te snoeien en verzorgen."
+      {
+        "title": "Ga naar Duomo di Milano",
+        "place": "Duomo di Milano",
+        "coordinates": {
+          "lat": 45.4642,
+          "lng": 9.1916
         },
-        {
-          "text": "Een volledig geautomatiseerd robotsysteem, zonder mensen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De bewoners zelf, om beurten volgens een rooster",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Stadio San Siro (Giuseppe Meazza)",
-      "place": "Stadio San Siro (Giuseppe Meazza)",
-      "coordinates": {
-        "lat": 45.45878,
-        "lng": 9.18857
-      },
-      "assignment": "Kijk rustig rond bij Stadio San Siro (Giuseppe Meazza) en zoek het detail dat deze plek typisch maakt voor Milaan.",
-      "question": "Wat is opvallend aan de elf cilindrische torens rondom dit stadion?",
-      "hint": "Kijk naar de buitenkant van het stadion, bij het beklimmen naar de tribunes.",
-      "choices": [
-        {
-          "text": "Ze hebben spiraalvormige (helicoïdale) opritten die naar de bovenste ring leiden",
-          "correct": true,
-          "feedback": "Goed gezien. Het stadion wordt gedeeld door aartsrivalen AC Milan en Inter, en is vernoemd naar Giuseppe Meazza, die voor beide clubs speelde."
-        },
-        {
-          "text": "Elke toren is vernoemd naar een andere wereldkampioen voetbal",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Ze zijn allemaal van glas, als enige stadion van Italië",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk naar de gevel, de hoogte en de details rond Duomo di Milano voordat je antwoord geeft.",
+        "question": "Wat kun je doen als je helemaal boven op het dak komt?",
+        "hint": "Koop een ticket voor het dakterras, niet alleen de kerk zelf.",
+        "choices": [
+          {
+            "text": "Tussen duizenden torentjes en beelden lopen, met de gouden Madonnina in zicht",
+            "correct": true,
+            "feedback": "Goed gezien. Het dakterras is een van de weinige plekken waar je zo dicht tussen de gotische spitsen kunt lopen."
+          },
+          {
+            "text": "Een klok bekijken die groter is dan die van Praag",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De originele glas-in-loodramen van dichtbij zien liggen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "athens",
-  "city": "Athene",
-  "title": "Athene: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "200 min",
-  "distance": "5,5 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Athene met 10 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Akropolis / Parthenon",
-      "place": "Akropolis / Parthenon",
-      "coordinates": {
-        "lat": 37.97961,
-        "lng": 23.72913
+    "id": "athens",
+    "city": "Athene",
+    "title": "Athene: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "200 min",
+    "distance": "5,8 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Athene met 10 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Lycabettusheuvel",
+        "place": "Lycabettusheuvel",
+        "coordinates": {
+          "lat": 37.9818,
+          "lng": 23.7436
+        },
+        "assignment": "Kijk rustig rond bij Lycabettusheuvel en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat vind je helemaal boven op deze heuvel?",
+        "hint": "Neem de kabelbaan of beklim de heuvel.",
+        "choices": [
+          {
+            "text": "Een kapel gewijd aan Sint-Joris",
+            "correct": true,
+            "feedback": "Goed gezien. Dit is het hoogste punt van Athene, met een adembenemend uitzicht over de stad."
+          },
+          {
+            "text": "De ruïne van een oude tempel voor Athena",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een oud Byzantijns fort",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Akropolis / Parthenon en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat klopt er \"niet\" aan de zuilen als je goed kijkt?",
-      "hint": "Kijk van een afstand langs de hele rij zuilen.",
-      "choices": [
-        {
-          "text": "Ze buigen licht naar buiten, om optisch juist rechter te lijken",
-          "correct": true,
-          "feedback": "Goed gezien. Dit heet \"entasis\" - een bewuste architectonische illusie van de oude Grieken."
+      {
+        "title": "Ga naar Syntagma-plein (Evzones-wachters)",
+        "place": "Syntagma-plein (Evzones-wachters)",
+        "coordinates": {
+          "lat": 37.9755,
+          "lng": 23.7348
         },
-        {
-          "text": "Ze staan expres een beetje scheef door de aardbeving van 1999",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Om de andere zuil is dikker, voor extra stabiliteit",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Erechtheion",
-      "place": "Erechtheion",
-      "coordinates": {
-        "lat": 37.98077,
-        "lng": 23.73221
+        "assignment": "Neem even de tijd om de randen van Syntagma-plein (Evzones-wachters) te bekijken: gevels, namen, beelden en dagelijks leven.",
+        "question": "Wat is opvallend aan de manier van lopen van deze ceremoniële wachters?",
+        "hint": "Kijk naar de wisseling van de wacht bij het parlement.",
+        "choices": [
+          {
+            "text": "Een langzame, hoge, overdreven stap",
+            "correct": true,
+            "feedback": "Goed gezien. De kenmerkende trage, hoge pas is uniek voor de Griekse ceremoniële wacht."
+          },
+          {
+            "text": "Ze lopen achterwaarts het gebouw in",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Ze marcheren volledig synchroon met muziek uit een verborgen speaker",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Erechtheion en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat zie je op de beroemde veranda van dit tempeltje?",
-      "hint": "Zoek de zuilen in vrouwvorm.",
-      "choices": [
-        {
-          "text": "Zes Karyatiden, vrouwfiguren die als zuilen dienen (kopieën)",
-          "correct": true,
-          "feedback": "Goed gezien. De originele beelden staan veilig in het Akropolismuseum."
+      {
+        "title": "Ga naar Panathenaic Stadium (Kallimarmaro)",
+        "place": "Panathenaic Stadium (Kallimarmaro)",
+        "coordinates": {
+          "lat": 37.9683,
+          "lng": 23.7411
         },
-        {
-          "text": "Vier bronzen paarden",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een rij leeuwenbeelden",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Ancient Agora - Hephaestus-tempel",
-      "place": "Ancient Agora - Hephaestus-tempel",
-      "coordinates": {
-        "lat": 37.98418,
-        "lng": 23.73419
+        "assignment": "Kijk rustig rond bij Panathenaic Stadium (Kallimarmaro) en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Waarvan is dit stadion volledig gebouwd?",
+        "hint": "Kijk naar het materiaal van de tribunes.",
+        "choices": [
+          {
+            "text": "Volledig van marmer",
+            "correct": true,
+            "feedback": "Goed gezien. Het is het enige stadion ter wereld dat volledig uit marmer is opgetrokken, en gastheer van de eerste moderne Olympische Spelen in 1896."
+          },
+          {
+            "text": "Van baksteen met een marmeren laag eroverheen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Van beton, later bekleed met marmer look-alike tegels",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Ancient Agora - Hephaestus-tempel en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat is bijzonder aan de bewaringsstaat van deze tempel?",
-      "hint": "Vergelijk met andere tempels op de Akropolis.",
-      "choices": [
-        {
-          "text": "Het is een van de best bewaarde antieke Griekse tempels ter wereld",
-          "correct": true,
-          "feedback": "Goed gezien. Doordat de tempel later als kerk werd gebruikt, bleef hij ongewoon goed intact."
+      {
+        "title": "Ga naar Tempel van Olympische Zeus",
+        "place": "Tempel van Olympische Zeus",
+        "coordinates": {
+          "lat": 37.9693,
+          "lng": 23.7331
         },
-        {
-          "text": "Het is volledig gereconstrueerd in de 20e eeuw",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Alleen de fundering is nog origineel",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Panathenaic Stadium (Kallimarmaro)",
-      "place": "Panathenaic Stadium (Kallimarmaro)",
-      "coordinates": {
-        "lat": 37.98873,
-        "lng": 23.73354
+        "assignment": "Kijk rustig rond bij Tempel van Olympische Zeus en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Hoeveel van de oorspronkelijke zuilen staan er nog overeind?",
+        "hint": "Tel de staande zuilen.",
+        "choices": [
+          {
+            "text": "15 van de oorspronkelijke 104",
+            "correct": true,
+            "feedback": "Goed gezien. Het was ooit de grootste tempel van Griekenland, nu grotendeels in ruïne."
+          },
+          {
+            "text": "Alle 104, volledig gerestaureerd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Slechts 4",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Panathenaic Stadium (Kallimarmaro) en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Waarvan is dit stadion volledig gebouwd?",
-      "hint": "Kijk naar het materiaal van de tribunes.",
-      "choices": [
-        {
-          "text": "Volledig van marmer",
-          "correct": true,
-          "feedback": "Goed gezien. Het is het enige stadion ter wereld dat volledig uit marmer is opgetrokken, en gastheer van de eerste moderne Olympische Spelen in 1896."
+      {
+        "title": "Ga naar Hadrianusboog",
+        "place": "Hadrianusboog",
+        "coordinates": {
+          "lat": 37.9703,
+          "lng": 23.7318
         },
-        {
-          "text": "Van baksteen met een marmeren laag eroverheen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Van beton, later bekleed met marmer look-alike tegels",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Syntagma-plein (Evzones-wachters)",
-      "place": "Syntagma-plein (Evzones-wachters)",
-      "coordinates": {
-        "lat": 37.98815,
-        "lng": 23.72865
+        "assignment": "Kijk rustig rond bij Hadrianusboog en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat staat er op de twee kanten van de boog, en waarom is dat opmerkelijk?",
+        "hint": "Lees de Griekse inscripties aan beide zijden.",
+        "choices": [
+          {
+            "text": "De ene kant noemt het \"de stad van Theseus\", de andere \"de stad van Hadrianus\"",
+            "correct": true,
+            "feedback": "Goed gezien. De boog markeerde letterlijk de grens tussen het oude Athene en het nieuwe, Romeinse Athene van Hadrianus."
+          },
+          {
+            "text": "Beide kanten bevatten exact dezelfde tekst, als eerbetoon",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een kant is in het Grieks, de andere in het Latijn, met dezelfde boodschap",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Neem even de tijd om de randen van Syntagma-plein (Evzones-wachters) te bekijken: gevels, namen, beelden en dagelijks leven.",
-      "question": "Wat is opvallend aan de manier van lopen van deze ceremoniële wachters?",
-      "hint": "Kijk naar de wisseling van de wacht bij het parlement.",
-      "choices": [
-        {
-          "text": "Een langzame, hoge, overdreven stap",
-          "correct": true,
-          "feedback": "Goed gezien. De kenmerkende trage, hoge pas is uniek voor de Griekse ceremoniële wacht."
+      {
+        "title": "Ga naar Akropolismuseum",
+        "place": "Akropolismuseum",
+        "coordinates": {
+          "lat": 37.9684,
+          "lng": 23.7285
         },
-        {
-          "text": "Ze lopen achterwaarts het gebouw in",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Ze marcheren volledig synchroon met muziek uit een verborgen speaker",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Akropolismuseum",
-      "place": "Akropolismuseum",
-      "coordinates": {
-        "lat": 37.98902,
-        "lng": 23.72547
+        "assignment": "Zoek bij Akropolismuseum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
+        "question": "Wat loop je letterlijk overheen bij binnenkomst?",
+        "hint": "Kijk naar de vloer bij de ingang.",
+        "choices": [
+          {
+            "text": "Een glazen vloer boven opgegraven oude ruïnes",
+            "correct": true,
+            "feedback": "Goed gezien. Onder het museum liggen archeologische opgravingen die zichtbaar bleven door een glazen vloer."
+          },
+          {
+            "text": "Een mozaïekvloer uit de Byzantijnse tijd",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Marmeren tegels uit de Akropolis zelf, hier herplaatst",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Zoek bij Akropolismuseum naar sporen van de oorspronkelijke functie en let op hoe bezoekers zich door de ruimte bewegen.",
-      "question": "Wat loop je letterlijk overheen bij binnenkomst?",
-      "hint": "Kijk naar de vloer bij de ingang.",
-      "choices": [
-        {
-          "text": "Een glazen vloer boven opgegraven oude ruïnes",
-          "correct": true,
-          "feedback": "Goed gezien. Onder het museum liggen archeologische opgravingen die zichtbaar bleven door een glazen vloer."
+      {
+        "title": "Ga naar Akropolis / Parthenon",
+        "place": "Akropolis / Parthenon",
+        "coordinates": {
+          "lat": 37.9715,
+          "lng": 23.7267
         },
-        {
-          "text": "Een mozaïekvloer uit de Byzantijnse tijd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Marmeren tegels uit de Akropolis zelf, hier herplaatst",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Tempel van Olympische Zeus",
-      "place": "Tempel van Olympische Zeus",
-      "coordinates": {
-        "lat": 37.98743,
-        "lng": 23.72187
+        "assignment": "Kijk rustig rond bij Akropolis / Parthenon en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat klopt er \"niet\" aan de zuilen als je goed kijkt?",
+        "hint": "Kijk van een afstand langs de hele rij zuilen.",
+        "choices": [
+          {
+            "text": "Ze buigen licht naar buiten, om optisch juist rechter te lijken",
+            "correct": true,
+            "feedback": "Goed gezien. Dit heet \"entasis\" - een bewuste architectonische illusie van de oude Grieken."
+          },
+          {
+            "text": "Ze staan expres een beetje scheef door de aardbeving van 1999",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Om de andere zuil is dikker, voor extra stabiliteit",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Tempel van Olympische Zeus en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Hoeveel van de oorspronkelijke zuilen staan er nog overeind?",
-      "hint": "Tel de staande zuilen.",
-      "choices": [
-        {
-          "text": "15 van de oorspronkelijke 104",
-          "correct": true,
-          "feedback": "Goed gezien. Het was ooit de grootste tempel van Griekenland, nu grotendeels in ruïne."
+      {
+        "title": "Ga naar Erechtheion",
+        "place": "Erechtheion",
+        "coordinates": {
+          "lat": 37.9721,
+          "lng": 23.7265
         },
-        {
-          "text": "Alle 104, volledig gerestaureerd",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Slechts 4",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Lycabettusheuvel",
-      "place": "Lycabettusheuvel",
-      "coordinates": {
-        "lat": 37.98336,
-        "lng": 23.71971
+        "assignment": "Kijk rustig rond bij Erechtheion en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat zie je op de beroemde veranda van dit tempeltje?",
+        "hint": "Zoek de zuilen in vrouwvorm.",
+        "choices": [
+          {
+            "text": "Zes Karyatiden, vrouwfiguren die als zuilen dienen (kopieën)",
+            "correct": true,
+            "feedback": "Goed gezien. De originele beelden staan veilig in het Akropolismuseum."
+          },
+          {
+            "text": "Vier bronzen paarden",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een rij leeuwenbeelden",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Lycabettusheuvel en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat vind je helemaal boven op deze heuvel?",
-      "hint": "Neem de kabelbaan of beklim de heuvel.",
-      "choices": [
-        {
-          "text": "Een kapel gewijd aan Sint-Joris",
-          "correct": true,
-          "feedback": "Goed gezien. Dit is het hoogste punt van Athene, met een adembenemend uitzicht over de stad."
+      {
+        "title": "Ga naar Plaka",
+        "place": "Plaka",
+        "coordinates": {
+          "lat": 37.9737,
+          "lng": 23.7306
         },
-        {
-          "text": "De ruïne van een oude tempel voor Athena",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een oud Byzantijns fort",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Hadrianusboog",
-      "place": "Hadrianusboog",
-      "coordinates": {
-        "lat": 37.98095,
-        "lng": 23.72401
+        "assignment": "Kijk rustig rond bij Plaka en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat is bijzonder aan deze wijk aan de voet van de Akropolis?",
+        "hint": "Kijk naar de bouwstijl en straatjes vergeleken met de rest van Athene.",
+        "choices": [
+          {
+            "text": "Het is de oudste, nog bewoonde wijk van de stad",
+            "correct": true,
+            "feedback": "Goed gezien. De smalle steegjes en lage huizen dateren van lang voor de moderne stad eromheen."
+          },
+          {
+            "text": "Het is volledig herbouwd na de Grieks-Turkse oorlog",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Het is de enige wijk met uitsluitend neoclassicistische gebouwen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Hadrianusboog en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat staat er op de twee kanten van de boog, en waarom is dat opmerkelijk?",
-      "hint": "Lees de Griekse inscripties aan beide zijden.",
-      "choices": [
-        {
-          "text": "De ene kant noemt het \"de stad van Theseus\", de andere \"de stad van Hadrianus\"",
-          "correct": true,
-          "feedback": "Goed gezien. De boog markeerde letterlijk de grens tussen het oude Athene en het nieuwe, Romeinse Athene van Hadrianus."
+      {
+        "title": "Ga naar Ancient Agora - Hephaestus-tempel",
+        "place": "Ancient Agora - Hephaestus-tempel",
+        "coordinates": {
+          "lat": 37.9756,
+          "lng": 23.7214
         },
-        {
-          "text": "Beide kanten bevatten exact dezelfde tekst, als eerbetoon",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een kant is in het Grieks, de andere in het Latijn, met dezelfde boodschap",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Plaka",
-      "place": "Plaka",
-      "coordinates": {
-        "lat": 37.97838,
-        "lng": 23.72607
-      },
-      "assignment": "Kijk rustig rond bij Plaka en zoek het detail dat deze plek typisch maakt voor Athene.",
-      "question": "Wat is bijzonder aan deze wijk aan de voet van de Akropolis?",
-      "hint": "Kijk naar de bouwstijl en straatjes vergeleken met de rest van Athene.",
-      "choices": [
-        {
-          "text": "Het is de oudste, nog bewoonde wijk van de stad",
-          "correct": true,
-          "feedback": "Goed gezien. De smalle steegjes en lage huizen dateren van lang voor de moderne stad eromheen."
-        },
-        {
-          "text": "Het is volledig herbouwd na de Grieks-Turkse oorlog",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Het is de enige wijk met uitsluitend neoclassicistische gebouwen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-},
+        "assignment": "Kijk rustig rond bij Ancient Agora - Hephaestus-tempel en zoek het detail dat deze plek typisch maakt voor Athene.",
+        "question": "Wat is bijzonder aan de bewaringsstaat van deze tempel?",
+        "hint": "Vergelijk met andere tempels op de Akropolis.",
+        "choices": [
+          {
+            "text": "Het is een van de best bewaarde antieke Griekse tempels ter wereld",
+            "correct": true,
+            "feedback": "Goed gezien. Doordat de tempel later als kerk werd gebruikt, bleef hij ongewoon goed intact."
+          },
+          {
+            "text": "Het is volledig gereconstrueerd in de 20e eeuw",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Alleen de fundering is nog origineel",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  },
 {
-  "id": "edinburgh",
-  "city": "Edinburgh",
-  "title": "Edinburgh: stadsopdracht langs iconen en verborgen details",
-  "price": "€4,49",
-  "duration": "128 min",
-  "distance": "3,3 km",
-  "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
-  "summary": "Een interactieve wandeling door Edinburgh met 6 opdrachten, lokale verhalen en locatie-unlocks.",
-  "stops": [
-    {
-      "title": "Begin bij Greyfriars Bobby (standbeeld)",
-      "place": "Greyfriars Bobby (standbeeld)",
-      "coordinates": {
-        "lat": 55.94911,
-        "lng": -3.18667
+    "id": "edinburgh",
+    "city": "Edinburgh",
+    "title": "Edinburgh: stadsopdracht langs iconen en verborgen details",
+    "price": "€4,49",
+    "duration": "128 min",
+    "distance": "5,7 km",
+    "paymentUrl": "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=Fawy7NnASP6JXF6az-_OUQ",
+    "summary": "Een interactieve wandeling door Edinburgh met 6 opdrachten, lokale verhalen en locatie-unlocks.",
+    "stops": [
+      {
+        "title": "Begin bij Edinburgh Castle",
+        "place": "Edinburgh Castle",
+        "coordinates": {
+          "lat": 55.9486,
+          "lng": -3.1999
+        },
+        "assignment": "Loop langs de buitenkant van Edinburgh Castle en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Wat hoor je hier elke dag (behalve zondag) stipt om 13:00 uur?",
+        "hint": "Luister goed als je rond het middaguur op het kasteelterrein bent.",
+        "choices": [
+          {
+            "text": "Het afvuren van het One O'Clock Gun-kanonschot",
+            "correct": true,
+            "feedback": "Goed gezien. Deze traditie diende ooit om schepen in de haven de tijd te geven."
+          },
+          {
+            "text": "Het luiden van de kasteelklok, 13 keer",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Doedelzakmuziek van de kasteelwacht",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Greyfriars Bobby (standbeeld) en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
-      "question": "Wat is er opvallend aan zijn neus vergeleken met de rest van het beeld?",
-      "hint": "Kijk goed naar de kleur van het brons.",
-      "choices": [
-        {
-          "text": "Zijn neus is goudkleurig glimmend door het aanraken voor geluk",
-          "correct": true,
-          "feedback": "Goed gezien. Duizenden handen hebben de patina van zijn neus weggewreven."
+      {
+        "title": "Ga naar Greyfriars Bobby (standbeeld)",
+        "place": "Greyfriars Bobby (standbeeld)",
+        "coordinates": {
+          "lat": 55.9469,
+          "lng": -3.1919
         },
-        {
-          "text": "Zijn neus ontbreekt volledig door vandalisme",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Zijn neus is van een ander materiaal dan de rest",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Edinburgh Castle",
-      "place": "Edinburgh Castle",
-      "coordinates": {
-        "lat": 55.95245,
-        "lng": -3.18277
+        "assignment": "Kijk rustig rond bij Greyfriars Bobby (standbeeld) en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
+        "question": "Wat is er opvallend aan zijn neus vergeleken met de rest van het beeld?",
+        "hint": "Kijk goed naar de kleur van het brons.",
+        "choices": [
+          {
+            "text": "Zijn neus is goudkleurig glimmend door het aanraken voor geluk",
+            "correct": true,
+            "feedback": "Goed gezien. Duizenden handen hebben de patina van zijn neus weggewreven."
+          },
+          {
+            "text": "Zijn neus ontbreekt volledig door vandalisme",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Zijn neus is van een ander materiaal dan de rest",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Loop langs de buitenkant van Edinburgh Castle en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Wat hoor je hier elke dag (behalve zondag) stipt om 13:00 uur?",
-      "hint": "Luister goed als je rond het middaguur op het kasteelterrein bent.",
-      "choices": [
-        {
-          "text": "Het afvuren van het One O'Clock Gun-kanonschot",
-          "correct": true,
-          "feedback": "Goed gezien. Deze traditie diende ooit om schepen in de haven de tijd te geven."
+      {
+        "title": "Ga naar Royal Mile",
+        "place": "Royal Mile",
+        "coordinates": {
+          "lat": 55.9505,
+          "lng": -3.1857
         },
-        {
-          "text": "Het luiden van de kasteelklok, 13 keer",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Doedelzakmuziek van de kasteelwacht",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Royal Mile",
-      "place": "Royal Mile",
-      "coordinates": {
-        "lat": 55.95852,
-        "lng": -3.18411
+        "assignment": "Kijk rustig rond bij Royal Mile en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
+        "question": "Wat kun je onder de straat vinden, verborgen voor het zicht?",
+        "hint": "Zoek een ingang naar een ondergrondse rondleiding.",
+        "choices": [
+          {
+            "text": "Mary King's Close, een compleet verborgen straatje uit de 17e eeuw",
+            "correct": true,
+            "feedback": "Goed gezien. Dit oude steegje werd letterlijk overbouwd toen er nieuwe gebouwen bovenop kwamen."
+          },
+          {
+            "text": "Een Romeins riool",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een middeleeuwse muntenschat, nog steeds ter plekke te zien",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Royal Mile en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
-      "question": "Wat kun je onder de straat vinden, verborgen voor het zicht?",
-      "hint": "Zoek een ingang naar een ondergrondse rondleiding.",
-      "choices": [
-        {
-          "text": "Mary King's Close, een compleet verborgen straatje uit de 17e eeuw",
-          "correct": true,
-          "feedback": "Goed gezien. Dit oude steegje werd letterlijk overbouwd toen er nieuwe gebouwen bovenop kwamen."
+      {
+        "title": "Ga naar Holyrood Palace",
+        "place": "Holyrood Palace",
+        "coordinates": {
+          "lat": 55.9527,
+          "lng": -3.1722
         },
-        {
-          "text": "Een Romeins riool",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een middeleeuwse muntenschat, nog steeds ter plekke te zien",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Arthur's Seat",
-      "place": "Arthur's Seat",
-      "coordinates": {
-        "lat": 55.96057,
-        "lng": -3.19113
+        "assignment": "Loop langs de buitenkant van Holyrood Palace en zoek details die macht, rijkdom of verdediging laten zien.",
+        "question": "Wat staat er direct naast het paleis, in duidelijk vervallen staat?",
+        "hint": "Loop om het paleis heen, aan de kant van de heuvel.",
+        "choices": [
+          {
+            "text": "De ruïne van Holyrood Abbey",
+            "correct": true,
+            "feedback": "Goed gezien. De abdij raakte na de Reformatie in verval en ligt nu als open ruïne naast het paleis."
+          },
+          {
+            "text": "Een ingestorte middeleeuwse toren",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "De restanten van een Romeins fort",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Arthur's Seat en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
-      "question": "Wat is de oorsprong van deze heuvel middenin de stad?",
-      "hint": "Kijk naar de rotsvorm vanaf de top.",
-      "choices": [
-        {
-          "text": "Een uitgedoofde vulkaan",
-          "correct": true,
-          "feedback": "Goed gezien. De rotsformaties zijn duidelijk vulkanisch van oorsprong."
+      {
+        "title": "Ga naar Arthur's Seat",
+        "place": "Arthur's Seat",
+        "coordinates": {
+          "lat": 55.9444,
+          "lng": -3.1618
         },
-        {
-          "text": "Een kunstmatige heuvel, aangelegd door de Romeinen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Resten van een ingestort kasteel",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Calton Hill",
-      "place": "Calton Hill",
-      "coordinates": {
-        "lat": 55.95398,
-        "lng": -3.19275
+        "assignment": "Kijk rustig rond bij Arthur's Seat en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
+        "question": "Wat is de oorsprong van deze heuvel middenin de stad?",
+        "hint": "Kijk naar de rotsvorm vanaf de top.",
+        "choices": [
+          {
+            "text": "Een uitgedoofde vulkaan",
+            "correct": true,
+            "feedback": "Goed gezien. De rotsformaties zijn duidelijk vulkanisch van oorsprong."
+          },
+          {
+            "text": "Een kunstmatige heuvel, aangelegd door de Romeinen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Resten van een ingestort kasteel",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
       },
-      "assignment": "Kijk rustig rond bij Calton Hill en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
-      "question": "Waarom is het \"National Monument\" hier nooit afgebouwd?",
-      "hint": "Kijk naar de zuilen - er ontbreekt duidelijk iets.",
-      "choices": [
-        {
-          "text": "Het geld raakte op, waardoor alleen een deel van de zuilen overeind staat",
-          "correct": true,
-          "feedback": "Goed gezien. Het monument staat lokaal bekend als \"Edinburgh's Disgrace\" (de schande van Edinburgh)."
+      {
+        "title": "Ga naar Calton Hill",
+        "place": "Calton Hill",
+        "coordinates": {
+          "lat": 55.955,
+          "lng": -3.1828
         },
-        {
-          "text": "Het werd met opzet als ruïne ontworpen",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "Een storm blies de rest van het monument omver",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    },
-    {
-      "title": "Ga naar Holyrood Palace",
-      "place": "Holyrood Palace",
-      "coordinates": {
-        "lat": 55.94893,
-        "lng": -3.19181
-      },
-      "assignment": "Loop langs de buitenkant van Holyrood Palace en zoek details die macht, rijkdom of verdediging laten zien.",
-      "question": "Wat staat er direct naast het paleis, in duidelijk vervallen staat?",
-      "hint": "Loop om het paleis heen, aan de kant van de heuvel.",
-      "choices": [
-        {
-          "text": "De ruïne van Holyrood Abbey",
-          "correct": true,
-          "feedback": "Goed gezien. De abdij raakte na de Reformatie in verval en ligt nu als open ruïne naast het paleis."
-        },
-        {
-          "text": "Een ingestorte middeleeuwse toren",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        },
-        {
-          "text": "De restanten van een Romeins fort",
-          "correct": false,
-          "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
-        }
-      ]
-    }
-  ]
-}
+        "assignment": "Kijk rustig rond bij Calton Hill en zoek het detail dat deze plek typisch maakt voor Edinburgh.",
+        "question": "Waarom is het \"National Monument\" hier nooit afgebouwd?",
+        "hint": "Kijk naar de zuilen - er ontbreekt duidelijk iets.",
+        "choices": [
+          {
+            "text": "Het geld raakte op, waardoor alleen een deel van de zuilen overeind staat",
+            "correct": true,
+            "feedback": "Goed gezien. Het monument staat lokaal bekend als \"Edinburgh's Disgrace\" (de schande van Edinburgh)."
+          },
+          {
+            "text": "Het werd met opzet als ruïne ontworpen",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          },
+          {
+            "text": "Een storm blies de rest van het monument omver",
+            "correct": false,
+            "feedback": "Niet helemaal. Kijk nog eens goed naar de details op deze plek en vergelijk ze met de vraag."
+          }
+        ]
+      }
+    ]
+  }
 ];
 
 const storageKey = "stadsopdracht-progress";
@@ -8082,484 +8082,484 @@ const routeGuides = {
   ],
   paris: [
     {
-      "route": "Start bij Eiffeltoren. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Montmartre. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Eiffeltoren naar Notre-Dame. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Montmartre naar Palais Garnier (Opera). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Notre-Dame naar Louvre (glazen piramide). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Palais Garnier (Opera) naar Place de la Concorde. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Louvre (glazen piramide) naar Montmartre. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Place de la Concorde naar Arc de Triomphe. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Montmartre naar Arc de Triomphe. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Arc de Triomphe naar Eiffeltoren. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Arc de Triomphe naar Pont Neuf. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
+      "route": "Loop van Eiffeltoren naar Musée d'Orsay. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Musée d'Orsay naar Louvre (glazen piramide). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Louvre (glazen piramide) naar Pont Neuf. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Pont Neuf naar Musée d'Orsay. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Pont Neuf naar Notre-Dame. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Musée d'Orsay naar Panthéon. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Panthéon naar Palais Garnier (Opera). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Palais Garnier (Opera) naar Place de la Concorde. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Parijs meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Notre-Dame naar Panthéon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   rome: [
     {
-      "route": "Start bij Colosseum. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Colosseum. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Colosseum naar Trevifontein. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Colosseum naar Circus Maximus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Trevifontein naar Pantheon. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Circus Maximus naar Bocca della Verità. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Pantheon naar Spaanse Trappen. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Bocca della Verità naar Campo de' Fiori. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Spaanse Trappen naar Sint-Pietersplein. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
+      "route": "Loop van Campo de' Fiori naar Piazza Navona. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Sint-Pietersplein naar Piazza Navona. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
+      "route": "Loop van Piazza Navona naar Pantheon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Pantheon naar Trevifontein. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Trevifontein naar Spaanse Trappen. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Spaanse Trappen naar Castel Sant'Angelo. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Castel Sant'Angelo naar Sint-Pietersplein. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
-    },
-    {
-      "route": "Loop van Piazza Navona naar Bocca della Verità. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Bocca della Verità naar Circus Maximus. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Circus Maximus naar Castel Sant'Angelo. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Castel Sant'Angelo naar Campo de' Fiori. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Rome meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   amsterdam: [
     {
-      "route": "Start bij Anne Frank Huis. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Anne Frank Huis. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Anne Frank Huis naar Rijksmuseum. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Amsterdam meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Anne Frank Huis naar Westerkerk. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Rijksmuseum naar Westerkerk. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Amsterdam meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Westerkerk naar Dam / Koninklijk Paleis. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Westerkerk naar Bloemenmarkt. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Amsterdam meepakt.",
+      "route": "Loop van Dam / Koninklijk Paleis naar Bloemenmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Bloemenmarkt naar Magere Brug. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Amsterdam meepakt.",
+      "route": "Loop van Bloemenmarkt naar Magere Brug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Magere Brug naar Dam / Koninklijk Paleis. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Amsterdam meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Magere Brug naar Rijksmuseum. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   berlin: [
     {
-      "route": "Start bij Brandenburger Tor. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Siegessäule (Tiergarten). Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Brandenburger Tor naar Reichstag. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Siegessäule (Tiergarten) naar Reichstag. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Reichstag naar East Side Gallery. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Reichstag naar Brandenburger Tor. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van East Side Gallery naar Checkpoint Charlie. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Brandenburger Tor naar Holocaust-Mahnmal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Checkpoint Charlie naar Fernsehturm. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Fernsehturm naar Gendarmenmarkt. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
+      "route": "Loop van Holocaust-Mahnmal naar Gendarmenmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Gendarmenmarkt naar Pergamonmuseum (Museumsinsel). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Gendarmenmarkt naar Checkpoint Charlie. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Pergamonmuseum (Museumsinsel) naar Berliner Dom. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Checkpoint Charlie naar Pergamonmuseum (Museumsinsel). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Berliner Dom naar Holocaust-Mahnmal. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Pergamonmuseum (Museumsinsel) naar Berliner Dom. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Holocaust-Mahnmal naar Siegessäule (Tiergarten). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Berlijn meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Berliner Dom naar Fernsehturm. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Fernsehturm naar East Side Gallery. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   lisbon: [
     {
-      "route": "Start bij Torre de Belém. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Torre de Belém. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Torre de Belém naar Mosteiro dos Jerónimos. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Lissabon meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Torre de Belém naar Mosteiro dos Jerónimos. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Mosteiro dos Jerónimos naar Tram 28. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Lissabon meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem vanaf Belém de tram, trein of bus terug richting Baixa en wandel daarna naar Praça do Comércio.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Tram 28 naar Castelo de São Jorge. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Lissabon meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Praça do Comércio naar Elevador de Santa Justa. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Castelo de São Jorge naar Praça do Comércio. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Lissabon meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Elevador de Santa Justa naar Tram 28. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Praça do Comércio naar Elevador de Santa Justa. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Lissabon meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Tram 28 naar Castelo de São Jorge. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   budapest: [
     {
-      "route": "Start bij Parlementsgebouw. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Heldenplein. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Parlementsgebouw naar Kettingbrug. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
+      "route": "Loop van Heldenplein naar Széchenyi-bad. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Neem voor deze overgang de metro of tram richting het centrum; vanaf daar pak je de wandeling weer op bij Grote Synagoge (Dohány utca).",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Grote Synagoge (Dohány utca) naar Grote Markthal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
+    },
+    {
+      "route": "Loop van Grote Markthal naar Gellértberg / Citadella. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Gellértberg / Citadella naar Burcht van Buda. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Burcht van Buda naar Vissersbastion. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Vissersbastion naar Kettingbrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Kettingbrug naar Vissersbastion. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Kettingbrug naar Schoenen aan de Donau. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Vissersbastion naar Heldenplein. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
-    },
-    {
-      "route": "Loop van Heldenplein naar Széchenyi-bad. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Széchenyi-bad naar Grote Markthal. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
-    },
-    {
-      "route": "Loop van Grote Markthal naar Burcht van Buda. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Burcht van Buda naar Grote Synagoge (Dohány utca). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Grote Synagoge (Dohány utca) naar Schoenen aan de Donau. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Schoenen aan de Donau naar Gellértberg / Citadella. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Boedapest meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Schoenen aan de Donau naar Parlementsgebouw. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   venice: [
     {
-      "route": "Start bij San Marcoplein. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
+      "route": "Start bij San Marcoplein. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van San Marcoplein naar Basiliek San Marco. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Venetië meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van San Marcoplein naar Basiliek San Marco. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Basiliek San Marco naar Dogenpaleis. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Venetië meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Basiliek San Marco naar Dogenpaleis. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Dogenpaleis naar Rialtobrug. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Venetië meepakt.",
+      "route": "Loop van Dogenpaleis naar Rialtobrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Rialtobrug naar Canal Grande. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Venetië meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Rialtobrug naar Canal Grande. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Canal Grande naar Burano. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Venetië meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem vanaf de omgeving van de Canal Grande de vaporetto richting Burano. Dit is bewust een bootstuk: start de volgende opdracht pas op het eiland zelf.",
+      "watch": "Let op hoe anders het tempo, de kleuren en de schaal van Burano voelen vergeleken met Venetië zelf."
     }
   ],
   barcelona: [
     {
-      "route": "Start bij Sagrada Familia. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Park Güell. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Sagrada Familia naar Park Güell. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Park Güell naar Sagrada Familia. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Park Güell naar Casa Batlló. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Sagrada Familia naar Sagrada Familia (Passiegevel, extra). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Casa Batlló naar La Boqueria (markt aan La Rambla). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
+      "route": "Loop van Sagrada Familia (Passiegevel, extra) naar Casa Milà (La Pedrera). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van La Boqueria (markt aan La Rambla) naar Barri Gòtic (brug in Carrer del Bisbe). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
+      "route": "Loop van Casa Milà (La Pedrera) naar Casa Batlló. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Casa Batlló naar Palau de la Música Catalana. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Palau de la Música Catalana naar Plaça Nova (Barri Gòtic). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Plaça Nova (Barri Gòtic) naar Barri Gòtic (brug in Carrer del Bisbe). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Barri Gòtic (brug in Carrer del Bisbe) naar Montjuïc (Font Màgica). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Barri Gòtic (brug in Carrer del Bisbe) naar La Boqueria (markt aan La Rambla). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Montjuïc (Font Màgica) naar Sagrada Familia (Passiegevel, extra). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Sagrada Familia (Passiegevel, extra) naar Casa Milà (La Pedrera). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Casa Milà (La Pedrera) naar Plaça Nova (Barri Gòtic). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Plaça Nova (Barri Gòtic) naar Palau de la Música Catalana. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Barcelona meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van La Boqueria (markt aan La Rambla) naar Montjuïc (Font Màgica). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   prague: [
     {
-      "route": "Start bij Karelsbrug. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
+      "route": "Start bij Petřín-toren. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Petřín-toren naar Praagse Burcht. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Praagse Burcht naar Sint-Vituskathedraal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Sint-Vituskathedraal naar Gouden Straatje (Zlatá ulička). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Gouden Straatje (Zlatá ulička) naar Karelsbrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Karelsbrug naar Astronomische Klok. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Astronomische Klok naar Praagse Burcht. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Praagse Burcht naar Gouden Straatje (Zlatá ulička). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Gouden Straatje (Zlatá ulička) naar Sint-Vituskathedraal. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Sint-Vituskathedraal naar Joodse Wijk (Josefov) - Oude Joodse Begraafplaats. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Joodse Wijk (Josefov) - Oude Joodse Begraafplaats naar Vyšehrad. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Vyšehrad naar Petřín-toren. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Petřín-toren naar Dansend Huis (Tančící dům). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Dansend Huis (Tančící dům) naar Oudestadsplein - Jan Hus-monument. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Praag meepakt.",
+      "route": "Loop van Karelsbrug naar Oudestadsplein - Jan Hus-monument. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
+    },
+    {
+      "route": "Loop van Oudestadsplein - Jan Hus-monument naar Astronomische Klok. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Astronomische Klok naar Joodse Wijk (Josefov) - Oude Joodse Begraafplaats. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Joodse Wijk (Josefov) - Oude Joodse Begraafplaats naar Dansend Huis (Tančící dům). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Dansend Huis (Tančící dům) naar Vyšehrad. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   munich: [
     {
-      "route": "Start bij Neues Rathaus (Marienplatz). Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Allianz Arena. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
     },
     {
-      "route": "Loop van Neues Rathaus (Marienplatz) naar Frauenkirche. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem voor dit stuk de U-Bahn of tram in plaats van te lopen. Stap pas weer over op de wandelroute zodra je bij BMW Welt / BMW Museum bent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Frauenkirche naar Englischer Garten (Eisbach). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van BMW Welt / BMW Museum naar Olympiapark. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Englischer Garten (Eisbach) naar Schloss Nymphenburg (Schönheitengalerie). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Olympiapark naar Englischer Garten (Eisbach). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Schloss Nymphenburg (Schönheitengalerie) naar Viktualienmarkt. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
+      "route": "Loop van Englischer Garten (Eisbach) naar Frauenkirche. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Frauenkirche naar Neues Rathaus (Marienplatz). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Viktualienmarkt naar Hofbräuhaus. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Neues Rathaus (Marienplatz) naar Viktualienmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Hofbräuhaus naar Olympiapark. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Viktualienmarkt naar Hofbräuhaus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Olympiapark naar BMW Welt / BMW Museum. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Hofbräuhaus naar Asamkirche. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van BMW Welt / BMW Museum naar Asamkirche. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Asamkirche naar Allianz Arena. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van München meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem voor dit stuk de U-Bahn of tram in plaats van te lopen. Stap pas weer over op de wandelroute zodra je bij Schloss Nymphenburg (Schönheitengalerie) bent.",
+      "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
     }
   ],
   milan: [
     {
-      "route": "Start bij Duomo di Milano. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Stadio San Siro (Giuseppe Meazza). Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
     },
     {
-      "route": "Loop van Duomo di Milano naar Galleria Vittorio Emanuele II. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem voor dit lange stuk de metro richting het centrum en wandel vanaf de dichtstbijzijnde halte naar Santa Maria delle Grazie.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Galleria Vittorio Emanuele II naar Teatro alla Scala. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Santa Maria delle Grazie naar Basilica di Sant'Ambrogio. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Teatro alla Scala naar Santa Maria delle Grazie. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Basilica di Sant'Ambrogio naar Navigli. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Santa Maria delle Grazie naar Castello Sforzesco. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Navigli naar Castello Sforzesco. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Castello Sforzesco naar Navigli. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Castello Sforzesco naar Cimitero Monumentale. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Navigli naar Basilica di Sant'Ambrogio. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Cimitero Monumentale naar Bosco Verticale. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Basilica di Sant'Ambrogio naar Cimitero Monumentale. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Bosco Verticale naar Teatro alla Scala. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Cimitero Monumentale naar Bosco Verticale. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Teatro alla Scala naar Galleria Vittorio Emanuele II. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Bosco Verticale naar Stadio San Siro (Giuseppe Meazza). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Milaan meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Galleria Vittorio Emanuele II naar Duomo di Milano. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   athens: [
     {
-      "route": "Start bij Akropolis / Parthenon. Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Lycabettusheuvel. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Akropolis / Parthenon naar Erechtheion. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Erechtheion naar Ancient Agora - Hephaestus-tempel. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Ancient Agora - Hephaestus-tempel naar Panathenaic Stadium (Kallimarmaro). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
-    },
-    {
-      "route": "Loop van Panathenaic Stadium (Kallimarmaro) naar Syntagma-plein (Evzones-wachters). Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
+      "route": "Loop van Lycabettusheuvel naar Syntagma-plein (Evzones-wachters). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Syntagma-plein (Evzones-wachters) naar Akropolismuseum. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Syntagma-plein (Evzones-wachters) naar Panathenaic Stadium (Kallimarmaro). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Akropolismuseum naar Tempel van Olympische Zeus. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Panathenaic Stadium (Kallimarmaro) naar Tempel van Olympische Zeus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Tempel van Olympische Zeus naar Lycabettusheuvel. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Tempel van Olympische Zeus naar Hadrianusboog. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Lycabettusheuvel naar Hadrianusboog. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Hadrianusboog naar Akropolismuseum. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Hadrianusboog naar Plaka. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Athene meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Akropolismuseum naar Akropolis / Parthenon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Akropolis / Parthenon naar Erechtheion. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Erechtheion naar Plaka. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+    },
+    {
+      "route": "Loop van Plaka naar Ancient Agora - Hephaestus-tempel. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   edinburgh: [
     {
-      "route": "Start bij Greyfriars Bobby (standbeeld). Neem eerst een minuut om je te oriënteren op de kaart en kijk welke kant de volgende stop op ligt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Start bij Edinburgh Castle. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Greyfriars Bobby (standbeeld) naar Edinburgh Castle. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Edinburgh meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Edinburgh Castle naar Greyfriars Bobby (standbeeld). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Edinburgh Castle naar Royal Mile. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Edinburgh meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Greyfriars Bobby (standbeeld) naar Royal Mile. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Royal Mile naar Arthur's Seat. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Edinburgh meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Royal Mile naar Holyrood Palace. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Arthur's Seat naar Calton Hill. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Edinburgh meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Holyrood Palace naar Arthur's Seat. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Calton Hill naar Holyrood Palace. Kies waar mogelijk de route via levendige straten of pleinen, zodat je onderweg al iets van Edinburgh meepakt.",
-      "watch": "Let onderweg op gevels, straatnamen en kleine hoogteverschillen; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop van Arthur's Seat naar Calton Hill. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ]
 };
