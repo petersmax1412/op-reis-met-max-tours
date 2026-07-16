@@ -6306,6 +6306,7 @@ const tours = [
 
 const storageKey = "stadsopdracht-progress";
 const cityTabs = document.querySelector("[data-city-tabs]");
+const citySearch = document.querySelector("[data-city-search]");
 const tourGrid = document.querySelector("[data-tour-grid]");
 const stopList = document.querySelector("[data-stop-list]");
 const assignmentPanel = document.querySelector("[data-assignment-panel]");
@@ -6324,6 +6325,7 @@ const promoToggleButton = document.querySelector("[data-promo-toggle]");
 let selectedTourId = null;
 let selectedCityId = "all";
 let selectedStopIndex = 0;
+let citySearchTerm = "";
 let userLocation = null;
 let locationMessage = "Locatie nog niet actief.";
 let paymentTimer = null;
@@ -6352,6 +6354,11 @@ const getTourPriceValue = (tour) =>
     Math.max(minTourPrice, baseTourPrice + (tour.stops.length - baseTourStops) * pricePerExtraStop),
   );
 const getTourPrice = (tour) => formatEuroPrice(getTourPriceValue(tour));
+const normalizeSearch = (value) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 const cityPhotos = {
   malaga: {
     src: "assets/cities/malaga.jpg",
@@ -9302,9 +9309,19 @@ const renderInstallCallout = () => {
 };
 
 const renderTours = () => {
-  tourGrid.innerHTML = tours
-    .filter((tour) => selectedCityId === "all" || tour.id === selectedCityId)
-    .map((tour) => {
+  const normalizedSearch = normalizeSearch(citySearchTerm.trim());
+  const visibleTours = tours.filter((tour) => {
+    const matchesCity = selectedCityId === "all" || tour.id === selectedCityId;
+    const searchable = normalizeSearch(
+      [tour.id, tour.city, tour.title, tour.summary, ...tour.stops.map((stop) => stop.place)].join(" "),
+    );
+    const matchesSearch = !normalizedSearch || searchable.includes(normalizedSearch);
+    return matchesCity && matchesSearch;
+  });
+
+  tourGrid.innerHTML = visibleTours.length
+    ? visibleTours
+        .map((tour) => {
       const unlocked = isUnlocked(tour.id);
       return `
         <article class="tour-card">
@@ -9331,7 +9348,12 @@ const renderTours = () => {
         </article>
       `;
     })
-    .join("");
+        .join("")
+    : `
+      <div class="empty-state tour-empty">
+        Geen steden gevonden. Probeer een andere zoekterm.
+      </div>
+    `;
 };
 
 const renderStops = () => {
@@ -9616,6 +9638,8 @@ document.addEventListener("click", (event) => {
   if (openButton) openTour(openButton.dataset.openTour);
   if (cityTab) {
     selectedCityId = cityTab.dataset.cityTab;
+    citySearchTerm = "";
+    if (citySearch) citySearch.value = "";
     resetWorkspace();
     renderCityTabs();
     renderTours();
@@ -9735,6 +9759,14 @@ document.addEventListener("click", (event) => {
   if (closeCheckout) {
     closeDialog(checkoutDialog);
   }
+});
+
+citySearch?.addEventListener("input", (event) => {
+  citySearchTerm = event.target.value;
+  selectedCityId = "all";
+  resetWorkspace();
+  renderCityTabs();
+  renderTours();
 });
 
 document.addEventListener("keydown", (event) => {

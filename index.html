@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=67" />
+    <link rel="stylesheet" href="styles.css?v=68" />
   </head>
   <body>
     <section class="promo-intro" data-promo-intro aria-label="Stadsopdracht intro">
@@ -135,7 +135,6 @@
       <nav class="top-nav" aria-label="Navigatie">
         <a href="#tours">Steden</a>
         <a href="#mijn-tour">Mijn tour</a>
-        <a href="#betaling">Betalen</a>
       </nav>
     </header>
 
@@ -205,6 +204,19 @@
           </div>
         </div>
 
+        <div class="tour-search">
+          <label for="city-search">Zoek een stad</label>
+          <div class="tour-search-field">
+            <input
+              id="city-search"
+              type="search"
+              data-city-search
+              placeholder="Bijvoorbeeld Parijs, Málaga of München"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
         <div class="city-tabs" data-city-tabs aria-label="Kies een stad"></div>
         <div class="tour-grid" data-tour-grid></div>
       </section>
@@ -226,34 +238,12 @@
         </div>
       </section>
 
-      <section class="section payment-section" id="betaling">
-        <div>
-          <p class="eyebrow dark">Betalingen</p>
-          <h2>Betaal eenvoudig met iDEAL of Wero</h2>
-          <p>
-            Koop je stadsroute via een veilige betaalpagina. Na het openen van de betaalpagina
-            zet de webapp je route klaar, zodat je direct kunt beginnen met de opdrachten in de
-            stad. Je aankoop en voortgang blijven op dit apparaat bewaard.
-          </p>
-        </div>
-        <div class="payment-card">
-          <span class="pill">Betaalstructuur</span>
-          <ul>
-            <li>Prijs per route op basis van stops</li>
-            <li>Betalen met iDEAL of Wero</li>
-            <li>Route wordt daarna op dit apparaat vrijgegeven</li>
-            <li>PWA voorbereid voor Android en iOS</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="admin-section" data-admin-panel aria-label="Admin toegang"></section>
     </main>
 
     <footer class="bottom-nav" aria-label="Mobiele navigatie">
       <a href="#tours">Steden</a>
       <a href="#mijn-tour">Mijn tour</a>
-      <a href="#betaling">Betalen</a>
     </footer>
 
     <dialog class="checkout-dialog" data-checkout-dialog>
@@ -270,6 +260,6 @@
       <div data-answer-content></div>
     </dialog>
 
-    <script src="script.js?v=67"></script>
+    <script src="script.js?v=68"></script>
   </body>
 </html>
