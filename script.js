@@ -8082,483 +8082,483 @@ const routeGuides = {
   ],
   paris: [
     {
-      "route": "Start bij Montmartre. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start boven op Montmartre bij de wijngaard/Sacré-Cœur-omgeving. Rond hier eerst de opdracht af voordat je afdaalt richting de grote boulevards.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Montmartre naar Palais Garnier (Opera). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf Montmartre af richting Pigalle en neem daarna de metro of wandel via Rue des Martyrs richting Opéra. Eindig bij de gevel van Palais Garnier.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Palais Garnier (Opera) naar Place de la Concorde. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Palais Garnier via Boulevard des Capucines en Place Vendôme richting Jardin des Tuileries. Steek door naar Place de la Concorde.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Place de la Concorde naar Arc de Triomphe. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Volg vanaf Place de la Concorde de Champs-Élysées richting het westen. De Arc de Triomphe blijft steeds duidelijker recht voor je liggen.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Arc de Triomphe naar Eiffeltoren. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Ga vanaf de Arc de Triomphe richting Trocadéro en steek daarna via de tuinen of Pont d’Iéna door naar de Eiffeltoren.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Eiffeltoren naar Musée d'Orsay. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Eiffeltoren langs de Seine richting Pont de l’Alma en daarna verder naar Musée d’Orsay. Houd de rivier zoveel mogelijk aan je rechterhand.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Musée d'Orsay naar Louvre (glazen piramide). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Musée d’Orsay over Pont Royal of Pont du Carrousel naar de Louvre-zijde. Ga het binnenplein op richting de glazen piramide.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Louvre (glazen piramide) naar Pont Neuf. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Louvre-piramide door Cour Carrée of langs de Seine naar Pont Neuf. De brug ligt bij de westpunt van Île de la Cité.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Pont Neuf naar Notre-Dame. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek Pont Neuf over naar Île de la Cité en loop door richting de voorkant van Notre-Dame. Kijk bij aankomst ook naar de bestrating voor de ingang.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Notre-Dame naar Panthéon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Notre-Dame via de brug naar de linkeroever en klim rustig omhoog door het Quartier Latin richting het Panthéon.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   rome: [
     {
-      "route": "Start bij Colosseum. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij het Colosseum en neem even de tijd om de buitenkant en de bogen rondom goed te bekijken.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Colosseum naar Circus Maximus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Colosseum langs de rand van het Forum richting de open vlakte van Circus Maximus. Houd de Palatijnse heuvel aan je rechterkant.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Circus Maximus naar Bocca della Verità. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Circus Maximus richting Santa Maria in Cosmedin. De Bocca della Verità ligt bij de kerk, vlak bij de Tiber.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Bocca della Verità naar Campo de' Fiori. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek vanaf de Bocca della Verità door richting de Tiber en loop via rustige straatjes naar Campo de’ Fiori.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Campo de' Fiori naar Piazza Navona. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Campo de’ Fiori via Via dei Baullari naar Piazza Navona. Je komt vanzelf uit op het langgerekte plein.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Piazza Navona naar Pantheon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Piazza Navona door de smalle straatjes naar het Pantheon. De koepel duikt pas laat ineens voor je op.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Pantheon naar Trevifontein. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Pantheon via Piazza di Pietra en smalle winkelstraten naar de Trevifontein. Volg het geluid van water en drukte.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Trevifontein naar Spaanse Trappen. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Trevifontein richting Piazza di Spagna. De route gaat door een druk winkelgebied voordat de Spaanse Trappen verschijnen.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Spaanse Trappen naar Castel Sant'Angelo. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Spaanse Trappen richting de Tiber en steek over bij Ponte Sant’Angelo. Castel Sant’Angelo ligt direct aan de overkant.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Castel Sant'Angelo naar Sint-Pietersplein. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Castel Sant’Angelo over Via della Conciliazione richting Sint-Pietersplein. De basiliek ligt precies in de zichtlijn.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     }
   ],
   amsterdam: [
     {
-      "route": "Start bij Anne Frank Huis. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij het Anne Frank Huis aan de Prinsengracht. Kijk eerst naar de gracht en de smalle gevels rondom.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Anne Frank Huis naar Westerkerk. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Anne Frank Huis een paar stappen naar de Westerkerk. De toren is vanaf de gracht bijna niet te missen.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Westerkerk naar Dam / Koninklijk Paleis. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Westerkerk via de Raadhuisstraat richting de Dam. Je gaat van de Jordaanrand naar het drukste plein van de stad.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Dam / Koninklijk Paleis naar Bloemenmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Dam via Rokin en Muntplein naar de Bloemenmarkt aan het Singel. Je merkt onderweg hoe winkelstad en grachten door elkaar lopen.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Bloemenmarkt naar Magere Brug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Bloemenmarkt richting Rembrandtplein en daarna naar de Amstel. De Magere Brug ligt als lichte, witte brug over het water.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Magere Brug naar Rijksmuseum. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Magere Brug via de Amstel en Weteringcircuit richting Museumplein. Eindig aan de voorkant of passage van het Rijksmuseum.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   berlin: [
     {
-      "route": "Start bij Siegessäule (Tiergarten). Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij de Siegessäule midden in Tiergarten. Dit is een ruime, groene start voordat je richting regeringswijk loopt.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Siegessäule (Tiergarten) naar Reichstag. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Siegessäule door Tiergarten richting de Reichstag. Houd de brede lanen en het groen aan als richting naar het oosten.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Reichstag naar Brandenburger Tor. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Reichstag naar de Brandenburger Tor. Dit is maar een kort stuk door de regeringswijk.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Brandenburger Tor naar Holocaust-Mahnmal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Brandenburger Tor zuidwaarts naar het Holocaust-Mahnmal. Je ziet de betonnen blokken al snel tussen de straten verschijnen.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Holocaust-Mahnmal naar Gendarmenmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Holocaust-Mahnmal via Behrenstraße en Friedrichstraße richting Gendarmenmarkt.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Gendarmenmarkt naar Checkpoint Charlie. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Gendarmenmarkt zuidwaarts naar Checkpoint Charlie. De route loopt door het strakkere, zakelijke centrum van Berlijn.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Checkpoint Charlie naar Pergamonmuseum (Museumsinsel). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Checkpoint Charlie richting Unter den Linden en steek door naar Museumsinsel. Reken op een langer stadsstuk met veel geschiedenis onderweg.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Pergamonmuseum (Museumsinsel) naar Berliner Dom. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Pergamonmuseum over Museumsinsel naar de Berliner Dom. De koepel is dichtbij en goed zichtbaar.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Berliner Dom naar Fernsehturm. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Berliner Dom richting Alexanderplatz. De Fernsehturm wordt onderweg steeds dominanter in beeld.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Fernsehturm naar East Side Gallery. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Neem vanaf Alexanderplatz of omgeving de S-Bahn/U-Bahn richting Warschauer Straße of Ostbahnhof en loop naar de East Side Gallery aan de Spree.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   lisbon: [
     {
-      "route": "Start bij Torre de Belém. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij Torre de Belém aan het water. Kijk eerst naar de Taag en de verdedigende ligging van de toren.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Torre de Belém naar Mosteiro dos Jerónimos. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Torre de Belém langs de tuinen naar Mosteiro dos Jerónimos. Het klooster ligt landinwaarts, aan de overkant van de brede zone bij Belém.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Neem vanaf Belém de tram, trein of bus terug richting Baixa en wandel daarna naar Praça do Comércio.",
+      "route": "Neem vanaf Belém de tram, trein of bus terug richting Baixa. Stap uit bij de rivier en loop naar het open plein van Praça do Comércio.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Praça do Comércio naar Elevador de Santa Justa. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Praça do Comércio onder de triomfboog door de Baixa in richting Elevador de Santa Justa.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Elevador de Santa Justa naar Tram 28. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Elevador de Santa Justa richting Martim Moniz of een halte waar Tram 28 zichtbaar door smalle straten rijdt.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Tram 28 naar Castelo de São Jorge. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Tram 28-omgeving omhoog richting Castelo de São Jorge. Neem trappen en stegen rustig; dit is een klimstuk.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   budapest: [
     {
-      "route": "Start bij Heldenplein. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij Heldenplein en kijk eerst naar de zuil, standbeelden en de brede aanleg van het plein.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Heldenplein naar Széchenyi-bad. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Heldenplein door het stadspark naar Széchenyi-bad. Het bad ligt dieper in het groen van Városliget.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Neem voor deze overgang de metro of tram richting het centrum; vanaf daar pak je de wandeling weer op bij Grote Synagoge (Dohány utca).",
+      "route": "Neem vanaf Széchenyi of Hősök tere de metro richting Deák Ferenc tér en loop daarna naar de Grote Synagoge aan Dohány utca.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Grote Synagoge (Dohány utca) naar Grote Markthal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Grote Synagoge via de binnenstad richting de Grote Markthal bij Fővám tér.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Grote Markthal naar Gellértberg / Citadella. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek vanaf de Grote Markthal de Vrijheidsbrug over naar de Buda-kant en klim richting Gellértberg/Citadella.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Gellértberg / Citadella naar Burcht van Buda. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf Gellértberg af richting de Buda-kant en ga verder naar de Burcht van Buda. Neem rustig de route via trappen of hellende paden.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Burcht van Buda naar Vissersbastion. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop binnen het burchtgebied van de Burcht van Buda naar het Vissersbastion. Dit is een kort maar rijk stuk door het oude Buda.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Vissersbastion naar Kettingbrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf het Vissersbastion richting de Donau en loop naar de Kettingbrug.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Kettingbrug naar Schoenen aan de Donau. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek de Kettingbrug over naar Pest en loop langs de Donau naar het monument Schoenen aan de Donau.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Schoenen aan de Donau naar Parlementsgebouw. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Volg vanaf de Schoenen aan de Donau de kade noordwaarts naar het Parlementsgebouw.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   venice: [
     {
-      "route": "Start bij San Marcoplein. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start op San Marcoplein. Kijk eerst hoe plein, basiliek, campanile en waterkant samen één decor vormen.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van San Marcoplein naar Basiliek San Marco. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het plein direct naar de voorkant van de Basiliek San Marco. Dit is maar een paar stappen, dus neem vooral de gevel goed in je op.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Basiliek San Marco naar Dogenpaleis. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de basiliek naar het Dogenpaleis aan de waterkant. Let op de overgang van kerk naar machtspaleis.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Dogenpaleis naar Rialtobrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Dogenpaleis via smalle calli richting Rialtobrug. Volg de gele bordjes “Rialto” als je twijfelt.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Rialtobrug naar Canal Grande. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Blijf bij de Rialtobrug even aan het Canal Grande. Zoek een plek waar je het verkeer op het water goed kunt zien.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Neem vanaf de omgeving van de Canal Grande de vaporetto richting Burano. Dit is bewust een bootstuk: start de volgende opdracht pas op het eiland zelf.",
+      "route": "Neem vanaf de omgeving van Fondamente Nove of San Zaccaria de vaporetto richting Burano. Dit is bewust een bootstuk; open de volgende opdracht pas op het eiland zelf.",
       "watch": "Let op hoe anders het tempo, de kleuren en de schaal van Burano voelen vergeleken met Venetië zelf."
     }
   ],
   barcelona: [
     {
-      "route": "Start bij Park Güell. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij Park Güell. Rond hier eerst de parkopdracht af voordat je afdaalt richting de stad.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Park Güell naar Sagrada Familia. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf Park Güell af richting de Sagrada Familia. Als je tijd wilt besparen, neem een bus of metro; te voet is dit een stevig stuk omlaag.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Sagrada Familia naar Sagrada Familia (Passiegevel, extra). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop rond de Sagrada Familia naar de Passiegevel. Je blijft bij hetzelfde gebouw, maar de stijl verandert enorm.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Sagrada Familia (Passiegevel, extra) naar Casa Milà (La Pedrera). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Sagrada Familia via de Eixample-straten richting Casa Milà. Volg de rechte blokkenstructuur van de wijk.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Casa Milà (La Pedrera) naar Casa Batlló. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Casa Milà over Passeig de Gràcia naar Casa Batlló. Dit is een van de duidelijkste modernisme-straten van de stad.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Casa Batlló naar Palau de la Música Catalana. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Casa Batlló richting Plaça de Catalunya en daarna naar Palau de la Música Catalana.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Palau de la Música Catalana naar Plaça Nova (Barri Gòtic). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Palau de la Música via smalle straten naar Plaça Nova bij de oude stadsmuren.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Plaça Nova (Barri Gòtic) naar Barri Gòtic (brug in Carrer del Bisbe). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Plaça Nova een paar stappen het Barri Gòtic in naar Carrer del Bisbe en de bekende brug.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Barri Gòtic (brug in Carrer del Bisbe) naar La Boqueria (markt aan La Rambla). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Carrer del Bisbe via de gotische straatjes naar La Rambla en de ingang van La Boqueria.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van La Boqueria (markt aan La Rambla) naar Montjuïc (Font Màgica). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Neem vanaf La Boqueria metro of bus richting Plaça d’Espanya en loop daarna naar de Font Màgica op Montjuïc.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   prague: [
     {
-      "route": "Start bij Petřín-toren. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij de Petřín-toren. Dit is een hoog beginpunt; kijk eerst hoe de stad onder je ligt.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Petřín-toren naar Praagse Burcht. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Petřín via de groene helling richting de Praagse Burcht. Kies de dalende paden en houd de burcht als richtpunt.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Praagse Burcht naar Sint-Vituskathedraal. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop binnen het burchtcomplex naar de Sint-Vituskathedraal. De torens bepalen hier vanzelf de route.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Sint-Vituskathedraal naar Gouden Straatje (Zlatá ulička). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de kathedraal naar Gouden Straatje. Blijf binnen het burchtgebied en volg de borden naar Zlatá ulička.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Gouden Straatje (Zlatá ulička) naar Karelsbrug. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf de burcht af naar Malá Strana en loop door naar de Karelsbrug.",
       "watch": "Let onderweg op zichtlijnen over het water en hoe de stad aan beide kanten anders aanvoelt."
     },
     {
-      "route": "Loop van Karelsbrug naar Oudestadsplein - Jan Hus-monument. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek de Karelsbrug over naar de Oude Stad en loop door naar het Oudestadsplein met het Jan Hus-monument.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Oudestadsplein - Jan Hus-monument naar Astronomische Klok. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop op hetzelfde plein naar de Astronomische Klok aan de gevel van het oude raadhuis.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Astronomische Klok naar Joodse Wijk (Josefov) - Oude Joodse Begraafplaats. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Oudestadsplein noordwaarts naar Josefov en de Oude Joodse Begraafplaats.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Joodse Wijk (Josefov) - Oude Joodse Begraafplaats naar Dansend Huis (Tančící dům). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Josefov langs de rivier of via de binnenstad naar het Dansend Huis aan de Moldau.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Dansend Huis (Tančící dům) naar Vyšehrad. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het Dansend Huis zuidwaarts langs de rivier richting Vyšehrad. Dit is een langer maar logisch rivierstuk.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   munich: [
     {
-      "route": "Start bij Allianz Arena. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
-      "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
+      "route": "Start bij Allianz Arena aan de noordkant van München. Rond hier eerst de stadionopdracht af; dit is een losse buitenstop en geen logisch wandelstuk vanuit het centrum.",
+      "watch": "Let op hoe de arena vrij in het landschap ligt, met veel ruimte eromheen in plaats van een dichte binnenstad."
     },
     {
-      "route": "Neem voor dit stuk de U-Bahn of tram in plaats van te lopen. Stap pas weer over op de wandelroute zodra je bij BMW Welt / BMW Museum bent.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Ga terug naar metrostation Fröttmaning en neem de U6 richting centrum. Stap over richting Olympiazentrum en loop vanaf daar naar BMW Welt / BMW Museum.",
+      "watch": "Je wisselt hier van voetbalrand naar het Olympische noorden van München; let op hoe breed en modern dit stadsdeel is opgezet."
     },
     {
-      "route": "Loop van BMW Welt / BMW Museum naar Olympiapark. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop vanaf BMW Welt over de brede brug en paden het Olympiapark in. Houd de Olympiatoren en het tentdak van het stadion als richtpunten aan.",
+      "watch": "Let op hoe BMW, sport en parklandschap hier bijna één modern decor vormen."
     },
     {
-      "route": "Loop van Olympiapark naar Englischer Garten (Eisbach). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Neem vanaf Olympiazentrum de U3 richting centrum en stap uit bij Odeonsplatz of Universität. Loop daarna naar de Eisbachwelle aan de rand van de Englischer Garten.",
+      "watch": "Vanaf hier verandert München van modern parkgebied naar monumentale stad en groen stadsleven."
     },
     {
-      "route": "Loop van Englischer Garten (Eisbach) naar Frauenkirche. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop vanaf de Eisbach via de Hofgarten en Odeonsplatz richting de oude binnenstad. Ga via Theatinerstraße of Residenzstraße door naar de Frauenkirche.",
+      "watch": "Let op de overgang van park naar paleisstad en daarna naar smallere winkelstraten."
     },
     {
-      "route": "Loop van Frauenkirche naar Neues Rathaus (Marienplatz). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Frauenkirche via Frauenplatz en de korte winkelstraten richting Marienplatz. De toren van het Neues Rathaus helpt je vanzelf de goede kant op.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Neues Rathaus (Marienplatz) naar Viktualienmarkt. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Steek Marienplatz over richting Peterskirche en loop daarna een paar minuten omlaag naar de kraampjes van de Viktualienmarkt.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Viktualienmarkt naar Hofbräuhaus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop vanaf de Viktualienmarkt via kleine straatjes richting Platzl. Daar vind je het Hofbräuhaus tussen de drukte van terrassen en bierhallen.",
+      "watch": "Let op hoe de marktbuurt langzaam verandert in een toeristische bierhuisbuurt."
     },
     {
-      "route": "Loop van Hofbräuhaus naar Asamkirche. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
-      "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
+      "route": "Loop vanaf het Hofbräuhaus terug richting Marienplatz en volg dan Sendlinger Straße naar de Asamkirche. De kerk zit verrassend smal tussen de gevels.",
+      "watch": "Let onderweg op hoe de brede toeristische kern smaller en lokaler aanvoelt richting Sendlinger Straße."
     },
     {
-      "route": "Neem voor dit stuk de U-Bahn of tram in plaats van te lopen. Stap pas weer over op de wandelroute zodra je bij Schloss Nymphenburg (Schönheitengalerie) bent.",
-      "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
+      "route": "Neem voor Nymphenburg het openbaar vervoer: vanaf Sendlinger Tor of Karlsplatz kun je richting het westen reizen en daarna naar het paleis lopen. Open de volgende opdracht pas bij het paleis zelf.",
+      "watch": "Dit laatste stuk voelt bewust anders: van compacte binnenstad naar brede lanen, groen en paleisruimte."
     }
   ],
   milan: [
     {
-      "route": "Start bij Stadio San Siro (Giuseppe Meazza). Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij San Siro. Rond hier eerst de stadionopdracht af; dit is een losse buitenstop aan de westkant van Milaan.",
       "watch": "Dit is een grotere verplaatsing; kijk juist naar de overgang tussen centrum en buitenwijk."
     },
     {
-      "route": "Neem voor dit lange stuk de metro richting het centrum en wandel vanaf de dichtstbijzijnde halte naar Santa Maria delle Grazie.",
+      "route": "Neem vanaf San Siro de metro richting het centrum en stap uit in de buurt van Santa Maria delle Grazie.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Santa Maria delle Grazie naar Basilica di Sant'Ambrogio. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Santa Maria delle Grazie naar Basilica di Sant’Ambrogio. Dit is een rustig historisch stuk ten westen van het centrum.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Basilica di Sant'Ambrogio naar Navigli. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Sant’Ambrogio richting de Navigli. Je zakt af naar de wijk met kanalen en avondleven.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Navigli naar Castello Sforzesco. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Ga vanaf Navigli terug richting het centrum met metro/tram of een langere wandeling naar Castello Sforzesco.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Castello Sforzesco naar Cimitero Monumentale. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Castello Sforzesco via Parco Sempione richting Cimitero Monumentale. Reken op een langer stuk noordwaarts.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Cimitero Monumentale naar Bosco Verticale. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Cimitero Monumentale richting Porta Nuova en Bosco Verticale. De stad verandert hier duidelijk naar modern Milaan.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Bosco Verticale naar Teatro alla Scala. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Neem vanaf Porta Nuova of Garibaldi een korte metro/tram of wandel zuidwaarts naar Teatro alla Scala.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Teatro alla Scala naar Galleria Vittorio Emanuele II. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Teatro alla Scala door de Galleria Vittorio Emanuele II. Je komt vanzelf uit richting de Duomo.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Galleria Vittorio Emanuele II naar Duomo di Milano. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Galleria het plein op naar de Duomo di Milano. Neem de gevel vanaf afstand én dichtbij in je op.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   athens: [
     {
-      "route": "Start bij Lycabettusheuvel. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij Lycabettusheuvel. Dit is een hoog beginpunt; kijk eerst hoe Athene en de Akropolis in de stad liggen.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Lycabettusheuvel naar Syntagma-plein (Evzones-wachters). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf Lycabettus af richting Syntagma-plein. Neem de route via Kolonaki als je rustig naar beneden wilt lopen.",
       "watch": "Let op hoe straten naar deze open ruimte toe trekken en waar mensen vanzelf blijven staan."
     },
     {
-      "route": "Loop van Syntagma-plein (Evzones-wachters) naar Panathenaic Stadium (Kallimarmaro). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Syntagma langs de Nationale Tuin richting het Panathenaic Stadium.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Panathenaic Stadium (Kallimarmaro) naar Tempel van Olympische Zeus. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf het stadion terug richting de Tempel van Olympische Zeus. Je blijft aan de rand van het oude centrum.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Tempel van Olympische Zeus naar Hadrianusboog. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf de Tempel van Olympische Zeus naar Hadrianusboog. Die ligt vlakbij aan dezelfde historische zone.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Hadrianusboog naar Akropolismuseum. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Hadrianusboog naar het Akropolismuseum aan de voet van de Akropolis.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Akropolismuseum naar Akropolis / Parthenon. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Klim vanaf het Akropolismuseum omhoog naar de Akropolis/Parthenon. Neem dit stuk rustig; het is kort maar stijgend.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Akropolis / Parthenon naar Erechtheion. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop op de Akropolis van het Parthenon naar het Erechtheion. Je blijft binnen hetzelfde archeologische gebied.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Erechtheion naar Plaka. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf de Akropolis af richting Plaka. De smalle straatjes beginnen bijna direct onder de heuvel.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Plaka naar Ancient Agora - Hephaestus-tempel. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanuit Plaka westwaarts naar de Ancient Agora en de Hephaestus-tempel.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ],
   edinburgh: [
     {
-      "route": "Start bij Edinburgh Castle. Neem eerst even de tijd om je op de kaart te oriënteren voordat je de eerste opdracht opent.",
+      "route": "Start bij Edinburgh Castle boven aan de rots. Kijk eerst hoe het kasteel de stad domineert.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Edinburgh Castle naar Greyfriars Bobby (standbeeld). Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Daal vanaf het kasteel richting Grassmarket en loop daarna naar Greyfriars Bobby bij de kerk en begraafplaats.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Greyfriars Bobby (standbeeld) naar Royal Mile. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Greyfriars Bobby terug richting de Royal Mile. Je gaat van een stillere begraafplaatsbuurt naar de drukke hoofdstraat.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Royal Mile naar Holyrood Palace. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Volg de Royal Mile omlaag richting Holyrood Palace. Dit is de klassieke afdaling van oude stad naar paleis.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Holyrood Palace naar Arthur's Seat. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop vanaf Holyrood Palace naar de voet van Arthur’s Seat. Open de opdracht pas als je bij het park/het startpunt van de klim bent.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     },
     {
-      "route": "Loop van Arthur's Seat naar Calton Hill. Kies waar mogelijk de route via pleinen, kades of winkelstraten zodat de wandeling zelf ook iets laat zien.",
+      "route": "Loop of neem OV vanaf de omgeving van Holyrood/Arthur’s Seat naar Calton Hill. Klim daar omhoog voor het afsluitende uitzicht over de stad.",
       "watch": "Let onderweg op gevels, straatnamen, hoogteverschillen en drukte; die verraden vaak de geschiedenis van de buurt."
     }
   ]
