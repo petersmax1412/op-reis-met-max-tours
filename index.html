@@ -14,9 +14,98 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=30" />
+    <link rel="stylesheet" href="styles.css?v=31" />
   </head>
   <body>
+    <section class="promo-intro" data-promo-intro aria-label="Stadsopdracht intro">
+      <div class="promo-stage">
+        <div class="promo-progress" data-promo-progress aria-hidden="true"></div>
+        <button class="promo-skip" type="button" data-promo-finish>Overslaan</button>
+
+        <svg class="promo-route" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g class="promo-grid">
+            <line x1="0" y1="100" x2="1000" y2="100" />
+            <line x1="0" y1="250" x2="1000" y2="250" />
+            <line x1="0" y1="400" x2="1000" y2="400" />
+            <line x1="0" y1="530" x2="1000" y2="530" />
+            <line x1="150" y1="0" x2="150" y2="600" />
+            <line x1="380" y1="0" x2="380" y2="600" />
+            <line x1="620" y1="0" x2="620" y2="600" />
+            <line x1="850" y1="0" x2="850" y2="600" />
+          </g>
+          <path
+            class="promo-quest-path"
+            d="M60,560 L60,400 L300,400 L300,250 L520,250 L520,470 L740,470 L740,150 L940,150 L940,60"
+          />
+          <circle class="promo-pin" data-promo-pin="0" cx="60" cy="560" r="9" />
+          <circle class="promo-pin" data-promo-pin="1" cx="60" cy="400" r="9" />
+          <circle class="promo-pin" data-promo-pin="2" cx="300" cy="400" r="9" />
+          <circle class="promo-pin" data-promo-pin="3" cx="300" cy="250" r="9" />
+          <circle class="promo-pin" data-promo-pin="4" cx="520" cy="250" r="9" />
+          <circle class="promo-pin" data-promo-pin="5" cx="740" cy="470" r="9" />
+          <circle class="promo-pin" data-promo-pin="6" cx="940" cy="150" r="9" />
+        </svg>
+
+        <div class="promo-scenes">
+          <article class="promo-scene active" data-promo-scene="0">
+            <img class="promo-logo" src="assets/app-icon-512.png" alt="Stadsopdracht" />
+            <p class="promo-eyebrow">Nieuwe manier van ontdekken</p>
+            <h1>Stadsopdracht</h1>
+            <p>Geen standaard rondleiding. Je loopt, zoekt, kijkt en lost onderweg opdrachten op.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="1">
+            <div class="promo-flyer" aria-hidden="true"><span>×</span></div>
+            <h2>Weg met saaie lijstjes</h2>
+            <p>Niet alleen lezen wat je ziet, maar zelf ontdekken waarom een plek bijzonder is.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="2">
+            <div class="promo-phone" aria-hidden="true">
+              <span class="promo-walker"></span>
+            </div>
+            <h2>Volg de route op je telefoon</h2>
+            <p>De webapp brengt je van stop naar stop, met een opdracht zodra je op de juiste plek bent.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="3">
+            <div class="promo-question-card" aria-hidden="true">
+              <strong>Waarom staat dit gebouw juist hier?</strong>
+              <span>Omdat route, macht en stadsgeschiedenis hier samenkomen.</span>
+              <span class="promo-answer">Goed antwoord</span>
+            </div>
+            <h2>Los korte vragen op</h2>
+            <p>Elke opdracht laat je beter kijken naar pleinen, bruggen, gebouwen en details.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="4">
+            <div class="promo-unlock" aria-hidden="true">
+              <span class="promo-lock">🔒</span>
+              <span class="promo-open-lock">✓</span>
+              <small>Binnen 100 meter</small>
+            </div>
+            <h2>Pas open op locatie</h2>
+            <p>De volgende vraag komt vrij wanneer je echt bij de stop bent aangekomen.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="5">
+            <div class="promo-city-bars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2>Kies je stad</h2>
+            <p>Begin met Málaga, Düsseldorf, Wenen, Copenhagen en meer steden in dezelfde app.</p>
+          </article>
+
+          <article class="promo-scene" data-promo-scene="6">
+            <img class="promo-logo" src="assets/app-icon-512.png" alt="" />
+            <h2>Klaar voor je stadsopdracht?</h2>
+            <p>Kies een route en ontdek de stad stap voor stap.</p>
+            <button class="promo-cta" type="button" data-promo-finish>Begin de route</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <header class="app-shell">
       <a class="brand" href="#home" aria-label="Stadsopdracht">
         <span class="brand-mark" aria-hidden="true">
@@ -166,6 +255,6 @@
       <div data-answer-content></div>
     </dialog>
 
-    <script src="script.js?v=30"></script>
+    <script src="script.js?v=31"></script>
   </body>
 </html>

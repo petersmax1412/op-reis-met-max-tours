@@ -1458,6 +1458,8 @@ const checkoutContent = document.querySelector("[data-checkout-content]");
 const answerDialog = document.querySelector("[data-answer-dialog]");
 const answerContent = document.querySelector("[data-answer-content]");
 const adminPanel = document.querySelector("[data-admin-panel]");
+const promoIntro = document.querySelector("[data-promo-intro]");
+const promoProgress = document.querySelector("[data-promo-progress]");
 
 let selectedTourId = null;
 let selectedCityId = "all";
@@ -1467,11 +1469,14 @@ let locationMessage = "Locatie nog niet actief.";
 let paymentTimer = null;
 let deferredInstallPrompt = null;
 let installHelpVisible = false;
+let promoTimer = null;
 
 const defaultUnlockRadiusMeters = 70;
 const paymentProcessingMs = 40000;
 const adminStorageKey = "stadsopdracht-admin";
 const adminAccessCode = "max2026";
+const promoStorageKey = "stadsopdracht-promo-seen";
+const promoDurations = [3200, 3200, 3800, 4200, 3600, 3400, 4600];
 
 const stopUnlockRadii = {
   "Plaza de la Constitución": 60,
@@ -1547,6 +1552,60 @@ const closeDialog = (dialog) => {
   }
 
   dialog.removeAttribute("open");
+};
+
+const finishPromoIntro = () => {
+  if (!promoIntro) return;
+  window.clearTimeout(promoTimer);
+  sessionStorage.setItem(promoStorageKey, "true");
+  document.body.classList.remove("promo-active");
+  promoIntro.classList.add("is-hidden");
+  promoIntro.setAttribute("aria-hidden", "true");
+
+  window.setTimeout(() => {
+    promoIntro.hidden = true;
+  }, 380);
+};
+
+const showPromoScene = (sceneIndex) => {
+  if (!promoIntro || !promoProgress) return;
+  const scenes = [...promoIntro.querySelectorAll("[data-promo-scene]")];
+  const pins = [...promoIntro.querySelectorAll("[data-promo-pin]")];
+  const progressItems = [...promoProgress.children];
+  const duration = promoDurations[sceneIndex] || 3200;
+
+  scenes.forEach((scene, index) => {
+    scene.classList.toggle("active", index === sceneIndex);
+  });
+
+  pins.forEach((pin, index) => {
+    pin.classList.toggle("active", index <= sceneIndex);
+    pin.classList.toggle("now", index === sceneIndex);
+  });
+
+  progressItems.forEach((item, index) => {
+    item.classList.toggle("done", index < sceneIndex);
+    item.classList.toggle("active", index === sceneIndex);
+    item.style.setProperty("--promo-duration", `${duration}ms`);
+  });
+
+  window.clearTimeout(promoTimer);
+  if (sceneIndex < scenes.length - 1) {
+    promoTimer = window.setTimeout(() => showPromoScene(sceneIndex + 1), duration);
+  }
+};
+
+const initPromoIntro = () => {
+  if (!promoIntro || !promoProgress) return;
+
+  if (sessionStorage.getItem(promoStorageKey) === "true") {
+    promoIntro.hidden = true;
+    return;
+  }
+
+  document.body.classList.add("promo-active");
+  promoProgress.innerHTML = promoDurations.map(() => "<span></span>").join("");
+  showPromoScene(0);
 };
 
 const getProgress = () => JSON.parse(localStorage.getItem(storageKey) || "{}");
@@ -2510,6 +2569,12 @@ document.addEventListener("click", (event) => {
   const adminLogout = event.target.closest("[data-admin-logout]");
   const closeAnswerDialog = event.target.closest("[data-close-answer-dialog]");
   const arriveStop = event.target.closest("[data-arrive-stop]");
+  const promoFinish = event.target.closest("[data-promo-finish]");
+
+  if (promoFinish) {
+    finishPromoIntro();
+    return;
+  }
 
   if (buyButton) openCheckout(buyButton.dataset.buyTour);
   if (openButton) openTour(openButton.dataset.openTour);
@@ -2640,6 +2705,7 @@ window.addEventListener("appinstalled", () => {
 });
 
 refreshApp();
+initPromoIntro();
 
 if ("serviceWorker" in navigator) {
   let refreshing = false;
